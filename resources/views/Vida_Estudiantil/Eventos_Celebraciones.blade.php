@@ -109,10 +109,6 @@
     </main>
     <script>
 
-
-
-
-
         const eventos = [
     {
         id: 'sanpedrito',
@@ -187,7 +183,6 @@
         ]
     },
 
-
     {
         id: 'deportivo',
         category: 'Deportivo',
@@ -196,11 +191,13 @@
         description: 'Competencia deportiva anual que promueve el trabajo en equipo, el espíritu deportivo y la vida saludable entre todos nuestros estudiantes.',
         date: 'Agosto',
         images: [
-            '../images/Media Academica/Imagen6.jpg',
-            '../images/Media Academica/Imagen6.jpg',
+            '../images/Proyecto/Imagen4.jpg',
+            '../images/Proyecto/Imagen11.jpg',
             '../images/Media Academica/Imagen6.jpg'
         ]
     }
+
+    
 ];
 
 // Variables para el lightbox

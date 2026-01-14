@@ -43,7 +43,7 @@
         <!-- HERO -->
         <section class="hero-section" aria-label="Educación Inicial y Preescolar en Neiva">
             <div class="hero-background">
-                <img src="../images/Educacion Secundaria/Imagen1.jpg"
+                <img src="../images/Simbolos.jpg"
                     alt="Instalaciones del colegio en Neiva enfocadas en educación inicial y preescolar" width="1920"
                     height="1080" loading="lazy">
             </div>
@@ -69,107 +69,151 @@
 
 
 
+
+
         <!-- NAVEGACIÓN INTERNA DE ADMISIÓN -->
-        <section class="admision-nav-section" id="siguiente_sesion">
-            <div class="container">
+<section class="admision-nav-section" id="siguiente_sesion">
+    <div class="container">
 
-                <div class="admision-nav-layout">
-                    <!-- Grid Principal -->
-                    <div class="nav-grid-main">
-                        <!-- Requisitos de inscripción -->
-                        <a href="#costos-educativos" class="nav-card-featured nav-card-featured--primary">
-                            <div class="featured-header">
-                                <div class="featured-icon featured-icon--green">
-                                    <i class="fas fa-clipboard-check"></i>
-                                </div>
-                            </div>
-                            <div class="featured-content">
-                                <h3 class="featured-title">Requisitos de Inscripción</h3>
-                                <p class="featured-description">Documentación y procedimientos necesarios para tu
-                                    matrícula.
-                                </p>
-                                <div class="featured-action">
-                                    <span class="action-text">Ver requisitos</span>
-                                    <div class="action-arrow">
-                                        <i class="fas fa-arrow-right"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+        <div class="admision-nav-layout">
 
+            <!-- Grid Principal -->
+            <div class="nav-grid-main">
 
-                    <!-- Ruta de Admision -->
-                        <a href="#ruta-admision" class="nav-card-featured">
-                            <div class="featured-header">
-                                <div class="featured-icon">
-                                    <i class="fas fa-route"></i>
-                                </div>
-                            </div>
-                            <div class="featured-content">
-                                <h3 class="featured-title">Rutas de Admisiones</h3>
-                                <p class="featured-description">Información sobre procesos, requisitos y etapas de
-                                    admisión.</p>
-                                <div class="featured-action">
-                                    <span class="action-text">Ver rutas</span>
-                                    <div class="action-arrow">
-                                        <i class="fas fa-arrow-right"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                <!-- Requisitos de inscripción -->
+                <a href="#costos-educativos"
+                   class="nav-card-featured nav-card-featured--primary admision-bg admision-bg--requisitos">
 
-                    <!-- Grid Secundario -->
-                    <div class="nav-grid-secondary">
-                        <!-- Horarios de atención -->
-                        <a href="#horarios-atencion" class="nav-card-featured">
-                            <div class="featured-header">
-                                <div class="featured-icon">
-                                    <i class="far fa-clock"></i>
-                                </div>
-                            </div>
-                            <div class="featured-content">
-                                <h3 class="featured-title">Horarios de Atención</h3>
-                                <p class="featured-description">Agenda tu visita personalizada y conoce nuestras
-                                    instalaciones.</p>
-                                <div class="featured-action">
-                                    <span class="action-text">Ver horarios</span>
-                                    <div class="action-arrow">
-                                        <i class="fas fa-arrow-right"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                    <!-- Imagen de fondo -->
+                    <div class="admision-bg-image"></div>
 
-                        
+                    <!-- Overlay oscuro -->
+                    <div class="admision-bg-overlay"></div>
 
-                        
+                    <!-- Contenido -->
+                    <div class="featured-header">
+                        <div class="featured-icon featured-icon--green">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
                     </div>
 
+                    <div class="featured-content">
+                        <h3 class="featured-title">Requisitos de Inscripción</h3>
+                        
 
-                        <!-- Modalidades -->
-                        <a href="{{ route('prescolar')}}" class="nav-card-featured">
-                            <div class="featured-header">
-                                <div class="featured-icon">
-                                    <i class="fas fa-graduation-cap"></i>
-                                </div>
+                        <div class="featured-action">
+                            <span class="action-text">Ver requisitos</span>
+                            <div class="action-arrow">
+                                <i class="fas fa-arrow-right"></i>
                             </div>
-                            <div class="featured-content">
-                                <h3 class="featured-title">Modalidades Educativas</h3>
-                                <p class="featured-description">Niveles de preescolar, primaria y secundaria
-                                    disponibles.
-                                </p>
-                                <div class="featured-action">
-                                    <span class="action-text">Ver modalidades</span>
-                                    <div class="action-arrow">
-                                        <i class="fas fa-arrow-right"></i>
-                                    </div>
-                                </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Ruta de Admisión -->
+                <a href="#ruta-admision"
+                   class="nav-card-featured admision-bg admision-bg--rutas">
+
+                    <div class="admision-bg-image"></div>
+                    <div class="admision-bg-overlay"></div>
+
+                    <div class="featured-header">
+                        <div class="featured-icon">
+                            <i class="fas fa-route"></i>
+                        </div>
+                    </div>
+
+                    <div class="featured-content">
+                        <h3 class="featured-title">Rutas de Admisiones</h3>
+                        
+                        <div class="featured-action">
+                            <span class="action-text">Ver rutas</span>
+                            <div class="action-arrow">
+                                <i class="fas fa-arrow-right"></i>
                             </div>
-                        </a>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- Grid Secundario -->
+            <div class="nav-grid-secondary">
+
+                <!-- Horarios de atención -->
+                <a href="#horarios-atencion"
+                   class="nav-card-featured admision-bg admision-bg--horarios">
+
+                    <div class="admision-bg-image"></div>
+                    <div class="admision-bg-overlay"></div>
+
+                    <div class="featured-header">
+                        <div class="featured-icon">
+                            <i class="far fa-clock"></i>
+                        </div>
+                    </div>
+
+                    <div class="featured-content">
+                        <h3 class="featured-title">Horarios de Atención</h3>
+                        
+
+                        <div class="featured-action">
+                            <span class="action-text">Ver horarios</span>
+                            <div class="action-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- Modalidades -->
+            <a href="{{ route('prescolar') }}"
+               class="nav-card-featured admision-bg admision-bg--modalidades">
+
+                <div class="admision-bg-image"></div>
+                <div class="admision-bg-overlay"></div>
+
+                <div class="featured-header">
+                    <div class="featured-icon">
+                        <i class="fas fa-graduation-cap"></i>
                     </div>
                 </div>
-            </div>
-        </section>
+
+                <div class="featured-content">
+                    <h3 class="featured-title">Modalidades Educativas</h3>
+                    
+
+                    <div class="featured-action">
+                        <span class="action-text">Ver modalidades</span>
+                        <div class="action-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -324,20 +368,6 @@
             </div>
         </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <!-- SECCIÓN REQUISITOS DE ADMISIÓN -->
 <section class="requisitos-admision-section" id="costos-educativos">
     <div class="container">
@@ -466,8 +496,6 @@
                 </div>
             </div>
         </div>
-
-        
     </div>
 </section>
 

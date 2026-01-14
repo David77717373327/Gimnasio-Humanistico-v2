@@ -569,7 +569,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </h2>
             <p class="academic-levels-main-subtitle" data-aos="fade-up" data-aos-delay="200">
                 Formación académica y humanística desde los primeros años hasta la preparación universitaria,
-                con metodologías innovadoras y enfoque en el desarrollo de competencias para el siglo XXI.
+                para el siglo XXI.
             </p>
         </header>
 
@@ -643,7 +643,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                     class="academic-level-image" loading="lazy">
                             </div>
                             <div class="academic-carousel-slide">
-                                <img src="{{ asset('images/Educacion-Primaria/Imagen5.jpg') }}"
+                                <img src="{{ asset('images/Educacion-Primaria/Imagen9.jpg') }}"
                                     alt="Habilidades comunicativas en educación primaria"
                                     class="academic-level-image" loading="lazy">
                             </div>
@@ -700,7 +700,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                     class="academic-level-image" loading="lazy">
                             </div>
                             <div class="academic-carousel-slide">
-                                <img src="{{ asset('images/Educacion Secundaria/Imagen4.jpg') }}"
+                                <img src="{{ asset('images/Educacion Secundaria/Imagen6.jpg') }}"
                                     alt="Proyectos interdisciplinarios en secundaria"
                                     class="academic-level-image" loading="lazy">
                             </div>

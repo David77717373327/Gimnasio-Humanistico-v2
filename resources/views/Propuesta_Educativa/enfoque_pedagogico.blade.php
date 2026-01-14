@@ -64,210 +64,144 @@
         </section>
 
 
-        <!-- METODOLOGÍA INNOVADORA - DISEÑO ARQUITECTÓNICO -->
-        <section class="metodologia-arquitectura" id="siguiente_sesion">
-            
-            <!-- Intro Centrada -->
-            <div class="arquitectura-intro">
-                <div class="intro-line"></div>
-                <div class="intro-content">
-                    <span class="intro-micro">SISTEMA EDUCATIVO INTEGRAL</span>
-                    <h2 class="intro-macro">Metodología Integrada<br>de Aprendizaje</h2>
-                </div>
-                <div class="intro-line"></div>
-            </div>
 
-            <!-- Grid Simétrico Principal -->
-            <div class="grid-simetrico">
-                
-                <!-- MÓDULO 1: SANTILLANA -->
-                <div class="modulo-educativo" data-modulo="01">
-                    
-                    <div class="modulo-header">
-                        <div class="header-left">
-                            <span class="modulo-tag">PLATAFORMA DIGITAL</span>
-                            <h3 class="modulo-titulo">Santillana Compartir</h3>
-                        </div>
+                <!-- INTRODUCCIÓN ENFOQUE PEDAGÓGICO -->
+        <section id="siguiente_sesion" class="pedagogia-intro">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 text-center">
                         
+                        <h2 class="intro-title">
+                            ENFOQUE INSTITUCINAL
+                        </h2>
+                        <p class="intro-description">
+                            Nuestro enfoque pedagógico integra herramientas digitales, material físico especializado
+                            y acompañamiento docente permanente, promoviendo el aprendizaje significativo,
+                            el desarrollo integral y la formación en valores.
+                        </p>
                     </div>
-
-                    <div class="modulo-grid">
-                        <!-- Imagen -->
-                        <div class="modulo-imagen">
-                            <div class="imagen-frame">
-                                <img src="../images/Santillana2.webp" alt="Plataforma Santillana">
-                            </div>
-                        </div>
-
-                        <!-- Contenido -->
-                        <div class="modulo-contenido">
-                            <p class="contenido-descripcion">
-                                Ecosistema digital integral que transforma la experiencia educativa mediante recursos interactivos, evaluación continua y análisis de datos en tiempo real.
-                            </p>
-
-                            <div class="caracteristicas-grid">
-                                <div class="caracteristica">
-                                    <div class="caracteristica-icono">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
-                                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
-                                        </svg>
-                                    </div>
-                                    <div class="caracteristica-texto">
-                                        <h4>Libros Web Interactivos</h4>
-                                        <p>Biblioteca digital completa con multimedia integrado</p>
-                                    </div>
-                                </div>
-
-                                <div class="caracteristica">
-                                    <div class="caracteristica-icono">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                            <polyline points="9 11 12 14 22 4"/>
-                                            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
-                                        </svg>
-                                    </div>
-                                    <div class="caracteristica-texto">
-                                        <h4>Tareas Digitales</h4>
-                                        <p>Actividades adaptativas con gamificación</p>
-                                    </div>
-                                </div>
-
-                                <div class="caracteristica">
-                                    <div class="caracteristica-icono">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                            <line x1="18" y1="20" x2="18" y2="10"/>
-                                            <line x1="12" y1="20" x2="12" y2="4"/>
-                                            <line x1="6" y1="20" x2="6" y2="14"/>
-                                        </svg>
-                                    </div>
-                                    <div class="caracteristica-texto">
-                                        <h4>Analytics Educativo</h4>
-                                        <p>Métricas precisas de progreso individual</p>
-                                    </div>
-                                </div>
-
-                                <div class="caracteristica">
-                                    <div class="caracteristica-icono">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                                            <circle cx="9" cy="7" r="4"/>
-                                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                                        </svg>
-                                    </div>
-                                    <div class="caracteristica-texto">
-                                        <h4>Colaboración</h4>
-                                        <p>Espacios virtuales para trabajo en equipo</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-
-                <!-- MÓDULO 2: KIT ESCOLAR -->
-                <div class="modulo-educativo" data-modulo="02">
-                    
-                    <div class="modulo-header">
-                        <div class="header-left">
-                            <span class="modulo-tag">MATERIAL PEDAGÓGICO</span>
-                            <h3 class="modulo-titulo">Kit Escolar Especializado</h3>
-                        </div>
-                        <div class="header-right">
-                            <div class="numero-grande">02</div>
-                        </div>
-                    </div>
-
-                    <div class="modulo-grid">
-                        <!-- Imagen -->
-                        <div class="modulo-imagen">
-                            <div class="imagen-frame">
-                                <img src="../images/libros.jpg" alt="Kit Escolar">
-                            </div>
-                        </div>
-
-                        <!-- Contenido -->
-                        <div class="modulo-contenido">
-                            <p class="contenido-descripcion">
-                                Sistema integrado de recursos físicos diseñados con estándares editoriales internacionales para complementar y reforzar el aprendizaje digital.
-                            </p>
-
-                            <div class="componentes-lista">
-                                <div class="componente">
-                                    <div class="componente-numero">
-                                        <span>01</span>
-                                    </div>
-                                    <div class="componente-info">
-                                        <h4>Libros Físicos Santillana</h4>
-                                        <p>Colección editorial completa con contenido actualizado y certificado</p>
-                                    </div>
-                                </div>
-
-                                <div class="componente">
-                                    <div class="componente-numero">
-                                        <span>02</span>
-                                    </div>
-                                    <div class="componente-info">
-                                        <h4>Cartilla Integrada</h4>
-                                        <p>Herramienta unificada que consolida cinco áreas de conocimiento</p>
-                                    </div>
-                                </div>
-
-                                <div class="componente">
-                                    <div class="componente-numero">
-                                        <span>03</span>
-                                    </div>
-                                    <div class="componente-info">
-                                        <h4>Cuadernos Especializados</h4>
-                                        <p>Material de práctica diseñado para desarrollo de competencias</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="materias-etiquetas">
-                                <span class="etiqueta">Matemáticas</span>
-                                <span class="etiqueta">Español</span>
-                                <span class="etiqueta">Ciencias Naturales</span>
-                                <span class="etiqueta">Sociales</span>
-                                <span class="etiqueta">Inglés</span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
             </div>
-
         </section>
+
+        <!-- SECCIÓN 1: PLATAFORMA DIGITAL -->
+        <section class="pedagogia-bloque">
+            <div class="container">
+                <div class="row align-items-center gy-4">
+                    
+                    <!-- Contenido -->
+                    <div class="col-lg-6">
+                        <span class="bloque-etiqueta">PLATAFORMA EDUCATIVA</span>
+                        <h3 class="bloque-titulo">Santillana Compartir</h3>
+                        <p class="bloque-descripcion">
+                            Ecosistema digital que fortalece la enseñanza mediante recursos interactivos,
+                            evaluación continua y seguimiento académico en tiempo real, facilitando
+                            una experiencia educativa dinámica y estructurada.
+                        </p>
+
+                        <ul class="bloque-lista">
+                            <li>
+                                <i class="fas fa-book-open"></i>
+                                Libros digitales interactivos y multimedia
+                            </li>
+                            <li>
+                                <i class="fas fa-laptop"></i>
+                                Actividades digitales y tareas guiadas
+                            </li>
+                            <li>
+                                <i class="fas fa-chart-line"></i>
+                                Seguimiento del progreso académico
+                            </li>
+                            <li>
+                                <i class="fas fa-users"></i>
+                                Espacios de trabajo colaborativo
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Imagen -->
+                    <div class="col-lg-6">
+                        <div class="bloque-imagen imagen-compacta">
+
+                            <img src="../images/Santillana2.webp" alt="Plataforma Santillana">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: KIT ESCOLAR -->
+        <section class="pedagogia-bloque pedagogia-alterno">
+            <div class="container">
+                <div class="row align-items-stretch gy-4 flex-lg-row-reverse">
+
+                    <!-- Contenido -->
+                    <div class="col-lg-6 d-flex flex-column justify-content-center">
+                        <span class="bloque-etiqueta">RECURSOS PEDAGÓGICOS</span>
+                        <h3 class="bloque-titulo">Kit Escolar Especializado</h3>
+                        <p class="bloque-descripcion">
+                            Complementamos el aprendizaje digital con material físico diseñado bajo
+                            estándares editoriales internacionales, fortaleciendo las competencias
+                            académicas a través de la práctica estructurada.
+                        </p>
+
+                        <div class="kit-componentes">
+                            <div class="kit-item">
+                                <span class="kit-numero">01</span>
+                                <div>
+                                    <h4>Libros Santillana</h4>
+                                    <p>Contenido actualizado y alineado al currículo nacional</p>
+                                </div>
+                            </div>
+
+                            <div class="kit-item">
+                                <span class="kit-numero">02</span>
+                                <div>
+                                    <h4>Cartilla Integrada</h4>
+                                    <p>Consolidación de cinco áreas fundamentales</p>
+                                </div>
+                            </div>
+
+                            <div class="kit-item">
+                                <span class="kit-numero">03</span>
+                                <div>
+                                    <h4>Cuadernos Especializados</h4>
+                                    <p>Refuerzo práctico para el desarrollo de habilidades</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="materias">
+                            <span>Matemáticas</span>
+                            <span>Lengua Castellana</span>
+                            <span>Ciencias Naturales</span>
+                            <span>Sociales</span>
+                            <span>Inglés</span>
+                        </div>
+                    </div>
+
+                    <!-- Imagen más alta para balancear -->
+                    <div class="col-lg-6">
+                        <div class="bloque-imagen imagen-extendida">
+                            <img src="../images/libros.jpg" alt="Kit Escolar">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+        
 
     </main>
 
     @include('layouts.footer')
 
-    <script>
-        // Intersection Observer para animaciones
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.modulo-educativo').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(40px)';
-            el.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
-            observer.observe(el);
-        });
-    </script>
+    
 
 </body>
 

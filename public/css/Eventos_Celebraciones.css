@@ -104,7 +104,7 @@
 
 .tab-btn {
     flex: 1;
-    min-width: 150px;
+    min-width: 200px;
     padding: 15px 16px 12px;
     background: transparent;
     border: none;
@@ -529,174 +529,85 @@
 
 
 
-
-
-
-
-
-
 /* ============================================
-   SISTEMA RESPONSIVE COMPLETO - VERSIÓN 2.3
-   Correcciones: Scrollbar gris + Fecha compacta + Espaciado optimizado
+   NAVEGACIÓN STICKY CON SCROLL HORIZONTAL
+   ✨ Posición fija + scroll horizontal + ocultar iconos al scrollear
 ============================================ */
 
-
-/* Desktop y tablets grandes */
+/* Navegación sticky para todas las pantallas */
 .eventos-tabs {
-    background: var(--white);
-    padding: 20px 0 8px;
     position: sticky;
     top: 0;
     z-index: 100;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
 }
 
+/* Contenedor de tabs con scroll horizontal */
 .tabs-wrapper {
     display: flex;
-    gap: 0;
     overflow-x: auto;
     overflow-y: hidden;
+    background: #ffffff;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
     scrollbar-width: thin;
-    scrollbar-color: #bbb #f0f0f0;
-    -ms-overflow-style: auto;
-    padding-bottom: 8px;
+    flex-wrap: nowrap;
 }
 
-/* Scrollbar GRIS visible en todos los navegadores */
-.tabs-wrapper::-webkit-scrollbar {
-    height: 6px;
-    display: block;
+/* Ocultar scrollbar en móviles para diseño más limpio */
+@media screen and (max-width: 768px) {
+    .tabs-wrapper::-webkit-scrollbar {
+        height: 4px;
+    }
+    
+    .tabs-wrapper::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    
+    .tabs-wrapper::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+    }
 }
 
-.tabs-wrapper::-webkit-scrollbar-track {
-    background: #f0f0f0;
-    border-radius: 3px;
-}
-
-.tabs-wrapper::-webkit-scrollbar-thumb {
-    background: #bbb;
-    border-radius: 3px;
-}
-
-.tabs-wrapper::-webkit-scrollbar-thumb:hover {
-    background: #999;
-}
-
+/* Tabs con flex para evitar wrap */
 .tab-btn {
-    flex: 0 0 auto;
-    min-width: 150px;
-    padding: 16px 20px 14px;
-    background: transparent;
-    border: none;
-    border-bottom: 3px solid transparent;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.tab-btn::after {
-    content: '';
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background: var(--primary-green);
-    transform: scaleX(0);
-    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.tab-btn.active::after {
-    transform: scaleX(1);
-}
-
-.tab-btn:hover {
-    background: var(--light-gray);
-}
-
-.tab-icon {
-    font-size: 22px;
-    color: var(--text-light);
-    display: block;
-    margin-bottom: 8px;
-    transition: all 0.3s ease;
-    line-height: 1;
-}
-
-.tab-btn.active .tab-icon {
-    color: var(--primary-green);
-    transform: scale(1.05);
-}
-
-.tab-title {
-    font-size: 11px;
-    font-weight: 700;
-    color: var(--text-light);
-    text-transform: uppercase;
-    letter-spacing: 0.8px;
-    transition: color 0.3s ease;
-    line-height: 1.3;
+    flex-shrink: 0;
     white-space: nowrap;
 }
 
-.tab-btn.active .tab-title {
-    color: var(--black);
+/* Clase para cuando se hace scroll - ocultar iconos */
+.eventos-tabs.scrolled .tab-icon {
+    display: none;
 }
 
-/* ============================================
-   CORRECCIÓN: FECHA COMPACTA SIN ESPACIO EXTRA
-============================================ */
-
-.evento-category {
-    display: inline-block;
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    color: var(--primary-green);
-    margin-bottom: 12px;
-    opacity: 0.9;
+/* Ajustar padding de tabs cuando no hay icono */
+.eventos-tabs.scrolled .tab-btn {
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
-.evento-title {
-    font-size: 42px;
-    font-weight: 800;
-    color: var(--primary-green);
-    margin-bottom: 16px;
-    line-height: 1.15;
-    letter-spacing: -0.8px;
+/* Centrar texto cuando no hay icono */
+.eventos-tabs.scrolled .tab-title {
+    margin-bottom: 0;
 }
 
-/* FECHA - Compacta y sin espacios extras */
-.evento-fecha {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 18px;
-    background: var(--light-gray);
-    border-radius: var(--border-radius-sm);
-    margin-bottom: 20px;
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--text-dark);
+/* Transición suave para iconos */
+.tab-icon {
+    transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-.evento-fecha-icon {
-    font-size: 18px;
-    color: var(--primary-green);
+.eventos-tabs.scrolled .tab-icon {
+    opacity: 0;
+    transform: scale(0.8);
 }
 
-.evento-description {
-    font-size: 16px;
-    line-height: 1.75;
-    color: var(--black);
-    margin-bottom: 32px;
-    font-weight: 400;
+/* Opcional: Efecto de sombra más pronunciada al hacer scroll */
+.eventos-tabs.scrolled {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-
-
-
 
 
 
