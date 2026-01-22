@@ -47,8 +47,8 @@
                             <h6 class="dropdown-header">Institución</h6>
                             <a class="dropdown-item" role="menuitem" href="{{ route('Historia') }}">Nuestra Historia</a>
                             <a class="dropdown-item" role="menuitem" href="{{ route('mision-vision') }}">Misión y Visión</a>
-                            <a class="dropdown-item" role="menuitem" href="{{ route('filosofia_institucional') }}">Filosofía Educativa</a>
-                            <a class="dropdown-item" role="menuitem" href="{{ route('simbolos') }}">Símbolos Institucionales</a>
+                            <a class="dropdown-item" role="menuitem" href="{{ route('filosofia-institucional') }}">Filosofía Educativa</a>
+                            <a class="dropdown-item" role="menuitem" href="{{ route('simbolos-institucionales') }}">Símbolos Institucionales</a>
                             <a class="dropdown-item" role="menuitem" href="{{ route('principios-valores') }}">Principios y Valores</a>
                             <a class="dropdown-item" role="menuitem" href="{{ route('politica-calidad') }}">Política de Calidad</a>
                         </div>

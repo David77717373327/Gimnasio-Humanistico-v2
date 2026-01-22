@@ -29,7 +29,7 @@
             </a>
 
             <!-- Filosofía institucional -->
-            <a href="{{ route('filosofia_institucional') }}"
+            <a href="{{ route('filosofia-institucional') }}"
                class="nav-card-inst filosofia"
                aria-label="Ir a la sección institucional: Filosofía">
                 <div class="nav-card-overlay-inst"></div>
@@ -55,7 +55,7 @@
             </a>
 
             <!-- Símbolos institucionales -->
-            <a href="{{ route('simbolos') }}"
+            <a href="{{ route('simbolos-institucionales') }}"
                class="nav-card-inst simbolos"
                aria-label="Ir a la sección institucional: Símbolos del colegio">
                 <div class="nav-card-overlay-inst"></div>
