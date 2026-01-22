@@ -63,8 +63,6 @@
             </div>
         </section>
 
-
-
                 <!-- INTRODUCCIÓN ENFOQUE PEDAGÓGICO -->
         <section id="siguiente_sesion" class="pedagogia-intro">
             <div class="container">
@@ -75,9 +73,8 @@
                             ENFOQUE INSTITUCINAL
                         </h2>
                         <p class="intro-description">
-                            Nuestro enfoque pedagógico integra herramientas digitales, material físico especializado
-                            y acompañamiento docente permanente, promoviendo el aprendizaje significativo,
-                            el desarrollo integral y la formación en valores.
+                            Integramos recursos digitales y material
+                            especializado con acompañamiento docente para un aprendizaje integral y con valores.
                         </p>
                     </div>
                 </div>

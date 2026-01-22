@@ -69,8 +69,6 @@
 
 
 
-
-
         <!-- NAVEGACIÓN INTERNA DE ADMISIÓN -->
 <section class="admision-nav-section" id="siguiente_sesion">
     <div class="container">
@@ -110,34 +108,9 @@
                     </div>
                 </a>
 
-                <!-- Ruta de Admisión -->
-                <a href="#ruta-admision"
-                   class="nav-card-featured admision-bg admision-bg--rutas">
 
-                    <div class="admision-bg-image"></div>
-                    <div class="admision-bg-overlay"></div>
 
-                    <div class="featured-header">
-                        <div class="featured-icon">
-                            <i class="fas fa-route"></i>
-                        </div>
-                    </div>
-
-                    <div class="featured-content">
-                        <h3 class="featured-title">Rutas de Admisiones</h3>
-                        
-                        <div class="featured-action">
-                            <span class="action-text">Ver rutas</span>
-                            <div class="action-arrow">
-                                <i class="fas fa-arrow-right"></i>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-            </div>
-
-            <!-- Grid Secundario -->
+                <!-- Grid Secundario -->
             <div class="nav-grid-secondary">
 
                 <!-- Horarios de atención -->
@@ -167,6 +140,35 @@
                 </a>
 
             </div>
+
+                <!-- Ruta de Admisión -->
+                <a href="#ruta-admision"
+                   class="nav-card-featured admision-bg admision-bg--rutas">
+
+                    <div class="admision-bg-image"></div>
+                    <div class="admision-bg-overlay"></div>
+
+                    <div class="featured-header">
+                        <div class="featured-icon">
+                            <i class="fas fa-route"></i>
+                        </div>
+                    </div>
+
+                    <div class="featured-content">
+                        <h3 class="featured-title">Rutas de Admisiones</h3>
+                        
+                        <div class="featured-action">
+                            <span class="action-text">Ver rutas</span>
+                            <div class="action-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+            
 
             <!-- Modalidades -->
             <a href="{{ route('prescolar') }}"
@@ -215,7 +217,136 @@
 
 
 
+      <!-- SECCIÓN REQUISITOS DE ADMISIÓN -->
+<section class="requisitos-admision-section" id="costos-educativos">
+    <div class="container">
+        <!-- Header de la sección -->
+        <div class="admision-nav-header">
+            <div class="header-content-wrapper">
+                <div class="header-text-content">
+                    <h2 class="admision-nav-title">Requisitos de Admisión</h2>
+                </div>
+            </div>
+        </div>
 
+        <!-- PREESCOLAR -->
+        <div class="modalidad-container style-table">
+            <div class="modalidad-header">
+                <div class="modalidad-icon">
+                    <img src="{{ asset('images/logo.png') }}" alt="Logo Gimnasio Humanístico">
+                </div>
+                <h3 class="modalidad-title">PREESCOLAR</h3>
+                <span class="modalidad-badge">Pre-jardín, Jardín y Transición</span>
+            </div>
+
+            <div class="modalidad-content">
+                <!-- Card de información -->
+                <div class="info-card">
+                    <div class="info-section">
+                        <div class="info-header">
+                            <i class="far fa-clock"></i>
+                            <h4>Horario</h4>
+                        </div>
+                        <p class="info-detail">7:00 a.m. - 11:30 a.m.</p>
+                    </div>
+
+                    <div class="info-section">
+                        <div class="info-header">
+                            <i class="fas fa-file-alt"></i>
+                            <h4>Requisitos de Matrícula</h4>
+                        </div>
+                        <ul class="requisitos-list">
+                            <li>Fotocopia documento de identidad ampliado</li>
+                            <li>Boletín final</li>
+                            <li>Paz y salvo</li>
+                            <li>Retiro del Simat</li>
+                            <li>1 carpeta azul colgante</li>
+                            <li>Fotocopia cédula de los padres o acudiente</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRIMARIA -->
+        <div class="modalidad-container style-table">
+            <div class="modalidad-header">
+                <div class="modalidad-icon">
+                    <img src="{{ asset('images/logo.png') }}" alt="Logo Gimnasio Humanístico">
+                </div>
+                <h3 class="modalidad-title">PRIMARIA</h3>
+                <span class="modalidad-badge">Grados 1° a 5°</span>
+            </div>
+
+            <div class="modalidad-content">
+                <!-- Card de información -->
+                <div class="info-card">
+                    <div class="info-section">
+                        <div class="info-header">
+                            <i class="far fa-clock"></i>
+                            <h4>Horario</h4>
+                        </div>
+                        <p class="info-detail">6:00 a.m. - 12:00 p.m.</p>
+                    </div>
+
+                    <div class="info-section">
+                        <div class="info-header">
+                            <i class="fas fa-file-alt"></i>
+                            <h4>Requisitos de Matrícula</h4>
+                        </div>
+                        <ul class="requisitos-list">
+                            <li>Fotocopia documento de identidad ampliado</li>
+                            <li>Certificados de estudio del grado anterior</li>
+                            <li>Paz y salvo</li>
+                            <li>Retiro del Simat</li>
+                            <li>1 carpeta azul colgante</li>
+                            <li>Fotocopia cédula de los padres o acudiente</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECUNDARIA -->
+        <div class="modalidad-container style-table">
+            <div class="modalidad-header">
+                <div class="modalidad-icon">
+                    <img src="{{ asset('images/logo.png') }}" alt="Logo Gimnasio Humanístico">
+                </div>
+                <h3 class="modalidad-title">SECUNDARIA</h3>
+                <span class="modalidad-badge">Grados 6° a 11°</span>
+            </div>
+
+            <div class="modalidad-content">
+                <!-- Card de información -->
+                <div class="info-card">
+                    <div class="info-section">
+                        <div class="info-header">
+                            <i class="far fa-clock"></i>
+                            <h4>Horario</h4>
+                        </div>
+                        <p class="info-detail">6:00 a.m. - 12:30 p.m.</p>
+                    </div>
+
+                    <div class="info-section">
+                        <div class="info-header">
+                            <i class="fas fa-file-alt"></i>
+                            <h4>Requisitos de Matrícula</h4>
+                        </div>
+                        <ul class="requisitos-list">
+                            <li>Fotocopia documento de identidad ampliado</li>
+                            <li>Certificados de estudio de los grados anteriores</li>
+                            <li>Paz y salvo</li>
+                            <li>Retiro del Simat</li>
+                            <li>1 carpeta azul colgante</li>
+                            <li>Fotocopia cédula de los padres o acudiente</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 
@@ -368,136 +499,14 @@
             </div>
         </section>
 
-        <!-- SECCIÓN REQUISITOS DE ADMISIÓN -->
-<section class="requisitos-admision-section" id="costos-educativos">
-    <div class="container">
-        <!-- Header de la sección -->
-        <div class="admision-nav-header">
-            <div class="header-content-wrapper">
-                <div class="header-text-content">
-                    <h2 class="admision-nav-title">Requisitos de Admisión</h2>
-                </div>
-            </div>
-        </div>
 
-        <!-- PREESCOLAR -->
-        <div class="modalidad-container style-table">
-            <div class="modalidad-header">
-                <div class="modalidad-icon">
-                    <img src="{{ asset('images/logo.png') }}" alt="Logo Gimnasio Humanístico">
-                </div>
-                <h3 class="modalidad-title">PREESCOLAR</h3>
-                <span class="modalidad-badge">Pre-jardín, Jardín y Transición</span>
-            </div>
 
-            <div class="modalidad-content">
-                <!-- Card de información -->
-                <div class="info-card">
-                    <div class="info-section">
-                        <div class="info-header">
-                            <i class="far fa-clock"></i>
-                            <h4>Horario</h4>
-                        </div>
-                        <p class="info-detail">7:00 a.m. - 11:30 a.m.</p>
-                    </div>
 
-                    <div class="info-section">
-                        <div class="info-header">
-                            <i class="fas fa-file-alt"></i>
-                            <h4>Requisitos de Matrícula</h4>
-                        </div>
-                        <ul class="requisitos-list">
-                            <li>Fotocopia documento de identidad ampliado</li>
-                            <li>Boletín final</li>
-                            <li>Paz y salvo</li>
-                            <li>Retiro del Simat</li>
-                            <li>1 carpeta azul colgante</li>
-                            <li>Fotocopia cédula de los padres o acudiente</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- PRIMARIA -->
-        <div class="modalidad-container style-table">
-            <div class="modalidad-header">
-                <div class="modalidad-icon">
-                    <img src="{{ asset('images/logo.png') }}" alt="Logo Gimnasio Humanístico">
-                </div>
-                <h3 class="modalidad-title">PRIMARIA</h3>
-                <span class="modalidad-badge">Grados 1° a 5°</span>
-            </div>
 
-            <div class="modalidad-content">
-                <!-- Card de información -->
-                <div class="info-card">
-                    <div class="info-section">
-                        <div class="info-header">
-                            <i class="far fa-clock"></i>
-                            <h4>Horario</h4>
-                        </div>
-                        <p class="info-detail">6:00 a.m. - 12:00 p.m.</p>
-                    </div>
 
-                    <div class="info-section">
-                        <div class="info-header">
-                            <i class="fas fa-file-alt"></i>
-                            <h4>Requisitos de Matrícula</h4>
-                        </div>
-                        <ul class="requisitos-list">
-                            <li>Fotocopia documento de identidad ampliado</li>
-                            <li>Certificados de estudio del grado anterior</li>
-                            <li>Paz y salvo</li>
-                            <li>Retiro del Simat</li>
-                            <li>1 carpeta azul colgante</li>
-                            <li>Fotocopia cédula de los padres o acudiente</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- SECUNDARIA -->
-        <div class="modalidad-container style-table">
-            <div class="modalidad-header">
-                <div class="modalidad-icon">
-                    <img src="{{ asset('images/logo.png') }}" alt="Logo Gimnasio Humanístico">
-                </div>
-                <h3 class="modalidad-title">SECUNDARIA</h3>
-                <span class="modalidad-badge">Grados 6° a 11°</span>
-            </div>
-
-            <div class="modalidad-content">
-                <!-- Card de información -->
-                <div class="info-card">
-                    <div class="info-section">
-                        <div class="info-header">
-                            <i class="far fa-clock"></i>
-                            <h4>Horario</h4>
-                        </div>
-                        <p class="info-detail">6:00 a.m. - 12:30 p.m.</p>
-                    </div>
-
-                    <div class="info-section">
-                        <div class="info-header">
-                            <i class="fas fa-file-alt"></i>
-                            <h4>Requisitos de Matrícula</h4>
-                        </div>
-                        <ul class="requisitos-list">
-                            <li>Fotocopia documento de identidad ampliado</li>
-                            <li>Certificados de estudio de los grados anteriores</li>
-                            <li>Paz y salvo</li>
-                            <li>Retiro del Simat</li>
-                            <li>1 carpeta azul colgante</li>
-                            <li>Fotocopia cédula de los padres o acudiente</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+      
 
 
 

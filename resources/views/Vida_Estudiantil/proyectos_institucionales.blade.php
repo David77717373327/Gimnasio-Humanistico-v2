@@ -338,12 +338,12 @@
                 futbol: [
                     '../images/Proyecto/Imagen4.jpg',
                     '../images/Proyecto/Imagen11.jpg',
-                    '../images/Dansas.jpg',
+                    '../images/Proyecto/Imagen12.jpg',
                 ],
                 sacramentos: [
-                    '../images/Dansas.jpg',
-                    '../images/Educacion_Inicila.jpg',
-                    '../images/Dansas.jpg',
+                    '../images/Celebraciones/comuniones3.jpg',
+                    '../images/Celebraciones/comuniones2.jpg',
+                    '../images/Celebraciones/Confirmaciones1.jpg',
                 ],
                 voleibol: [
                     '../images/Proyecto/Imagen8.jpg',
@@ -351,13 +351,12 @@
                     '../images/Proyecto/Imagen10.jpg'
                 ],
                 artes: [
-                    '../images/Educacion_Inicila.jpg',
-                    '../images/Primariaa.jpeg',
-                    '../images/Dansas.jpg',
+                    '../images/Proyecto/Imagen13.jpg',
+                    '../images/Proyecto/Imagen15.jpg',
+                    '../images/Proyecto/Imagen14.jpg',
                 ],
-
             };
-
+        
             // Variables globales para el modal
             let currentModalProject = null;
             let currentModalIndex = 0;

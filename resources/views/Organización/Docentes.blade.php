@@ -43,7 +43,7 @@
         <!-- HERO -->
         <section class="hero-section" aria-label="Equipo Directivo del Gimnasio Humanístico">
             <div class="hero-background">
-                <img src="{{ asset('images/Politica_de_calidad2.webp') }}"
+                <img src="{{ asset('images/Simbolos.jpg ') }}"
                     alt="Instalaciones del Gimnasio Humanístico en Neiva, Colombia" width="1920" height="1080"
                     loading="lazy">
             </div>

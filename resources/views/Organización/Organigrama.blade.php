@@ -110,13 +110,7 @@
                                 </div>
                             </div>
 
-                            <!-- Botón de descarga -->
-                            <div class="organigrama-actions">
-                                <button class="btn-download" id="downloadBtn" aria-label="Descargar organigrama institucional">
-                                    <i class="fas fa-download"></i>
-                                    <span>Descargar Organigrama</span>
-                                </button>
-                            </div>
+                            
                         </article>
 
                     </div>

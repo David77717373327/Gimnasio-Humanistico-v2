@@ -60,7 +60,7 @@
     <!-- HERO -->
     <section class="hero-section" aria-label="Gobierno Escolar Institucional">
         <div class="hero-background">
-            <img src="../images/Politica_de_calidad2.webp"
+            <img src="../images/Consejo_Directivo.jpg"
                 alt="Instalaciones del Gimnasio Humanístico en Neiva, Colombia"
                 width="1920" height="1080" loading="lazy">
         </div>
@@ -176,10 +176,8 @@
                                 <div class="member-item"><span class="bullet">•</span><p class="member-text"><strong>Un representante de los exalumnos</strong>.</p></div>
                                 <div class="member-item"><span class="bullet">•</span><p class="member-text"><strong>Un representante del sector productivo</strong>.</p></div>
                                 <div class="member-item"><span class="bullet">•</span><p class="member-text"><strong>Un representante de los Directivos Propietarios</strong>.</p></div>
-
                             </div>
                         </div>
-
                     </div>
                 </div>
             </article>
@@ -193,7 +191,6 @@
 
                 <div class="flip-card">
                     <div class="flip-card-inner">
-
                         <div class="flip-card-front">
                             <div class="card-icon">
                                 <img src="{{ asset('images/Consejo_Directivo.jpg') }}" alt="Consejo Académico">
@@ -202,20 +199,15 @@
                             <p class="front-subtitle">Órgano Asesor</p>
                             <div class="hover-hint">Pasa el cursor →</div>
                         </div>
-
                         <div class="flip-card-back">
                             <h5 class="back-title">Miembros del Consejo</h5>
-
                             <div class="members-list">
-
                                 <div class="member-item"><span class="bullet">•</span><p class="member-text"><strong>La Rectoría</strong>, representante legal.</p></div>
                                 <div class="member-item"><span class="bullet">•</span><p class="member-text"><strong>La Coordinadora</strong>, quien dirige los niveles educativos asignados.</p></div>
                                 <div class="member-item"><span class="bullet">•</span><p class="member-text"><strong>Los Directivos Propietarios</strong>: un representante.</p></div>
                                 <div class="member-item"><span class="bullet">•</span><p class="member-text"><strong>El jefe de cada área académica</strong>, elegido anualmente.</p></div>
-
                             </div>
                         </div>
-
                     </div>
                 </div>
             </article>

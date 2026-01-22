@@ -103,7 +103,7 @@
         <!-- HERO -->
         <section class="hero-section" aria-label="Equipo Directivo del Gimnasio Humanístico">
             <div class="hero-background">
-                <img src="{{ asset('images/Politica_de_calidad2.webp') }}"
+                <img src="{{ asset('images/Politica_de_calidad4.webp') }}"
                     alt="Instalaciones del Gimnasio Humanístico en Neiva, Colombia" width="1920" height="1080"
                     loading="lazy">
             </div>
@@ -164,7 +164,7 @@
                     <div class="directivo-image">
                         <div class="image-accent"></div>
                         <div class="image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&h=1000&fit=crop"
+                            <img src="{{ asset('images/Logo.png') }}"
                                 alt="Retrato de la coordinadora académica del Gimnasio Humanístico" width="600"
                                 height="750" loading="lazy">
                         </div>
@@ -172,14 +172,14 @@
 
                     <div class="directivo-content">
                         <header class="directivo-header">
-                            <h2 class="directivo-nombre">Lic. XXXX</h2>
+                            <h2 class="directivo-nombre">Lic. Stefany Polania Cubillos</h2>
                             <p class="directivo-cargo">Coordinadora Académica</p>
                         </header>
 
                         <div class="directivo-divider"></div>
 
                         <p class="directivo-descripcion">
-                            La Lic. XXXX lidera la coordinación académica, garantizando la implementación efectiva del
+                            La Lic. Stefany Polania Cubillos lidera la coordinación académica, garantizando la implementación efectiva del
                             modelo pedagógico humanístico.
                             Su experiencia en gestión educativa y su enfoque innovador permiten desarrollar programas
                             modernos que integran tradición,

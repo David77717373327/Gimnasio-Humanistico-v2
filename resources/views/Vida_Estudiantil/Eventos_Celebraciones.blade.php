@@ -163,9 +163,9 @@
         description: 'Ceremonia religiosa significativa donde nuestros estudiantes reciben el sacramento de la Eucaristía, acompañados por sus familias y comunidad educativa.',
         date: 'Mayo',
         images: [
+            '../images/Celebraciones/comuniones2.jpg',
             '../images/Celebraciones/comuniones1.jpg',
-            '../images/Educacion Secundaria/Imagen1.jpg',
-            '../images/Educacion Secundaria/Imagen1.jpg'
+            '../images/Celebraciones/Confirmaciones1.jpg'
         ]
     },
 
@@ -177,9 +177,9 @@
         description: 'Sacramento de la Confirmación donde nuestros jóvenes fortalecen su compromiso con la fe y los valores cristianos que guían nuestra institución educativa.',
         date: 'Octubre',
         images: [
-            '../images/iniciooo2.jpeg',
-            '../images/iniciooo2.jpeg',
-            '../images/iniciooo2.jpeg'
+            '../images/Celebraciones/comuniones1.jpg',
+            '../images/Celebraciones/comuniones2.jpg',
+            '../images/Celebraciones/Confirmaciones1.jpg'
         ]
     },
 
@@ -193,7 +193,7 @@
         images: [
             '../images/Proyecto/Imagen4.jpg',
             '../images/Proyecto/Imagen11.jpg',
-            '../images/Media Academica/Imagen6.jpg'
+            '../images/Proyecto/Imagen12.jpg'
         ]
     }
 

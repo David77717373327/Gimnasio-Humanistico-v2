@@ -80,7 +80,7 @@
 
 .admision-nav-section {
     background-color: #ffffff;
-    padding: 5rem 0 2.5rem;
+    padding: 5rem 0 5.5rem;
     position: relative;
     overflow: hidden;
 }
@@ -131,6 +131,7 @@
 .admision-nav-layout::-webkit-scrollbar-thumb {
     background: rgba(4, 14, 9, 0.35);
     border-radius: 10px;
+    
 }
 
 .nav-grid-main,
@@ -147,11 +148,10 @@
     position: relative;
     width: 300px;
     min-width: 300px;
-    height: 220px;
+    height: 210px;
     padding: 1.8rem;
     display: flex;
     flex-direction: column;
-
     text-decoration: none;
     overflow: hidden;
     scroll-snap-align: start;
@@ -177,15 +177,15 @@
 
 /* Imágenes */
 .admision-bg--requisitos .admision-bg-image {
-    background-image: url('../images/Imagen1.jpg');
+    background-image: url('../images/OIP.webp');
 }
 
 .admision-bg--rutas .admision-bg-image {
-    background-image: url('../images/Simbolos.jpg');
+    background-image: url('../images/Iniciooo1.jpg');
 }
 
 .admision-bg--horarios .admision-bg-image {
-    background-image: url('../images/Libros.jpg');
+    background-image: url('../images/vista-superior-reloj-pared-bodegon_23-2150417196.avif');
 }
 
 .admision-bg--modalidades .admision-bg-image {
@@ -227,11 +227,11 @@
 .featured-icon {
     width: 20px;
     height: 20px;
-    color: white;
+    color: #CFE8DB;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2.1rem;
+    font-size: 2.4rem;
 }
 
 /* ============================================
@@ -247,7 +247,7 @@
 ============================================ */
 
 .featured-title {
-    color: #ffffff;
+    color: #CFE8DB;
     font-size: 1.25rem;
     font-weight: 700;
     letter-spacing: 0.2px;
@@ -265,7 +265,7 @@
 }
 
 .action-text {
-    color: #ffffff;
+    color: #CFE8DB;
     font-size: 1rem;
     font-weight: 600;
     opacity: 0.95;
@@ -275,7 +275,7 @@
     width: 30px;
     height: 30px;
     background: rgba(255,255,255,0.25);
-    color: #ffffff;
+    color: #CFE8DB;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -304,6 +304,7 @@
     outline: 2px solid rgba(255,255,255,0.65);
     outline-offset: 3px;
 }
+
 
 
 
@@ -367,7 +368,7 @@
 }
 
 .admision-nav-title {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Playfair Display', serif;
     font-size: clamp(2rem, 4vw, 2.8rem);
     font-weight: 700;
     color: var(--primary-green, #0d3f27);
@@ -377,7 +378,7 @@
 }
 
 .admision-nav-subtitle {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-size: 1.09rem;
     color: var(--text-darkk);
     font-weight: 400;
@@ -982,11 +983,11 @@
 }
 
 .modalidad-title {
-    font-size: 1.45rem;
+    font-size: 1.55rem;
     font-weight: 700;
     color: var(--primary-green);
     margin: 0;
-    font-family: "Lucida Calligraphy", "Lucida Handwriting", cursive;
+    font-family: 'Playfair Display', serif;
 }
 
 .modalidad-badge {

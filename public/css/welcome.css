@@ -201,6 +201,9 @@ h6 {
     z-index: 3;
 }
 
+
+
+
 /* ============================================
    CONTENIDO DEL HERO
 ============================================ */
@@ -375,6 +378,9 @@ h6 {
     font-size: 1rem;
     transition: all 0.3s ease;
 }
+
+
+
 
 
 
@@ -812,6 +818,10 @@ h6 {
     color: black;
     font-size: 1.15rem;
 }
+
+
+
+
 
 
 
@@ -1728,6 +1738,28 @@ h6 {
 .academic-level-card:hover .academic-level-title::after {
     width: 80px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

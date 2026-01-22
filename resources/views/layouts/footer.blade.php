@@ -80,11 +80,10 @@
 
                         <ul class="footer-links" role="list">
                             <li><a href="{{ route('prescolar') }}" class="footer-link" aria-label="Educación Preescolar"><i class="fas fa-chevron-right" aria-hidden="true"></i> Educación Preescolar</a></li>
-                            <li><a href="#" class="footer-link" aria-label="Básica Primaria"><i class="fas fa-chevron-right" aria-hidden="true"></i> Básica Primaria</a></li>
-                            <li><a href="#" class="footer-link" aria-label="Básica Secundaria"><i class="fas fa-chevron-right" aria-hidden="true"></i> Básica Secundaria</a></li>
-                            <li><a href="#" class="footer-link" aria-label="Media Académica"><i class="fas fa-chevron-right" aria-hidden="true"></i> Media Académica</a></li>
+                            <li><a href="{{ route('basica_primaria') }}" class="footer-link" aria-label="Básica Primaria"><i class="fas fa-chevron-right" aria-hidden="true"></i> Básica Primaria</a></li>
+                            <li><a href="{{ route('basica_segundaria') }}" class="footer-link" aria-label="Básica Secundaria"><i class="fas fa-chevron-right" aria-hidden="true"></i> Básica Secundaria</a></li>
+                            <li><a href="{{ route('media_academica') }}" class="footer-link" aria-label="Media Académica"><i class="fas fa-chevron-right" aria-hidden="true"></i> Media Académica</a></li>
                         </ul>
-
                     </div>
                 </div>
 
@@ -181,9 +180,9 @@
     <script>
         // Inicializar AOS
         AOS.init({
-            duration: 600,
+            duration: 500,
             easing: 'ease-out',
-            once: false,
+            once: true,
             offset: 50
         });
 
