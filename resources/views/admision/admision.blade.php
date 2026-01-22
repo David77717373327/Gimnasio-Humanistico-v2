@@ -171,7 +171,7 @@
             
 
             <!-- Modalidades -->
-            <a href="{{ route('prescolar') }}"
+            <a href="{{ route('preescolar') }}"
                class="nav-card-featured admision-bg admision-bg--modalidades">
 
                 <div class="admision-bg-image"></div>

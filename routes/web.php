@@ -41,29 +41,30 @@ Route::get('/usuario/inicio', [RutasController::class, 'mostrarContenidoUsuario'
     ->name('usuario.welcome');
 
 Route::get('/video-bienvenida', [RutasController::class, 'mostrarcontenidovideobienvenida'])
-    ->name('video-bienvenida');
+    ->name('video.bienvenida');
 
 /*
 |--------------------------------------------------------------------------
 | Información institucional
 |--------------------------------------------------------------------------
 */
-Route::get('/Historia', [RutasController::class, 'mostrarcontenidohistoria'])
-    ->name('Historia');
+Route::get('/historia', [RutasController::class, 'mostrarcontenidohistoria'])
+    ->name('historia');
 
 Route::get('/mision-vision', [RutasController::class, 'mostrarcontenidomisionyvision'])
-    ->name('mision-vision');
+    ->name('mision.vision');
 
-Route::get('/filosofia-institucional', [RutasController::class, 'mostrarcontenidofilosofiainstitucional'])->name('filosofia-institucional');
+Route::get('/filosofia-institucional', [RutasController::class, 'mostrarcontenidofilosofiainstitucional'])
+    ->name('filosofia.institucional');
 
 Route::get('/simbolos-institucionales', [RutasController::class, 'mostrarcontenidosimbolosinstitucionales'])
-    ->name('simbolos-institucionales');
+    ->name('simbolos.institucionales');
 
-Route::get('/principos-valores', [RutasController::class, 'mostrarcontenidoprincipiosyvarolres'])
-    ->name('principios-valores');
+Route::get('/principios-valores', [RutasController::class, 'mostrarcontenidoprincipiosyvarolres'])
+    ->name('principios.valores');
 
 Route::get('/politica-calidad', [RutasController::class, 'mostrarcontenidopoliticadecalidad'])
-    ->name('politica-calidad');
+    ->name('politica.calidad');
 
 /*
 |--------------------------------------------------------------------------
@@ -73,59 +74,59 @@ Route::get('/politica-calidad', [RutasController::class, 'mostrarcontenidopoliti
 Route::get('/organigrama', [RutasController::class, 'mostrarcontenidoorganigrama'])
     ->name('organigrama');
 
-Route::get('/Grupo-humanistico', [RutasController::class, 'mostrarcontenidoGrupohumanistico'])
-    ->name('Grupo_humanistico');
+Route::get('/grupo-humanistico', [RutasController::class, 'mostrarcontenidoGrupohumanistico'])
+    ->name('grupo.humanistico');
 
-Route::get('/Gobierno-escolar', [RutasController::class, 'mostrarcontenidoGobiernoescolar'])
-    ->name('Gobierno_escolar');
+Route::get('/gobierno-escolar', [RutasController::class, 'mostrarcontenidoGobiernoescolar'])
+    ->name('gobierno.escolar');
 
-Route::get('/Administrativos', [RutasController::class, 'mostrarcontenidoAdministrativos'])
-    ->name('Administrativos');
+Route::get('/administrativos', [RutasController::class, 'mostrarcontenidoAdministrativos'])
+    ->name('administrativos');
 
-Route::get('/Docentes', [RutasController::class, 'mostrarcontenidoDocentes'])
-    ->name('Docentes');
+Route::get('/docentes', [RutasController::class, 'mostrarcontenidoDocentes'])
+    ->name('docentes');
 
-Route::get('/Directivos', [RutasController::class, 'mostrarcontenidoDirectivos'])
-    ->name('Directivos');
+Route::get('/directivos', [RutasController::class, 'mostrarcontenidoDirectivos'])
+    ->name('directivos');
 
 /*
 |--------------------------------------------------------------------------
 | Niveles educativos
 |--------------------------------------------------------------------------
 */
-Route::get('/Prescolar', [RutasController::class, 'mostrarcontenidoprecolar'])
-    ->name('prescolar');
+Route::get('/preescolar', [RutasController::class, 'mostrarcontenidoprecolar'])
+    ->name('preescolar');
 
-Route::get('/BasicaPrimaria', [RutasController::class, 'mostrarcontenidobasicaprimaria'])
-    ->name('basica_primaria');
+Route::get('/basica-primaria', [RutasController::class, 'mostrarcontenidobasicaprimaria'])
+    ->name('basica.primaria');
 
-Route::get('/BasicaSegundaria', [RutasController::class, 'mostrarcontenidobasicasegundaria'])
-    ->name('basica_segundaria');
+Route::get('/basica-secundaria', [RutasController::class, 'mostrarcontenidobasicasegundaria'])
+    ->name('basica.secundaria');
 
-Route::get('/Mediaacademica', [RutasController::class, 'mostrarcontenidomediaacademica'])
-    ->name('media_academica');
+Route::get('/media-academica', [RutasController::class, 'mostrarcontenidomediaacademica'])
+    ->name('media.academica');
 
 /*
 |--------------------------------------------------------------------------
 | Enfoque pedagógico
 |--------------------------------------------------------------------------
 */
-Route::get('/enfoque-padagogico', [RutasController::class, 'mostrarcontenidoenfoquepadagogico'])
-    ->name('enfoque-padagogico');
+Route::get('/enfoque-pedagogico', [RutasController::class, 'mostrarcontenidoenfoquepadagogico'])
+    ->name('enfoque.pedagogico');
 
 /*
 |--------------------------------------------------------------------------
 | Vida estudiantil
 |--------------------------------------------------------------------------
 */
-Route::get('/tranporte', [RutasController::class, 'mostrarcontenidotranporte'])
+Route::get('/transporte', [RutasController::class, 'mostrarcontenidotranporte'])
     ->name('transporte');
 
 Route::get('/proyectos-institucionales', [RutasController::class, 'mostrarcontenidoproyectosinstitucionales'])
-    ->name('proyectos_institucionales');
+    ->name('proyectos.institucionales');
 
 Route::get('/eventos-celebraciones', [RutasController::class, 'mostrarcontenidoeventoscelebraciones'])
-    ->name('eventos_celebraciones');
+    ->name('eventos.celebraciones');
 
 /*
 |--------------------------------------------------------------------------

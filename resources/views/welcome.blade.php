@@ -236,7 +236,7 @@
                                         <i class="fas fa-rocket" aria-hidden="true"></i>
                                         Solicitar Admisión
                                     </a>
-                                    <a href="{{ route('video-bienvenida') }}" class="btn-secondary-modern"
+                                    <a href="{{ route('video.bienvenida') }}" class="btn-secondary-modern"
                                         aria-label="Ver tour virtual del colegio">
                                         <i class="fas fa-play" aria-hidden="true"></i>
                                         Tour Virtual
@@ -649,7 +649,7 @@
                                     Desarrollamos las habilidades fundamentales a través del juego,
                                     la exploración y actividades que estimulan la creatividad y el pensamiento crítico.
                                 </p>
-                                <a href="{{ route('prescolar') }}" class="academic-level-link"
+                                <a href="{{ route('preescolar') }}" class="academic-level-link"
                                     aria-label="Ver información completa sobre educación preescolar">
                                     <span>Ver más información</span>
                                     <i class="fas fa-arrow-right" aria-hidden="true"></i>
@@ -704,7 +704,7 @@
                                     Fortalecemos las competencias comunicativas, matemáticas y científicas
                                     con metodologías activas y enfoque en el aprendizaje colaborativo.
                                 </p>
-                                <a href="{{ route('basica_primaria') }}" class="academic-level-link"
+                                <a href="{{ route('basica.primaria') }}" class="academic-level-link"
                                     aria-label="Ver información completa sobre educación básica primaria">
                                     <span>Ver más información</span>
                                     <i class="fas fa-arrow-right" aria-hidden="true"></i>
@@ -759,7 +759,7 @@
                                     Desarrollo del pensamiento crítico y analítico a través de proyectos
                                     interdisciplinarios que preparan para los desafíos de la educación media.
                                 </p>
-                                <a href="{{ route('basica_segundaria') }}" class="academic-level-link"
+                                <a href="{{ route('basica.secundaria') }}" class="academic-level-link"
                                     aria-label="Ver información completa sobre educación básica secundaria">
                                     <span>Ver más información</span>
                                     <i class="fas fa-arrow-right" aria-hidden="true"></i>
@@ -814,7 +814,7 @@
                                     Preparación integral para la educación superior con énfasis en el desarrollo
                                     del proyecto de vida y competencias para el siglo XXI.
                                 </p>
-                                <a href="{{ route('media_academica') }}" class="academic-level-link"
+                                <a href="{{ route('media.academica') }}" class="academic-level-link"
                                     aria-label="Ver información completa sobre educación media académica">
                                     <span>Ver más información</span>
                                     <i class="fas fa-arrow-right" aria-hidden="true"></i>

@@ -64,8 +64,8 @@
 
                         <ul class="footer-links" role="list">
                             <li><a href="{{ url('/') }}" class="footer-link" aria-label="Ir a la sección Inicio"><i class="fas fa-chevron-right" aria-hidden="true"></i> Inicio</a></li>
-                            <li><a href="{{ route('Historia') }}" class="footer-link" aria-label="Ir a la sección Quiénes Somos"><i class="fas fa-chevron-right" aria-hidden="true"></i> Quiénes Somos</a></li>
-                            <li><a href="{{ route('prescolar') }}" class="footer-link" aria-label="Ir a Oferta Académica"><i class="fas fa-chevron-right" aria-hidden="true"></i> Oferta Académica</a></li>
+                            <li><a href="{{ route('historia') }}" class="footer-link" aria-label="Ir a la sección Quiénes Somos"><i class="fas fa-chevron-right" aria-hidden="true"></i> Quiénes Somos</a></li>
+                            <li><a href="{{ route('preescolar') }}" class="footer-link" aria-label="Ir a Oferta Académica"><i class="fas fa-chevron-right" aria-hidden="true"></i> Oferta Académica</a></li>
                             <li><a href="{{ route('admision') }}" class="footer-link" aria-label="Ir a Admisiones"><i class="fas fa-chevron-right" aria-hidden="true"></i> Admisiones</a></li>
                         </ul>
 
@@ -79,10 +79,10 @@
                         <h5 class="footer-title">Servicios</h5>
 
                         <ul class="footer-links" role="list">
-                            <li><a href="{{ route('prescolar') }}" class="footer-link" aria-label="Educación Preescolar"><i class="fas fa-chevron-right" aria-hidden="true"></i> Educación Preescolar</a></li>
-                            <li><a href="{{ route('basica_primaria') }}" class="footer-link" aria-label="Básica Primaria"><i class="fas fa-chevron-right" aria-hidden="true"></i> Básica Primaria</a></li>
-                            <li><a href="{{ route('basica_segundaria') }}" class="footer-link" aria-label="Básica Secundaria"><i class="fas fa-chevron-right" aria-hidden="true"></i> Básica Secundaria</a></li>
-                            <li><a href="{{ route('media_academica') }}" class="footer-link" aria-label="Media Académica"><i class="fas fa-chevron-right" aria-hidden="true"></i> Media Académica</a></li>
+                            <li><a href="{{ route('preescolar') }}" class="footer-link" aria-label="Educación Preescolar"><i class="fas fa-chevron-right" aria-hidden="true"></i> Educación Preescolar</a></li>
+                            <li><a href="{{ route('basica.primaria') }}" class="footer-link" aria-label="Básica Primaria"><i class="fas fa-chevron-right" aria-hidden="true"></i> Básica Primaria</a></li>
+                            <li><a href="{{ route('basica.secundaria') }}" class="footer-link" aria-label="Básica Secundaria"><i class="fas fa-chevron-right" aria-hidden="true"></i> Básica Secundaria</a></li>
+                            <li><a href="{{ route('media.academica') }}" class="footer-link" aria-label="Media Académica"><i class="fas fa-chevron-right" aria-hidden="true"></i> Media Académica</a></li>
                         </ul>
                     </div>
                 </div>

@@ -16,7 +16,7 @@
         <div class="institutional-nav-grid">
 
             <!-- Misión y Visión -->
-            <a href="{{ route('mision-vision') }}"
+            <a href="{{ route('mision.vision') }}"
                class="nav-card-inst"
                aria-label="Ir a la sección institucional: Misión y Visión">
                 <div class="nav-card-overlay-inst"></div>
@@ -29,7 +29,7 @@
             </a>
 
             <!-- Filosofía institucional -->
-            <a href="{{ route('filosofia-institucional') }}"
+            <a href="{{ route('filosofia.institucional') }}"
                class="nav-card-inst filosofia"
                aria-label="Ir a la sección institucional: Filosofía">
                 <div class="nav-card-overlay-inst"></div>
@@ -42,7 +42,7 @@
             </a>
 
             <!-- Principios -->
-            <a href="{{ route('principios-valores') }}"
+            <a href="{{ route('principios.valores') }}"
                class="nav-card-inst principios"
                aria-label="Ir a la sección institucional: Principios y valores">
                 <div class="nav-card-overlay-inst"></div>
@@ -55,7 +55,7 @@
             </a>
 
             <!-- Símbolos institucionales -->
-            <a href="{{ route('simbolos-institucionales') }}"
+            <a href="{{ route('simbolos.institucionales') }}"
                class="nav-card-inst simbolos"
                aria-label="Ir a la sección institucional: Símbolos del colegio">
                 <div class="nav-card-overlay-inst"></div>

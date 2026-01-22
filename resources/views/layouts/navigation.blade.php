@@ -45,22 +45,22 @@
                     <div class="dropdown-menu" role="menu">
                         <div class="dropdown-section">
                             <h6 class="dropdown-header">Institución</h6>
-                            <a class="dropdown-item" role="menuitem" href="{{ route('Historia') }}">Nuestra Historia</a>
-                            <a class="dropdown-item" role="menuitem" href="{{ route('mision-vision') }}">Misión y Visión</a>
-                            <a class="dropdown-item" role="menuitem" href="{{ route('filosofia-institucional') }}">Filosofía Educativa</a>
-                            <a class="dropdown-item" role="menuitem" href="{{ route('simbolos-institucionales') }}">Símbolos Institucionales</a>
-                            <a class="dropdown-item" role="menuitem" href="{{ route('principios-valores') }}">Principios y Valores</a>
-                            <a class="dropdown-item" role="menuitem" href="{{ route('politica-calidad') }}">Política de Calidad</a>
+                            <a class="dropdown-item" role="menuitem" href="{{ route('historia') }}">Nuestra Historia</a>
+                            <a class="dropdown-item" role="menuitem" href="{{ route('mision.vision') }}">Misión y Visión</a>
+                            <a class="dropdown-item" role="menuitem" href="{{ route('filosofia.institucional') }}">Filosofía Educativa</a>
+                            <a class="dropdown-item" role="menuitem" href="{{ route('simbolos.institucionales') }}">Símbolos Institucionales</a>
+                            <a class="dropdown-item" role="menuitem" href="{{ route('principios.valores') }}">Principios y Valores</a>
+                            <a class="dropdown-item" role="menuitem" href="{{ route('politica.calidad') }}">Política de Calidad</a>
                         </div>
 
                         <div class="dropdown-section">
                             <h6 class="dropdown-header">Organización</h6>
                             <a class="dropdown-item" role="menuitem" href="{{ route('organigrama') }}">Organigrama</a>
-                            <a class="dropdown-item" role="menuitem" href="{{ route('Grupo_humanistico') }}">Grupo Humanístico S.A.S</a>
-                            <a class="dropdown-item" role="menuitem" href="{{ route('Gobierno_escolar') }}">Gobierno Escolar</a>
-                            <a class="dropdown-item" role="menuitem" href="{{ route('Directivos') }}">Directivos</a>
-                            <a class="dropdown-item" role="menuitem" href="{{ route('Administrativos') }}">Administrativos</a>
-                            <a class="dropdown-item" role="menuitem" href="{{ route('Docentes') }}">Docentes</a>
+                            <a class="dropdown-item" role="menuitem" href="{{ route('grupo.humanistico') }}">Grupo Humanístico S.A.S</a>
+                            <a class="dropdown-item" role="menuitem" href="{{ route('gobierno.escolar') }}">Gobierno Escolar</a>
+                            <a class="dropdown-item" role="menuitem" href="{{ route('directivos') }}">Directivos</a>
+                            <a class="dropdown-item" role="menuitem" href="{{ route('administrativos') }}">Administrativos</a>
+                            <a class="dropdown-item" role="menuitem" href="{{ route('docentes') }}">Docentes</a>
                         </div>
                     </div>
                 </li>
@@ -69,7 +69,7 @@
 
                 <!-- PROPUESTA EDUCATIVA -->
                 <li class="nav-item" role="none">
-                    <a class="nav-link" href="{{ route('enfoque-padagogico') }}" role="menuitem">Propuesta Educativa</a>
+                    <a class="nav-link" href="{{ route('enfoque.pedagogico') }}" role="menuitem">Propuesta Educativa</a>
                 </li>
 
 
@@ -79,10 +79,10 @@
                         Niveles Educativos
                     </a>
                     <div class="dropdown-menu single-column" role="menu">
-                        <a class="dropdown-item" role="menuitem" href="{{ route('prescolar') }}">Educación Inicial Prescolar</a>
-                        <a class="dropdown-item" role="menuitem" href="{{ route('basica_primaria') }}">Educación Básica Primaria</a>
-                        <a class="dropdown-item" role="menuitem" href="{{ route('basica_segundaria') }}">Educación Básica Secundaria</a>
-                        <a class="dropdown-item" role="menuitem" href="{{ route('media_academica') }}">Educación Media Académica</a>
+                        <a class="dropdown-item" role="menuitem" href="{{ route('preescolar') }}">Educación Inicial Prescolar</a>
+                        <a class="dropdown-item" role="menuitem" href="{{ route('basica.primaria') }}">Educación Básica Primaria</a>
+                        <a class="dropdown-item" role="menuitem" href="{{ route('basica.secundaria') }}">Educación Básica Secundaria</a>
+                        <a class="dropdown-item" role="menuitem" href="{{ route('media.academica') }}">Educación Media Académica</a>
                     </div>
                 </li>
 
@@ -97,14 +97,14 @@
                         Vida Estudiantil
                     </a>
                     <div class="dropdown-menu single-column" role="menu">
-                        <a class="dropdown-item" role="menuitem" href="{{ route('eventos_celebraciones') }}">Eventos y Celebraciones</a>
+                        <a class="dropdown-item" role="menuitem" href="{{ route('eventos.celebraciones') }}">Eventos y Celebraciones</a>
                         <a class="dropdown-item" role="menuitem" href="{{ route('transporte') }}">Transporte Escolar</a>
                     </div>
                 </li>
 
                 <!-- Proyectos -->
                 <li class="nav-item" role="none">
-                    <a class="nav-link" href="{{ route('proyectos_institucionales') }}" role="menuitem">Proyectos</a>
+                    <a class="nav-link" href="{{ route('proyectos.institucionales') }}" role="menuitem">Proyectos</a>
                 </li>
 
             </ul>
