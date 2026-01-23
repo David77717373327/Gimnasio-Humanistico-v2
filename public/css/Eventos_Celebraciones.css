@@ -213,9 +213,10 @@
 }
 
 .evento-category {
+    font-family: 'Playfair Display', serif;
     display: inline-block;
     font-size: 12px;
-    font-weight: 800;
+    font-weight: 900;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     color: var(--primary-green);
@@ -224,8 +225,9 @@
 }
 
 .evento-title {
+    font-family: 'Playfair Display', serif;
     font-size: 42px;
-    font-weight: 800;
+    font-weight: 900;
     color: var(--primary-green);
     margin-bottom: 24px;
     line-height: 1.15;
@@ -253,6 +255,7 @@
 .stat-number {
     font-size: 40px;
     font-weight: 900;
+    font-family: 'Playfair Display', serif;
     color: var(--primary-green);
     display: block;
     margin-bottom: 8px;

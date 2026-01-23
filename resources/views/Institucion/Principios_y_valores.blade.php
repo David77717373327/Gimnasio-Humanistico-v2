@@ -86,14 +86,14 @@
     <!-- Bootstrap y Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="{{ asset('images/Logo.png') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/logo.png') }}">
 
     <!-- Script del hero -->
     <script src="{{ asset('js/hero.js') }}"></script>
 
     <!-- CSS personalizado -->
     <link href="{{ asset('css/header.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/principios-valores.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/principios_y_valores.css') }}" rel="stylesheet">
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
     <link href="{{ asset('css/hero.css') }}" rel="stylesheet">
     <link href="{{ asset('css/navegacion.css') }}" rel="stylesheet">
@@ -121,7 +121,7 @@
             <h2 class="visually-hidden">Principios y valores institucionales del Gimnasio Humanístico</h2>
 
             <div class="hero-background">
-                <img src="../images/Educacion Secundaria/imagen2.jpg"
+                <img src="../images/educacion_secundaria/imagen2.jpg"
                     alt="Instalaciones del Gimnasio Humanístico del Alto Magdalena, institución educativa ubicada en Neiva, Colombia"
                     width="1920" height="1080"
                     fetchpriority="high"
@@ -320,7 +320,7 @@
 
     <!-- Navegación interna -->
     <nav aria-label="Navegación interna del sitio">
-        @include('layouts.navegacion_Interna')
+        @include('layouts.navegacion_interna')
     </nav>
 
     <!-- Footer -->

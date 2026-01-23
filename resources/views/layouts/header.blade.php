@@ -31,7 +31,7 @@
 
 
 <!-- Incluye el botón de WhatsApp -->
-    <script src="{{ asset('js/whatsapp-button.js') }}"></script>
+    <script src="{{ asset('js/whatsapp_button.js') }}"></script>
 
 
 

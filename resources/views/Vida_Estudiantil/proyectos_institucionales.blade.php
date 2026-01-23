@@ -27,12 +27,12 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <!-- Favicons -->
-    <link rel="icon" type="image/x-icon" href="{{ asset('images/Logo.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/Logo.png') }}">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/Logo.png') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/logo.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/logo.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/logo.png') }}">
     <!-- CSS personalizado -->
     <link href="{{ asset('css/header.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/Proyectos_De_vida.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/proyectos_de_vida.css') }}" rel="stylesheet">
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
     <link href="{{ asset('css/hero.css') }}" rel="stylesheet">
 </head>
@@ -54,7 +54,7 @@
         <!-- HERO SECTION -->
         <section class="hero-section" aria-label="Sección destacada de historia">
             <div class="hero-background">
-                <img src="../images/Educacion Secundaria/Imagen1.jpg"
+                <img src="../images/educacion_secundaria/imagen1.jpg"
                     alt="Vista del Gimnasio Humanístico del Alto Magdalena, institución educativa en Neiva"
                     width="1920" height="1080">
             </div>
@@ -78,8 +78,6 @@
         <!-- CONTENIDO PRINCIPAL -->
         <main>
             <div class="proyectos-container" id="siguiente_sesion">
-
-
 
                 <!-- PROYECTO 6: DANZAS -->
                 <div class="proyecto-item" data-proyecto="danzas">
@@ -291,9 +289,6 @@
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
         </main>
 
@@ -325,35 +320,35 @@
 
 
                 danzas: [
-                    '../images/Proyecto/Imagen1.jpg',
-                    '../images/Proyecto/Imagen2.jpg',
-                    '../images/Proyecto/Imagen3.jpg'
+                    '../images/proyecto/imagen1.jpg',
+                    '../images/proyecto/imagen2.jpg',
+                    '../images/proyecto/imagen3.jpg'
                 ],
 
                 natacion: [
-                    '../images/Proyecto/Imagen5.jpg',
-                    '../images/Proyecto/Imagen6.jpg',
-                    '../images/Proyecto/Imagen7.jpg'
+                    '../images/proyecto/imagen5.jpg',
+                    '../images/proyecto/imagen6.jpg',
+                    '../images/proyecto/imagen7.jpg'
                 ],
                 futbol: [
-                    '../images/Proyecto/Imagen4.jpg',
-                    '../images/Proyecto/Imagen11.jpg',
-                    '../images/Proyecto/Imagen12.jpg',
+                    '../images/proyecto/imagen4.jpg',
+                    '../images/proyecto/imagen11.jpg',
+                    '../images/proyecto/imagen12.jpg',
                 ],
                 sacramentos: [
-                    '../images/Celebraciones/comuniones3.jpg',
-                    '../images/Celebraciones/comuniones2.jpg',
-                    '../images/Celebraciones/Confirmaciones1.jpg',
+                    '../images/celebraciones/comuniones3.jpg',
+                    '../images/celebraciones/comuniones2.jpg',
+                    '../images/celebraciones/confirmaciones1.jpg',
                 ],
                 voleibol: [
-                    '../images/Proyecto/Imagen8.jpg',
-                    '../images/Proyecto/Imagen9.jpg',
-                    '../images/Proyecto/Imagen10.jpg'
+                    '../images/proyecto/imagen8.jpg',
+                    '../images/proyecto/imagen9.jpg',
+                    '../images/proyecto/imagen10.jpg'
                 ],
                 artes: [
-                    '../images/Proyecto/Imagen13.jpg',
-                    '../images/Proyecto/Imagen15.jpg',
-                    '../images/Proyecto/Imagen14.jpg',
+                    '../images/proyecto/imagen13.jpg',
+                    '../images/proyecto/imagen15.jpg',
+                    '../images/proyecto/imagen14.jpg',
                 ],
             };
         
@@ -546,5 +541,4 @@
             });
         </script>
 </body>
-
 </html>

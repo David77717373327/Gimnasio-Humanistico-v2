@@ -19,7 +19,7 @@
     <!-- SEO Social -->
     <meta property="og:title" content="Gobierno Escolar - Gimnasio Humanístico">
     <meta property="og:description" content="Conoce la estructura del Gobierno Escolar: Rectoría, Consejo Directivo y Consejo Académico.">
-    <meta property="og:image" content="{{ asset('images/Logo.png') }}">
+    <meta property="og:image" content="{{ asset('images/logo.png') }}">
     <meta property="og:type" content="website">
 
     <!-- Google Fonts -->
@@ -32,14 +32,14 @@
     <!-- Bootstrap y Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="{{ asset('images/Logo.png') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/logo.png') }}">
 
     <!-- Scripts -->
     <script src="{{ asset('js/hero.js') }}" defer></script>
 
     <!-- CSS -->
     <link href="{{ asset('css/header.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/Gobierno_escolar.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/gobierno_escolar.css') }}" rel="stylesheet">
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
     <link href="{{ asset('css/hero.css') }}" rel="stylesheet">
     <link href="{{ asset('css/navegacion.css') }}" rel="stylesheet">
@@ -60,7 +60,7 @@
     <!-- HERO -->
     <section class="hero-section" aria-label="Gobierno Escolar Institucional">
         <div class="hero-background">
-            <img src="../images/Consejo_Directivo.jpg"
+            <img src="../images/consejo_directivo.jpg"
                 alt="Instalaciones del Gimnasio Humanístico en Neiva, Colombia"
                 width="1920" height="1080" loading="lazy">
         </div>
@@ -111,7 +111,7 @@
 
                         <div class="flip-card-front">
                             <div class="card-icon">
-                                <img src="{{ asset('images/Logo.png') }}" alt="Rectoría">
+                                <img src="{{ asset('images/logo.png') }}" alt="Rectoría">
                             </div>
                             <h4 class="front-title">Rectoría</h4>
                             <p class="front-subtitle">Representación Legal</p>
@@ -158,7 +158,7 @@
 
                         <div class="flip-card-front">
                             <div class="card-icon">
-                                <img src="{{ asset('images/Grupo-Humanistico2.png') }}" alt="Consejo Directivo">
+                                <img src="{{ asset('images/grupo_humanistico2.png') }}" alt="Consejo Directivo">
                             </div>
                             <h4 class="front-title">Consejo Directivo</h4>
                             <p class="front-subtitle">Órgano de Decisión</p>
@@ -193,7 +193,7 @@
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <div class="card-icon">
-                                <img src="{{ asset('images/Consejo_Directivo.jpg') }}" alt="Consejo Académico">
+                                <img src="{{ asset('images/consejo_directivo.jpg') }}" alt="Consejo Académico">
                             </div>
                             <h4 class="front-title">Consejo Académico</h4>
                             <p class="front-subtitle">Órgano Asesor</p>

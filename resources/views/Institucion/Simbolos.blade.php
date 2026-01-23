@@ -16,7 +16,7 @@
     <!-- Bootstrap y Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="{{ asset('images/Logo.png') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/logo.png') }}">
 
     <!-- Scripts -->
     <script src="{{ asset('js/hero.js') }}" defer></script>
@@ -37,7 +37,7 @@
     <meta property="og:title" content="Símbolos y Himno - Gimnasio Humanístico de Neiva">
     <meta property="og:description"
         content="Conoce el himno institucional, escudo y bandera del Gimnasio Humanístico de Neiva. Identidad, humanismo y cultura ambiental.">
-    <meta property="og:image" content="{{ asset('images/Politica_de_calidad2.jpg') }}">
+    <meta property="og:image" content="{{ asset('images/politica_de_calidad2.jpg') }}">
     <meta property="og:type" content="website">
 
 
@@ -82,7 +82,7 @@
         <!-- HERO -->
         <section class="hero-section" aria-label="Sección principal de símbolos institucionales">
             <div class="hero-background">
-                <img src="../images/Simbolos.jpg" alt="Instalaciones del Gimnasio Humanístico de Neiva" width="1920"
+                <img src="../images/simbolos.jpg" alt="Instalaciones del Gimnasio Humanístico de Neiva" width="1920"
                     height="1080" loading="lazy">
             </div>
             <div class="hero-overlay"></div>
@@ -242,7 +242,7 @@
 
     <!-- Navegación interna -->
     <nav aria-label="Navegación interna del sitio">
-        @include('layouts.navegacion_Interna')
+        @include('layouts.navegacion_interna')
     </nav>
 
     <!-- Footer -->

@@ -26,9 +26,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <!-- Favicons -->
-    <link rel="icon" type="image/x-icon" href="{{ asset('images/Logo.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/Logo.png') }}">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/Logo.png') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/logo.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/logo.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/logo.png') }}">
     <!-- CSS personalizado -->
     <link href="{{ asset('css/header.css') }}" rel="stylesheet">
     <link href="{{ asset('css/quienes_somos.css') }}" rel="stylesheet">
@@ -78,7 +78,7 @@
         <!-- HERO SECTION -->
         <section class="hero-section" aria-label="Sección destacada de historia">
             <div class="hero-background">
-                <img src="../images/Politica_de_calidad4.webp"
+                <img src="../images/politica_de_calidad4.webp"
                     alt="Vista del Gimnasio Humanístico del Alto Magdalena, institución educativa en Neiva"
                     width="1920" height="1080">
             </div>
@@ -554,7 +554,7 @@
 
     <!-- Navegación interna -->
     <nav aria-label="Navegación interna del sitio">
-        @include('layouts.navegacion_Interna')
+        @include('layouts.navegacion_interna')
     </nav>
 
     <!-- Footer del sitio -->

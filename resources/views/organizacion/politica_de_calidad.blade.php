@@ -24,14 +24,14 @@
     <!-- Bootstrap y Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="{{ asset('images/Logo.png') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/logo.png') }}">
 
     <!-- Scripts -->
     <script src="{{ asset('js/hero.js') }}" defer></script>
 
     <!-- CSS personalizado -->
     <link href="{{ asset('css/header.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/Politica_de_calidad.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/politica_de_calidad.css') }}" rel="stylesheet">
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
     <link href="{{ asset('css/hero.css') }}" rel="stylesheet">
     <link href="{{ asset('css/navegacion.css') }}" rel="stylesheet">
@@ -55,7 +55,7 @@
         <!-- HERO -->
         <section class="hero-section" aria-label="Introducción a la Política de Calidad">
             <div class="hero-background">
-                <img src="../images/Politica_de_calidad77.jpg"
+                <img src="../images/politica_de_calidad7.webp"
                     alt="Instalaciones del Gimnasio Humanístico del Alto Magdalena en Neiva, Colombia"
                     width="1920" height="1080" loading="lazy">
             </div>
@@ -108,7 +108,7 @@
 
                     <!-- IMAGEN -->
                     <figure class="policy-image-container">
-                        <img src="{{ asset('images/Educacion Secundaria/Imagen2.jpg') }}" alt="Representación visual de la Política de Calidad institucional"
+                        <img src="{{ asset('images/educacion_secundaria/imagen2.jpg') }}" alt="Representación visual de la Política de Calidad institucional"
                             class="policy-image" loading="lazy">
                     </figure>
                 </div>
@@ -120,7 +120,7 @@
                         desarrollo integral de nuestros estudiantes. Mediante la implementación de estándares rigurosos,
                         la evaluación continua y la responsabilidad compartida, aseguramos un servicio educativo que responde
                         a las necesidades de la comunidad y a los retos del mundo contemporáneo.
-                    </p>
+                    </p> 
                 </section>
 
             </div>
@@ -130,7 +130,7 @@
 
     <!-- NAVEGACIÓN INTERNA -->
     <nav aria-label="Navegación interna del sitio">
-        @include('layouts.navegacion_Interna')
+        @include('layouts.navegacion_interna')
     </nav>
 
     <!-- PIE DE PÁGINA -->
@@ -140,6 +140,5 @@
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>

@@ -29,7 +29,7 @@
     <!-- Bootstrap & Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="{{ asset('images/Logo.png') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/logo.png') }}">
 
     <!-- Scripts -->
     <script src="{{ asset('js/hero.js') }}" defer></script>
@@ -99,7 +99,7 @@
     <!-- HERO -->
     <section class="hero-section" aria-label="Componente filosófico institucional">
         <div class="hero-background">
-            <img src="../images/Politica_de_calidad3.jpg"
+            <img src="../images/politica_de_calidad3.jpg"
                 alt="Instalaciones del Gimnasio Humanístico de Neiva en el Alto Magdalena"
                 width="1920"
                 height="1080"
@@ -259,7 +259,7 @@
 
     <!-- Navegación interna -->
     <nav aria-label="Navegación interna del sitio">
-        @include('layouts.navegacion_Interna')
+        @include('layouts.navegacion_interna')
     </nav>
 
     <!-- Footer -->

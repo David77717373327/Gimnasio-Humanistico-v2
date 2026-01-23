@@ -21,7 +21,7 @@
     <!-- 🌐 OPEN GRAPH (SEO PARA REDES SOCIALES) -->
     <meta property="og:title" content="Equipo Administrativo | Gimnasio Humanístico">
     <meta property="og:description" content="Conoce al equipo administrativo del Gimnasio Humanístico. Profesionales que garantizan la excelencia institucional.">
-    <meta property="og:image" content="{{ asset('images/Politica_de_calidad2.webp') }}">
+    <meta property="og:image" content="{{ asset('images/politica_de_calidad2.webp') }}">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_CO">
 
@@ -29,7 +29,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Equipo Administrativo | Gimnasio Humanístico">
     <meta name="twitter:description" content="Nuestro equipo administrativo garantiza la calidad en todos los procesos institucionales.">
-    <meta name="twitter:image" content="{{ asset('images/Politica_de_calidad2.webp') }}">
+    <meta name="twitter:image" content="{{ asset('images/politica_de_calidad2.webp') }}">
 
     <!-- 📘 Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,11 +42,11 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
     <!-- 🔵 Favicon -->
-    <link rel="icon" type="image/x-icon" href="{{ asset('images/Logo.png') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/logo.png') }}">
 
     <!-- 🎨 CSS -->
     <link href="{{ asset('css/header.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/Administrativos.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/administrativos.css') }}" rel="stylesheet">
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
     <link href="{{ asset('css/hero.css') }}" rel="stylesheet">
     <link href="{{ asset('css/navegacion.css') }}" rel="stylesheet">
@@ -73,7 +73,7 @@
         <!-- HERO -->
         <section class="hero-section" aria-labelledby="titulo-pagina">
             <div class="hero-background">
-                <img src="{{ asset('images/Politica_de_calidad3.jpg') }}"
+                <img src="{{ asset('images/politica_de_calidad3.jpg') }}"
                     alt="Instalaciones del Gimnasio Humanístico en Neiva que representan la gestión administrativa."
                     width="1920" height="1080" loading="lazy">
             </div>
@@ -113,7 +113,7 @@
 
                             <div class="flip-card-front" aria-hidden="false">
                                 <div class="card-logo">
-                                    <img src="{{ asset('images/Jefe_Administracion.png') }}"
+                                    <img src="{{ asset('images/jefe_administracion.png') }}"
                                         alt="Ícono representativo del Jefe Administrativo">
                                 </div>
                                 <h4 class="front-title">Jefe Administrativo</h4>
@@ -144,7 +144,7 @@
 
                             <div class="flip-card-front">
                                 <div class="card-logo">
-                                    <img src="{{ asset('images/Contador.png') }}"
+                                    <img src="{{ asset('images/contador.png') }}"
                                         alt="Ícono representativo del Contador institucional">
                                 </div>
                                 <h4 class="front-title">Contador</h4>
@@ -176,7 +176,7 @@
 
                             <div class="flip-card-front">
                                 <div class="card-logo">
-                                    <img src="{{ asset('images/Secretaria_Academica.png') }}"
+                                    <img src="{{ asset('images/secretaria_academica.png') }}"
                                         alt="Ícono de la Secretaría Académica">
                                 </div>
                                 <h4 class="front-title">Secretaría Académica</h4>
@@ -208,7 +208,7 @@
 
                             <div class="flip-card-front">
                                 <div class="card-logo">
-                                    <img src="{{ asset('images/Pagador_Tesorero.png') }}"
+                                    <img src="{{ asset('images/pagador_tesorero.png') }}"
                                         alt="Ícono representativo del Pagador o Tesorero">
                                 </div>
                                 <h4 class="front-title">Pagador - Tesorero</h4>
@@ -239,7 +239,7 @@
 
                             <div class="flip-card-front">
                                 <div class="card-logo">
-                                    <img src="{{ asset('images/Maestra_Apoyo.png') }}"
+                                    <img src="{{ asset('images/maestra_apoyo.png') }}"
                                         alt="Ícono representativo de la Maestra de Apoyo">
                                 </div>
                                 <h4 class="front-title">Maestra de Apoyo</h4>
@@ -272,7 +272,7 @@
 
                             <div class="flip-card-front">
                                 <div class="card-logo">
-                                    <img src="{{ asset('images/Servicios_Generales.png') }}"
+                                    <img src="{{ asset('images/servicios_generales.png') }}"
                                         alt="Ícono del personal de Servicios Generales">
                                 </div>
                                 <h4 class="front-title">Servicios Generales</h4>

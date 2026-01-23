@@ -217,7 +217,7 @@
 .contact-icon {
     width: 36px;
     height: 36px;
-    background: linear-gradient(135deg, var(--accent-gold), var(--secondary-green));
+    background: var(--accent-gold);
     color: var(--primary-green);
     display: flex;
     align-items: center;

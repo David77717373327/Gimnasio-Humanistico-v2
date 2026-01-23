@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,7 @@
     <!-- Bootstrap y Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="{{ asset('images/Logo.png') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/logo.png') }}">
 
     <!-- Scripts -->
     <script src="{{ asset('js/hero.js') }}" defer></script>
@@ -23,7 +24,7 @@
     <link href="{{ asset('css/basica_primaria.css') }}" rel="stylesheet">
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
     <link href="{{ asset('css/hero.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/Galeria.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/galeria.css') }}" rel="stylesheet">
 </head>
 
 <body>
@@ -41,11 +42,9 @@
         <!-- HERO -->
         <section class="hero-section" aria-label="Educación Básica Primaria en Neiva">
             <div class="hero-background">
-                <img src="../images/Educacion-Primaria/Imagen2.jpg"
-                    alt="Instalaciones del colegio en Neiva enfocadas en educación básica primaria" 
-                    width="1920"
-                    height="1080" 
-                    loading="lazy">
+                <img src="../images/educacion_primaria/imagen2.jpg"
+                    alt="Instalaciones del colegio en Neiva enfocadas en educación básica primaria" width="1920"
+                    height="1080" loading="lazy">
             </div>
 
             <div class="hero-overlay"></div>
@@ -65,7 +64,7 @@
             </div>
         </section>
 
-        
+
 
 
 
@@ -77,7 +76,7 @@
 
         <!-- Título SEO -->
         <header class="admision-nav-header" id="siguiente_sesion">
-            <h2 class="admision-nav-title">Objetivos  Básica Primaria</h2>
+            <h2 class="admision-nav-title">Objetivos Básica Primaria</h2>
         </header>
 
 
@@ -136,11 +135,14 @@
                         </div>
                     </div>
                     <p class="objetivos-content-text">
-                        La formación de los valores fundamentales para la convivencia de una sociedad democrática, participativa y pluralista.
+                        La formación de los valores fundamentales para la convivencia de una sociedad democrática,
+                        participativa y pluralista.
                     </p>
                     <div class="objetivos-content-highlight">
                         <h3>¿Por qué es importante?</h3>
-                        <p>Este objetivo busca desarrollar en los estudiantes las bases éticas y morales necesarias para vivir en armonía con otros, respetando la diversidad y promoviendo el diálogo como herramienta de resolución de conflictos.</p>
+                        <p>Este objetivo busca desarrollar en los estudiantes las bases éticas y morales necesarias para
+                            vivir en armonía con otros, respetando la diversidad y promoviendo el diálogo como
+                            herramienta de resolución de conflictos.</p>
                     </div>
                 </div>
 
@@ -158,7 +160,8 @@
                     </p>
                     <div class="objetivos-content-highlight">
                         <h3>¿Por qué es importante?</h3>
-                        <p>Fomenta la comprensión de las normas sociales y el desarrollo de una consciencia ciudadana responsable desde temprana edad.</p>
+                        <p>Fomenta la comprensión de las normas sociales y el desarrollo de una consciencia ciudadana
+                            responsable desde temprana edad.</p>
                     </div>
                 </div>
 
@@ -176,7 +179,8 @@
                     </p>
                     <div class="objetivos-content-highlight">
                         <h3>¿Por qué es importante?</h3>
-                        <p>Introduce a los estudiantes en los principios fundamentales que rigen nuestra sociedad y sus derechos como ciudadanos.</p>
+                        <p>Introduce a los estudiantes en los principios fundamentales que rigen nuestra sociedad y sus
+                            derechos como ciudadanos.</p>
                     </div>
                 </div>
 
@@ -190,11 +194,13 @@
                         </div>
                     </div>
                     <p class="objetivos-content-text">
-                        La formación para la participación y organización infantil y la utilización adecuada del tiempo libre.
+                        La formación para la participación y organización infantil y la utilización adecuada del tiempo
+                        libre.
                     </p>
                     <div class="objetivos-content-highlight">
                         <h3>¿Por qué es importante?</h3>
-                        <p>Desarrolla habilidades de liderazgo, trabajo en equipo y gestión del tiempo desde la infancia.</p>
+                        <p>Desarrolla habilidades de liderazgo, trabajo en equipo y gestión del tiempo desde la
+                            infancia.</p>
                     </div>
                 </div>
 
@@ -209,11 +215,13 @@
                         </div>
                     </div>
                     <p class="objetivos-content-text">
-                        El fomento del deseo del saber, de la iniciativa personal frente al conocimiento y frente a la realidad social, así como el espíritu crítico.
+                        El fomento del deseo del saber, de la iniciativa personal frente al conocimiento y frente a la
+                        realidad social, así como el espíritu crítico.
                     </p>
                     <div class="objetivos-content-highlight">
                         <h3>¿Por qué es importante?</h3>
-                        <p>Cultiva la curiosidad intelectual y el pensamiento crítico, herramientas esenciales para el aprendizaje continuo.</p>
+                        <p>Cultiva la curiosidad intelectual y el pensamiento crítico, herramientas esenciales para el
+                            aprendizaje continuo.</p>
                     </div>
                 </div>
 
@@ -227,11 +235,14 @@
                         </div>
                     </div>
                     <p class="objetivos-content-text">
-                        El desarrollo de las habilidades comunicativas básicas para leer, comprender, escribir, escuchar, hablar y expresarse correctamente en lengua castellana, así como el fomento de la afición por la lectura.
+                        El desarrollo de las habilidades comunicativas básicas para leer, comprender, escribir,
+                        escuchar, hablar y expresarse correctamente en lengua castellana, así como el fomento de la
+                        afición por la lectura.
                     </p>
                     <div class="objetivos-content-highlight">
                         <h3>¿Por qué es importante?</h3>
-                        <p>La comunicación efectiva es la base de todas las interacciones humanas y el aprendizaje académico.</p>
+                        <p>La comunicación efectiva es la base de todas las interacciones humanas y el aprendizaje
+                            académico.</p>
                     </div>
                 </div>
 
@@ -245,7 +256,8 @@
                         </div>
                     </div>
                     <p class="objetivos-content-text">
-                        El desarrollo de la capacidad para apreciar y utilizar la lengua como medio de expresión estética.
+                        El desarrollo de la capacidad para apreciar y utilizar la lengua como medio de expresión
+                        estética.
                     </p>
                     <div class="objetivos-content-highlight">
                         <h3>¿Por qué es importante?</h3>
@@ -263,11 +275,14 @@
                         </div>
                     </div>
                     <p class="objetivos-content-text">
-                        El desarrollo de los conocimientos matemáticos necesarios para manejar y utilizar operaciones simples de cálculo y procedimientos lógicos elementales en diferentes situaciones, así como la capacidad para solucionar problemas que impliquen conocimientos.
+                        El desarrollo de los conocimientos matemáticos necesarios para manejar y utilizar operaciones
+                        simples de cálculo y procedimientos lógicos elementales en diferentes situaciones, así como la
+                        capacidad para solucionar problemas que impliquen conocimientos.
                     </p>
                     <div class="objetivos-content-highlight">
                         <h3>¿Por qué es importante?</h3>
-                        <p>Las matemáticas desarrollan el razonamiento lógico y la capacidad de resolver problemas de manera sistemática.</p>
+                        <p>Las matemáticas desarrollan el razonamiento lógico y la capacidad de resolver problemas de
+                            manera sistemática.</p>
                     </div>
                 </div>
 
@@ -281,7 +296,8 @@
                         </div>
                     </div>
                     <p class="objetivos-content-text">
-                        La comprensión básica del medio físico, social y cultural en el nivel local, nacional y universal, de acuerdo con el desarrollo intelectual correspondiente a su edad.
+                        La comprensión básica del medio físico, social y cultural en el nivel local, nacional y
+                        universal, de acuerdo con el desarrollo intelectual correspondiente a su edad.
                     </p>
                     <div class="objetivos-content-highlight">
                         <h3>¿Por qué es importante?</h3>
@@ -299,11 +315,13 @@
                         </div>
                     </div>
                     <p class="objetivos-content-text">
-                        La asimilación de conceptos en áreas del conocimiento que sean objeto de estudio, de acuerdo con el desarrollo intelectual y la edad.
+                        La asimilación de conceptos en áreas del conocimiento que sean objeto de estudio, de acuerdo con
+                        el desarrollo intelectual y la edad.
                     </p>
                     <div class="objetivos-content-highlight">
                         <h3>¿Por qué es importante?</h3>
-                        <p>Garantiza una comprensión profunda de los contenidos adaptados a cada etapa del desarrollo.</p>
+                        <p>Garantiza una comprensión profunda de los contenidos adaptados a cada etapa del desarrollo.
+                        </p>
                     </div>
                 </div>
 
@@ -336,7 +354,8 @@
                         </div>
                     </div>
                     <p class="objetivos-content-text">
-                        La valoración de la higiene y la salud del propio cuerpo y la formación para la protección de la naturaleza y el ambiente.
+                        La valoración de la higiene y la salud del propio cuerpo y la formación para la protección de la
+                        naturaleza y el ambiente.
                     </p>
                     <div class="objetivos-content-highlight">
                         <h3>¿Por qué es importante?</h3>
@@ -354,7 +373,8 @@
                         </div>
                     </div>
                     <p class="objetivos-content-text">
-                        El conocimiento y ejercitación del propio cuerpo mediante la práctica de la educación física, la recreación y los deportes adecuados a su edad y conducentes a un desarrollo físico armónico.
+                        El conocimiento y ejercitación del propio cuerpo mediante la práctica de la educación física, la
+                        recreación y los deportes adecuados a su edad y conducentes a un desarrollo físico armónico.
                     </p>
                     <div class="objetivos-content-highlight">
                         <h3>¿Por qué es importante?</h3>
@@ -372,11 +392,13 @@
                         </div>
                     </div>
                     <p class="objetivos-content-text">
-                        La formación artística mediante la expresión corporal, la representación, la música, la plástica y la literatura.
+                        La formación artística mediante la expresión corporal, la representación, la música, la plástica
+                        y la literatura.
                     </p>
                     <div class="objetivos-content-highlight">
                         <h3>¿Por qué es importante?</h3>
-                        <p>Desarrolla la creatividad y la sensibilidad artística a través de múltiples lenguajes expresivos.</p>
+                        <p>Desarrolla la creatividad y la sensibilidad artística a través de múltiples lenguajes
+                            expresivos.</p>
                     </div>
                 </div>
 
@@ -457,36 +479,38 @@
                 <div class="gallery-grid">
 
                     <article class="gallery-item" onclick="openLightbox(0)">
-                        <img src="images/Educacion-Primaria/Imagen7.jpg" alt="Niños jugando en el aula del preescolar"
+                        <img src="images/educacion_primaria/imagen7.jpg" alt="Niños jugando en el aula del preescolar"
                             loading="lazy">
                     </article>
 
                     <article class="gallery-item" onclick="openLightbox(1)">
-                        <img src="images/Educacion-Primaria/Imagen2.jpg" alt="Actividades creativas para primera infancia"
-                            loading="lazy">
+                        <img src="images/educacion_primaria/imagen2.jpg"
+                            alt="Actividades creativas para primera infancia" loading="lazy">
                     </article>
 
                     <article class="gallery-item" onclick="openLightbox(2)">
-                        <img src="images/Educacion-Primaria/Imagen1.jpg" alt="Aprendizaje colaborativo en preescolar"
+                        <img src="images/educacion_primaria/imagen1.jpg" alt="Aprendizaje colaborativo en preescolar"
                             loading="lazy">
                     </article>
 
                     <article class="gallery-item" onclick="openLightbox(3)">
-                        <img src="images/Educacion-Primaria/Imagen8.jpg" alt="Exploración educativa al aire libre"
+                        <img src="images/educacion_primaria/imagen8.jpg" alt="Exploración educativa al aire libre"
                             loading="lazy">
                     </article>
 
                     <article class="gallery-item" onclick="openLightbox(4)">
-                        <img src="images/Educacion-Primaria/Imagen4.jpg" alt="Juego libre y diversión en el colegio" loading="lazy">
-                    </article>
-
-                    <article class="gallery-item" onclick="openLightbox(5)">
-                        <img src="images/Educacion-Primaria/Imagen9.jpg" alt="Desarrollo integral y acompañamiento docente"
+                        <img src="images/educacion_primaria/imagen4.jpg" alt="Juego libre y diversión en el colegio"
                             loading="lazy">
                     </article>
 
+                    <article class="gallery-item" onclick="openLightbox(5)">
+                        <img src="images/educacion_primaria/imagen9.jpg"
+                            alt="Desarrollo integral y acompañamiento docente" loading="lazy">
+                    </article>
+
                     <article class="gallery-item" onclick="openLightbox(6)">
-                        <img src="images/Educacion-Primaria/Imagen3.jpg" alt="Momentos de aprendizaje diario" loading="lazy">
+                        <img src="images/educacion_primaria/imagen3.jpg" alt="Momentos de aprendizaje diario"
+                            loading="lazy">
                     </article>
 
                 </div>
@@ -521,231 +545,119 @@
 
 
         <script>
+            // Array con todas las imágenes de la galería (7 imágenes)
+            const galleryImages = [{
+                    src: 'images/educacion_primaria/imagen7.jpg',
+                    alt: 'Niños jugando en el aula'
+                },
+                {
+                    src: 'images/educacion_primaria/imagen2.jpg',
+                    alt: 'Actividades creativas'
+                },
+                {
+                    src: 'images/educacion_primaria/imagen1.jpg',
+                    alt: 'Aprendizaje en grupo'
+                },
+                {
+                    src: 'images/educacion_primaria/imagen8.jpg',
+                    alt: 'Exploración educativa'
+                },
+                {
+                    src: 'images/educacion_primaria/imagen4.jpg',
+                    alt: 'Tiempo de juego y diversión'
+                },
+                {
+                    src: 'images/educacion_primaria/imagen9.jpg',
+                    alt: 'Desarrollo integral'
+                },
+                {
+                    src: 'images/educacion_primaria/imagen3.jpg',
+                    alt: 'Momentos de aprendizaje'
+                }
+            ];
 
+            let currentImageIndex = 0;
 
+            // Mostrar u ocultar flechas según posición
+            function updateArrows() {
+                const prevBtn = document.querySelector('.lightbox-prev');
+                const nextBtn = document.querySelector('.lightbox-next');
 
+                // Primera imagen → esconder flecha izquierda
+                prevBtn.style.display = currentImageIndex === 0 ? "none" : "block";
 
-
-// Array con todas las imágenes de la galería (7 imágenes)
-    const galleryImages = [
-        { src: 'images/Educacion-Primaria/Imagen7.jpg', alt: 'Niños jugando en el aula' },
-        { src: 'images/Educacion-Primaria/Imagen2.jpg', alt: 'Actividades creativas' },
-        { src: 'images/Educacion-Primaria/Imagen1.jpg', alt: 'Aprendizaje en grupo' },
-        { src: 'images/Educacion-Primaria/Imagen8.jpg', alt: 'Exploración educativa' },
-        { src: 'images/Educacion-Primaria/Imagen4.jpg', alt: 'Tiempo de juego y diversión' },
-        { src: 'images/Educacion-Primaria/Imagen9.jpg', alt: 'Desarrollo integral' },
-        { src: 'images/Educacion-Primaria/Imagen3.jpg', alt: 'Momentos de aprendizaje' }
-    ];
-
-    let currentImageIndex = 0;
-
-    // Mostrar u ocultar flechas según posición
-    function updateArrows() {
-        const prevBtn = document.querySelector('.lightbox-prev');
-        const nextBtn = document.querySelector('.lightbox-next');
-
-        // Primera imagen → esconder flecha izquierda
-        prevBtn.style.display = currentImageIndex === 0 ? "none" : "block";
-
-        // Última imagen → esconder flecha derecha
-        nextBtn.style.display = currentImageIndex === galleryImages.length - 1 ? "none" : "block";
-    }
-
-    // Abrir lightbox
-    function openLightbox(index) {
-        currentImageIndex = index;
-
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = document.getElementById('lightbox-img');
-
-        lightboxImg.src = galleryImages[index].src;
-        lightboxImg.alt = galleryImages[index].alt;
-        lightbox.classList.add('active');
-
-        updateArrows(); // Actualizar flechas al abrir
-
-        document.body.style.overflow = 'hidden';
-    }
-
-    // Cerrar lightbox
-    function closeLightbox() {
-        document.getElementById('lightbox').classList.remove('active');
-        document.body.style.overflow = 'auto';
-    }
-
-    // Cambiar imagen sin bucle infinito
-    function changeImage(direction) {
-        currentImageIndex += direction;
-
-        // Limitar índices
-        if (currentImageIndex < 0) currentImageIndex = 0;
-        if (currentImageIndex >= galleryImages.length)
-            currentImageIndex = galleryImages.length - 1;
-
-        const lightboxImg = document.getElementById('lightbox-img');
-
-        lightboxImg.style.opacity = '0';
-
-        setTimeout(() => {
-            lightboxImg.src = galleryImages[currentImageIndex].src;
-            lightboxImg.alt = galleryImages[currentImageIndex].alt;
-            lightboxImg.style.opacity = '1';
-        }, 200);
-
-        updateArrows(); // Actualizar flechas cada vez que cambias imagen
-    }
-
-    // Cerrar con tecla ESC y navegar con flechas
-    document.addEventListener('keydown', function(e) {
-        const lightbox = document.getElementById('lightbox');
-
-        if (e.key === 'Escape') closeLightbox();
-
-        if (lightbox.classList.contains('active')) {
-            if (e.key === 'ArrowLeft') changeImage(-1);
-            if (e.key === 'ArrowRight') changeImage(1);
-        }
-    });
-
-    // Cerrar al hacer clic fuera de la imagen
-    document.getElementById('lightbox').addEventListener('click', function(e) {
-        if (e.target === this) closeLightbox();
-    });
-
-    // Prevenir cierres al hacer clic en botones
-    document.querySelector('.lightbox-close').addEventListener('click', e => e.stopPropagation());
-    document.querySelector('.lightbox-prev').addEventListener('click', e => e.stopPropagation());
-    document.querySelector('.lightbox-next').addEventListener('click', e => e.stopPropagation());
-
-    // Transición suave
-    document.getElementById('lightbox-img').style.transition = 'opacity 0.3s ease';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        document.addEventListener('DOMContentLoaded', function() {
-    const navItems = document.querySelectorAll('.objetivos-nav-item');
-    const contentItems = document.querySelectorAll('.objetivos-content-item');
-    const prevBtn = document.getElementById('objetivosPrevBtn');
-    const nextBtn = document.getElementById('objetivosNextBtn');
-    
-    let currentCategory = 'valores';
-    let currentIndex = 0;
-    let isTransitioning = false;
-
-    function getObjectivesByCategory(category) {
-        return Array.from(contentItems).filter(item => 
-            item.getAttribute('data-category') === category
-        );
-    }
-
-    function showContent(category, index) {
-        if (isTransitioning) return;
-        isTransitioning = true;
-
-        const categoryObjectives = getObjectivesByCategory(category);
-        
-        // Paso 1: Agregar clase fade-out al contenido actual
-        contentItems.forEach(item => {
-            if (item.classList.contains('active')) {
-                item.classList.add('fade-out');
-            }
-        });
-        
-        // Paso 2: Esperar que termine la animación de salida (300ms)
-        setTimeout(() => {
-            // Remover todas las clases active y fade-out
-            contentItems.forEach(item => {
-                item.classList.remove('active');
-                item.classList.remove('fade-out');
-            });
-            
-            // Paso 3: Mostrar el nuevo contenido
-            if (categoryObjectives[index]) {
-                categoryObjectives[index].classList.add('active');
+                // Última imagen → esconder flecha derecha
+                nextBtn.style.display = currentImageIndex === galleryImages.length - 1 ? "none" : "block";
             }
 
-            // Actualizar botones
-            prevBtn.disabled = index === 0;
-            nextBtn.disabled = index === categoryObjectives.length - 1;
+            // Abrir lightbox
+            function openLightbox(index) {
+                currentImageIndex = index;
 
-            // Scroll suave al inicio
-            document.querySelector('.objetivos-content-panel').scrollTo({
-                top: 0,
-                behavior: 'smooth'
+                const lightbox = document.getElementById('lightbox');
+                const lightboxImg = document.getElementById('lightbox-img');
+
+                lightboxImg.src = galleryImages[index].src;
+                lightboxImg.alt = galleryImages[index].alt;
+                lightbox.classList.add('active');
+
+                updateArrows(); // Actualizar flechas al abrir
+
+                document.body.style.overflow = 'hidden';
+            }
+
+            // Cerrar lightbox
+            function closeLightbox() {
+                document.getElementById('lightbox').classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+
+            // Cambiar imagen sin bucle infinito
+            function changeImage(direction) {
+                currentImageIndex += direction;
+
+                // Limitar índices
+                if (currentImageIndex < 0) currentImageIndex = 0;
+                if (currentImageIndex >= galleryImages.length)
+                    currentImageIndex = galleryImages.length - 1;
+
+                const lightboxImg = document.getElementById('lightbox-img');
+
+                lightboxImg.style.opacity = '0';
+
+                setTimeout(() => {
+                    lightboxImg.src = galleryImages[currentImageIndex].src;
+                    lightboxImg.alt = galleryImages[currentImageIndex].alt;
+                    lightboxImg.style.opacity = '1';
+                }, 200);
+
+                updateArrows(); // Actualizar flechas cada vez que cambias imagen
+            }
+
+            // Cerrar con tecla ESC y navegar con flechas
+            document.addEventListener('keydown', function(e) {
+                const lightbox = document.getElementById('lightbox');
+
+                if (e.key === 'Escape') closeLightbox();
+
+                if (lightbox.classList.contains('active')) {
+                    if (e.key === 'ArrowLeft') changeImage(-1);
+                    if (e.key === 'ArrowRight') changeImage(1);
+                }
             });
 
-            // Actualizar variables
-            currentCategory = category;
-            currentIndex = index;
-            
-            // Permitir nuevas transiciones después de que termine la animación de entrada
-            setTimeout(() => {
-                isTransitioning = false;
-            }, 400);
-            
-        }, 300);
-    }
+            // Cerrar al hacer clic fuera de la imagen
+            document.getElementById('lightbox').addEventListener('click', function(e) {
+                if (e.target === this) closeLightbox();
+            });
 
-    navItems.forEach((item) => {
-        item.addEventListener('click', function() {
-            if (isTransitioning) return;
-            
-            const category = this.getAttribute('data-category');
-            
-            navItems.forEach(nav => nav.classList.remove('active'));
-            this.classList.add('active');
-            
-            showContent(category, 0);
-        });
-    });
+            // Prevenir cierres al hacer clic en botones
+            document.querySelector('.lightbox-close').addEventListener('click', e => e.stopPropagation());
+            document.querySelector('.lightbox-prev').addEventListener('click', e => e.stopPropagation());
+            document.querySelector('.lightbox-next').addEventListener('click', e => e.stopPropagation());
 
-    prevBtn.addEventListener('click', function() {
-        if (currentIndex > 0 && !isTransitioning) {
-            showContent(currentCategory, currentIndex - 1);
-        }
-    });
-
-    nextBtn.addEventListener('click', function() {
-        const categoryObjectives = getObjectivesByCategory(currentCategory);
-        if (currentIndex < categoryObjectives.length - 1 && !isTransitioning) {
-            showContent(currentCategory, currentIndex + 1);
-        }
-    });
-
-    // Inicializar
-    showContent('valores', 0);
-});
-
-function scrollToContent() {
-    document.getElementById('siguiente_sesion').scrollIntoView({ 
-        behavior: 'smooth' 
-    });
-}
+            // Transición suave
+            document.getElementById('lightbox-img').style.transition = 'opacity 0.3s ease';
 
 
 
@@ -772,7 +684,107 @@ function scrollToContent() {
 
 
 
-        
+
+
+            document.addEventListener('DOMContentLoaded', function() {
+                const navItems = document.querySelectorAll('.objetivos-nav-item');
+                const contentItems = document.querySelectorAll('.objetivos-content-item');
+                const prevBtn = document.getElementById('objetivosPrevBtn');
+                const nextBtn = document.getElementById('objetivosNextBtn');
+
+                let currentCategory = 'valores';
+                let currentIndex = 0;
+                let isTransitioning = false;
+
+                function getObjectivesByCategory(category) {
+                    return Array.from(contentItems).filter(item =>
+                        item.getAttribute('data-category') === category
+                    );
+                }
+
+                function showContent(category, index) {
+                    if (isTransitioning) return;
+                    isTransitioning = true;
+
+                    const categoryObjectives = getObjectivesByCategory(category);
+
+                    // Paso 1: Agregar clase fade-out al contenido actual
+                    contentItems.forEach(item => {
+                        if (item.classList.contains('active')) {
+                            item.classList.add('fade-out');
+                        }
+                    });
+
+                    // Paso 2: Esperar que termine la animación de salida (300ms)
+                    setTimeout(() => {
+                        // Remover todas las clases active y fade-out
+                        contentItems.forEach(item => {
+                            item.classList.remove('active');
+                            item.classList.remove('fade-out');
+                        });
+
+                        // Paso 3: Mostrar el nuevo contenido
+                        if (categoryObjectives[index]) {
+                            categoryObjectives[index].classList.add('active');
+                        }
+
+                        // Actualizar botones
+                        prevBtn.disabled = index === 0;
+                        nextBtn.disabled = index === categoryObjectives.length - 1;
+
+                        // Scroll suave al inicio
+                        document.querySelector('.objetivos-content-panel').scrollTo({
+                            top: 0,
+                            behavior: 'smooth'
+                        });
+
+                        // Actualizar variables
+                        currentCategory = category;
+                        currentIndex = index;
+
+                        // Permitir nuevas transiciones después de que termine la animación de entrada
+                        setTimeout(() => {
+                            isTransitioning = false;
+                        }, 400);
+
+                    }, 300);
+                }
+
+                navItems.forEach((item) => {
+                    item.addEventListener('click', function() {
+                        if (isTransitioning) return;
+
+                        const category = this.getAttribute('data-category');
+
+                        navItems.forEach(nav => nav.classList.remove('active'));
+                        this.classList.add('active');
+
+                        showContent(category, 0);
+                    });
+                });
+
+                prevBtn.addEventListener('click', function() {
+                    if (currentIndex > 0 && !isTransitioning) {
+                        showContent(currentCategory, currentIndex - 1);
+                    }
+                });
+
+                nextBtn.addEventListener('click', function() {
+                    const categoryObjectives = getObjectivesByCategory(currentCategory);
+                    if (currentIndex < categoryObjectives.length - 1 && !isTransitioning) {
+                        showContent(currentCategory, currentIndex + 1);
+                    }
+                });
+
+                // Inicializar
+                showContent('valores', 0);
+            });
+
+            function scrollToContent() {
+                document.getElementById('siguiente_sesion').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
         </script>
 
         <!-- Incluir el footer -->
@@ -780,5 +792,6 @@ function scrollToContent() {
 
         <!-- Scripts -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-    </body>
+</body>
+
 </html>

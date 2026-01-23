@@ -38,7 +38,7 @@
     <meta name="twitter:title" content="Misión y Visión - Gimnasio Humanístico del Alto Magdalena">
     <meta name="twitter:description"
         content="Conoce nuestra misión y visión enfocadas en la formación integral, el pensamiento crítico y la innovación educativa.">
-    <meta name="twitter:image" content="{{ asset('images/Politica_de_calidad2.webp') }}">
+    <meta name="twitter:image" content="{{ asset('images/imagen1.jpg') }}">
 
     @verbatim
     <!-- Datos estructurados JSON-LD (SEO avanzado) -->
@@ -76,14 +76,14 @@
     <!-- Bootstrap y Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="{{ asset('images/Logo.png') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/logo.png') }}">
 
     <!-- Scripts -->
     <script src="{{ asset('js/hero.js') }}" defer></script>
 
     <!-- CSS personalizado -->
     <link href="{{ asset('css/header.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/Mision_vision.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/mision_vision.css') }}" rel="stylesheet">
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
     <link href="{{ asset('css/hero.css') }}" rel="stylesheet">
     <link href="{{ asset('css/navegacion.css') }}" rel="stylesheet">
@@ -107,7 +107,7 @@
     <!-- HERO -->
     <section class="hero-section" aria-label="Misión y Visión del Gimnasio Humanístico del Alto Magdalena">
         <div class="hero-background">
-            <img src="../images/Educacion Secundaria/imagen1.jpg" alt="Instalaciones del Gimnasio Humanístico del Alto Magdalena en Neiva"
+            <img src="../images/educacion_secundaria/imagen1.jpg" alt="Instalaciones del Gimnasio Humanístico del Alto Magdalena en Neiva"
                 width="1920" height="1080" loading="lazy">
         </div>
         <div class="hero-overlay"></div>
@@ -155,7 +155,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-6">
                     <div class="mision-visual"></div>
                 </div>
@@ -205,7 +204,7 @@
 </main>
 
 <nav aria-label="Navegación interna del sitio">
-    @include('layouts.navegacion_Interna')
+    @include('layouts.navegacion_interna')
 </nav>
 
 <footer aria-label="Pie de página del sitio">

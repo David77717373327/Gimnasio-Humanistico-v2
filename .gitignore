@@ -60,3 +60,11 @@ auth.json
 # LOGS
 # ===============================
 *.log
+
+# ===============================
+# VIDEOS
+# ===============================
+
+/public/videos/*.mp4
+public/videos/*.mov
+public/videos/*.avi

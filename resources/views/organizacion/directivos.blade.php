@@ -15,7 +15,7 @@
     <meta property="og:title" content="Equipo Directivo | Gimnasio Humanístico">
     <meta property="og:description"
         content="Líderes comprometidos con la excelencia educativa y el enfoque humanístico del Gimnasio Humanístico.">
-    <meta property="og:image" content="{{ asset('images/Politica_de_calidad2.webp') }}">
+    <meta property="og:image" content="{{ asset('images/politica_de_calidad2.webp') }}">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_ES">
 
@@ -26,7 +26,7 @@
         content="Conoce a los líderes que guían el proyecto educativo del Gimnasio Humanístico.">
 
     <!-- Icono -->
-    <link rel="icon" type="image/x-icon" href="{{ asset('images/Logo.png') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/logo.png') }}">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,7 +41,7 @@
 
     <!-- CSS personalizado -->
     <link href="{{ asset('css/header.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/Directivos.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/directivos.css') }}" rel="stylesheet">
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
     <link href="{{ asset('css/hero.css') }}" rel="stylesheet">
     <link href="{{ asset('css/navegacion.css') }}" rel="stylesheet">
@@ -103,7 +103,7 @@
         <!-- HERO -->
         <section class="hero-section" aria-label="Equipo Directivo del Gimnasio Humanístico">
             <div class="hero-background">
-                <img src="{{ asset('images/Politica_de_calidad4.webp') }}"
+                <img src="{{ asset('images/politica_de_calidad4.webp') }}"
                     alt="Instalaciones del Gimnasio Humanístico en Neiva, Colombia" width="1920" height="1080"
                     loading="lazy">
             </div>
@@ -132,7 +132,7 @@
                     <div class="directivo-image">
                         <div class="image-accent"></div>
                         <div class="image-wrapper">
-                            <img src="{{ asset('images/Logo.png') }}"
+                            <img src="{{ asset('images/logo.png') }}"
                                 alt="Retrato de la Rectora Silvia Cristina Ruiz Campos del Gimnasio Humanístico"
                                 width="600" height="600" loading="lazy">
                         </div>
@@ -164,7 +164,7 @@
                     <div class="directivo-image">
                         <div class="image-accent"></div>
                         <div class="image-wrapper">
-                            <img src="{{ asset('images/Logo.png') }}"
+                            <img src="{{ asset('images/logo.png') }}"
                                 alt="Retrato de la coordinadora académica del Gimnasio Humanístico" width="600"
                                 height="750" loading="lazy">
                         </div>

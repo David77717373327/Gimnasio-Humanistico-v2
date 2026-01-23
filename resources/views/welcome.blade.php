@@ -609,22 +609,22 @@
                             <div class="academic-carousel-container" data-carousel="preescolar">
                                 <div class="academic-carousel-slides">
                                     <div class="academic-carousel-slide">
-                                        <img src="{{ asset('images/Educacion Inicial/Imagen5.jpg') }}"
+                                        <img src="{{ asset('images/educacion_inicial/imagen5.jpg') }}"
                                             alt="Niños de preescolar en actividades de aprendizaje lúdico"
                                             class="academic-level-image" loading="lazy">
                                     </div>
                                     <div class="academic-carousel-slide">
-                                        <img src="{{ asset('images/Educacion Inicial/Imagen4.jpg') }}"
+                                        <img src="{{ asset('images/educacion_inicial/imagen4.jpg') }}"
                                             alt="Desarrollo de habilidades fundamentales en preescolar"
                                             class="academic-level-image" loading="lazy">
                                     </div>
                                     <div class="academic-carousel-slide">
-                                        <img src="{{ asset('images/Educacion Inicial/Sanpedrito.jpg') }}"
+                                        <img src="{{ asset('images/educacion_inicial/sanpedrito.jpg') }}"
                                             alt="Exploración y creatividad en educación inicial"
                                             class="academic-level-image" loading="lazy">
                                     </div>
                                     <div class="academic-carousel-slide">
-                                        <img src="{{ asset('images/Educacion Inicial/Imagen1.jpg') }}"
+                                        <img src="{{ asset('images/educacion_inicial/imagen1.jpg') }}"
                                             alt="Pensamiento crítico en preescolar" class="academic-level-image"
                                             loading="lazy">
                                     </div>
@@ -664,22 +664,22 @@
                             <div class="academic-carousel-container" data-carousel="primaria">
                                 <div class="academic-carousel-slides">
                                     <div class="academic-carousel-slide">
-                                        <img src="{{ asset('images/Educacion-Primaria/Imagen3.jpg') }}"
+                                        <img src="{{ asset('images/educacion_Primaria/imagen3.jpg') }}"
                                             alt="Estudiantes de primaria en aulas bilingües"
                                             class="academic-level-image" loading="lazy">
                                     </div>
                                     <div class="academic-carousel-slide">
-                                        <img src="{{ asset('images/Educacion-Primaria/Imagen1.jpg') }}"
+                                        <img src="{{ asset('images/educacion_Primaria/imagen1.jpg') }}"
                                             alt="Desarrollo de competencias STEM en primaria"
                                             class="academic-level-image" loading="lazy">
                                     </div>
                                     <div class="academic-carousel-slide">
-                                        <img src="{{ asset('images/Educacion-Primaria/Imagen9.jpg') }}"
+                                        <img src="{{ asset('images/educacion_Primaria/imagen9.jpg') }}"
                                             alt="Habilidades comunicativas en educación primaria"
                                             class="academic-level-image" loading="lazy">
                                     </div>
                                     <div class="academic-carousel-slide">
-                                        <img src="{{ asset('images/Educacion-Primaria/Imagen4.jpg') }}"
+                                        <img src="{{ asset('images/educacion_Primaria/imagen4.jpg') }}"
                                             alt="Aprendizaje colaborativo en primaria" class="academic-level-image"
                                             loading="lazy">
                                     </div>
@@ -719,22 +719,22 @@
                             <div class="academic-carousel-container" data-carousel="secundaria">
                                 <div class="academic-carousel-slides">
                                     <div class="academic-carousel-slide">
-                                        <img src="{{ asset('images/Educacion Secundaria/Imagen1.jpg') }}"
+                                        <img src="{{ asset('images/educacion_secundaria/imagen1.jpg') }}"
                                             alt="Estudiantes de secundaria en proyectos de investigación"
                                             class="academic-level-image" loading="lazy">
                                     </div>
                                     <div class="academic-carousel-slide">
-                                        <img src="{{ asset('images/Educacion Secundaria/Imagen2.jpg') }}"
+                                        <img src="{{ asset('images/educacion_secundaria/imagen2.jpg') }}"
                                             alt="Desarrollo de pensamiento crítico en secundaria"
                                             class="academic-level-image" loading="lazy">
                                     </div>
                                     <div class="academic-carousel-slide">
-                                        <img src="{{ asset('images/Educacion Secundaria/Imagen3.jpg') }}"
+                                        <img src="{{ asset('images/educacion_secundaria/imagen3.jpg') }}"
                                             alt="Liderazgo estudiantil en educación secundaria"
                                             class="academic-level-image" loading="lazy">
                                     </div>
                                     <div class="academic-carousel-slide">
-                                        <img src="{{ asset('images/Educacion Secundaria/Imagen6.jpg') }}"
+                                        <img src="{{ asset('images/educacion_secundaria/imagen6.jpg') }}"
                                             alt="Proyectos interdisciplinarios en secundaria"
                                             class="academic-level-image" loading="lazy">
                                     </div>
@@ -774,17 +774,17 @@
                             <div class="academic-carousel-container" data-carousel="media">
                                 <div class="academic-carousel-slides">
                                     <div class="academic-carousel-slide">
-                                        <img src="{{ asset('images/Media Academica/Imagen9.jpg') }}"
+                                        <img src="{{ asset('images/media_academica/imagen9.jpg') }}"
                                             alt="Estudiantes de media académica en preparación universitaria"
                                             class="academic-level-image" loading="lazy">
                                     </div>
                                     <div class="academic-carousel-slide">
-                                        <img src="{{ asset('images/Media Academica/Imagen7.jpg') }}"
+                                        <img src="{{ asset('images/media_academica/imagen7.jpg') }}"
                                             alt="Orientación vocacional para el proyecto de vida"
                                             class="academic-level-image" loading="lazy">
                                     </div>
                                     <div class="academic-carousel-slide">
-                                        <img src="{{ asset('images/Media Academica/Imagen8.jpg') }}"
+                                        <img src="{{ asset('images/media_academica/imagen8.jpg') }}"
                                             alt="Preparación ICFES en educación media" class="academic-level-image"
                                             loading="lazy">
                                     </div>

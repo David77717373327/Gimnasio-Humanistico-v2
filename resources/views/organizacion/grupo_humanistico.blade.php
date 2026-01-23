@@ -39,13 +39,13 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
     <!-- FAVICONS -->
-    <link rel="icon" type="image/x-icon" href="{{ asset('images/Logo.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/Logo.png') }}">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/Logo.png') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/logo.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/logo.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/logo.png') }}">
 
     <!-- CSS -->
     <link href="{{ asset('css/header.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/Grupohumanistico.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/grupohumanistico.css') }}" rel="stylesheet">
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
     <link href="{{ asset('css/hero.css') }}" rel="stylesheet">
     <link href="{{ asset('css/navegacion.css') }}" rel="stylesheet">
@@ -92,7 +92,7 @@
         <!-- HERO -->
         <section class="hero-section" aria-label="Sección inicial del Organigrama Institucional">
             <div class="hero-background">
-                <img src="../images/Politica_de_calidad4.webp
+                <img src="../images/politica_de_calidad4.webp
                 "
                     alt="Instalaciones educativas del Grupo Humanístico S.A.S en Neiva"
                     width="1920" height="1080" loading="lazy">
@@ -120,7 +120,7 @@
 
                 <!-- Logo del Grupo -->
                 <div class="grupo-logo-container">
-                    <img src="{{ asset('images/Grupo-Humanistico2.png') }}"
+                    <img src="{{ asset('images/grupo_humanistico2.png') }}"
                         alt="Logo del Grupo Humanístico S.A.S"
                         class="grupo-logo">
                 </div>

@@ -20,28 +20,13 @@ class RutasController extends Controller
         return view('usuario.welcome');
     }
 
-    public function mostrarContenidoAdmin()
-    {
-        return view('admin.index');
-    }
-
-    public function mostrarContenidoEstudiante()
-    {
-        return view('student.index');
-    }
-
-    public function mostrarContenidoProfesor()
-    {
-        return view('professor.index');
-    }
-
     /* ---------------------------------
      |  INSTITUCIÓN – QUIÉNES SOMOS
      |----------------------------------*/
 
     public function mostrarcontenidohistoria()
     {
-        return view('institucion.quienes_somos');
+        return view('institucion.historia');
     }
 
     public function mostrarcontenidosimbolosinstitucionales()

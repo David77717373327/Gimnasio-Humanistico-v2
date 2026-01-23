@@ -15,7 +15,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
-    <link rel="icon" type="image/x-icon" href="{{ asset('images/Logo.png') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/logo.png') }}">
 
     <!-- Scripts -->
     <script src="{{ asset('js/hero.js') }}" defer></script>
@@ -46,7 +46,7 @@
         <!-- HERO -->
         <section class="hero-section" aria-label="Sección inicial del Organigrama Institucional">
             <div class="hero-background">
-                <img src="../images/Politica_de_calidad4.webp"
+                <img src="../images/politica_de_calidad4.webp"
                     alt="Instalaciones del Gimnasio Humanístico"
                     width="1920" height="1080" loading="lazy">
             </div>
@@ -88,7 +88,7 @@
 
                                 <!-- Logo -->
                                 <figure class="organigrama-logo-container">
-                                    <img src="{{ asset('images/Logo.png') }}"
+                                    <img src="{{ asset('images/logo.png') }}"
                                         alt="Logo del Colegio"
                                         class="organigrama-logo"
                                         id="logoImg">
@@ -96,7 +96,7 @@
 
                                 <!-- Imagen del organigrama -->
                                 <div class="organigrama-wrapper">
-                                    <img src="{{ asset('images/Organigrama.jpeg') }}"
+                                    <img src="{{ asset('images/organigrama.jpeg') }}"
                                         alt="Organigrama Institucional Gimnasio Humanístico"
                                         class="organigrama-image"
                                         id="organigrama-img"
@@ -127,7 +127,7 @@
 
 <!-- NAVEGACIÓN INTERNA -->
     <nav aria-label="Navegación interna del sitio">
-        @include('layouts.navegacion_Interna')
+        @include('layouts.navegacion_interna')
     </nav>
 
     <!-- PIE DE PÁGINA -->
