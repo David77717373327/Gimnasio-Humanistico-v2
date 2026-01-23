@@ -35,30 +35,6 @@
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
     <link href="{{ asset('css/hero.css') }}" rel="stylesheet">
     <link href="{{ asset('css/navegacion.css') }}" rel="stylesheet">
-
-    @verbatim
-        <!-- JSON-LD Schema.org para SEO -->
-        <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "EducationalOrganization",
-      "name": "Gimnasio Humanístico del Alto Magdalena",
-      "url": "https://tusitio.com",
-      "logo": "https://tusitio.com/images/Logo.png",
-      "description": "Institución educativa en Neiva con más de 40 años de trayectoria formando líderes con excelencia académica y valores humanísticos desde 1983",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Calle 13 #4-53",
-        "addressLocality": "Neiva",
-        "addressRegion": "Huila",
-        "addressCountry": "CO"
-      },
-      "foundingDate": "1983-05-15",
-      "sameAs": []
-    }
-    </script>
-    @endverbatim
-
 </head>
 
 <body>
@@ -66,7 +42,6 @@
     <header class="header-top" aria-label="Encabezado principal del sitio">
         @include('layouts.header') <!-- AQUÍ SOLO LOGO, TITULO -->
     </header>
-
 
     <nav class="nav-sticky" aria-label="Navegación principal">
         @include('layouts.navigation') <!-- AQUÍ SOLO EL MENU -->

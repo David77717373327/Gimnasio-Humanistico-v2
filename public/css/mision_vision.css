@@ -246,7 +246,7 @@ body {
         .mision-visual {
             position: relative;
             min-height: 450px;
-            background: url('../images/Logo.png') center/contain no-repeat;
+            background: url('../images/logo.png') center/contain no-repeat;
             border-radius: 20px;
             box-shadow: var(--shadow-strong);
         }
@@ -313,7 +313,7 @@ body {
         .vision-visual {
             position: relative;
             min-height: 500px;
-            background: url('../images/Consejo_Directivo.jpg') center/cover;
+            background: url('../images/consejo_directivo.jpg') center/cover;
             border-radius: 20px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
         }
