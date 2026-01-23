@@ -664,22 +664,22 @@
                             <div class="academic-carousel-container" data-carousel="primaria">
                                 <div class="academic-carousel-slides">
                                     <div class="academic-carousel-slide">
-                                        <img src="{{ asset('images/educacion_Primaria/imagen3.jpg') }}"
+                                        <img src="{{ asset('images/educacion_primaria/imagen3.jpg') }}"
                                             alt="Estudiantes de primaria en aulas bilingües"
                                             class="academic-level-image" loading="lazy">
                                     </div>
                                     <div class="academic-carousel-slide">
-                                        <img src="{{ asset('images/educacion_Primaria/imagen1.jpg') }}"
+                                        <img src="{{ asset('images/educacion_primaria/imagen1.jpg') }}"
                                             alt="Desarrollo de competencias STEM en primaria"
                                             class="academic-level-image" loading="lazy">
                                     </div>
                                     <div class="academic-carousel-slide">
-                                        <img src="{{ asset('images/educacion_Primaria/imagen9.jpg') }}"
+                                        <img src="{{ asset('images/educacion_primaria/imagen9.jpg') }}"
                                             alt="Habilidades comunicativas en educación primaria"
                                             class="academic-level-image" loading="lazy">
                                     </div>
                                     <div class="academic-carousel-slide">
-                                        <img src="{{ asset('images/educacion_Primaria/imagen4.jpg') }}"
+                                        <img src="{{ asset('images/educacion_primaria/imagen4.jpg') }}"
                                             alt="Aprendizaje colaborativo en primaria" class="academic-level-image"
                                             loading="lazy">
                                     </div>

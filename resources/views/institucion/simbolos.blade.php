@@ -41,27 +41,6 @@
     <meta property="og:type" content="website">
 
 
-
-    @verbatim
-        <!-- JSON-LD: Organización -->
-        <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "EducationalOrganization",
-      "name": "Gimnasio Humanístico de Neiva",
-      "url": "https://gimnasiohumanistico.edu.co",
-      "logo": "{{ asset('images/Logo.png') }}",
-      "description": "Institución educativa con enfoque humanista, ambiental e integral en Neiva.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Neiva",
-        "addressRegion": "Huila",
-        "addressCountry": "Colombia"
-      }
-    }
-    </script>
-    @endverbatim
-
 </head>
 
 <body>
