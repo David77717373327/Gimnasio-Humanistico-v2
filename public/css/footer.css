@@ -217,7 +217,8 @@
 .contact-icon {
     width: 36px;
     height: 36px;
-    background: var(--accent-gold);
+/*cambios par ael color*/
+background: var(--accent-gold);
     color: var(--primary-green);
     display: flex;
     align-items: center;
@@ -334,34 +335,6 @@
 .footer-map:hover::before {
     opacity: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* REDES SOCIALES */
 .social-links {
