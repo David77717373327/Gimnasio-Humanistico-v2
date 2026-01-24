@@ -436,21 +436,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <!-- GALERÍA -->
         <section aria-label="Galería de momentos especiales en el preescolar de Neiva">
             <header class="gallery-header">
@@ -512,28 +497,9 @@
                         <img src="images/educacion_primaria/imagen3.jpg" alt="Momentos de aprendizaje diario"
                             loading="lazy">
                     </article>
-
                 </div>
             </div>
         </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -658,17 +624,6 @@
 
             // Transición suave
             document.getElementById('lightbox-img').style.transition = 'opacity 0.3s ease';
-
-
-
-
-
-
-
-
-
-
-
 
 
 

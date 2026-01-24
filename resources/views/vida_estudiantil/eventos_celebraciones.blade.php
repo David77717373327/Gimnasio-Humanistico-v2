@@ -121,10 +121,6 @@
                     '../images/celebraciones/sanpedro3.jpg'
                 ]
             },
-
-
-
-
             {
                 id: 'englishday',
                 category: 'Académico',
@@ -330,9 +326,7 @@
     <footer aria-label="Pie de página del sitio">
         @include('layouts.footer')
     </footer>
-
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

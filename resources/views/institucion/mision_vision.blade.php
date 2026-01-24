@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,8 +21,7 @@
     <!-- Autor -->
     <meta name="author" content="Gimnasio Humanístico del Alto Magdalena">
 
-    <!-- URL canónica -->
-    <link rel="canonical" href="https://gimnasiohumanistico.edu.co/mision-vision">
+    
 
     <!-- Open Graph -->
     <meta property="og:title" content="Misión y Visión - Gimnasio Humanístico del Alto Magdalena">
@@ -39,32 +37,6 @@
     <meta name="twitter:description"
         content="Conoce nuestra misión y visión enfocadas en la formación integral, el pensamiento crítico y la innovación educativa.">
     <meta name="twitter:image" content="{{ asset('images/imagen1.jpg') }}">
-
-    @verbatim
-    <!-- Datos estructurados JSON-LD (SEO avanzado) -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "EducationalOrganization",
-        "name": "Gimnasio Humanístico del Alto Magdalena",
-        "url": "https://gimnasiohumanistico.edu.co",
-        "logo": "{{ asset('images/Logo.png') }}",
-        "description": "Institución educativa con enfoque humanista, inclusivo, científico, ecológico y tecnológico.",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Neiva",
-            "addressCountry": "Colombia"
-        },
-        "foundingDate": "2005",
-        "keywords": [
-            "educación humanista",
-            "inclusión educativa",
-            "formación integral",
-            "colegio en Neiva"
-        ]
-    }
-    </script>
-    @endverbatim
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

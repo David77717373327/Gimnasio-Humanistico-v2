@@ -49,43 +49,6 @@
     <!-- Script Hero -->
     <script src="{{ asset('js/hero.js') }}" defer></script>
 
-
-    @verbatim
-        <!-- JSON-LD STRUCTURED DATA -->
-        <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "EducationalOrganization",
-      "name": "Gimnasio Humanístico",
-      "url": "https://gimnasiohumanistico.edu",
-      "logo": "{{ asset('images/Logo.png') }}",
-      "description": "Institución educativa con enfoque humanístico, comprometida con la excelencia académica, la formación integral y la innovación pedagógica.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Neiva",
-        "addressRegion": "Huila",
-        "addressCountry": "Colombia"
-      },
-      "employee": [
-        {
-          "@type": "Person",
-          "name": "Dra. Silvia Cristina Ruiz Campos",
-          "jobTitle": "Rectora",
-          "image": "{{ asset('images/Logo.png') }}",
-          "description": "Líder educativa con más de 25 años de experiencia. Encabezando el proyecto educativo humanístico."
-        },
-        {
-          "@type": "Person",
-          "name": "Lic. XXXX",
-          "jobTitle": "Coordinadora Académica",
-          "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&h=1000&fit=crop",
-          "description": "Encargada de coordinar los procesos académicos y garantizar la implementación del modelo pedagógico humanístico."
-        }
-      ]
-    }
-    </script>
-    @endverbatim
-
 </head>
 
 <body>
@@ -198,5 +161,4 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

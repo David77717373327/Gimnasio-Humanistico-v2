@@ -41,44 +41,7 @@
     <link href="{{ asset('css/hero.css') }}" rel="stylesheet">
     <link href="{{ asset('css/navegacion.css') }}" rel="stylesheet">
 
-    @verbatim
-    <!-- JSON-LD Organización -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "EducationalOrganization",
-      "name": "Gimnasio Humanístico de Neiva",
-      "url": "https://gimnasiohumanistico.edu.co",
-      "description": "Institución educativa humanista ubicada en Neiva, enfocada en la formación integral, ambiental y democrática.",
-      "logo": "{{ asset('images/Logo.png') }}",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Neiva",
-        "addressRegion": "Huila",
-        "addressCountry": "Colombia"
-      }
-    }
-    </script>
 
-    <!-- JSON-LD Breadcrumbs -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Inicio",
-        "item": "https://gimnasiohumanistico.edu.co"
-      },{
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Componente Filosófico",
-        "item": "https://gimnasiohumanistico.edu.co/componente-filosofico"
-      }]
-    }
-    </script>
-    @endverbatim
 
 </head>
 

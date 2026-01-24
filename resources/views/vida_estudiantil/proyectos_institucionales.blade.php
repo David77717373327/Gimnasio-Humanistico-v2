@@ -185,12 +185,6 @@
                 </div>
 
 
-
-
-
-
-
-
                 <!-- PROYECTO 3: PRIMERA COMUNIÓN Y CONFIRMACIÓN -->
                 <div class="proyecto-item" data-proyecto="sacramentos">
                     <div class="proyecto-header">

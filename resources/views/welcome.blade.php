@@ -17,46 +17,15 @@
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="googlebot" content="index, follow">
 
-
     <link rel="preload" as="video" href="{{ asset('videos/hero-background4.mp4') }}">
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.gimnasiohumanistico.edu.co/">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.gimnasiohumanistico.edu.co/">
-    <meta property="og:title" content="Gimnasio Humanístico del Alto Magdalena | Educación de Excelencia en Neiva">
-    <meta property="og:description"
-        content="Formamos líderes íntegros con valores cristianos, excelencia académica y visión global. Más de 40 años transformando vidas en Neiva, Huila.">
-    <meta property="og:image" content="{{ asset('images/og-image.jpg') }}">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:locale" content="es_CO">
-    <meta property="og:site_name" content="Gimnasio Humanístico del Alto Magdalena">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://www.gimnasiohumanistico.edu.co/">
-    <meta name="twitter:title" content="Gimnasio Humanístico del Alto Magdalena | Educación de Excelencia">
-    <meta name="twitter:description"
-        content="Formamos líderes íntegros con valores cristianos, excelencia académica y visión global en Neiva, Huila.">
-    <meta name="twitter:image" content="{{ asset('images/twitter-card.jpg') }}">
-
-    <!-- Geo Tags -->
-    <meta name="geo.region" content="CO-HUI">
-    <meta name="geo.placename" content="Neiva">
-    <meta name="geo.position" content="2.9273;-75.2819">
-    <meta name="ICBM" content="2.9273, -75.2819">
-
     <!-- Preconnect para optimización -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-
-    <!-- DNS Prefetch -->
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
 
     <!-- Fonts - con display=swap para mejor rendimiento -->
     <link
@@ -87,83 +56,10 @@
 
 
     <!-- Favicon optimizado -->
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/Logo.png') }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/Logo.png') }}">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/Logo.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/logo.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/logo.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/logo.png') }}">
     <link rel="manifest" href="#">
-
-    @verbatim
-        <!-- Schema.org JSON-LD -->
-        <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "EducationalOrganization",
-                "@id": "https://www.gimnasiohumanistico.edu.co/#organization",
-                "name": "Gimnasio Humanístico del Alto Magdalena",
-                "alternateName": "Gimnasio Humanístico",
-                "url": "https://www.gimnasiohumanistico.edu.co/",
-                "logo": {
-                    "@type": "ImageObject",
-                    "url": "{{ asset('images/Logo.png') }}",
-                    "width": 250,
-                    "height": 250
-                },
-                "description": "Institución educativa de excelencia en Neiva con más de 40 años de experiencia, formación bilingüe y valores cristianos",
-                "address": {
-                    "@type": "PostalAddress",
-                    "streetAddress": "[Dirección del colegio]",
-                    "addressLocality": "Neiva",
-                    "addressRegion": "Huila",
-                    "postalCode": "[Código Postal]",
-                    "addressCountry": "CO"
-                },
-                "geo": {
-                    "@type": "GeoCoordinates",
-                    "latitude": "2.9273",
-                    "longitude": "-75.2819"
-                },
-                "telephone": "[Teléfono de contacto]",
-                "email": "[Email de contacto]",
-                "foundingDate": "1983",
-                "founder": {
-                    "@type": "Person",
-                    "name": "Diana Patricia Cristancho de Iriarte"
-                },
-                "sameAs": [
-                    "[URL Facebook]",
-                    "[URL Instagram]",
-                    "[URL YouTube]"
-                ]
-            },
-            {
-                "@type": "WebSite",
-                "@id": "https://www.gimnasiohumanistico.edu.co/#website",
-                "url": "https://www.gimnasiohumanistico.edu.co/",
-                "name": "Gimnasio Humanístico del Alto Magdalena",
-                "description": "Sitio web oficial del Gimnasio Humanístico del Alto Magdalena",
-                "publisher": {
-                    "@id": "https://www.gimnasiohumanistico.edu.co/#organization"
-                },
-                "inLanguage": "es-CO"
-            },
-            {
-                "@type": "BreadcrumbList",
-                "@id": "https://www.gimnasiohumanistico.edu.co/#breadcrumb",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Inicio",
-                        "item": "https://www.gimnasiohumanistico.edu.co/"
-                    }
-                ]
-            }
-        ]
-    }
-    </script>
-    @endverbatim
 </head>
 
 <body>
@@ -192,12 +88,15 @@
                 <!-- Video de fondo -->
                 <video class="hero-bg-video" id="heroVideo" autoplay muted loop playsinline preload="auto"
                     poster="{{ asset('images/video-poster.jpg') }}" aria-label="Video de presentación del colegio">
-                
+                    
+                    
+                    
+                    <source src="{{ asset('videos/hero-background8.mp4') }}" type="video/mp4">
                     <source src="{{ asset('videos/hero-background.webm') }}" type="video/webm">
                 </video>
 
                 <!-- Imagen de fallback -->
-                <img src="{{ asset('images/Simbolos.jpg') }}"
+                <img src="{{ asset('images/simbolos.jpg') }}"
                     alt="Vista panorámica de las instalaciones del Gimnasio Humanístico del Alto Magdalena en Neiva"
                     class="hero-fallback-image" width="1920" height="1080" loading="eager">
 
@@ -367,7 +266,7 @@
                     <div class="col-lg-6">
                         <figure class="welcome-image-container" data-aos="fade-left">
                             <div class="main-image-wrapper">
-                                <img src="{{ asset('images/Instalaciones/Imagen1.jpg') }}"
+                                <img src="{{ asset('images/instalaciones/imagen1.jpg') }}"
                                     alt="Estudiantes del Gimnasio Humanístico en instalaciones modernas del colegio en Neiva"
                                     class="welcome-main-image" width="800" height="600" loading="lazy">
                                 <div class="image-overlay-content" aria-hidden="true">
@@ -404,7 +303,7 @@
                         <article class="gallery-item" data-index="0" data-aos="fade-up" data-aos-delay="150"
                             data-aos-duration="800">
                             <figure class="gallery-image-wrapper">
-                                <img src="{{ asset('images/Dansas.jpg') }}"
+                                <img src="{{ asset('images/dansas.jpg') }}"
                                     alt="Laboratorios de ciencias equipados con tecnología moderna"
                                     class="gallery-image" loading="lazy">
                             </figure>
@@ -417,7 +316,7 @@
                         <article class="gallery-item" data-index="1" data-aos="fade-up" data-aos-delay="250"
                             data-aos-duration="800">
                             <figure class="gallery-image-wrapper">
-                                <img src="{{ asset('images/Instalaciones/Imagen2.jpg') }}"
+                                <img src="{{ asset('images/instalaciones/imagen2.jpg') }}"
                                     alt="Aulas inteligentes con tecnología educativa avanzada" class="gallery-image"
                                     loading="lazy">
                             </figure>
@@ -430,7 +329,7 @@
                         <article class="gallery-item" data-index="2" data-aos="fade-up" data-aos-delay="350"
                             data-aos-duration="800">
                             <figure class="gallery-image-wrapper">
-                                <img src="{{ asset('images/Instalaciones/Imagen3.jpg') }}"
+                                <img src="{{ asset('images/instalaciones/imagen3.jpg') }}"
                                     alt="Biblioteca digital con recursos multimedia" class="gallery-image"
                                     loading="lazy">
                             </figure>
@@ -443,7 +342,7 @@
                         <article class="gallery-item" data-index="3" data-aos="fade-up" data-aos-delay="450"
                             data-aos-duration="800">
                             <figure class="gallery-image-wrapper">
-                                <img src="{{ asset('images/Instalaciones/Imagen4.jpg') }}"
+                                <img src="{{ asset('images/instalaciones/imagen4.jpg') }}"
                                     alt="Espacios deportivos y recreativos" class="gallery-image" loading="lazy">
                             </figure>
                             <figcaption class="gallery-title-overlay">
@@ -1129,25 +1028,25 @@
             const facilities = [{
                     title: "Laboratorios de Ciencias",
                     description: "Laboratorios de ciencias equipados con tecnología moderna para experimentos. Espacios diseñados para fomentar la investigación y el descubrimiento científico.",
-                    image: "images/Dansas.jpg",
+                    image: "images/dansas.jpg",
                     alt: "Laboratorios de ciencias equipados con tecnología moderna"
                 },
                 {
                     title: "Aula De Sistemas",
                     description: "Aulas inteligentes con tecnología educativa avanzada y espacios de aprendizaje colaborativo equipadas con computadoras de última generación.",
-                    image: "images/Instalaciones/Imagen2.jpg",
+                    image: "images/instalaciones/imagen2.jpg",
                     alt: "Aulas inteligentes con tecnología educativa avanzada"
                 },
                 {
                     title: "Espacios Culturales",
                     description: "Biblioteca digital con recursos multimedia y espacios de lectura modernos. Un ambiente tranquilo y estimulante para el desarrollo intelectual.",
-                    image: "images/Instalaciones/Imagen3.jpg",
+                    image: "images/instalaciones/imagen3.jpg",
                     alt: "Biblioteca digital con recursos multimedia"
                 },
                 {
                     title: "Espacios Recreativos",
                     description: "Espacios deportivos y recreativos para desarrollo físico y formación integral. Instalaciones modernas que promueven la vida saludable.",
-                    image: "images/Instalaciones/Imagen4.jpg",
+                    image: "images/instalaciones/imagen4.jpg",
                     alt: "Espacios deportivos y recreativos"
                 }
             ];

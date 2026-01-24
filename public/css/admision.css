@@ -306,15 +306,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
 /* Header Section */
 .admision-nav-header {
     text-align: center;
@@ -1436,7 +1427,7 @@ Estilos del Carrusel 3D - Admisiones
 
 
 .admisiones-carousel-section {
-    background: url("../images/Dansas.jpg") no-repeat center center/cover;
+    background: url("../images/dansas.jpg") no-repeat center center/cover;
     padding: 20px 20px 120px;
     min-height: 50vh;
     display: flex;

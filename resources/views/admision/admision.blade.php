@@ -29,7 +29,6 @@
 
 <body>
 
-
     <header class="header-top" aria-label="Encabezado principal del sitio">
         @include('layouts.header')
     </header>
@@ -63,10 +62,6 @@
                 </div>
             </div>
         </section>
-
-
-
-
 
 
         <!-- NAVEGACIÓN INTERNA DE ADMISIÓN -->
@@ -138,7 +133,6 @@
                         </div>
                     </div>
                 </a>
-
             </div>
 
                 <!-- Ruta de Admisión -->
@@ -165,10 +159,7 @@
                         </div>
                     </div>
                 </a>
-
             </div>
-
-            
 
             <!-- Modalidades -->
             <a href="{{ route('preescolar') }}"
@@ -500,28 +491,6 @@
 
 
 
-
-
-
-
-
-      
-
-
-
-
-
-
-
-
-
-
-
-        
-
-
-
-
         <!-- SECCIÓN PROCESO DE ADMISIONES -->
 <section class="admisiones-carousel-section" id="ruta-admision">
     <div class="header-section">
@@ -653,10 +622,7 @@
                 if (e.key === 'ArrowLeft') prevBtn.click();
                 if (e.key === 'ArrowRight') nextBtn.click();
             });
-
             updateCarousel();
         </script>
-
 </body>
-
 </html>

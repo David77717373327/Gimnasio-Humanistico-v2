@@ -26,55 +26,6 @@
     <meta name="twitter:description" content="Principios institucionales que guían la formación humanista, académica y espiritual.">
     <meta name="twitter:image" content="https://tusitio.com/images/Politica_de_calidad2.webp">
 
-    @verbatim
-    <!-- Datos estructurados JSON-LD -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "Principios y Valores",
-        "description": "Principios institucionales del Gimnasio Humanístico del Alto Magdalena.",
-        "url": "https://tusitio.com/principios-valores"
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "EducationalOrganization",
-      "name": "Gimnasio Humanístico del Alto Magdalena",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Neiva",
-        "addressCountry": "Colombia"
-      },
-      "url": "https://tusitio.com"
-    }
-    </script>
-
-    <!-- BreadcrumbList -->
-    <script type="application/ld+json">
-    {
-      "@context":"https://schema.org",
-      "@type":"BreadcrumbList",
-      "itemListElement":[
-        {
-          "@type":"ListItem",
-          "position":1,
-          "name":"Inicio",
-          "item":"https://tusitio.com"
-        },
-        {
-          "@type":"ListItem",
-          "position":2,
-          "name":"Principios y Valores",
-          "item":"https://tusitio.com/principios-valores"
-        }
-      ]
-    }
-    </script>
-
-    @endverbatim
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -311,11 +262,9 @@
 
                         </div>
                     </article>
-
                 </div>
             </div>
         </section>
-
     </main>
 
     <!-- Navegación interna -->

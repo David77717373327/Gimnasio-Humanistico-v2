@@ -43,7 +43,7 @@
         <!-- HERO -->
         <section class="hero-section" aria-label="Equipo Directivo del Gimnasio Humanístico">
             <div class="hero-background">
-                <img src="{{ asset('images/Simbolos.jpg ') }}"
+                <img src="{{ asset('images/simbolos.jpg ') }}"
                     alt="Instalaciones del Gimnasio Humanístico en Neiva, Colombia" width="1920" height="1080"
                     loading="lazy">
             </div>
@@ -84,12 +84,8 @@
 <footer aria-label="Pie de página institucional">
         @include('layouts.footer')
     </footer>
-
-
     <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>    
 </body>
 
 </html>

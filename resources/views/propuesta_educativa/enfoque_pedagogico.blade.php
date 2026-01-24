@@ -184,12 +184,9 @@
                             <img src="../images/libros.jpg" alt="Kit Escolar">
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
-        
-
     </main>
     @include('layouts.footer')
 </body>

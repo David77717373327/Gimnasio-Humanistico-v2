@@ -2047,6 +2047,11 @@ h6 {
     }
 }
 
+
+
+
+
+
 /* ============================================
    TABLETS PEQUEÑAS Y MÓVILES GRANDES (640px - 768px)
 ============================================ */
@@ -2326,6 +2331,8 @@ h6 {
         font-size: 0.93rem;
     }
 }
+
+
 
 /* ============================================
    MÓVILES (480px - 640px)
@@ -3023,5 +3030,209 @@ h6 {
     .academic-level-link {
         padding: 0.55rem 1rem;
         font-size: 0.7rem;
+    }
+}
+
+/* ============================================
+   PANTALLAS EXTREMADAMENTE PEQUEÑAS (< 280px)
+============================================ */
+@media (max-width: 280px) {
+    /* Hero Section */
+    .hero-title {
+        font-size: 0.95rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.65rem;
+    }
+
+    .btn-primary-modern,
+    .btn-secondary-modern {
+        padding: 0.6rem 0.9rem;
+        font-size: 0.65rem;
+        height: 36px;
+    }
+
+    /* Welcome Section */
+    .welcome-badge {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.6rem;
+    }
+
+    .welcome-main-title {
+        font-size: 1.3rem;
+    }
+
+    .welcome-main-subtitle {
+        font-size: 0.85rem;
+    }
+
+    .intro-subtitle {
+        font-size: 1.05rem;
+    }
+
+    .intro-description {
+        font-size: 0.8rem;
+    }
+
+    /* Stats Mini */
+    .stat-mini-item {
+        padding: 1rem 0.8rem;
+    }
+
+    .stat-mini-number {
+        font-size: 1.2rem;
+    }
+
+    .stat-mini-label {
+        font-size: 0.7rem;
+    }
+
+    /* Gallery */
+    .gallery-title {
+        font-size: 1.4rem;
+    }
+
+    .facility-title {
+        font-size: 0.95rem;
+    }
+
+    /* Modal - Controles más pequeños para pantallas extremadamente pequeñas */
+    .modal-nav {
+        width: 32px;
+        height: 32px;
+    }
+
+    .modal-nav i {
+        font-size: 0.85rem;
+    }
+
+    .modal-prev {
+        left: 0.5rem;
+    }
+
+    .modal-next {
+        right: 0.5rem;
+    }
+
+    .modal-close {
+        width: 30px;
+        height: 30px;
+    }
+
+    .modal-close i {
+        font-size: 0.95rem;
+    }
+
+    /* About Us */
+    .about-main-title {
+        font-size: 1.6rem;
+    }
+
+    .card-header h3 {
+        font-size: 1.1rem;
+    }
+
+    .card-description {
+        font-size: 0.8rem;
+    }
+
+    /* Academic Levels - Ajuste de imágenes del carrusel */
+    .academic-carousel-container {
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .academic-carousel-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .academic-levels-main-title {
+        font-size: 1.6rem;
+    }
+
+    .academic-level-title {
+        font-size: 1.1rem;
+    }
+
+    .academic-level-description {
+        font-size: 0.8rem;
+    }
+
+    .academic-level-link {
+        padding: 0.5rem 0.9rem;
+        font-size: 0.65rem;
+    }
+
+    .academic-carousel-nav {
+        width: 34px;
+        height: 34px;
+    }
+
+    .academic-carousel-nav i {
+        font-size: 1rem;
+    }
+
+    .academic-carousel-prev {
+        left: 10px;
+    }
+
+    .academic-carousel-next {
+        right: 10px;
+    }
+}
+
+/* ============================================
+   CORRECCIONES FINALES
+============================================ */
+
+/* Modal - Controles centrados en LA IMAGEN (todas las pantallas móviles) */
+@media (max-width: 768px) {
+    .modal-image-container {
+        position: relative;
+    }
+
+    .modal-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+    }
+
+    .modal-prev {
+        left: 0.8rem;
+    }
+
+    .modal-next {
+        right: 0.8rem;
+    }
+}
+
+/* Modal - Ajuste adicional para pantallas muy pequeñas */
+@media (max-width: 375px) {
+    .modal-prev {
+        left: 0.6rem;
+    }
+
+    .modal-next {
+        right: 0.6rem;
+    }
+}
+
+/* Academic Levels - Asegurar que las imágenes del carrusel se ajusten correctamente */
+@media (max-width: 640px) {
+    .academic-carousel-container {
+        overflow: hidden;
+        border-radius: inherit;
+    }
+
+    .academic-carousel-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
     }
 }

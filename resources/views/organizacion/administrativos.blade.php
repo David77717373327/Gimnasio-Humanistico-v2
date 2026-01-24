@@ -25,17 +25,8 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_CO">
 
-    <!-- 🔄 TWITTER CARDS -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Equipo Administrativo | Gimnasio Humanístico">
-    <meta name="twitter:description" content="Nuestro equipo administrativo garantiza la calidad en todos los procesos institucionales.">
-    <meta name="twitter:image" content="{{ asset('images/politica_de_calidad2.webp') }}">
+    
 
-    <!-- 📘 Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
 
     <!-- 🎨 Bootstrap y Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
@@ -293,7 +284,6 @@
                         </div>
                     </div>
                 </article>
-
             </div>
         </section>
 

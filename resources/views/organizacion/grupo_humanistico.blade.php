@@ -50,28 +50,6 @@
     <link href="{{ asset('css/hero.css') }}" rel="stylesheet">
     <link href="{{ asset('css/navegacion.css') }}" rel="stylesheet">
 
-    @verbatim
-    <!-- SCHEMA.ORG JSON-LD -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "EducationalOrganization",
-      "name": "Grupo Humanístico S.A.S",
-      "url": "https://tusitio.com/grupo-humanistico",
-      "logo": "https://tusitio.com/images/Logo.png",
-      "description": "Organización educativa en Colombia dedicada a la formación integral, la excelencia académica y los valores humanísticos.",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Calle 13 #4-53",
-        "addressLocality": "Neiva",
-        "addressRegion": "Huila",
-        "addressCountry": "CO"
-      },
-      "foundingDate": "1983-05-15",
-      "sameAs": []
-    }
-    </script>
-    @endverbatim
 
 </head>
 
