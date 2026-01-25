@@ -4,7 +4,7 @@
 
         <!-- Logo móvil -->
         <div class="logo-mobile">
-            <img src="{{ asset('images/Logo.png') }}" 
+            <img src="{{ asset('images/logo.png') }}" 
                  alt="Logo del Colegio Gimnasio Humanístico del Alto Magdalena" 
                  class="institutional-logo-mobile"
                  loading="lazy"
