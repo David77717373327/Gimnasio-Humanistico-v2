@@ -2,65 +2,100 @@
 <html lang="es-CO">
 
 <head>
-    <!-- Meta etiquetas esenciales -->
+    <!-- ===============================
+         META BÁSICOS
+    ================================ -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- SEO Meta Tags -->
-    <title>Inicio | Colegio Gimnasio Humanístico del Alto Magdalena - Neiva</title>
+    <!-- ===============================
+         SEO PRINCIPAL
+    ================================ -->
+    <title>Inicio | Colegio Gimnasio Humanístico del Alto Magdalena – Neiva</title>
+
     <meta name="description"
-        content="Colegio Gimnasio Humanístico del Alto Magdalena en Neiva. Más de 40 años de excelencia educativa con formación bilingüe, valores cristianos y metodología innovadora. Solicita admisión hoy.">
+        content="Colegio Gimnasio Humanístico del Alto Magdalena en Neiva. Más de 40 años de excelencia educativa, formación en valores, educación bilingüe y proyección integral. Solicita información hoy.">
+
     <meta name="keywords"
-        content="colegio Neiva, gimnasio humanístico, educación bilingüe Neiva, colegio privado Huila, educación cristiana, admisiones escolares Neiva, mejor colegio Neiva">
+        content="Colegio Neiva, Gimnasio Humanístico, colegio privado Neiva, educación bilingüe Neiva, colegio cristiano, admisiones escolares Huila">
+
     <meta name="author" content="Gimnasio Humanístico del Alto Magdalena">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
 
+    <!-- ===============================
+         CANONICAL (MUY IMPORTANTE)
+    ================================ -->
+    <link rel="canonical" href="https://www.gimnasiohumanisticoaltomagdalena.com/">
+
+    <!-- ===============================
+         OPEN GRAPH (Google / Facebook)
+    ================================ -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Colegio Gimnasio Humanístico del Alto Magdalena">
+    <meta property="og:description"
+        content="Educación integral con más de 40 años formando líderes en Neiva. Conoce nuestro modelo educativo.">
+    <meta property="og:url" content="https://www.gimnasiohumanisticoaltomagdalena.com/">
+    <meta property="og:image" content="{{ asset('images/logo.png') }}">
+    <meta property="og:locale" content="es_CO">
+
+    <!-- ===============================
+         PRELOAD / PRECONNECT
+    ================================ -->
     <link rel="preload" as="video" href="{{ asset('videos/hero-background4.mp4') }}">
 
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://www.gimnasiohumanistico.edu.co/">
-
-    <!-- Preconnect para optimización -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
-    <!-- Fonts - con display=swap para mejor rendimiento -->
+    <!-- ===============================
+         FUENTES
+    ================================ -->
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
-    <!-- CSS con preload crítico -->
+    <!-- ===============================
+         CSS EXTERNOS (OPTIMIZADOS)
+    ================================ -->
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
         as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
     </noscript>
 
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style"
         onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     </noscript>
 
-    <!-- CSS personalizado -->
-    <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/welcome.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/header.css') }}" rel="stylesheet">
+    <!-- ===============================
+         CSS PROPIO
+    ================================ -->
+    <link rel="stylesheet" href="{{ asset('css/header.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/welcome.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
 
-
-    <!--Scrip para esta vista -->
+    <!-- ===============================
+         JS
+    ================================ -->
     <script src="{{ asset('js/welcome.js') }}" defer></script>
 
-
-    <!-- Favicon optimizado -->
+    <!-- ===============================
+         FAVICON
+    ================================ -->
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/logo.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/logo.png') }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/logo.png') }}">
-    <link rel="manifest" href="#">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+
+
 </head>
+
 
 <body>
     <!-- Skip to main content para accesibilidad -->
@@ -88,9 +123,9 @@
                 <!-- Video de fondo -->
                 <video class="hero-bg-video" id="heroVideo" autoplay muted loop playsinline preload="auto"
                     poster="{{ asset('images/video-poster.jpg') }}" aria-label="Video de presentación del colegio">
-                    
-                    
-                    
+
+
+
                     <source src="{{ asset('videos/hero-background8.mp4') }}" type="video/mp4">
                     <source src="{{ asset('videos/hero-background.webm') }}" type="video/webm">
                 </video>
@@ -725,8 +760,7 @@
             </div>
         </section>
 
-
-        <script>
+         <script>
 
             /**
              * Carrusel para Sección de Oferta Académica
