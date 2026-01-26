@@ -1773,30 +1773,31 @@ h6 {
 
 
 
-
-
 /* ============================================
-   MEDIA QUERIES - RESPONSIVE DESIGN PROFESIONAL
+   MEDIA QUERIES - RESPONSIVE DESIGN MODULAR
    Gimnasio Humanístico 2024
+   Organizado por secciones para fácil mantenimiento
+   (Sin sección de Niveles Educativos)
 ============================================ */
 
 /* ============================================
    TABLETS GRANDES Y LAPTOPS PEQUEÑAS (1024px - 1200px)
 ============================================ */
 @media (max-width: 1200px) {
+    /* ========== VARIABLES GLOBALES ========== */
     :root {
         --section-padding: 5rem 0;
         --container-padding: 0 1.25rem;
     }
 
+    /* ========== CONTENEDORES GENERALES ========== */
     .container,
     .welcome-section .container,
-    .about-us-section .container,
-    .academic-container {
+    .about-us-section .container {
         padding: 0 1.5rem;
     }
 
-    /* Hero Section */
+    /* ========== HERO SECTION ========== */
     .hero-title {
         font-size: clamp(1.4rem, 2.8vw, 2rem);
     }
@@ -1805,7 +1806,7 @@ h6 {
         font-size: clamp(0.85rem, 1.4vw, 1rem);
     }
 
-    /* Welcome Section */
+    /* ========== SECCIÓN BIENVENIDA ========== */
     .welcome-main-title {
         font-size: clamp(1.8rem, 4.2vw, 3.5rem);
     }
@@ -1818,19 +1819,18 @@ h6 {
         font-size: 1.7rem;
     }
 
-    /* Stats Mini */
     .welcome-stats-mini {
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
         gap: 1.5rem;
     }
 
-    /* Gallery */
+    /* ========== GALERÍA DE INSTALACIONES ========== */
     .gallery-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
     }
 
-    /* About Us - Cards Grid */
+    /* ========== SECCIÓN QUIÉNES SOMOS ========== */
     .cards-grid {
         gap: 2rem;
     }
@@ -1839,26 +1839,18 @@ h6 {
         font-size: 1.7rem;
         margin-left: 1.5rem;
     }
-
-    /* Academic Levels */
-    .academic-levels-main-title {
-        font-size: clamp(2.5rem, 4.8vw, 3.8rem);
-    }
-
-    .academic-carousel-container {
-        height: 260px;
-    }
 }
 
 /* ============================================
    TABLETS (768px - 1024px)
 ============================================ */
 @media (max-width: 1024px) {
+    /* ========== VARIABLES GLOBALES ========== */
     :root {
         --section-padding: 4rem 0;
     }
 
-    /* Hero Section */
+    /* ========== HERO SECTION ========== */
     .hero-banner {
         min-height: 85vh;
     }
@@ -1893,7 +1885,7 @@ h6 {
         bottom: 30px;
     }
 
-    /* Welcome Section */
+    /* ========== SECCIÓN BIENVENIDA ========== */
     .welcome-section {
         padding: 4rem 0;
     }
@@ -1923,7 +1915,6 @@ h6 {
         font-size: 1.05rem;
     }
 
-    /* Stats Mini */
     .welcome-stats-mini {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
@@ -1948,7 +1939,18 @@ h6 {
         font-size: 0.85rem;
     }
 
-    /* Gallery */
+    .welcome-main-image {
+        height: 420px;
+    }
+
+    .overlay-badge {
+        padding: 1rem 1.5rem;
+        font-size: 0.85rem;
+        top: 1.5rem;
+        right: 1.5rem;
+    }
+
+    /* ========== GALERÍA DE INSTALACIONES ========== */
     .facilities-gallery {
         margin-top: 4rem;
     }
@@ -1975,7 +1977,7 @@ h6 {
         font-size: 1.1rem;
     }
 
-    /* Modal */
+    /* Modal de Galería */
     .modal-content {
         max-width: 750px;
     }
@@ -1984,7 +1986,7 @@ h6 {
         height: 280px;
     }
 
-    /* About Us */
+    /* ========== SECCIÓN QUIÉNES SOMOS ========== */
     .about-us-section {
         padding: 4rem 0;
     }
@@ -2019,57 +2021,18 @@ h6 {
         font-size: 0.95rem;
         line-height: 1.8;
     }
-
-    /* Academic Levels */
-    .academic-levels-section {
-        padding: 4rem 2rem;
-    }
-
-    .academic-levels-main-title {
-        font-size: clamp(2.2rem, 4.2vw, 3.5rem);
-        margin-bottom: 1.5rem;
-    }
-
-    .academic-levels-main-subtitle {
-        font-size: 1.1rem;
-    }
-
-    .academic-row {
-        gap: 2.5rem;
-    }
-
-    .academic-carousel-container {
-        height: 240px;
-    }
-
-    .academic-level-title {
-        font-size: 1.4rem;
-    }
-
-    .academic-level-description {
-        font-size: 0.9rem;
-    }
-
-    .academic-level-link {
-        font-size: 0.85rem;
-        padding: 0.7rem 1.4rem;
-    }
 }
-
-
-
-
-
 
 /* ============================================
    TABLETS PEQUEÑAS Y MÓVILES GRANDES (640px - 768px)
 ============================================ */
 @media (max-width: 768px) {
+    /* ========== VARIABLES GLOBALES ========== */
     :root {
         --section-padding: 3.5rem 0;
     }
 
-    /* Hero Section */
+    /* ========== HERO SECTION ========== */
     .hero-banner {
         min-height: 80vh;
     }
@@ -2117,7 +2080,7 @@ h6 {
         font-size: 0.75rem;
     }
 
-    /* Welcome Section */
+    /* ========== SECCIÓN BIENVENIDA ========== */
     .welcome-section {
         padding: 3.5rem 0;
     }
@@ -2157,7 +2120,6 @@ h6 {
         font-size: 1rem;
     }
 
-    /* Stats Mini - Columna simple */
     .welcome-stats-mini {
         grid-template-columns: 1fr;
         gap: 1.3rem;
@@ -2168,7 +2130,6 @@ h6 {
         padding: 1.6rem 1.3rem;
     }
 
-    /* Feature Points */
     .feature-point {
         padding: 1.3rem 1.5rem;
     }
@@ -2177,7 +2138,6 @@ h6 {
         font-size: 1rem;
     }
 
-    /* Imagen Principal */
     .welcome-main-image {
         height: 360px;
     }
@@ -2189,7 +2149,7 @@ h6 {
         right: 1.5rem;
     }
 
-    /* Gallery */
+    /* ========== GALERÍA DE INSTALACIONES ========== */
     .facilities-gallery {
         margin-top: 3rem;
     }
@@ -2221,7 +2181,7 @@ h6 {
         font-size: 1rem;
     }
 
-    /* Modal */
+    /* Modal de Galería */
     .modal-content {
         max-width: 90vw;
         width: 90vw;
@@ -2263,7 +2223,7 @@ h6 {
         right: 1rem;
     }
 
-    /* About Us */
+    /* ========== SECCIÓN QUIÉNES SOMOS ========== */
     .about-us-section {
         padding: 3.5rem 0;
     }
@@ -2304,65 +2264,18 @@ h6 {
         font-size: 0.93rem;
         line-height: 1.75;
     }
-
-    /* Academic Levels */
-    .academic-levels-section {
-        padding: 3.5rem 1.5rem;
-    }
-
-    .academic-levels-header {
-        margin-bottom: 3.5rem;
-    }
-
-    .academic-levels-main-title {
-        font-size: clamp(2rem, 3.8vw, 3rem);
-        margin-bottom: 1.3rem;
-    }
-
-    .academic-levels-main-subtitle {
-        font-size: 1.05rem;
-    }
-
-    .academic-row {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-    }
-
-    .academic-carousel-container {
-        height: 260px;
-    }
-
-    .academic-level-title {
-        font-size: 1.35rem;
-    }
-
-    .academic-level-description {
-        font-size: 0.93rem;
-    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ============================================
    MÓVILES (480px - 640px)
 ============================================ */
 @media (max-width: 640px) {
+    /* ========== VARIABLES GLOBALES ========== */
     :root {
         --section-padding: 3rem 0;
     }
 
-    /* Hero Section */
+    /* ========== HERO SECTION ========== */
     .hero-banner {
         min-height: 75vh;
     }
@@ -2406,7 +2319,7 @@ h6 {
         display: none;
     }
 
-    /* Welcome Section */
+    /* ========== SECCIÓN BIENVENIDA ========== */
     .welcome-section {
         padding: 3rem 0;
     }
@@ -2449,7 +2362,6 @@ h6 {
         font-size: 0.95rem;
     }
 
-    /* Stats Mini */
     .welcome-stats-mini {
         gap: 1.2rem;
         margin-bottom: 2.5rem;
@@ -2474,7 +2386,6 @@ h6 {
         font-size: 0.8rem;
     }
 
-    /* Feature Points */
     .feature-point {
         padding: 1.2rem 1.3rem;
         gap: 1.2rem;
@@ -2490,7 +2401,6 @@ h6 {
         font-size: 0.95rem;
     }
 
-    /* Imagen Principal */
     .welcome-main-image {
         height: 320px;
     }
@@ -2507,7 +2417,7 @@ h6 {
         font-size: 1rem;
     }
 
-    /* Gallery */
+    /* ========== GALERÍA DE INSTALACIONES ========== */
     .gallery-header {
         margin-bottom: 2.5rem;
     }
@@ -2536,7 +2446,7 @@ h6 {
         font-size: 0.95rem;
     }
 
-    /* Modal */
+    /* Modal de Galería */
     .modal-image-container {
         height: 220px;
     }
@@ -2579,7 +2489,7 @@ h6 {
         right: 0.8rem;
     }
 
-    /* About Us */
+    /* ========== SECCIÓN QUIÉNES SOMOS ========== */
     .about-us-section {
         padding: 3rem 0;
     }
@@ -2613,96 +2523,11 @@ h6 {
     }
 
     .card-body {
-        padding: 1.5rem 0;
+        padding: 1rem 0;
     }
 
     .card-description {
         font-size: 0.9rem;
-    }
-
-    /* Academic Levels */
-    .academic-levels-section {
-        padding: 3rem 1.2rem;
-    }
-
-    .academic-levels-header {
-        margin-bottom: 3rem;
-    }
-
-    .academic-levels-main-title {
-        font-size: clamp(1.8rem, 3.5vw, 2.6rem);
-        margin-bottom: 1.2rem;
-    }
-
-    .academic-levels-main-subtitle {
-        font-size: 1rem;
-    }
-
-    .academic-row {
-        gap: 2.5rem;
-    }
-
-    .academic-carousel-container {
-        height: 240px;
-    }
-
-    .academic-carousel-counter {
-        top: 12px;
-        right: 12px;
-        padding: 5px 12px;
-        font-size: 0.8rem;
-    }
-
-    .academic-carousel-nav {
-        width: 38px;
-        height: 38px;
-    }
-
-    .academic-carousel-nav i {
-        font-size: 1.1rem;
-    }
-
-    .academic-carousel-prev {
-        left: 12px;
-    }
-
-    .academic-carousel-next {
-        right: 12px;
-    }
-
-    .academic-carousel-controls {
-        bottom: 15px;
-        gap: 8px;
-    }
-
-    .academic-carousel-dot {
-        width: 9px;
-        height: 9px;
-    }
-
-    .academic-card-content {
-        padding: 1.3rem 0 0;
-    }
-
-    .academic-level-title {
-        font-size: 1.25rem;
-        margin-bottom: 0.7rem;
-    }
-
-    .academic-level-title::after {
-        width: 50px;
-        height: 2.5px;
-    }
-
-    .academic-level-description {
-        font-size: 0.9rem;
-        margin-bottom: 0.9rem;
-    }
-
-    .academic-level-link {
-        padding: 0.65rem 1.3rem;
-        font-size: 0.8rem;
-        gap: 0.8rem;
     }
 }
 
@@ -2710,11 +2535,12 @@ h6 {
    MÓVILES PEQUEÑOS (< 480px)
 ============================================ */
 @media (max-width: 480px) {
+    /* ========== VARIABLES GLOBALES ========== */
     :root {
         --section-padding: 2.5rem 0;
     }
 
-    /* Hero Section */
+    /* ========== HERO SECTION ========== */
     .hero-banner {
         min-height: 70vh;
     }
@@ -2747,7 +2573,7 @@ h6 {
         font-size: 0.85rem;
     }
 
-    /* Welcome Section */
+    /* ========== SECCIÓN BIENVENIDA ========== */
     .welcome-section {
         padding: 2.5rem 0;
     }
@@ -2786,7 +2612,6 @@ h6 {
         font-size: 0.9rem;
     }
 
-    /* Stats Mini */
     .welcome-stats-mini {
         gap: 1rem;
         margin-bottom: 2rem;
@@ -2810,7 +2635,6 @@ h6 {
         font-size: 0.75rem;
     }
 
-    /* Feature Points */
     .feature-point {
         padding: 1rem 1.1rem;
     }
@@ -2819,7 +2643,6 @@ h6 {
         font-size: 0.9rem;
     }
 
-    /* Imagen Principal */
     .welcome-main-image {
         height: 280px;
     }
@@ -2831,7 +2654,7 @@ h6 {
         right: 1rem;
     }
 
-    /* Gallery */
+    /* ========== GALERÍA DE INSTALACIONES ========== */
     .gallery-title {
         font-size: 1.7rem;
     }
@@ -2849,7 +2672,7 @@ h6 {
         font-size: 1.05rem;
     }
 
-    /* Modal */
+    /* Modal de Galería */
     .modal-content {
         margin-top: 3rem;
     }
@@ -2888,7 +2711,7 @@ h6 {
         font-size: 0.95rem;
     }
 
-    /* About Us */
+    /* ========== SECCIÓN QUIÉNES SOMOS ========== */
     .about-us-section {
         padding: 2.5rem 0;
     }
@@ -2916,50 +2739,11 @@ h6 {
     }
 
     .card-body {
-        padding: 1.3rem 0;
+        padding: 1rem 0;
     }
 
     .card-description {
         font-size: 0.88rem;
-    }
-
-    /* Academic Levels */
-    .academic-levels-section {
-        padding: 2.5rem 1rem;
-    }
-
-    .academic-levels-header {
-        margin-bottom: 2.5rem;
-    }
-
-    .academic-levels-main-title {
-        font-size: clamp(1.6rem, 3.2vw, 2.3rem);
-        margin-bottom: 1rem;
-    }
-
-    .academic-levels-main-subtitle {
-        font-size: 0.95rem;
-    }
-
-    .academic-row {
-        gap: 2rem;
-    }
-
-    .academic-carousel-container {
-        height: 220px;
-    }
-
-    .academic-level-title {
-        font-size: 1.2rem;
-    }
-
-    .academic-level-description {
-        font-size: 0.88rem;
-    }
-
-    .academic-level-link {
-        padding: 0.6rem 1.2rem;
-        font-size: 0.75rem;
     }
 }
 
@@ -2967,7 +2751,7 @@ h6 {
    MÓVILES MUY PEQUEÑOS (< 375px)
 ============================================ */
 @media (max-width: 375px) {
-    /* Hero Section */
+    /* ========== HERO SECTION ========== */
     .hero-title {
         font-size: 1.1rem;
     }
@@ -2983,7 +2767,7 @@ h6 {
         height: 38px;
     }
 
-    /* Welcome Section */
+    /* ========== SECCIÓN BIENVENIDA ========== */
     .welcome-badge {
         padding: 0.75rem 1.3rem;
         font-size: 0.65rem;
@@ -3005,7 +2789,6 @@ h6 {
         font-size: 0.85rem;
     }
 
-    /* Stats Mini */
     .stat-mini-item {
         padding: 1.2rem 0.9rem;
     }
@@ -3014,7 +2797,7 @@ h6 {
         font-size: 1.3rem;
     }
 
-    /* Gallery */
+    /* ========== GALERÍA DE INSTALACIONES ========== */
     .gallery-title {
         font-size: 1.5rem;
     }
@@ -3023,7 +2806,7 @@ h6 {
         font-size: 1rem;
     }
 
-    /* About Us */
+    /* ========== SECCIÓN QUIÉNES SOMOS ========== */
     .about-main-title {
         font-size: 1.7rem;
     }
@@ -3035,29 +2818,13 @@ h6 {
     .card-description {
         font-size: 0.85rem;
     }
-
-    /* Academic Levels */
-    .academic-levels-main-title {
-        font-size: 1.7rem;
-    }
-
-    .academic-level-title {
-        font-size: 1.15rem;
-    }   
-    .academic-level-description {
-        font-size: 0.85rem;
-    }
-    .academic-level-link {
-        padding: 0.55rem 1rem;
-        font-size: 0.7rem;
-    }
 }
 
 /* ============================================
    PANTALLAS EXTREMADAMENTE PEQUEÑAS (< 280px)
 ============================================ */
 @media (max-width: 280px) {
-    /* Hero Section */
+    /* ========== HERO SECTION ========== */
     .hero-title {
         font-size: 0.95rem;
     }
@@ -3073,7 +2840,7 @@ h6 {
         height: 36px;
     }
 
-    /* Welcome Section */
+    /* ========== SECCIÓN BIENVENIDA ========== */
     .welcome-badge {
         padding: 0.7rem 1.2rem;
         font-size: 0.6rem;
@@ -3095,7 +2862,6 @@ h6 {
         font-size: 0.8rem;
     }
 
-    /* Stats Mini */
     .stat-mini-item {
         padding: 1rem 0.8rem;
     }
@@ -3108,7 +2874,7 @@ h6 {
         font-size: 0.7rem;
     }
 
-    /* Gallery */
+    /* ========== GALERÍA DE INSTALACIONES ========== */
     .gallery-title {
         font-size: 1.4rem;
     }
@@ -3117,7 +2883,6 @@ h6 {
         font-size: 0.95rem;
     }
 
-    /* Modal - Controles más pequeños para pantallas extremadamente pequeñas */
     .modal-nav {
         width: 32px;
         height: 32px;
@@ -3144,7 +2909,7 @@ h6 {
         font-size: 0.95rem;
     }
 
-    /* About Us */
+    /* ========== SECCIÓN QUIÉNES SOMOS ========== */
     .about-main-title {
         font-size: 1.6rem;
     }
@@ -3156,57 +2921,10 @@ h6 {
     .card-description {
         font-size: 0.8rem;
     }
-
-    /* Academic Levels - Ajuste de imágenes del carrusel */
-    .academic-carousel-container {
-        height: 200px;
-        overflow: hidden;
-    }
-
-    .academic-carousel-container img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
-
-    .academic-levels-main-title {
-        font-size: 1.6rem;
-    }
-
-    .academic-level-title {
-        font-size: 1.1rem;
-    }
-
-    .academic-level-description {
-        font-size: 0.8rem;
-    }
-
-    .academic-level-link {
-        padding: 0.5rem 0.9rem;
-        font-size: 0.65rem;
-    }
-
-    .academic-carousel-nav {
-        width: 34px;
-        height: 34px;
-    }
-
-    .academic-carousel-nav i {
-        font-size: 1rem;
-    }
-
-    .academic-carousel-prev {
-        left: 10px;
-    }
-
-    .academic-carousel-next {
-        right: 10px;
-    }
 }
 
 /* ============================================
-   CORRECCIONES FINALES
+   CORRECCIONES FINALES Y AJUSTES ESPECÍFICOS
 ============================================ */
 
 /* Modal - Controles centrados en LA IMAGEN (todas las pantallas móviles) */
@@ -3242,17 +2960,532 @@ h6 {
     }
 }
 
-/* Academic Levels - Asegurar que las imágenes del carrusel se ajusten correctamente */
-@media (max-width: 640px) {
-    .academic-carousel-container {
-        overflow: hidden;
-        border-radius: inherit;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Tablets Grandes y Laptops pequeños (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .academic-container {
+        padding: 0 1.5rem;
     }
 
-    .academic-carousel-container img {
+    .academic-row {
+        gap: 2.5rem;
+    }
+
+    .academic-carousel-container {
+        height: 260px;
+    }
+
+    .academic-level-title {
+        font-size: 1.4rem;
+    }
+
+    .academic-level-description {
+        font-size: 0.92rem;
+    }
+}
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .academic-levels-section {
+        padding: 3rem 1rem;
+        margin-bottom: 40px;
+    }
+
+    .academic-container {
+        padding: 0 1rem;
+    }
+
+    .academic-levels-header {
+        margin-bottom: 3rem;
+    }
+
+    .academic-levels-main-title {
+        font-size: clamp(2rem, 6vw, 3rem);
+        margin-bottom: 1.5rem;
+    }
+
+    .academic-levels-main-subtitle {
+        font-size: 1.05rem;
+        padding: 0 1rem;
+    }
+
+    /* Grid cambia a 1 columna */
+    .academic-row {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .academic-carousel-container {
+        height: 240px;
+    }
+
+    .academic-level-title {
+        font-size: 1.35rem;
+    }
+
+    .academic-level-description {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    .academic-level-link {
+        font-size: 0.85rem;
+        padding: 0.7rem 1.3rem;
+    }
+
+    /* Botones de navegación más pequeños */
+    .academic-carousel-nav {
+        width: 36px;
+        height: 36px;
+    }
+
+    .academic-carousel-nav i {
+        font-size: 1.1rem;
+    }
+
+    .academic-carousel-prev {
+        left: 12px;
+    }
+
+    .academic-carousel-next {
+        right: 12px;
+    }
+
+    .academic-carousel-counter {
+        font-size: 0.8rem;
+        padding: 5px 12px;
+    }
+
+    .academic-carousel-controls {
+        bottom: 15px;
+        gap: 8px;
+    }
+
+    .academic-carousel-dot {
+        width: 9px;
+        height: 9px;
+    }
+}
+
+/* Móviles grandes (max-width: 576px) */
+@media (max-width: 576px) {
+    .academic-levels-section {
+        padding: 2.5rem 0.75rem;
+        margin-bottom: 30px;
+    }
+
+    .academic-container {
+        padding: 0 0.75rem;
+    }
+
+    .academic-levels-header {
+        margin-bottom: 2.5rem;
+    }
+
+    .academic-levels-main-title {
+        font-size: clamp(1.8rem, 7vw, 2.5rem);
+        margin-bottom: 1.2rem;
+        letter-spacing: -0.02em;
+    }
+
+    .academic-levels-main-subtitle {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        padding: 0 0.5rem;
+    }
+
+    .academic-row {
+        gap: 2.5rem;
+    }
+
+    .academic-carousel-container {
+        height: 200px;
+    }
+
+    .academic-card-content {
+        padding: 1.2rem 0 0;
+    }
+
+    .academic-level-title {
+        font-size: 1.25rem;
+        margin-bottom: 0.7rem;
+    }
+
+    .academic-level-title::after {
+        width: 50px;
+        height: 2.5px;
+        margin-top: 0.4rem;
+    }
+
+    .academic-level-description {
+        font-size: 0.88rem;
+        line-height: 1.6;
+        margin-bottom: 0.9rem;
+    }
+
+    .academic-level-link {
+        font-size: 0.8rem;
+        padding: 0.65rem 1.2rem;
+        gap: 0.8rem;
+    }
+
+    /* Botones de navegación aún más pequeños */
+    .academic-carousel-nav {
+        width: 32px;
+        height: 32px;
+    }
+
+    .academic-carousel-nav i {
+        font-size: 1rem;
+    }
+
+    .academic-carousel-prev {
+        left: 10px;
+    }
+
+    .academic-carousel-next {
+        right: 10px;
+    }
+
+    .academic-carousel-counter {
+        font-size: 0.75rem;
+        padding: 4px 10px;
+        top: 12px;
+        right: 12px;
+    }
+
+    .academic-carousel-controls {
+        bottom: 12px;
+        gap: 7px;
+    }
+
+    .academic-carousel-dot {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+/* Móviles medianos (max-width: 425px) */
+@media (max-width: 425px) {
+    .academic-levels-section {
+        padding: 2rem 0.5rem;
+    }
+
+    .academic-container {
+        padding: 0 0.5rem;
+    }
+
+    .academic-levels-main-title {
+        font-size: clamp(1.6rem, 8vw, 2.2rem);
+    }
+
+    .academic-levels-main-subtitle {
+        font-size: 0.9rem;
+        padding: 0;
+    }
+
+    .academic-row {
+        gap: 2rem;
+    }
+
+    .academic-carousel-container {
+        height: 180px;
+    }
+
+    .academic-card-content {
+        padding: 1rem 0 0;
+    }
+
+    .academic-level-title {
+        font-size: 1.15rem;
+    }
+
+    .academic-level-description {
+        font-size: 0.85rem;
+        line-height: 1.55;
+    }
+
+    .academic-level-link {
+        font-size: 0.75rem;
+        padding: 0.6rem 1rem;
         width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
+        justify-content: center;
+    }
+
+    .academic-carousel-nav {
+        width: 30px;
+        height: 30px;
+    }
+
+    .academic-carousel-nav i {
+        font-size: 0.95rem;
+    }
+
+    .academic-carousel-prev {
+        left: 8px;
+    }
+
+    .academic-carousel-next {
+        right: 8px;
+    }
+}
+
+/* Móviles pequeños (max-width: 375px) */
+@media (max-width: 375px) {
+    .academic-levels-section {
+        padding: 1.5rem 0.4rem;
+    }
+
+    .academic-levels-header {
+        margin-bottom: 2rem;
+    }
+
+    .academic-levels-main-title {
+        font-size: clamp(1.5rem, 9vw, 2rem);
+        margin-bottom: 1rem;
+    }
+
+    .academic-levels-main-subtitle {
+        font-size: 0.85rem;
+        line-height: 1.6;
+    }
+
+    .academic-row {
+        gap: 1.8rem;
+    }
+
+    .academic-carousel-container {
+        height: 160px;
+    }
+
+    .academic-card-content {
+        padding: 0.9rem 0 0;
+    }
+
+    .academic-level-title {
+        font-size: 1.1rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .academic-level-title::after {
+        width: 45px;
+        height: 2px;
+    }
+
+    .academic-level-description {
+        font-size: 0.82rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .academic-level-link {
+        font-size: 0.72rem;
+        padding: 0.55rem 0.9rem;
+    }
+
+    .academic-carousel-counter {
+        font-size: 0.7rem;
+        padding: 3px 8px;
+        top: 10px;
+        right: 10px;
+    }
+
+    .academic-carousel-controls {
+        bottom: 10px;
+        gap: 6px;
+    }
+
+    .academic-carousel-dot {
+        width: 7px;
+        height: 7px;
+    }
+}
+
+/* Móviles muy pequeños (max-width: 320px) */
+@media (max-width: 320px) {
+    .academic-levels-section {
+        padding: 1.5rem 0.3rem;
+    }
+
+    .academic-container {
+        padding: 0 0.3rem;
+    }
+
+    .academic-levels-main-title {
+        font-size: clamp(1.4rem, 10vw, 1.8rem);
+    }
+
+    .academic-levels-main-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .academic-row {
+        gap: 1.5rem;
+    }
+
+    .academic-carousel-container {
+        height: 150px;
+    }
+
+    .academic-card-content {
+        padding: 0.8rem 0 0;
+    }
+
+    .academic-level-title {
+        font-size: 1.05rem;
+    }
+
+    .academic-level-description {
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
+
+    .academic-level-link {
+        font-size: 0.7rem;
+        padding: 0.5rem 0.8rem;
+    }
+
+    .academic-carousel-nav {
+        width: 28px;
+        height: 28px;
+    }
+
+    .academic-carousel-nav i {
+        font-size: 0.9rem;
+    }
+
+    .academic-carousel-prev {
+        left: 6px;
+    }
+
+    .academic-carousel-next {
+        right: 6px;
+    }
+}
+
+/* Pantallas extremadamente pequeñas (max-width: 250px) */
+@media (max-width: 250px) {
+    .academic-levels-section {
+        padding: 1rem 0.2rem;
+    }
+
+    .academic-container {
+        padding: 0 0.2rem;
+    }
+
+    .academic-levels-header {
+        margin-bottom: 1.5rem;
+    }
+
+    .academic-levels-main-title {
+        font-size: 1.3rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .academic-levels-main-subtitle {
+        font-size: 0.75rem;
+        line-height: 1.5;
+    }
+
+    .academic-row {
+        gap: 1.2rem;
+    }
+
+    .academic-carousel-container {
+        height: 130px;
+    }
+
+    .academic-card-content {
+        padding: 0.7rem 0 0;
+    }
+
+    .academic-level-title {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .academic-level-title::after {
+        width: 40px;
+        height: 2px;
+    }
+
+    .academic-level-description {
+        font-size: 0.75rem;
+        line-height: 1.45;
+        margin-bottom: 0.7rem;
+    }
+
+    .academic-level-link {
+        font-size: 0.65rem;
+        padding: 0.45rem 0.7rem;
+        letter-spacing: 0.05em;
+    }
+
+    .academic-carousel-nav {
+        width: 26px;
+        height: 26px;
+    }
+
+    .academic-carousel-nav i {
+        font-size: 0.85rem;
+    }
+
+    .academic-carousel-prev {
+        left: 5px;
+    }
+
+    .academic-carousel-next {
+        right: 5px;
+    }
+
+    .academic-carousel-counter {
+        font-size: 0.65rem;
+        padding: 2px 6px;
+        top: 8px;
+        right: 8px;
+    }
+
+    .academic-carousel-controls {
+        bottom: 8px;
+        gap: 5px;
+    }
+
+    .academic-carousel-dot {
+        width: 6px;
+        height: 6px;
+    }
+}
+
+/* Ajustes para pantallas táctiles */
+@media (hover: none) and (pointer: coarse) {
+    .academic-carousel-nav {
+        opacity: 1;
+    }
+    
+    .academic-level-link:active {
+        transform: scale(0.98);
     }
 }
