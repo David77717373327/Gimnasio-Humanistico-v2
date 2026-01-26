@@ -54,6 +54,9 @@
                 </div>
             </a>
 
+
+
+            <!-- Cambiar ícono  a un libro abierto -->
             <!-- Símbolos institucionales -->
             <a href="{{ route('simbolos.institucionales') }}"
                class="nav-card-inst simbolos"
@@ -61,7 +64,7 @@
                 <div class="nav-card-overlay-inst"></div>
                 <div class="nav-card-content-inst">
                     <div class="nav-icon-inst">
-                        <i class="fas fa-trophy" aria-hidden="true"></i>
+                        <i class="fas fa-book-open" aria-hidden="true"></i>
                     </div>
                     <h3 class="nav-title-inst">Símbolos</h3>
                 </div>
