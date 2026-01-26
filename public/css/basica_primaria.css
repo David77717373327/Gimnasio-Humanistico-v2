@@ -20,7 +20,7 @@
     --text-dark: #1F2937;
     --text-darkk: #333333;
     --text-light: #6B7280;
-    --text-muted: #9CA3AF;
+    --text-muted: hsl(218, 11%, 65%);
 
     /* Azul principal - confianza */
     --primary-blue: #1E3A5F;
@@ -294,37 +294,37 @@ body {
 
 /* Estilos específicos para cada categoría */
 .objetivos-content-item[data-category="valores"] .objetivos-content-header {
-    background-image: url('../images/dansas.jpg');
+    background-image: url('/images/dansas.jpg');
 }
 
 .objetivos-content-item[data-category="academico"] .objetivos-content-header {
-    background-image: url('../images/educacion_primaria/imagen3.jpg');
+    background-image: url('/images/educacion_primaria/imagen3.jpg');
 }
 
 .objetivos-content-item[data-category="fisico"] .objetivos-content-header {
-    background-image: url('../images/educacion_primaria/imagen7.jpg');
+    background-image: url('/images/educacion_primaria/imagen7.jpg');
 }
 
 .objetivos-content-item[data-category="sociales"] .objetivos-content-header {
-    background-image: url('../images/educacion_primaria/imagen2.jpg');
+    background-image: url('/images/educacion_primaria/imagen2.jpg');
 }
 
 
 /* Estilos específicos para Básica Secundaria */
 .objetivos-content-item[data-category="comunicacion"] .objetivos-content-header {
-    background-image: url('../images/dansas.jpg');
+    background-image: url('/images/dansas.jpg');
 }
 
 .objetivos-content-item[data-category="cientifico"] .objetivos-content-header {
-    background-image: url('../images/educacion_primaria/imagen3.jpg');
+    background-image: url('/images/educacion_primaria/imagen3.jpg');
 }
 
 .objetivos-content-item[data-category="social"] .objetivos-content-header {
-    background-image: url('../images/educacion_primaria/imagen6.jpg');
+    background-image: url('/images/educacion_primaria/imagen6.jpg');
 }
 
 .objetivos-content-item[data-category="integral"] .objetivos-content-header {
-    background-image: url('../images/educacion_primaria/imagen2.jpg');
+    background-image: url('/images/educacion_primaria/imagen2.jpg');
 }
 
 
@@ -335,19 +335,19 @@ body {
 ============================================ */
 
 .objetivos-content-item[data-category="profundizacion"] .objetivos-content-header {
-    background-image: url('../images/dansas.jpg');
+    background-image: url('/images/dansas.jpg');
 }
 
 .objetivos-content-item[data-category="superior"] .objetivos-content-header {
-    background-image: url('../images/educacion_primaria/imagen3.jpg');
+    background-image: url('/images/educacion_primaria/imagen3.jpg');
 }
 
 .objetivos-content-item[data-category="trabajo"] .objetivos-content-header {
-    background-image: url('../images/educacion_primaria/imagen6.jpg');
+    background-image: url('/images/educacion_primaria/imagen6.jpg');
 }
 
 .objetivos-content-item[data-category="formacion"] .objetivos-content-header {
-    background-image: url('../images/educacion_primaria/imagen2.jpg');
+    background-image: url('/images/educacion_primaria/imagen2.jpg');
 }
 
 
