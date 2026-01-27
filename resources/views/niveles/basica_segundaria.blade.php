@@ -531,6 +531,117 @@
 
 
         <script>
+            // ============================================
+            // NAVEGACIÓN CON CONTROLES Y FLECHAS
+            // ============================================
+
+            document.addEventListener('DOMContentLoaded', function() {
+                // Solo ejecutar en móviles y tablets
+                if (window.innerWidth <= 1023) {
+                    initializeNavControls();
+                }
+
+                // Re-inicializar en resize
+                window.addEventListener('resize', function() {
+                    if (window.innerWidth <= 1023) {
+                        initializeNavControls();
+                    } else {
+                        removeNavControls();
+                    }
+                });
+            });
+
+            function initializeNavControls() {
+                const navPanel = document.querySelector('.objetivos-nav-panel');
+
+                if (!navPanel) return;
+
+                // Verificar si ya existen los controles
+                if (document.querySelector('.objetivos-nav-arrow-left')) return;
+
+                // Crear wrapper si no existe
+                let wrapper = navPanel.parentElement;
+                if (!wrapper.classList.contains('objetivos-nav-wrapper')) {
+                    wrapper = document.createElement('div');
+                    wrapper.className = 'objetivos-nav-wrapper';
+                    navPanel.parentNode.insertBefore(wrapper, navPanel);
+                    wrapper.appendChild(navPanel);
+                }
+
+                // Crear flecha izquierda
+                const arrowLeft = document.createElement('div');
+                arrowLeft.className = 'objetivos-nav-arrow-left';
+                arrowLeft.innerHTML = `
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7" />
+        </svg>
+    `;
+
+                // Crear flecha derecha
+                const arrowRight = document.createElement('div');
+                arrowRight.className = 'objetivos-nav-arrow-right';
+                arrowRight.innerHTML = `
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
+        </svg>
+    `;
+
+                // Insertar flechas
+                wrapper.appendChild(arrowLeft);
+                wrapper.appendChild(arrowRight);
+
+                // Funcionalidad de scroll
+                arrowLeft.addEventListener('click', function() {
+                    navPanel.scrollBy({
+                        left: -280,
+                        behavior: 'smooth'
+                    });
+                });
+
+                arrowRight.addEventListener('click', function() {
+                    navPanel.scrollBy({
+                        left: 280,
+                        behavior: 'smooth'
+                    });
+                });
+
+                // Actualizar visibilidad de flechas
+                function updateArrows() {
+                    const scrollLeft = navPanel.scrollLeft;
+                    const maxScroll = navPanel.scrollWidth - navPanel.clientWidth;
+
+                    // Flecha izquierda
+                    if (scrollLeft <= 10) {
+                        arrowLeft.classList.remove('visible');
+                    } else {
+                        arrowLeft.classList.add('visible');
+                    }
+
+                    // Flecha derecha
+                    if (scrollLeft >= maxScroll - 10) {
+                        arrowRight.classList.add('hidden');
+                    } else {
+                        arrowRight.classList.remove('hidden');
+                    }
+                }
+
+                // Escuchar scroll
+                navPanel.addEventListener('scroll', updateArrows);
+
+                // Actualizar al inicio
+                updateArrows();
+
+                // Actualizar después de un momento (por si hay animaciones)
+                setTimeout(updateArrows, 100);
+            }
+
+            function removeNavControls() {
+                const arrows = document.querySelectorAll('.objetivos-nav-arrow-left, .objetivos-nav-arrow-right');
+                arrows.forEach(arrow => arrow.remove());
+            }
+
+
+
             // Array con todas las imágenes de la galería (7 imágenes)
             const galleryImages = [{
                     src: 'images/educacion_secundaria/imagen5.jpg',

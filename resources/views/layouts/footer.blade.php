@@ -19,7 +19,7 @@
                             <div class="footer-logo-icon">
                                 <i class="fas fa-graduation-cap" aria-hidden="true"></i>
                             </div>
-                            <span class="titulo-footer-colegio">Gimnasio Humanístico</span>
+                            <span class="titulo-footer-colegio">Colegio Humanístico</span>
                         </a>
 
                         <p class="footer-description">

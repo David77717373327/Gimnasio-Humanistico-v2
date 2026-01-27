@@ -121,7 +121,7 @@
     font-weight: 700;
     font-size: 1rem;
     /* Reducido de 1.2rem */
-    margin-bottom: 1.2rem;
+    margin-bottom: 2.2rem;
     position: relative;
     padding-bottom: 0.6rem;
     text-transform: uppercase;
@@ -130,7 +130,10 @@
 }
 
 .titulo-footer-colegio{
-    font-family: "Lucida Calligraphy", "Lucida Handwriting", cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: var(--accent-gold);
+    font-size: 1.3rem;
 }
 
 .footer-title::after {
@@ -142,8 +145,6 @@
     height: 2px;
     background: linear-gradient(90deg, var(--accent-gold), var(--secondary-green));
 }
-
-
 
 
 
@@ -192,8 +193,6 @@
     color: var(--primary-green);
     box-shadow: 0 2px 8px rgba(244, 185, 66, 0.4);
 }
-
-
 
 
 

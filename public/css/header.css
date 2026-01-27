@@ -345,6 +345,17 @@
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
 /* ============================================
    BOTÓN HAMBURGUESA
 ============================================ */
@@ -436,12 +447,31 @@
         padding: 1rem 1.5rem;
         position: relative;
     }
+    
+    /* AUMENTAR ALTURA DE LA BARRA VERDE */
+    .main-navigation {
+        min-height: 80px;
+    }
 
-    /* Mostrar botón hamburguesa */
+    /* ============================================
+       BOTÓN HAMBURGUESA CON ANIMACIÓN MEJORADA
+    ============================================ */
     .navbar-toggler {
         display: block;
         margin-left: auto;
-        transition: none;
+        transition: transform 0.3s ease;
+        position: relative;
+    }
+
+    /* Animación al hacer clic - Efecto de feedback visual */
+    .navbar-toggler:active {
+        transform: scale(0.9);
+    }
+
+    /* Efecto de rebote al hacer clic */
+    .navbar-toggler:focus {
+        transform: scale(1.05);
+        transition: transform 0.2s ease;
     }
 
     /* Ocultar indicador */
@@ -449,7 +479,9 @@
         display: none !important;
     }
 
-    /* Menú colapsable - DISEÑO ELEGANTE Y COMPACTO */
+    /* ============================================
+       MENÚ COLAPSABLE - VELOCIDAD OPTIMIZADA
+    ============================================ */
     .navbar-collapse {
         position: absolute;
         top: 100%;
@@ -463,6 +495,8 @@
         max-height: calc(100vh - 80px);
         overflow-y: auto;
         overflow-x: hidden;
+        /* MEJORA DE VELOCIDAD - Transición más rápida */
+        transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .navbar-collapse:not(.show) {
@@ -471,6 +505,11 @@
 
     .navbar-collapse.show {
         display: block;
+    }
+
+    /* Animación de entrada más rápida */
+    .navbar-collapse.collapsing {
+        transition: height 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     /* Lista de navegación - CENTRADA Y COMPACTA */
@@ -533,7 +572,7 @@
 
 
 
-    /* ============================================
+/* ============================================
    DROPDOWNS MÓVILES - SOLO CLIC (CORREGIDO)
 ============================================ */
 
@@ -740,6 +779,11 @@
     .main-navigation .container-fluid {
         padding: 0.75rem 1rem;
     }
+    
+    /* AUMENTAR ALTURA DE LA BARRA VERDE EN MÓVIL */
+    .main-navigation {
+        min-height: 80px;
+    }
 
     .navbar-toggler {
         padding: 0.5rem;
@@ -800,6 +844,11 @@
 
     .main-navigation .container-fluid {
         padding: 0.65rem 0.875rem;
+    }
+    
+    /* AUMENTAR ALTURA DE LA BARRA VERDE EN MÓVIL PEQUEÑO */
+    .main-navigation {
+        min-height: 78px;
     }
 
     .navbar-toggler {
@@ -908,6 +957,7 @@ body.navbar-open {
 
 /* ============================================
    RESPONSIVE - MODIFICACIONES ESPECÍFICAS
+   TAMAÑO DEL LOGO MÓVIL AUMENTADO
 ============================================ */
 @media (max-width: 992px) {
 
@@ -953,9 +1003,10 @@ body.navbar-open {
         order: 1;
     }
 
+    /* LOGO MÓVIL AUMENTADO - 992px */
     .institutional-logo-mobile {
-        width: 55px;
-        height: 55px;
+        width: 65px;
+        height: 65px;
     }
 
     /* Ajustes para el contenedor de navegación móvil */
@@ -967,16 +1018,56 @@ body.navbar-open {
 
 
 /* ============================================
-   AJUSTES MÓVIL PEQUEÑO - TAMAÑOS AUMENTADOS
+   AJUSTES MÓVIL MEDIANO - 768px
+   LOGO AUMENTADO
+============================================ */
+@media (max-width: 768px) {
+    .institutional-logo-mobile {
+        width: 63px;
+        height: 63px;
+    }
+
+    .main-navigation .container-fluid {
+        padding-left: 20px;
+        padding-top: 0.25rem;
+    }
+    
+    /* AUMENTAR ALTURA DE LA BARRA VERDE EN TABLET */
+    .main-navigation {
+        min-height: 78px;
+    }
+}
+
+
+/* ============================================
+   AJUSTES MÓVIL - 480px
+   LOGO AUMENTADO
 ============================================ */
 @media (max-width: 480px) {
     .institutional-logo-mobile {
-        width: 55px;
-        height: 55px;
+        width: 65px;
+        height: 65px;
     }
 
     .main-navigation .container-fluid {
         padding-left: 20px;
         padding-top: 0.2rem;
+    }
+}
+
+
+/* ============================================
+   AJUSTES MÓVIL PEQUEÑO - 360px
+   LOGO AUMENTADO
+============================================ */
+@media (max-width: 360px) {
+    .institutional-logo-mobile {
+        width: 63px;
+        height: 63px;
+    }
+
+    .main-navigation .container-fluid {
+        padding-left: 18px;
+        padding-top: 0.18rem;
     }
 }

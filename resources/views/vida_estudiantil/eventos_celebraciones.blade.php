@@ -108,6 +108,149 @@
 
     </main>
     <script>
+        // ============================================
+        // FLECHAS DE NAVEGACIÓN PARA TABS - CORREGIDO
+        // ============================================
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Esperar a que renderTabs() termine
+            setTimeout(function() {
+                if (window.innerWidth <= 1023) {
+                    initializeTabsArrows();
+                }
+            }, 200);
+
+            // Re-inicializar en resize
+            let resizeTimer;
+            window.addEventListener('resize', function() {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(function() {
+                    if (window.innerWidth <= 1023) {
+                        removeTabsArrows();
+                        initializeTabsArrows();
+                    } else {
+                        removeTabsArrows();
+                    }
+                }, 250);
+            });
+        });
+
+        function initializeTabsArrows() {
+            const tabsWrapper = document.getElementById('tabsWrapper');
+
+            if (!tabsWrapper) {
+                console.log('No se encontró tabsWrapper');
+                return;
+            }
+
+            // Verificar si ya existen las flechas
+            if (document.querySelector('.tabs-arrow-left')) {
+                console.log('Las flechas ya existen');
+                return;
+            }
+
+            // Obtener o crear el contenedor
+            let container = tabsWrapper.parentElement;
+
+            // Si el padre no es .container, buscar hacia arriba
+            if (!container.classList.contains('container')) {
+                const eventosTabsSection = tabsWrapper.closest('.eventos-tabs');
+                if (eventosTabsSection) {
+                    container = eventosTabsSection.querySelector('.container');
+                }
+            }
+
+            if (!container) {
+                console.log('No se encontró contenedor adecuado');
+                return;
+            }
+
+            // Crear wrapper solo si no existe
+            if (!container.classList.contains('tabs-wrapper-container')) {
+                const wrapper = document.createElement('div');
+                wrapper.className = 'tabs-wrapper-container';
+
+                // Mover tabsWrapper dentro del nuevo wrapper
+                const parent = tabsWrapper.parentNode;
+                parent.insertBefore(wrapper, tabsWrapper);
+                wrapper.appendChild(tabsWrapper);
+
+                container = wrapper;
+            }
+
+            // Crear flecha izquierda
+            const arrowLeft = document.createElement('div');
+            arrowLeft.className = 'tabs-nav-arrow tabs-arrow-left';
+            arrowLeft.innerHTML = `
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7" />
+        </svg>
+    `;
+
+            // Crear flecha derecha
+            const arrowRight = document.createElement('div');
+            arrowRight.className = 'tabs-nav-arrow tabs-arrow-right';
+            arrowRight.innerHTML = `
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
+        </svg>
+    `;
+
+            // Insertar flechas
+            container.appendChild(arrowLeft);
+            container.appendChild(arrowRight);
+
+            console.log('Flechas creadas correctamente');
+
+            // Funcionalidad de scroll
+            arrowLeft.addEventListener('click', function() {
+                tabsWrapper.scrollBy({
+                    left: -200,
+                    behavior: 'smooth'
+                });
+            });
+
+            arrowRight.addEventListener('click', function() {
+                tabsWrapper.scrollBy({
+                    left: 200,
+                    behavior: 'smooth'
+                });
+            });
+
+            // Actualizar visibilidad de flechas
+            function updateArrows() {
+                const scrollLeft = tabsWrapper.scrollLeft;
+                const maxScroll = tabsWrapper.scrollWidth - tabsWrapper.clientWidth;
+
+                // Flecha izquierda
+                if (scrollLeft <= 10) {
+                    arrowLeft.classList.remove('visible');
+                } else {
+                    arrowLeft.classList.add('visible');
+                }
+
+                // Flecha derecha
+                if (scrollLeft >= maxScroll - 10) {
+                    arrowRight.classList.add('hidden');
+                } else {
+                    arrowRight.classList.remove('hidden');
+                }
+            }
+
+            // Escuchar scroll
+            tabsWrapper.addEventListener('scroll', updateArrows);
+
+            // Actualizar al inicio
+            updateArrows();
+            setTimeout(updateArrows, 300);
+        }
+
+        function removeTabsArrows() {
+            const arrows = document.querySelectorAll('.tabs-arrow-left, .tabs-arrow-right');
+            arrows.forEach(arrow => {
+                arrow.remove();
+            });
+        }
         const eventos = [{
                 id: 'sanpedrito',
                 category: 'Tradición',
@@ -229,13 +372,13 @@
                 
                 <div class="evento-gallery">
                     ${evento.images.map(img => `
-                            <div class="gallery-item" onclick="openLightbox('${img}')">
-                                <img src="${img}" alt="${evento.title}" class="gallery-img">
-                                <div class="gallery-overlay">
-                                    <i class="fas fa-expand gallery-icon"></i>
-                                </div>
-                            </div>
-                        `).join('')}
+                                    <div class="gallery-item" onclick="openLightbox('${img}')">
+                                        <img src="${img}" alt="${evento.title}" class="gallery-img">
+                                        <div class="gallery-overlay">
+                                            <i class="fas fa-expand gallery-icon"></i>
+                                        </div>
+                                    </div>
+                                `).join('')}
                 </div>
             </div>
         `;
@@ -329,4 +472,5 @@
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

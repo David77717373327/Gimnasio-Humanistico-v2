@@ -43,7 +43,7 @@
     <!-- ===============================
          PRELOAD / PRECONNECT
     ================================ -->
-    <link rel="preload" as="video" href="{{ asset('videos/hero-background4.mp4') }}">
+  <link rel="preload" href="{{ asset('videos/hero-background4.mp4') }}" as="video" type="video/mp4">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -124,10 +124,10 @@
                 <video class="hero-bg-video" id="heroVideo" autoplay muted loop playsinline preload="auto"
                     poster="{{ asset('images/video-poster.jpg') }}" aria-label="Video de presentación del colegio">
 
-
-
                     <source src="{{ asset('videos/hero-background8.mp4') }}" type="video/mp4">
                     <source src="{{ asset('videos/hero-background.webm') }}" type="video/webm">
+
+
                 </video>
 
                 <!-- Imagen de fallback -->
@@ -208,18 +208,18 @@
                 const video = document.getElementById("heroVideo");
                 const videoLoader = document.getElementById("videoLoader");
 
-                // Cuando el video puede reproducirse sin parar
+                if (!video) return;
+
                 video.addEventListener("canplaythrough", () => {
-                    videoLoader.classList.add("hidden");
+                    if (videoLoader) videoLoader.classList.add("hidden");
                     video.classList.add("loaded");
                 }, {
                     once: true
                 });
 
-                // Fallback: mostrar video después de 3 segundos
                 setTimeout(() => {
                     if (!video.classList.contains("loaded")) {
-                        videoLoader.classList.add("hidden");
+                        if (videoLoader) videoLoader.classList.add("hidden");
                         video.classList.add("loaded");
                     }
                 }, 3000);
@@ -413,32 +413,6 @@
                     </div>
                 </div>
 
-                <!-- Modal -->
-                <div class="modal-overlay" id="modalOverlay">
-                    <div class="modal-content">
-                        <button class="modal-close" id="modalClose" aria-label="Cerrar modal">
-                            <i class="fas fa-times"></i>
-                        </button>
-
-                        <button class="modal-nav modal-prev" id="modalPrev" aria-label="Imagen anterior">
-                            <i class="fas fa-chevron-left"></i>
-                        </button>
-
-                        <button class="modal-nav modal-next" id="modalNext" aria-label="Imagen siguiente">
-                            <i class="fas fa-chevron-right"></i>
-                        </button>
-
-                        <div class="modal-image-container">
-                            <img src="" alt="" class="modal-image" id="modalImage">
-                        </div>
-
-                        <div class="modal-info">
-                            <h3 class="modal-title" id="modalTitle"></h3>
-                            <p class="modal-description" id="modalDescription"></p>
-                        </div>
-                    </div>
-                </div>
-
 
             </div>
         </section>
@@ -518,7 +492,7 @@
 
 
 
-        
+
 
 
 
@@ -772,8 +746,7 @@
 
 
 
-         <script>
-
+        <script>
             /**
              * Carrusel para Sección de Oferta Académica
              * Todas las funciones y variables tienen prefijo "Academic" para evitar conflictos
@@ -1166,6 +1139,5 @@
         });
     </script>
 </body>
+
 </html>
-
-
