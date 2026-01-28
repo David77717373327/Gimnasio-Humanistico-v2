@@ -12,10 +12,12 @@
     <!-- ===============================
          SEO PRINCIPAL
     ================================ -->
-    <title>Inicio | Colegio Gimnasio Humanístico del Alto Magdalena – Neiva</title>
+    <title>Colegio privado en Neiva | Gimnasio Humanístico del Alto Magdalena</title>
+
 
     <meta name="description"
-        content="Colegio Gimnasio Humanístico del Alto Magdalena en Neiva. Más de 40 años de excelencia educativa, formación en valores, educación bilingüe y proyección integral. Solicita información hoy.">
+        content="El Gimnasio Humanístico del Alto Magdalena es un colegio privado en Neiva, Huila, con más de 40 años de experiencia. Educación preescolar, primaria y bachillerato con formación en valores.">
+
 
     <meta name="keywords"
         content="Colegio Neiva, Gimnasio Humanístico, colegio privado Neiva, educación bilingüe Neiva, colegio cristiano, admisiones escolares Huila">
@@ -43,7 +45,7 @@
     <!-- ===============================
          PRELOAD / PRECONNECT
     ================================ -->
-  <link rel="preload" href="{{ asset('videos/hero-background4.mp4') }}" as="video" type="video/mp4">
+    <link rel="preload" href="{{ asset('videos/hero-background4.mp4') }}" as="video" type="video/mp4">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -93,9 +95,36 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 
 
+    @verbatim
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "@id": "https://gimnasiohumanisticoaltomagdalena.com/#school",
+  "name": "Gimnasio Humanístico del Alto Magdalena",
+  "url": "https://gimnasiohumanisticoaltomagdalena.com/",
+  "logo": "https://gimnasiohumanisticoaltomagdalena.com/images/logo.png",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Neiva",
+    "addressRegion": "Huila",
+    "addressCountry": "CO"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Neiva"
+  },
+  "sameAs": [
+    "https://web.facebook.com/profile.php?id=100041995064524",
+        "https://www.instagram.com/gimnasiohumanistico03?utm_source=qr&igsh=YTV3aGt3ajVyZjRw"
+  ]
+}
+</script>
+    @endverbatim
+
+
 
 </head>
-
 
 <body>
     <!-- Skip to main content para accesibilidad -->
@@ -148,7 +177,7 @@
                             <!-- Título principal -->
                             <div class="hero-title-section">
                                 <h1 id="hero-title" class="hero-title">
-                                    Nos educamos en el trabajo humanizante para un nuevo país
+                                    Colegio privado en Neiva con formación humanística y excelencia académica
                                 </h1>
                             </div>
 
@@ -241,6 +270,8 @@
 
 
 
+
+
         <!-- Sección de Bienvenida -->
         <section class="welcome-section" id="bienvenida" aria-labelledby="welcome-title">
             <div class="container">
@@ -249,6 +280,10 @@
                     <h2 id="welcome-title" class="welcome-main-title" data-aos="fade-up" data-aos-delay="200">
                         <span class="highlight-text">Bienvenidos al Gimnasio Humanístico Del Alto Magdalena</span>
                     </h2>
+
+
+                
+
                     <div class="welcome-badge" data-aos="fade-up"
                         aria-label="Distintivo de excelencia educativa desde 1999">
                         <i class="fas fa-graduation-cap" aria-hidden="true"></i>
@@ -314,9 +349,6 @@
                         </figure>
                     </div>
                 </div>
-
-
-
                 <!-- ============================
      Sección de Instalaciones con Animaciones AOS
 ============================== -->
@@ -562,7 +594,7 @@
                                 </p>
                                 <a href="{{ route('preescolar') }}" class="academic-level-link"
                                     aria-label="Ver información completa sobre educación preescolar">
-                                    <span>Ver más información</span>
+                                    <span>Preescolar en Neiva</span>
                                     <i class="fas fa-arrow-right" aria-hidden="true"></i>
                                 </a>
                             </div>
@@ -617,7 +649,7 @@
                                 </p>
                                 <a href="{{ route('basica.primaria') }}" class="academic-level-link"
                                     aria-label="Ver información completa sobre educación básica primaria">
-                                    <span>Ver más información</span>
+                                    <span>Educación primaria en Neiva</span>
                                     <i class="fas fa-arrow-right" aria-hidden="true"></i>
                                 </a>
                             </div>
@@ -672,7 +704,7 @@
                                 </p>
                                 <a href="{{ route('basica.secundaria') }}" class="academic-level-link"
                                     aria-label="Ver información completa sobre educación básica secundaria">
-                                    <span>Ver más información</span>
+                                    <span>Segundaria en Neiva</span>
                                     <i class="fas fa-arrow-right" aria-hidden="true"></i>
                                 </a>
                             </div>
@@ -727,7 +759,7 @@
                                 </p>
                                 <a href="{{ route('media.academica') }}" class="academic-level-link"
                                     aria-label="Ver información completa sobre educación media académica">
-                                    <span>Ver más información</span>
+                                    <span>Bachillerato en Neiva</span>
                                     <i class="fas fa-arrow-right" aria-hidden="true"></i>
                                 </a>
                             </div>
@@ -736,6 +768,25 @@
                 </div>
             </div>
         </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1027,6 +1078,15 @@
                 });
             })();
         </script>
+
+
+
+
+
+
+
+
+
 
 
 

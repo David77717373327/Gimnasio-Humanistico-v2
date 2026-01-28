@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CO">
 
 <head>
     <meta charset="UTF-8">
@@ -35,6 +35,35 @@
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
     <link href="{{ asset('css/hero.css') }}" rel="stylesheet">
     <link href="{{ asset('css/navegacion.css') }}" rel="stylesheet">
+
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://gimnasiohumanisticoaltomagdalena.com/politica-calidad",
+  "name": "Política de Calidad",
+  "description": "Política de Calidad del Gimnasio Humanístico del Alto Magdalena, enfocada en la excelencia educativa, mejora continua, formación humanista y cumplimiento normativo.",
+  "url": "https://gimnasiohumanisticoaltomagdalena.com/politica-calidad",
+  "inLanguage": "es-CO",
+  "isPartOf": {
+    "@type": "EducationalOrganization",
+    "@id": "https://gimnasiohumanisticoaltomagdalena.com/#school",
+    "name": "Gimnasio Humanístico del Alto Magdalena"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "Política de Calidad Educativa",
+    "description": "Sistema de gestión, mejora continua y compromiso institucional con la calidad educativa."
+  },
+  "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "url": "https://gimnasiohumanisticoaltomagdalena.com/images/politica_de_calidad7.webp",
+    "caption": "Política de Calidad del Gimnasio Humanístico del Alto Magdalena"
+  }
+}
+</script>
+
 </head>
 
 <body>
@@ -55,7 +84,7 @@
         <!-- HERO -->
         <section class="hero-section" aria-label="Introducción a la Política de Calidad">
             <div class="hero-background">
-                <img src="../images/politica_de_calidad7.webp"
+                <img src="{{ asset('images/politica_de_calidad7.webp') }}"
                     alt="Instalaciones del Gimnasio Humanístico del Alto Magdalena en Neiva, Colombia"
                     width="1920" height="1080" loading="lazy">
             </div>
@@ -122,10 +151,8 @@
                         a las necesidades de la comunidad y a los retos del mundo contemporáneo.
                     </p> 
                 </section>
-
             </div>
         </section>
-
     </main>
 
     <!-- NAVEGACIÓN INTERNA -->

@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CO">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simbolos | Gimnasio Humanístico del Alto Magdalena - Neiva</title>
+    <title>Símbolos Institucionales | Gimnasio Humanístico del Alto Magdalena en Neiva</title>
+
+
+    <!--Meta Social-->
+    <meta property="og:site_name" content="Gimnasio Humanístico del Alto Magdalena">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Símbolos Institucionales - Gimnasio Humanístico de Neiva">
+    <meta name="twitter:description" content="Escudo, bandera e himno del Gimnasio Humanístico del Alto Magdalena.">
+
+
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +40,10 @@
     <!-- SEO adicional -->
     <meta name="description"
         content="Símbolos institucionales, himno oficial y valores del Gimnasio Humanístico de Neiva. Conoce nuestra identidad educativa basada en el humanismo, cultura ambiental y formación integral.">
-    <link rel="canonical" href="https://gimnasiohumanistico.edu.co/simbolos-himno">
+    <link rel="canonical" href="https://gimnasiohumanisticoaltomagdalena.com/simbolos-institucionales">
+
+    <meta property="og:url" content="https://gimnasiohumanisticoaltomagdalena.com/simbolos-institucionales">
+
 
     <!-- Open Graph -->
     <meta property="og:title" content="Símbolos y Himno - Gimnasio Humanístico de Neiva">
@@ -39,6 +51,21 @@
         content="Conoce el himno institucional, escudo y bandera del Gimnasio Humanístico de Neiva. Identidad, humanismo y cultura ambiental.">
     <meta property="og:image" content="{{ asset('images/politica_de_calidad2.jpg') }}">
     <meta property="og:type" content="website">
+
+@verbatim
+    <!-- JSON-LD para SEO -->
+    <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Símbolos Institucionales",
+  "about": {
+    "@type": "EducationalOrganization",
+    "name": "Gimnasio Humanístico del Alto Magdalena"
+  }
+}
+</script>
+@endverbatim
 
 
 </head>
@@ -56,12 +83,12 @@
     </nav>
 
     <!-- Contenido principal -->
-    <main id="main" role="main">
+    <main id="main">
 
         <!-- HERO -->
         <section class="hero-section" aria-label="Sección principal de símbolos institucionales">
             <div class="hero-background">
-                <img src="../images/simbolos.jpg" alt="Instalaciones del Gimnasio Humanístico de Neiva" width="1920"
+                <img src="{{ asset('images/simbolos.jpg') }}" alt="Instalaciones del Gimnasio Humanístico de Neiva" width="1920"
                     height="1080" loading="lazy">
             </div>
             <div class="hero-overlay"></div>
@@ -96,7 +123,7 @@
                     <div class="himno-intro">
                         <div class="himno-video-wrapper">
                             <iframe class="himno-video" src="https://www.youtube.com/embed/4ULoeT13IIg"
-                                title="Himno Gimnasio Humanístico" frameborder="0"
+                                title="Video del himno institucional del Gimnasio Humanístico del Alto Magdalena" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen>
                             </iframe>

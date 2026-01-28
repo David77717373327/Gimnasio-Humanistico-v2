@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CO">
+
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enfoque Pedagógico</title>
+    <html lang="es-CO">
+    <title>Enfoque Pedagógico Humanista | Gimnasio Humanístico del Alto Magdalena - Neiva</title>
+
     <!-- Google Fonts - Tipografía moderna -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +19,12 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="{{ asset('images/logo.png') }}">
 
+
+    <!--Meta description SEO-->
+    <meta name="description"
+      content="Conoce el enfoque pedagógico del Gimnasio Humanístico del Alto Magdalena en Neiva: formación humanista, acompañamiento docente, recursos digitales, plataforma Santillana y educación integral.">
+
+
     <!-- Scripts -->
     <script src="{{ asset('js/hero.js') }}" defer></script>
 
@@ -24,6 +33,45 @@
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
     <link href="{{ asset('css/hero.css')}}" rel="stylesheet">
     <link href="{{ asset('css/enfoque_pedagogico.css')}}" rel="stylesheet">
+
+
+     @verbatim
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://gimnasiohumanisticoaltomagdalena.com/enfoque-pedagogico",
+  "name": "Enfoque Pedagógico",
+  "description": "Enfoque pedagógico del Gimnasio Humanístico del Alto Magdalena, basado en formación integral, valores humanistas, recursos digitales, plataforma Santillana y material pedagógico especializado.",
+  "url": "https://gimnasiohumanisticoaltomagdalena.com/enfoque-pedagogico",
+  "inLanguage": "es-CO",
+  "isPartOf": {
+    "@type": "EducationalOrganization",
+    "@id": "https://gimnasiohumanisticoaltomagdalena.com/#school",
+    "name": "Gimnasio Humanístico del Alto Magdalena"
+  },
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Enfoque pedagógico institucional",
+      "description": "Modelo educativo basado en formación humanista, acompañamiento docente y uso de recursos pedagógicos innovadores."
+    },
+    {
+      "@type": "Thing",
+      "name": "Educación integral",
+      "description": "Desarrollo académico, humano y en valores para niños y jóvenes."
+    }
+  ],
+  "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "url": "https://gimnasiohumanisticoaltomagdalena.com/images/educacion_secundaria/imagen1.jpg",
+    "caption": "Enfoque pedagógico del Gimnasio Humanístico del Alto Magdalena"
+  }
+}
+</script>
+@endverbatim
+
+
 </head>
 
 <body>
@@ -36,12 +84,12 @@
         @include('layouts.navigation')
     </nav>
     
-    <main id="main" role="main">
+    <main id="main">
 
         <!-- HERO -->
         <section class="hero-section" aria-label="Educación Inicial y Preescolar en Neiva">
             <div class="hero-background">
-                <img src="../images/educacion_secundaria/imagen1.jpg"
+                <img src="{{ asset('images/educacion_secundaria/imagen1.jpg') }}"
                     alt="Instalaciones del colegio en Neiva enfocadas en educación inicial y preescolar" width="1920"
                     height="1080" loading="lazy">
             </div>
@@ -52,7 +100,8 @@
             <div class="container hero-container">
                 <div class="hero-content">
                     <h1 class="hero-title" data-title="Nuestra Identidad Institucional">
-                        Enfoque Pedagógico
+                       Enfoque Pedagógico Humanista del Gimnasio Humanístico
+
                     </h1>
 
                     <div class="hero-scroll-indicator" onclick="scrollToContent()" role="button" tabindex="0"
@@ -120,7 +169,7 @@
                     <div class="col-lg-6">
                         <div class="bloque-imagen imagen-compacta">
 
-                            <img src="../images/santillana2.webp" alt="Plataforma Santillana">
+                            <img src="{{ asset('/images/santillana2.webp') }}" alt="Plataforma Digital Santillana Compartir">
                         </div>
                     </div>
 
@@ -129,6 +178,8 @@
         </section>
 
         <!-- SECCIÓN 2: KIT ESCOLAR -->
+
+        
         <section class="pedagogia-bloque pedagogia-alterno">
             <div class="container">
                 <div class="row align-items-stretch gy-4 flex-lg-row-reverse">
@@ -181,7 +232,7 @@
                     <!-- Imagen más alta para balancear -->
                     <div class="col-lg-6">
                         <div class="bloque-imagen imagen-extendida">
-                            <img src="../images/libros.jpg" alt="Kit Escolar">
+                            <img src="{{ asset('/images/libros.jpg') }}" alt="Kit Escolar Especializado">
                         </div>
                     </div>
                 </div>

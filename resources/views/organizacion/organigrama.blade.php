@@ -1,10 +1,20 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CO">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Organigrama Institucional | Gimnasio Humanístico del Alto Magdalena - Neiva</title>
+
+    <!--Meta Descripción SEO-->
+    <meta name="description" content="Conoce el organigrama institucional del Gimnasio Humanístico del Alto Magdalena en Neiva. Descubre la estructura organizacional, cargos directivos y funciones administrativas.">
+
+    <!--SEO INDEXACIÓN-->
+    <link rel="canonical" href="https://gimnasiohumanisticoaltomagdalena.com/organigrama">
+
+    <meta name="theme-color" content="#0d3f27">
+
+    <meta name="robots" content="index, follow">
 
     <!-- Tipografías -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,6 +36,30 @@
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
     <link href="{{ asset('css/hero.css') }}" rel="stylesheet">
     <link href="{{ asset('css/navegacion.css') }}" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://gimnasiohumanisticoaltomagdalena.com/organigrama",
+  "name": "Organigrama Institucional",
+  "description": "Organigrama institucional del Gimnasio Humanístico del Alto Magdalena en Neiva. Presenta la estructura organizacional, cargos directivos y áreas administrativas de la institución.",
+  "url": "https://gimnasiohumanisticoaltomagdalena.com/organigrama",
+  "isPartOf": {
+    "@type": "EducationalOrganization",
+    "@id": "https://gimnasiohumanisticoaltomagdalena.com/#school",
+    "name": "Gimnasio Humanístico del Alto Magdalena"
+  },
+  "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "url": "https://gimnasiohumanisticoaltomagdalena.com/images/organigrama.jpeg",
+    "caption": "Organigrama Institucional del Gimnasio Humanístico del Alto Magdalena"
+  },
+  "inLanguage": "es-CO"
+}
+</script>
+
+
 </head>
 
 <body>
@@ -46,8 +80,8 @@
         <!-- HERO -->
         <section class="hero-section" aria-label="Sección inicial del Organigrama Institucional">
             <div class="hero-background">
-                <img src="../images/politica_de_calidad4.webp"
-                    alt="Instalaciones del Gimnasio Humanístico"
+                <img src="{{ asset('images/politica_de_calidad4.webp') }}"
+                    alt="Política de Calidad del Gimnasio Humanístico del Alto Magdalena"
                     width="1920" height="1080" loading="lazy">
             </div>
 

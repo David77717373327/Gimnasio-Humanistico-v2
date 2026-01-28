@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CO">
 
 <head>
     <meta charset="UTF-8">
@@ -9,11 +9,14 @@
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#0d3f27">
     <title>Proyectos de vida | Gimnasio Humanístico del Alto Magdalena - Neiva</title>
+
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://tusitio.com/proyectos-institucionales">
+    <link rel="canonical" href="https://gimnasiohumanisticoaltomagdalena.com/proyectos-institucionales">
+
     <!-- Preconnect para optimización de fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <!--Scrip para el hero -->
     <script src="{{ asset('js/hero.js') }}"></script>
     <!-- Google Fonts con preload opcional -->
@@ -35,6 +38,39 @@
     <link href="{{ asset('css/proyectos_de_vida.css') }}" rel="stylesheet">
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
     <link href="{{ asset('css/hero.css') }}" rel="stylesheet">
+
+
+     @verbatim
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://gimnasiohumanisticoaltomagdalena.com/proyectos-institucionales",
+  "url": "https://gimnasiohumanisticoaltomagdalena.com/proyectos-institucionales",
+  "name": "Proyectos Institucionales",
+  "description": "Proyectos institucionales del Gimnasio Humanístico del Alto Magdalena en Neiva: danzas, fútbol, natación, artes, voleibol y formación espiritual, orientados al desarrollo integral de los estudiantes.",
+  "inLanguage": "es-CO",
+  "isPartOf": {
+    "@type": "EducationalOrganization",
+    "@id": "https://gimnasiohumanisticoaltomagdalena.com/#school",
+    "name": "Gimnasio Humanístico del Alto Magdalena"
+  },
+  "about": [
+    {
+      "@type": "EducationalOccupationalProgram",
+      "name": "Proyectos de vida institucionales",
+      "description": "Programas extracurriculares y formativos que fortalecen habilidades deportivas, artísticas, espirituales y sociales."
+    }
+  ],
+  "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "url": "https://gimnasiohumanisticoaltomagdalena.com/images/educacion_secundaria/imagen1.jpg",
+    "caption": "Proyectos institucionales del Gimnasio Humanístico del Alto Magdalena"
+  }
+}
+</script>
+@endverbatim
+
 </head>
 
 <body>
@@ -54,7 +90,7 @@
         <!-- HERO SECTION -->
         <section class="hero-section" aria-label="Sección destacada de historia">
             <div class="hero-background">
-                <img src="../images/educacion_secundaria/imagen1.jpg"
+                <img src="{{ asset('/images/educacion_secundaria/imagen1.jpg') }}"
                     alt="Vista del Gimnasio Humanístico del Alto Magdalena, institución educativa en Neiva"
                     width="1920" height="1080">
             </div>
@@ -76,10 +112,10 @@
 
 
         <!-- CONTENIDO PRINCIPAL -->
-        <main>
-            <div class="proyectos-container" id="siguiente_sesion">
+        <div class="proyectos-container" id="siguiente_sesion">
 
-                <!-- PROYECTO 6: DANZAS -->
+            <!-- PROYECTO 6: DANZAS -->
+            <article>
                 <div class="proyecto-item" data-proyecto="danzas">
                     <div class="proyecto-header">
                         <h2 class="proyecto-titulo">1. Danzas</h2>
@@ -111,11 +147,13 @@
                         </div>
                     </div>
                 </div>
+            </article>
 
 
 
 
-                <!-- PROYECTO 2: FÚTBOL -->
+            <!-- PROYECTO 2: FÚTBOL -->
+            <article>
                 <div class="proyecto-item" data-proyecto="futbol">
                     <div class="proyecto-header">
                         <h2 class="proyecto-titulo">2. Fútbol</h2>
@@ -147,10 +185,10 @@
                         </div>
                     </div>
                 </div>
+            </article>
 
 
-
-
+            <article>
                 <!-- PROYECTO 1: NATACIÓN -->
                 <div class="proyecto-item" data-proyecto="natacion">
                     <div class="proyecto-header">
@@ -183,9 +221,10 @@
                         </div>
                     </div>
                 </div>
+            </article>
 
-
-                <!-- PROYECTO 3: PRIMERA COMUNIÓN Y CONFIRMACIÓN -->
+            <!-- PROYECTO 3: PRIMERA COMUNIÓN Y CONFIRMACIÓN -->
+            <article>
                 <div class="proyecto-item" data-proyecto="sacramentos">
                     <div class="proyecto-header">
                         <h2 class="proyecto-titulo">4. Primera Comunión y Confirmación</h2>
@@ -217,8 +256,10 @@
                         </div>
                     </div>
                 </div>
+            </article>
 
-                <!-- PROYECTO 4: VOLEIBOL -->
+            <!-- PROYECTO 4: VOLEIBOL -->
+            <article>
                 <div class="proyecto-item" data-proyecto="voleibol">
                     <div class="proyecto-header">
                         <h2 class="proyecto-titulo">5. Voleibol</h2>
@@ -250,8 +291,10 @@
                         </div>
                     </div>
                 </div>
+            </article>
 
-                <!-- PROYECTO 5: ARTES -->
+            <!-- PROYECTO 5: ARTES -->
+            <article>
                 <div class="proyecto-item" data-proyecto="artes">
                     <div class="proyecto-header">
                         <h2 class="proyecto-titulo">6. Artes</h2>
@@ -283,256 +326,259 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </main>
-
-        <!-- MODAL -->
-        <div class="modal" id="imageModal">
-            <div class="modal-content">
-                <button class="modal-close" onclick="closeModal()">&times;</button>
-                <button class="modal-nav prev" onclick="modalPrevImage()">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <img class="modal-image" id="modalImage" src="" alt="Imagen ampliada">
-                <button class="modal-nav next" onclick="modalNextImage()">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-            </div>
         </div>
+        </article>
 
-        <!-- Footer del sitio -->
-        <footer aria-label="Pie de página del sitio">
-            @include('layouts.footer')
-        </footer>
+    </main>
 
-        <!-- Scripts -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <!-- MODAL -->
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <button class="modal-nav prev" onclick="modalPrevImage()">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <img class="modal-image" id="modalImage" src="" alt="Imagen ampliada">
+            <button class="modal-nav next" onclick="modalNextImage()">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
 
-        <script>
-            // CONFIGURACIÓN DE IMÁGENES (3 por proyecto)
-            const proyectosData = {
+    <!-- Footer del sitio -->
+    <footer aria-label="Pie de página del sitio">
+        @include('layouts.footer')
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // CONFIGURACIÓN DE IMÁGENES (3 por proyecto)
+        const proyectosData = {
 
 
-                danzas: [
-                    '../images/proyecto/imagen1.jpg',
-                    '../images/proyecto/imagen2.jpg',
-                    '../images/proyecto/imagen3.jpg'
-                ],
+            danzas: [
+                '../images/proyecto/imagen1.jpg',
+                '../images/proyecto/imagen2.jpg',
+                '../images/proyecto/imagen3.jpg'
+            ],
 
-                natacion: [
-                    '../images/proyecto/imagen5.jpg',
-                    '../images/proyecto/imagen6.jpg',
-                    '../images/proyecto/imagen7.jpg'
-                ],
-                futbol: [
-                    '../images/proyecto/imagen4.jpg',
-                    '../images/proyecto/imagen11.jpg',
-                    '../images/proyecto/imagen12.jpg',
-                ],
-                sacramentos: [
-                    '../images/celebraciones/comuniones3.jpg',
-                    '../images/celebraciones/comuniones2.jpg',
-                    '../images/celebraciones/confirmaciones1.jpg',
-                ],
-                voleibol: [
-                    '../images/proyecto/imagen8.jpg',
-                    '../images/proyecto/imagen9.jpg',
-                    '../images/proyecto/imagen10.jpg'
-                ],
-                artes: [
-                    '../images/proyecto/imagen13.jpg',
-                    '../images/proyecto/imagen15.jpg',
-                    '../images/proyecto/imagen14.jpg',
-                ],
-            };
-        
-            // Variables globales para el modal
-            let currentModalProject = null;
-            let currentModalIndex = 0;
+            natacion: [
+                '../images/proyecto/imagen5.jpg',
+                '../images/proyecto/imagen6.jpg',
+                '../images/proyecto/imagen7.jpg'
+            ],
+            futbol: [
+                '../images/proyecto/imagen4.jpg',
+                '../images/proyecto/imagen11.jpg',
+                '../images/proyecto/imagen12.jpg',
+            ],
+            sacramentos: [
+                '../images/celebraciones/comuniones3.jpg',
+                '../images/celebraciones/comuniones2.jpg',
+                '../images/celebraciones/confirmaciones1.jpg',
+            ],
+            voleibol: [
+                '../images/proyecto/imagen8.jpg',
+                '../images/proyecto/imagen9.jpg',
+                '../images/proyecto/imagen10.jpg'
+            ],
+            artes: [
+                '../images/proyecto/imagen13.jpg',
+                '../images/proyecto/imagen15.jpg',
+                '../images/proyecto/imagen14.jpg',
+            ],
+        };
 
-            // Inicializar todos los carruseles
-            document.addEventListener('DOMContentLoaded', () => {
-                document.querySelectorAll('.proyecto-item').forEach(item => {
-                    const proyecto = item.dataset.proyecto;
-                    const images = proyectosData[proyecto];
+        // Variables globales para el modal
+        let currentModalProject = null;
+        let currentModalIndex = 0;
 
-                    if (images) {
-                        initCarrusel(item, images);
-                    }
-                });
-            });
+        // Inicializar todos los carruseles
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.proyecto-item').forEach(item => {
+                const proyecto = item.dataset.proyecto;
+                const images = proyectosData[proyecto];
 
-            // Función para inicializar cada carrusel
-            function initCarrusel(container, images) {
-                const carruselImages = container.querySelector('.carrusel-images');
-                const indicators = container.querySelector('.carrusel-indicators');
-                const totalSlides = container.querySelector('.total-slides');
-                const currentSlide = container.querySelector('.current-slide');
-
-                // Actualizar total de slides
-                totalSlides.textContent = images.length;
-
-                // Crear imágenes
-                images.forEach((src, index) => {
-                    const imgDiv = document.createElement('div');
-                    imgDiv.className = `carrusel-image ${index === 0 ? 'active' : ''}`;
-                    imgDiv.innerHTML = `<img src="${src}" alt="Imagen ${index + 1}">`;
-                    imgDiv.onclick = () => {
-                        const activeIndex = Array.from(
-                            container.querySelectorAll('.carrusel-image')
-                        ).findIndex(img => img.classList.contains('active'));
-
-                        openModal(container.dataset.proyecto, activeIndex);
-                    };
-
-                    carruselImages.appendChild(imgDiv);
-                });
-
-                // Crear indicadores
-                images.forEach((_, index) => {
-                    const indicator = document.createElement('div');
-                    indicator.className = `indicator ${index === 0 ? 'active' : ''}`;
-                    indicator.onclick = () => goToSlide(container, index);
-                    indicators.appendChild(indicator);
-                });
-
-                // Agregar eventos a los botones
-                const prevBtn = container.querySelector('.prev-btn');
-                const nextBtn = container.querySelector('.next-btn');
-
-                prevBtn.onclick = () => changeSlide(container, -1);
-                nextBtn.onclick = () => changeSlide(container, 1);
-
-                // Auto-play (10 segundos)
-                let autoplayInterval = setInterval(() => changeSlide(container, 1), 10000);
-
-                // Pausar autoplay al hover
-                container.addEventListener('mouseenter', () => clearInterval(autoplayInterval));
-                container.addEventListener('mouseleave', () => {
-                    autoplayInterval = setInterval(() => changeSlide(container, 1), 10000);
-                });
-            }
-
-            // Cambiar slide
-            function changeSlide(container, direction) {
-                const images = container.querySelectorAll('.carrusel-image');
-                const indicators = container.querySelectorAll('.indicator');
-                const currentSlideSpan = container.querySelector('.current-slide');
-
-                let currentIndex = Array.from(images).findIndex(img => img.classList.contains('active'));
-                let newIndex = currentIndex + direction;
-
-                // Loop circular
-                if (newIndex >= images.length) newIndex = 0;
-                if (newIndex < 0) newIndex = images.length - 1;
-
-                // Cambiar imagen activa
-                images[currentIndex].classList.remove('active');
-                images[newIndex].classList.add('active');
-
-                // Cambiar indicador activo
-                indicators[currentIndex].classList.remove('active');
-                indicators[newIndex].classList.add('active');
-
-                // Actualizar contador
-                currentSlideSpan.textContent = newIndex + 1;
-            }
-
-            // Ir a un slide específico
-            function goToSlide(container, index) {
-                const images = container.querySelectorAll('.carrusel-image');
-                const indicators = container.querySelectorAll('.indicator');
-                const currentSlideSpan = container.querySelector('.current-slide');
-
-                const currentIndex = Array.from(images).findIndex(img => img.classList.contains('active'));
-
-                // Remover clases activas
-                images[currentIndex].classList.remove('active');
-                indicators[currentIndex].classList.remove('active');
-
-                // Agregar clases activas
-                images[index].classList.add('active');
-                indicators[index].classList.add('active');
-
-                // Actualizar contador
-                currentSlideSpan.textContent = index + 1;
-            }
-
-            // Abrir modal
-            function openModal(proyecto, index) {
-                currentModalProject = proyecto;
-                currentModalIndex = index;
-
-                const modal = document.getElementById('imageModal');
-                const modalImage = document.getElementById('modalImage');
-
-                modalImage.src = proyectosData[proyecto][index];
-                modal.classList.add('active');
-
-                // Prevenir scroll del body
-                document.body.style.overflow = 'hidden';
-            }
-
-            // Cerrar modal
-            function closeModal() {
-                const modal = document.getElementById('imageModal');
-                modal.classList.remove('active');
-                document.body.style.overflow = 'auto';
-            }
-
-            // Navegación en modal - Anterior
-            function modalPrevImage() {
-                if (!currentModalProject) return;
-
-                const images = proyectosData[currentModalProject];
-                currentModalIndex--;
-
-                if (currentModalIndex < 0) {
-                    currentModalIndex = images.length - 1;
-                }
-
-                document.getElementById('modalImage').src = images[currentModalIndex];
-            }
-
-            // Navegación en modal - Siguiente
-            function modalNextImage() {
-                if (!currentModalProject) return;
-
-                const images = proyectosData[currentModalProject];
-                currentModalIndex++;
-
-                if (currentModalIndex >= images.length) {
-                    currentModalIndex = 0;
-                }
-
-                document.getElementById('modalImage').src = images[currentModalIndex];
-            }
-
-            // Cerrar modal con tecla ESC
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape') {
-                    closeModal();
+                if (images) {
+                    initCarrusel(item, images);
                 }
             });
+        });
 
-            // Navegación con flechas en modal
-            document.addEventListener('keydown', (e) => {
-                const modal = document.getElementById('imageModal');
-                if (modal.classList.contains('active')) {
-                    if (e.key === 'ArrowLeft') {
-                        modalPrevImage();
-                    } else if (e.key === 'ArrowRight') {
-                        modalNextImage();
-                    }
-                }
+        // Función para inicializar cada carrusel
+        function initCarrusel(container, images) {
+            const carruselImages = container.querySelector('.carrusel-images');
+            const indicators = container.querySelector('.carrusel-indicators');
+            const totalSlides = container.querySelector('.total-slides');
+            const currentSlide = container.querySelector('.current-slide');
+
+            // Actualizar total de slides
+            totalSlides.textContent = images.length;
+
+            // Crear imágenes
+            images.forEach((src, index) => {
+                const imgDiv = document.createElement('div');
+                imgDiv.className = `carrusel-image ${index === 0 ? 'active' : ''}`;
+                imgDiv.innerHTML = `<img src="${src}" alt="Imagen ${index + 1}">`;
+                imgDiv.onclick = () => {
+                    const activeIndex = Array.from(
+                        container.querySelectorAll('.carrusel-image')
+                    ).findIndex(img => img.classList.contains('active'));
+
+                    openModal(container.dataset.proyecto, activeIndex);
+                };
+
+                carruselImages.appendChild(imgDiv);
             });
 
-            // Cerrar modal al hacer clic fuera de la imagen
-            document.getElementById('imageModal').addEventListener('click', (e) => {
-                if (e.target.id === 'imageModal') {
-                    closeModal();
-                }
+            // Crear indicadores
+            images.forEach((_, index) => {
+                const indicator = document.createElement('div');
+                indicator.className = `indicator ${index === 0 ? 'active' : ''}`;
+                indicator.onclick = () => goToSlide(container, index);
+                indicators.appendChild(indicator);
             });
-        </script>
+
+            // Agregar eventos a los botones
+            const prevBtn = container.querySelector('.prev-btn');
+            const nextBtn = container.querySelector('.next-btn');
+
+            prevBtn.onclick = () => changeSlide(container, -1);
+            nextBtn.onclick = () => changeSlide(container, 1);
+
+            // Auto-play (10 segundos)
+            let autoplayInterval = setInterval(() => changeSlide(container, 1), 10000);
+
+            // Pausar autoplay al hover
+            container.addEventListener('mouseenter', () => clearInterval(autoplayInterval));
+            container.addEventListener('mouseleave', () => {
+                autoplayInterval = setInterval(() => changeSlide(container, 1), 10000);
+            });
+        }
+
+        // Cambiar slide
+        function changeSlide(container, direction) {
+            const images = container.querySelectorAll('.carrusel-image');
+            const indicators = container.querySelectorAll('.indicator');
+            const currentSlideSpan = container.querySelector('.current-slide');
+
+            let currentIndex = Array.from(images).findIndex(img => img.classList.contains('active'));
+            let newIndex = currentIndex + direction;
+
+            // Loop circular
+            if (newIndex >= images.length) newIndex = 0;
+            if (newIndex < 0) newIndex = images.length - 1;
+
+            // Cambiar imagen activa
+            images[currentIndex].classList.remove('active');
+            images[newIndex].classList.add('active');
+
+            // Cambiar indicador activo
+            indicators[currentIndex].classList.remove('active');
+            indicators[newIndex].classList.add('active');
+
+            // Actualizar contador
+            currentSlideSpan.textContent = newIndex + 1;
+        }
+
+        // Ir a un slide específico
+        function goToSlide(container, index) {
+            const images = container.querySelectorAll('.carrusel-image');
+            const indicators = container.querySelectorAll('.indicator');
+            const currentSlideSpan = container.querySelector('.current-slide');
+
+            const currentIndex = Array.from(images).findIndex(img => img.classList.contains('active'));
+
+            // Remover clases activas
+            images[currentIndex].classList.remove('active');
+            indicators[currentIndex].classList.remove('active');
+
+            // Agregar clases activas
+            images[index].classList.add('active');
+            indicators[index].classList.add('active');
+
+            // Actualizar contador
+            currentSlideSpan.textContent = index + 1;
+        }
+
+        // Abrir modal
+        function openModal(proyecto, index) {
+            currentModalProject = proyecto;
+            currentModalIndex = index;
+
+            const modal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+
+            modalImage.src = proyectosData[proyecto][index];
+            modal.classList.add('active');
+
+            // Prevenir scroll del body
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Cerrar modal
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Navegación en modal - Anterior
+        function modalPrevImage() {
+            if (!currentModalProject) return;
+
+            const images = proyectosData[currentModalProject];
+            currentModalIndex--;
+
+            if (currentModalIndex < 0) {
+                currentModalIndex = images.length - 1;
+            }
+
+            document.getElementById('modalImage').src = images[currentModalIndex];
+        }
+
+        // Navegación en modal - Siguiente
+        function modalNextImage() {
+            if (!currentModalProject) return;
+
+            const images = proyectosData[currentModalProject];
+            currentModalIndex++;
+
+            if (currentModalIndex >= images.length) {
+                currentModalIndex = 0;
+            }
+
+            document.getElementById('modalImage').src = images[currentModalIndex];
+        }
+
+        // Cerrar modal con tecla ESC
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        // Navegación con flechas en modal
+        document.addEventListener('keydown', (e) => {
+            const modal = document.getElementById('imageModal');
+            if (modal.classList.contains('active')) {
+                if (e.key === 'ArrowLeft') {
+                    modalPrevImage();
+                } else if (e.key === 'ArrowRight') {
+                    modalNextImage();
+                }
+            }
+        });
+
+        // Cerrar modal al hacer clic fuera de la imagen
+        document.getElementById('imageModal').addEventListener('click', (e) => {
+            if (e.target.id === 'imageModal') {
+                closeModal();
+            }
+        });
+    </script>
 </body>
+
 </html>

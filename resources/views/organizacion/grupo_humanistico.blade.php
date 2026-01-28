@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +19,8 @@
     <title>Grupo Humanístico S.A.S | Gimnasio Humanístico del Alto Magdalena - Neiva</title>
 
     <!-- CANONICAL -->
-    <link rel="canonical" href="https://tusitio.com/grupo-humanistico">
+    <link rel="canonical" href="https://gimnasiohumanisticoaltomagdalena.com/grupo-humanistico">
+
 
     <!-- OPTIMIZACIÓN DE FUENTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,6 +55,51 @@
     <link href="{{ asset('css/hero.css') }}" rel="stylesheet">
     <link href="{{ asset('css/navegacion.css') }}" rel="stylesheet">
 
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "EducationalOrganization",
+      "@id": "https://gimnasiohumanisticoaltomagdalena.com/#grupo-humanistico",
+      "name": "Grupo Humanístico S.A.S",
+      "url": "https://gimnasiohumanisticoaltomagdalena.com/grupo-humanistico",
+      "logo": "https://gimnasiohumanisticoaltomagdalena.com/images/grupo_humanistico2.png",
+      "description": "Grupo Humanístico S.A.S es una organización educativa en Colombia dedicada a la formación integral, valores humanísticos, excelencia académica y desarrollo personal.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Neiva",
+        "addressRegion": "Huila",
+        "addressCountry": "CO"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Colombia"
+      },
+      "sameAs": [
+        "https://web.facebook.com/profile.php?id=100041995064524",
+        "https://www.instagram.com/gimnasiohumanistico03?utm_source=qr&igsh=YTV3aGt3ajVyZjRw"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://gimnasiohumanisticoaltomagdalena.com/grupo-humanistico#webpage",
+      "url": "https://gimnasiohumanisticoaltomagdalena.com/grupo-humanistico",
+      "name": "Grupo Humanístico S.A.S | Gimnasio Humanístico del Alto Magdalena",
+      "description": "Conoce el Grupo Humanístico S.A.S, organización educativa comprometida con la formación integral, valores y excelencia académica en Neiva, Colombia.",
+      "inLanguage": "es",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://gimnasiohumanisticoaltomagdalena.com/#website"
+      },
+      "about": {
+        "@id": "https://gimnasiohumanisticoaltomagdalena.com/#grupo-humanistico"
+      }
+    }
+  ]
+}
+</script>
 
 </head>
 

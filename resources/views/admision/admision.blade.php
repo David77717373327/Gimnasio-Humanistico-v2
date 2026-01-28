@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admisión - GIMNASIO HUMANÍSTICO</title>
+    <title>Proceso de Admisiones en Neiva | Gimnasio Humanístico del Alto Magdalena</title>
     <!-- Google Fonts - Tipografía moderna -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +16,11 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="{{ asset('images/logo.png') }}">
 
+    <!-- Meta descripción SEO-->
+    <meta name="description"
+content="Conoce el proceso de admisiones en Neiva del Gimnasio Humanístico del Alto Magdalena. Requisitos, horarios, rutas de admisión y matrícula para preescolar, primaria y secundaria.">
+
+
     <!-- Scripts -->
     <script src="{{ asset('js/hero.js') }}" defer></script>
 
@@ -24,6 +29,59 @@
     <link href="{{ asset('css/admision.css') }}" rel="stylesheet">
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
     <link href="{{ asset('css/hero.css') }}" rel="stylesheet">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://gimnasiohumanisticoaltomagdalena.com/admisiones">
+
+
+
+@verbatim
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Gimnasio Humanístico del Alto Magdalena",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "CLL.13 4-53",
+    "addressLocality": "Neiva",
+    "addressRegion": "Huila",
+    "addressCountry": "CO"
+  },
+  "telephone": "+573152296832",
+  "email": "gimnasiohumanistico@homt.com",
+  "url": "https://gimnasiohumanisticoaltomagdalena.com",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Proceso de Admisiones",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "EducationalOccupationalProgram",
+          "name": "Admisiones Preescolar"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "EducationalOccupationalProgram",
+          "name": "Admisiones Básica Primaria"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "EducationalOccupationalProgram",
+          "name": "Admisiones Básica Secundaria y Media Académica"
+        }
+      }
+    ]
+  }
+}
+</script>
+@endverbatim
+
 </head>
 
 <body>
@@ -36,13 +94,14 @@
         @include('layouts.navigation')
     </nav>
 
-    <main id="main" role="main">
+    <main id="main" aria-label="Contenido principal del proceso de admisiones">
+
 
         <!-- HERO -->
-        <section class="hero-section" aria-label="Educación Inicial y Preescolar en Neiva">
+        <section class="hero-section" aria-label="Sección de bienvenida a procesos de admisión en Neiva Huila">
             <div class="hero-background">
-                <img src="../images/simbolos.jpg"
-                    alt="Instalaciones del colegio en Neiva enfocadas en educación inicial y preescolar" width="1920"
+                <img src="{{ asset('images/simbolos.jpg') }}"
+                    alt="Simbolos del Gimnasio Humanístico del Alto Magdalena Neiva Huila" width="1920"
                     height="1080" loading="lazy">
             </div>
 
@@ -51,8 +110,8 @@
 
             <div class="container hero-container">
                 <div class="hero-content">
-                    <h1 class="hero-title" data-title="Nuestra Identidad Institucional">
-                        Procesos De Admision
+                    <h1 class="hero-title" data-title="Proceso de Admisiones en Neiva">
+                        Proceso de Admisiones en Neiva
                     </h1>
                     <div class="hero-scroll-indicator" onclick="scrollToContent()" role="button" tabindex="0"
                         aria-label="Ir a contenido principal" onkeypress="if(event.key==='Enter')scrollToContent()">
@@ -493,7 +552,7 @@
         <!-- SECCIÓN PROCESO DE ADMISIONES -->
 <section class="admisiones-carousel-section" id="ruta-admision">
     <div class="header-section">
-        <h1 class="main-title">Ruta Proceso De Admisión</h1>
+        <h2 class="main-title">Ruta Proceso De Admisión</h2>
     </div>
 
     <div class="progress-counter">
@@ -546,14 +605,12 @@
     </div>
 </section>
 
-
+    </main>
         <!-- Incluir el footer -->
         @include('layouts.footer')
 
-
         <!-- Scripts -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-        </script>
 
         <script>
             const cards = document.querySelectorAll('.carousel-card');

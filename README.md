@@ -114,3 +114,81 @@ $kernel->terminate($request, $response);
 
 
 
+
+
+
+Seo  vistade Inicio debajo de bienbenida
+
+<section class="seo-text-section">
+  <h2>Colegio privado en Neiva, Huila</h2>
+  <p>
+    El Gimnasio Humanístico del Alto Magdalena es un colegio privado en Neiva, Huila,
+    con una propuesta educativa integral que abarca preescolar, básica primaria,
+    básica secundaria y media académica. Nuestro modelo pedagógico humanista fortalece
+    los valores, el pensamiento crítico y la excelencia académica.
+  </p>
+
+  <p>
+    Somos una institución reconocida por su compromiso con la formación integral
+    de niños y jóvenes, ofreciendo educación de calidad en un entorno seguro,
+    innovador y con proyección al futuro.
+  </p>
+</section>
+
+
+
+
+SEO PRESCOLAR TEXTOS LARGOS
+<section class="seo-text-section">
+  <div class="container">
+    <h2>Preescolar en Neiva con enfoque humanista</h2>
+
+    <p>
+      Nuestro programa de educación inicial y preescolar en Neiva está diseñado para
+      acompañar a los niños en sus primeras etapas de aprendizaje, fortaleciendo su
+      desarrollo emocional, social, comunicativo y cognitivo en un entorno seguro,
+      afectivo y estimulante.
+    </p>
+
+    <p>
+      En el Gimnasio Humanístico del Alto Magdalena promovemos el aprendizaje a través
+      del juego, la exploración y la interacción, respetando los ritmos individuales
+      de cada niño y fomentando valores, autonomía y pensamiento creativo desde la
+      primera infancia.
+    </p>
+  </div>
+</section>
+
+
+
+SEO BASICA PRIMARIA
+
+<section class="seo-text-section">
+  <div class="container">
+    <h2>Educación Básica Primaria en Neiva</h2>
+
+    <p>
+      Nuestro programa de educación básica primaria en Neiva está orientado al
+      desarrollo integral de los estudiantes, fortaleciendo sus competencias académicas,
+      sociales y emocionales a través de una formación humanística basada en valores,
+      disciplina y pensamiento crítico.
+    </p>
+
+    <p>
+      En el Gimnasio Humanístico del Alto Magdalena acompañamos a los niños en su proceso
+      de aprendizaje desde los primeros grados de primaria, brindando una educación de
+      calidad que promueve la autonomía, la convivencia y el amor por el conocimiento.
+    </p>
+  </div>
+</section>
+
+
+SEO EDUCACION SEGUNDARIA
+
+<p class="objetivos-intro">
+    La Educación Básica Secundaria en el Gimnasio Humanístico del Alto Magdalena en Neiva
+    fortalece las competencias académicas, científicas, sociales y humanas, preparando a
+    los estudiantes para la educación media y los desafíos de la vida.
+</p>
+
+

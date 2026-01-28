@@ -13,24 +13,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-/*
-|--------------------------------------------------------------------------
-| Dashboard (usuarios autenticados)
-|--------------------------------------------------------------------------
-*/
-Route::get('/dashboard', function () {
-    $user = Auth::user();
-
-    if ($user->role === 'admin') {
-        return redirect()->route('admin.index');
-    } elseif ($user->role === 'student') {
-        return redirect()->route('student.index');
-    } elseif ($user->role === 'professor') {
-        return redirect()->route('professor.index');
-    }
-
-    return redirect()->route('usuario.welcome');
-})->middleware(['auth'])->name('dashboard');
 
 /*
 |--------------------------------------------------------------------------

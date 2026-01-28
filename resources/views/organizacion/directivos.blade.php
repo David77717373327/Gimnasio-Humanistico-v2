@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CO">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta property="og:url" content="https://gimnasiohumanisticoaltomagdalena.com/directivos">
+    <meta property="og:site_name" content="Gimnasio Humanístico del Alto Magdalena">
+
     <!-- SEO -->
     <title>Equipo Directivo | Gimnasio Humanístico del Alto Magdalena - Neiva</title>
     <meta name="description"
         content="Conoce al equipo directivo del Gimnasio Humanístico. Liderazgo académico, visión humanística, gestión educativa moderna y compromiso con la excelencia institucional.">
-    <link rel="canonical" href="https://gimnasiohumanistico.edu/directivos">
+    <link rel="canonical" href="https://gimnasiohumanisticoaltomagdalena.com/directivos">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Equipo Directivo | Gimnasio Humanístico">
@@ -17,7 +20,7 @@
         content="Líderes comprometidos con la excelencia educativa y el enfoque humanístico del Gimnasio Humanístico.">
     <meta property="og:image" content="{{ asset('images/politica_de_calidad2.webp') }}">
     <meta property="og:type" content="website">
-    <meta property="og:locale" content="es_ES">
+    <meta property="og:locale" content="es_CO">
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
@@ -49,6 +52,40 @@
     <!-- Script Hero -->
     <script src="{{ asset('js/hero.js') }}" defer></script>
 
+
+      @verbatim
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Gimnasio Humanístico del Alto Magdalena",
+  "url": "https://gimnasiohumanisticoaltomagdalena.com",
+  "employee": [
+    {
+      "@type": "Person",
+      "name": "Silvia Cristina Ruiz Campos",
+      "jobTitle": "Rectora",
+      "worksFor": {
+        "@type": "EducationalOrganization",
+        "name": "Gimnasio Humanístico del Alto Magdalena"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "Stefany Polania Cubillos",
+      "jobTitle": "Coordinadora Académica",
+      "worksFor": {
+        "@type": "EducationalOrganization",
+        "name": "Gimnasio Humanístico del Alto Magdalena"
+      }
+    }
+  ]
+}
+</script>
+
+@endverbatim
+
+
 </head>
 
 <body>
@@ -75,7 +112,7 @@
 
             <div class="container hero-container">
                 <div class="hero-content">
-                    <h1 class="hero-title" data-title="Liderazgo Institucional">Equipo Directivo</h1>
+                    <h1 class="hero-title" data-title="Liderazgo Institucional">Equipo Directivo del Gimnasio Humanístico</h1>
 
                     <div class="hero-scroll-indicator" onclick="scrollToContent()" role="button" tabindex="0"
                         aria-label="Desplazarse a la siguiente sección"
@@ -128,7 +165,7 @@
                         <div class="image-accent"></div>
                         <div class="image-wrapper">
                             <img src="{{ asset('images/logo.png') }}"
-                                alt="Retrato de la coordinadora académica del Gimnasio Humanístico" width="600"
+                                alt="Stefany Polania Cubillos, Coordinadora Académica del Gimnasio Humanístico del Alto Magdalena" width="600"
                                 height="750" loading="lazy">
                         </div>
                     </div>

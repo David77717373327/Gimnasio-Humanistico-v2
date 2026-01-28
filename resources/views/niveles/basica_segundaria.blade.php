@@ -16,6 +16,14 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="{{ asset('images/logo.png') }}">
 
+
+
+
+    <!--Meta descripción para SEO-->
+    <meta name="description"
+      content="Educación Básica Secundaria en Neiva en el Gimnasio Humanístico del Alto Magdalena. Formación académica integral, científica y humanística para estudiantes de secundaria.">
+
+
     <!-- Scripts -->
     <script src="{{ asset('js/hero.js') }}" defer></script>
 
@@ -25,6 +33,27 @@
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
     <link href="{{ asset('css/hero.css') }}" rel="stylesheet">
     <link href="{{ asset('css/galeria.css') }}" rel="stylesheet">
+
+
+    @verbatim
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Gimnasio Humanístico del Alto Magdalena",
+    "url": "https://gimnasiohumanisticoaltomagdalena.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Neiva",
+      "addressRegion": "Huila",
+      "addressCountry": "CO"
+    },
+    "educationalLevel": "Educación Básica Secundaria"
+  }
+  </script>
+
+    @endverbatim
+
 </head>
 
 <body>
@@ -42,8 +71,8 @@
         <!-- HERO -->
         <section class="hero-section" aria-label="Educación Básica Secundaria en Neiva">
             <div class="hero-background">
-                <img src="../images/educacion_secundaria/imagen11.jpg"
-                    alt="Instalaciones del colegio en Neiva enfocadas en educación básica secundaria" width="1920"
+                <img src="{{ asset('images/educacion_secundaria/imagen11.jpg') }}"
+                    alt="Educación básica secundaria en Neiva en el Gimnasio Humanístico del Alto Magdalena" width="1920"
                     height="1080" loading="lazy">
             </div>
 
@@ -53,7 +82,7 @@
             <div class="container hero-container">
                 <div class="hero-content">
                     <h1 class="hero-title" data-title="Nuestra Identidad Institucional">
-                        Educación Básica Secundaria
+                        Educación Básica Secundaria en Neiva
                     </h1>
 
                     <div class="hero-scroll-indicator" onclick="scrollToContent()" role="button" tabindex="0"
@@ -65,381 +94,401 @@
         </section>
 
 
+
+
+
+
+
+
+
+
+
+
+
+<section>
         <!-- Título SEO -->
-        <header class="admision-nav-header" id="siguiente_sesion">
-            <h2 class="admision-nav-title">Objetivos Básica Secundaria</h2>
-        </header>
+<header class="admision-nav-header" id="siguiente_sesion">
+    <h2 class="admision-nav-title">Objetivos Básica Secundaria</h2>
+</header>
 
 
-        <div class="objetivos-split-container">
-            <!-- Panel de Navegación -->
-            <div class="objetivos-nav-panel">
+<div class="objetivos-split-container">
+    <!-- Panel de Navegación -->
+    <div class="objetivos-nav-panel">
 
-                <!-- Comunicación y Expresión -->
-                <div class="objetivos-nav-item active" data-category="comunicacion">
-                    <div class="objetivos-nav-number">01</div>
-                    <div class="objetivos-nav-content">
-                        <div class="objetivos-nav-title">Comunicación y Expresión</div>
-                        <div class="objetivos-nav-subtitle">3 objetivos</div>
-                    </div>
-                </div>
-
-                <!-- Desarrollo Científico y Tecnológico -->
-                <div class="objetivos-nav-item" data-category="cientifico">
-                    <div class="objetivos-nav-number">02</div>
-                    <div class="objetivos-nav-content">
-                        <div class="objetivos-nav-title">Desarrollo Científico y Tecnológico</div>
-                        <div class="objetivos-nav-subtitle">5 objetivos</div>
-                    </div>
-                </div>
-
-                <!-- Formación Social y Ciudadana -->
-                <div class="objetivos-nav-item" data-category="social">
-                    <div class="objetivos-nav-number">03</div>
-                    <div class="objetivos-nav-content">
-                        <div class="objetivos-nav-title">Formación Social y Ciudadana</div>
-                        <div class="objetivos-nav-subtitle">4 objetivos</div>
-                    </div>
-                </div>
-
-                <!-- Desarrollo Integral y Bienestar -->
-                <div class="objetivos-nav-item" data-category="integral">
-                    <div class="objetivos-nav-number">04</div>
-                    <div class="objetivos-nav-content">
-                        <div class="objetivos-nav-title">Desarrollo Integral y Bienestar</div>
-                        <div class="objetivos-nav-subtitle">3 objetivos</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Panel de Contenido -->
-            <div class="objetivos-content-panel">
-
-                <!-- COMUNICACIÓN Y EXPRESIÓN -->
-                <!-- Objetivo 1 -->
-                <div class="objetivos-content-item active" data-category="comunicacion" data-index="0">
-                    <div class="objetivos-content-header">
-                        <div class="objetivos-content-number">01</div>
-                        <div class="objetivos-content-title-group">
-                            <h2>Competencia Comunicativa</h2>
-                            <p class="objetivos-content-category">Comunicación y Expresión • 1 de 3</p>
-                        </div>
-                    </div>
-                    <p class="objetivos-content-text">
-                        El desarrollo de la capacidad para comprender textos y expresar correctamente mensajes
-                        complejos, orales y escritos en lengua castellana, así como para entender mediante un estudio
-                        sistemático los diferentes elementos constitutivos de la lengua.
-                    </p>
-                    <div class="objetivos-content-highlight">
-                        <h3>¿Por qué es importante?</h3>
-                        <p>La competencia comunicativa es fundamental para el pensamiento crítico y la expresión
-                            efectiva de ideas complejas, habilidades esenciales en la vida académica y profesional.</p>
-                    </div>
-                </div>
-
-                <!-- Objetivo 2 -->
-                <div class="objetivos-content-item" data-category="comunicacion" data-index="1">
-                    <div class="objetivos-content-header">
-                        <div class="objetivos-content-number">02</div>
-                        <div class="objetivos-content-title-group">
-                            <h2>Expresión Literaria</h2>
-                            <p class="objetivos-content-category">Comunicación y Expresión • 2 de 3</p>
-                        </div>
-                    </div>
-                    <p class="objetivos-content-text">
-                        La valoración de la lengua castellana como medio de expresión literaria y el estudio de la
-                        creación literaria en el país y en el mundo.
-                    </p>
-                    <div class="objetivos-content-highlight">
-                        <h3>¿Por qué es importante?</h3>
-                        <p>La apreciación literaria desarrolla la sensibilidad cultural, el pensamiento analítico y la
-                            capacidad de expresión creativa, conectando a los estudiantes con su patrimonio cultural y
-                            el legado literario universal.</p>
-                    </div>
-                </div>
-
-                <!-- Objetivo 3 -->
-                <div class="objetivos-content-item" data-category="comunicacion" data-index="2">
-                    <div class="objetivos-content-header">
-                        <div class="objetivos-content-number">03</div>
-                        <div class="objetivos-content-title-group">
-                            <h2>Lengua Extranjera</h2>
-                            <p class="objetivos-content-category">Comunicación y Expresión • 3 de 3</p>
-                        </div>
-                    </div>
-                    <p class="objetivos-content-text">
-                        La comprensión y la capacidad de expresarse en lengua extranjera.
-                    </p>
-                    <div class="objetivos-content-highlight">
-                        <h3>¿Por qué es importante?</h3>
-                        <p>El dominio de una lengua extranjera abre oportunidades educativas y profesionales globales,
-                            además de desarrollar habilidades cognitivas avanzadas y comprensión intercultural.</p>
-                    </div>
-                </div>
-
-                <!-- DESARROLLO CIENTÍFICO Y TECNOLÓGICO -->
-                <!-- Objetivo 4 -->
-                <div class="objetivos-content-item" data-category="cientifico" data-index="0">
-                    <div class="objetivos-content-header">
-                        <div class="objetivos-content-number">01</div>
-                        <div class="objetivos-content-title-group">
-                            <h2>Razonamiento Lógico-Matemático</h2>
-                            <p class="objetivos-content-category">Desarrollo Científico y Tecnológico • 1 de 5</p>
-                        </div>
-                    </div>
-                    <p class="objetivos-content-text">
-                        El desarrollo de las capacidades para el razonamiento lógico, mediante el dominio de los
-                        sistemas numéricos, geométricos, métricos, lógicos, analíticos, de conjuntos, de operaciones y
-                        relaciones, así como para su utilización en la solución de los problemas de la ciencia, de la
-                        tecnología y de la vida cotidiana.
-                    </p>
-                    <div class="objetivos-content-highlight">
-                        <h3>¿Por qué es importante?</h3>
-                        <p>El razonamiento lógico-matemático es la base del pensamiento científico y tecnológico,
-                            permitiendo resolver problemas complejos de manera sistemática y eficiente.</p>
-                    </div>
-                </div>
-
-                <!-- Objetivo 5 -->
-                <div class="objetivos-content-item" data-category="cientifico" data-index="1">
-                    <div class="objetivos-content-header">
-                        <div class="objetivos-content-number">02</div>
-                        <div class="objetivos-content-title-group">
-                            <h2>Conocimiento Científico</h2>
-                            <p class="objetivos-content-category">Desarrollo Científico y Tecnológico • 2 de 5</p>
-                        </div>
-                    </div>
-                    <p class="objetivos-content-text">
-                        El avance en el conocimiento científico de los fenómenos físicos, químicos y biológicos,
-                        mediante la comprensión de las leyes, el planteamiento de los problemas y la observación
-                        experimental.
-                    </p>
-                    <div class="objetivos-content-highlight">
-                        <h3>¿Por qué es importante?</h3>
-                        <p>La comprensión científica desarrolla el pensamiento crítico y la capacidad de analizar el
-                            mundo natural mediante el método científico, fundamental para la innovación y el progreso.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Objetivo 6 -->
-                <div class="objetivos-content-item" data-category="cientifico" data-index="2">
-                    <div class="objetivos-content-header">
-                        <div class="objetivos-content-number">03</div>
-                        <div class="objetivos-content-title-group">
-                            <h2>Tecnología y Práctica</h2>
-                            <p class="objetivos-content-category">Desarrollo Científico y Tecnológico • 3 de 5</p>
-                        </div>
-                    </div>
-                    <p class="objetivos-content-text">
-                        La iniciativa en los campos más avanzados de la tecnología moderna y el entrenamiento en
-                        disciplinas, procesos y técnicas que les permitan el ejercicio de una función socialmente útil.
-                    </p>
-                    <div class="objetivos-content-highlight">
-                        <h3>¿Por qué es importante?</h3>
-                        <p>La formación tecnológica prepara a los estudiantes para un mundo en constante cambio,
-                            desarrollando habilidades prácticas que les permiten contribuir significativamente a la
-                            sociedad.</p>
-                    </div>
-                </div>
-
-                <!-- Objetivo 7 -->
-                <div class="objetivos-content-item" data-category="cientifico" data-index="3">
-                    <div class="objetivos-content-header">
-                        <div class="objetivos-content-number">04</div>
-                        <div class="objetivos-content-title-group">
-                            <h2>Teoría y Práctica</h2>
-                            <p class="objetivos-content-category">Desarrollo Científico y Tecnológico • 4 de 5</p>
-                        </div>
-                    </div>
-                    <p class="objetivos-content-text">
-                        La comprensión de la dimensión práctica de los conocimientos teóricos, así como la dimensión
-                        teórica del conocimiento práctico y la capacidad para utilizarla en la solución de problemas.
-                    </p>
-                    <div class="objetivos-content-highlight">
-                        <h3>¿Por qué es importante?</h3>
-                        <p>La integración entre teoría y práctica asegura que el aprendizaje sea significativo y
-                            aplicable, desarrollando competencias para resolver problemas reales.</p>
-                    </div>
-                </div>
-
-                <!-- Objetivo 8 -->
-                <div class="objetivos-content-item" data-category="cientifico" data-index="4">
-                    <div class="objetivos-content-header">
-                        <div class="objetivos-content-number">05</div>
-                        <div class="objetivos-content-title-group">
-                            <h2>Búsqueda de Conocimiento</h2>
-                            <p class="objetivos-content-category">Desarrollo Científico y Tecnológico • 5 de 5</p>
-                        </div>
-                    </div>
-                    <p class="objetivos-content-text">
-                        La utilización con sentido crítico de los distintos contenidos y formas de información y la
-                        búsqueda de nuevos conocimientos con su propio esfuerzo.
-                    </p>
-                    <div class="objetivos-content-highlight">
-                        <h3>¿Por qué es importante?</h3>
-                        <p>Fomenta el aprendizaje autónomo y permanente, desarrollando la capacidad de investigar,
-                            evaluar fuentes y construir conocimiento de manera independiente.</p>
-                    </div>
-                </div>
-
-                <!-- FORMACIÓN SOCIAL Y CIUDADANA -->
-                <!-- Objetivo 9 -->
-                <div class="objetivos-content-item" data-category="social" data-index="0">
-                    <div class="objetivos-content-header">
-                        <div class="objetivos-content-number">01</div>
-                        <div class="objetivos-content-title-group">
-                            <h2>Historia y Sociedad</h2>
-                            <p class="objetivos-content-category">Formación Social y Ciudadana • 1 de 4</p>
-                        </div>
-                    </div>
-                    <p class="objetivos-content-text">
-                        El estudio científico de la historia nacional y mundial dirigida a comprender el desarrollo de
-                        la sociedad y el estudio de las ciencias sociales, con miras al análisis de las condiciones
-                        actuales de la realidad social.
-                    </p>
-                    <div class="objetivos-content-highlight">
-                        <h3>¿Por qué es importante?</h3>
-                        <p>Comprender la historia permite entender el presente y tomar decisiones informadas sobre el
-                            futuro, desarrollando consciencia social y pensamiento crítico sobre la realidad
-                            contemporánea.</p>
-                    </div>
-                </div>
-
-                <!-- Objetivo 10 -->
-                <div class="objetivos-content-item" data-category="social" data-index="1">
-                    <div class="objetivos-content-header">
-                        <div class="objetivos-content-number">02</div>
-                        <div class="objetivos-content-title-group">
-                            <h2>Geografía y Cultura Mundial</h2>
-                            <p class="objetivos-content-category">Formación Social y Ciudadana • 2 de 4</p>
-                        </div>
-                    </div>
-                    <p class="objetivos-content-text">
-                        El estudio científico del universo, de la tierra, de su estructura física, de su división y
-                        organización política, del desarrollo económico de los países y de las diferentes
-                        manifestaciones culturales de los pueblos.
-                    </p>
-                    <div class="objetivos-content-highlight">
-                        <h3>¿Por qué es importante?</h3>
-                        <p>El conocimiento geográfico y cultural desarrolla una visión global del mundo, promoviendo el
-                            respeto intercultural y la comprensión de la interdependencia entre naciones.</p>
-                    </div>
-                </div>
-
-                <!-- Objetivo 11 -->
-                <div class="objetivos-content-item" data-category="social" data-index="2">
-                    <div class="objetivos-content-header">
-                        <div class="objetivos-content-number">03</div>
-                        <div class="objetivos-content-title-group">
-                            <h2>Formación Constitucional</h2>
-                            <p class="objetivos-content-category">Formación Social y Ciudadana • 3 de 4</p>
-                        </div>
-                    </div>
-                    <p class="objetivos-content-text">
-                        La formación en el ejercicio de sus deberes y derechos, el conocimiento de la constitución
-                        política y de las relaciones internacionales.
-                    </p>
-                    <div class="objetivos-content-highlight">
-                        <h3>¿Por qué es importante?</h3>
-                        <p>Formar ciudadanos conscientes de sus derechos y deberes es fundamental para fortalecer la
-                            democracia y promover una participación activa y responsable en la sociedad.</p>
-                    </div>
-                </div>
-
-                <!-- Objetivo 12 -->
-                <div class="objetivos-content-item" data-category="social" data-index="3">
-                    <div class="objetivos-content-header">
-                        <div class="objetivos-content-number">04</div>
-                        <div class="objetivos-content-title-group">
-                            <h2>Conservación Ambiental</h2>
-                            <p class="objetivos-content-category">Formación Social y Ciudadana • 4 de 4</p>
-                        </div>
-                    </div>
-                    <p class="objetivos-content-text">
-                        El desarrollo de actitudes favorables al conocimiento, valoración y conservación de la
-                        naturaleza y el ambiente.
-                    </p>
-                    <div class="objetivos-content-highlight">
-                        <h3>¿Por qué es importante?</h3>
-                        <p>La consciencia ambiental es crucial para la sostenibilidad del planeta, formando ciudadanos
-                            responsables con el medio ambiente y comprometidos con su preservación.</p>
-                    </div>
-                </div>
-
-                <!-- DESARROLLO INTEGRAL Y BIENESTAR -->
-                <!-- Objetivo 13 -->
-                <div class="objetivos-content-item" data-category="integral" data-index="0">
-                    <div class="objetivos-content-header">
-                        <div class="objetivos-content-number">01</div>
-                        <div class="objetivos-content-title-group">
-                            <h2>Formación Artística</h2>
-                            <p class="objetivos-content-category">Desarrollo Integral y Bienestar • 1 de 3</p>
-                        </div>
-                    </div>
-                    <p class="objetivos-content-text">
-                        La apreciación artística, la comprensión estética, la creatividad, la familiarización con los
-                        diferentes medios de expresión artística y el conocimiento, valoración y respeto por los bienes
-                        artísticos y culturales.
-                    </p>
-                    <div class="objetivos-content-highlight">
-                        <h3>¿Por qué es importante?</h3>
-                        <p>La formación artística desarrolla la sensibilidad, la creatividad y la expresión personal,
-                            enriqueciendo la vida emocional y cultural de los estudiantes.</p>
-                    </div>
-                </div>
-
-                <!-- Objetivo 14 -->
-                <div class="objetivos-content-item" data-category="integral" data-index="1">
-                    <div class="objetivos-content-header">
-                        <div class="objetivos-content-number">02</div>
-                        <div class="objetivos-content-title-group">
-                            <h2>Salud y Bienestar</h2>
-                            <p class="objetivos-content-category">Desarrollo Integral y Bienestar • 2 de 3</p>
-                        </div>
-                    </div>
-                    <p class="objetivos-content-text">
-                        La valoración de la salud y de los hábitos relacionados con ella.
-                    </p>
-                    <div class="objetivos-content-highlight">
-                        <h3>¿Por qué es importante?</h3>
-                        <p>La valoración de la salud establece las bases para un estilo de vida saludable y el bienestar
-                            integral a lo largo de toda la vida.</p>
-                    </div>
-                </div>
-
-                <!-- Objetivo 15 -->
-                <div class="objetivos-content-item" data-category="integral" data-index="2">
-                    <div class="objetivos-content-header">
-                        <div class="objetivos-content-number">03</div>
-                        <div class="objetivos-content-title-group">
-                            <h2>Desarrollo Físico y Recreación</h2>
-                            <p class="objetivos-content-category">Desarrollo Integral y Bienestar • 3 de 3</p>
-                        </div>
-                    </div>
-                    <p class="objetivos-content-text">
-                        La educación física y la práctica de la recreación y los deportes, la participación y
-                        organización juvenil y la utilización adecuada del tiempo libre.
-                    </p>
-                    <div class="objetivos-content-highlight">
-                        <h3>¿Por qué es importante?</h3>
-                        <p>El desarrollo físico y la recreación promueven hábitos saludables, trabajo en equipo,
-                            disciplina y el aprovechamiento constructivo del tiempo libre, contribuyendo al desarrollo
-                            integral de la personalidad.</p>
-                    </div>
-                </div>
-
-                <!-- Navegación entre objetivos -->
-                <div class="objetivos-content-navigation">
-                    <button class="objetivos-nav-btn objetivos-prev" id="objetivosPrevBtn">
-                        ← Anterior
-                    </button>
-                    <button class="objetivos-nav-btn objetivos-next" id="objetivosNextBtn">
-                        Siguiente →
-                    </button>
-                </div>
+        <!-- Comunicación y Expresión -->
+        <div class="objetivos-nav-item active" data-category="comunicacion">
+            <div class="objetivos-nav-number">01</div>
+            <div class="objetivos-nav-content">
+                <div class="objetivos-nav-title">Comunicación y Expresión</div>
+                <div class="objetivos-nav-subtitle">3 objetivos</div>
             </div>
         </div>
+
+        <!-- Desarrollo Científico y Tecnológico -->
+        <div class="objetivos-nav-item" data-category="cientifico">
+            <div class="objetivos-nav-number">02</div>
+            <div class="objetivos-nav-content">
+                <div class="objetivos-nav-title">Desarrollo Científico y Tecnológico</div>
+                <div class="objetivos-nav-subtitle">5 objetivos</div>
+            </div>
+        </div>
+
+        <!-- Formación Social y Ciudadana -->
+        <div class="objetivos-nav-item" data-category="social">
+            <div class="objetivos-nav-number">03</div>
+            <div class="objetivos-nav-content">
+                <div class="objetivos-nav-title">Formación Social y Ciudadana</div>
+                <div class="objetivos-nav-subtitle">4 objetivos</div>
+            </div>
+        </div>
+
+        <!-- Desarrollo Integral y Bienestar -->
+        <div class="objetivos-nav-item" data-category="integral">
+            <div class="objetivos-nav-number">04</div>
+            <div class="objetivos-nav-content">
+                <div class="objetivos-nav-title">Desarrollo Integral y Bienestar</div>
+                <div class="objetivos-nav-subtitle">3 objetivos</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Panel de Contenido -->
+    <div class="objetivos-content-panel">
+
+        <!-- COMUNICACIÓN Y EXPRESIÓN -->
+        <!-- Objetivo 1 -->
+        <div class="objetivos-content-item active" data-category="comunicacion" data-index="0">
+            <div class="objetivos-content-header">
+                <div class="objetivos-content-number">01</div>
+                <div class="objetivos-content-title-group">
+                    <h4 class="objetivos-item-title">Competencia Comunicativa</h4>
+                    <p class="objetivos-content-category">Comunicación y Expresión • 1 de 3</p>
+                </div>
+            </div>
+            <p class="objetivos-content-text">
+                El desarrollo de la capacidad para comprender textos y expresar correctamente mensajes
+                complejos, orales y escritos en lengua castellana, así como para entender mediante un estudio
+                sistemático los diferentes elementos constitutivos de la lengua.
+            </p>
+            <div class="objetivos-content-highlight">
+                <h5>¿Por qué es importante?</h5>
+                <p>La competencia comunicativa es fundamental para el pensamiento crítico y la expresión
+                    efectiva de ideas complejas, habilidades esenciales en la vida académica y profesional.</p>
+            </div>
+        </div>
+
+        <!-- Objetivo 2 -->
+        <div class="objetivos-content-item" data-category="comunicacion" data-index="1">
+            <div class="objetivos-content-header">
+                <div class="objetivos-content-number">02</div>
+                <div class="objetivos-content-title-group">
+                    <h4 class="objetivos-item-title">Expresión Literaria</h4>
+                    <p class="objetivos-content-category">Comunicación y Expresión • 2 de 3</p>
+                </div>
+            </div>
+            <p class="objetivos-content-text">
+                La valoración de la lengua castellana como medio de expresión literaria y el estudio de la
+                creación literaria en el país y en el mundo.
+            </p>
+            <div class="objetivos-content-highlight">
+                <h5>¿Por qué es importante?</h5>
+                <p>La apreciación literaria desarrolla la sensibilidad cultural, el pensamiento analítico y la
+                    capacidad de expresión creativa, conectando a los estudiantes con su patrimonio cultural y
+                    el legado literario universal.</p>
+            </div>
+        </div>
+
+        <!-- Objetivo 3 -->
+        <div class="objetivos-content-item" data-category="comunicacion" data-index="2">
+            <div class="objetivos-content-header">
+                <div class="objetivos-content-number">03</div>
+                <div class="objetivos-content-title-group">
+                    <h4 class="objetivos-item-title">Lengua Extranjera</h4>
+                    <p class="objetivos-content-category">Comunicación y Expresión • 3 de 3</p>
+                </div>
+            </div>
+            <p class="objetivos-content-text">
+                La comprensión y la capacidad de expresarse en lengua extranjera.
+            </p>
+            <div class="objetivos-content-highlight">
+                <h5>¿Por qué es importante?</h5>
+                <p>El dominio de una lengua extranjera abre oportunidades educativas y profesionales globales,
+                    además de desarrollar habilidades cognitivas avanzadas y comprensión intercultural.</p>
+            </div>
+        </div>
+
+        <!-- DESARROLLO CIENTÍFICO Y TECNOLÓGICO -->
+        <!-- Objetivo 4 -->
+        <div class="objetivos-content-item" data-category="cientifico" data-index="0">
+            <div class="objetivos-content-header">
+                <div class="objetivos-content-number">01</div>
+                <div class="objetivos-content-title-group">
+                    <h4 class="objetivos-item-title">Razonamiento Lógico-Matemático</h4>
+                    <p class="objetivos-content-category">Desarrollo Científico y Tecnológico • 1 de 5</p>
+                </div>
+            </div>
+            <p class="objetivos-content-text">
+                El desarrollo de las capacidades para el razonamiento lógico, mediante el dominio de los
+                sistemas numéricos, geométricos, métricos, lógicos, analíticos, de conjuntos, de operaciones y
+                relaciones, así como para su utilización en la solución de los problemas de la ciencia, de la
+                tecnología y de la vida cotidiana.
+            </p>
+            <div class="objetivos-content-highlight">
+                <h5>¿Por qué es importante?</h5>
+                <p>El razonamiento lógico-matemático es la base del pensamiento científico y tecnológico,
+                    permitiendo resolver problemas complejos de manera sistemática y eficiente.</p>
+            </div>
+        </div>
+
+        <!-- Objetivo 5 -->
+        <div class="objetivos-content-item" data-category="cientifico" data-index="1">
+            <div class="objetivos-content-header">
+                <div class="objetivos-content-number">02</div>
+                <div class="objetivos-content-title-group">
+                    <h4 class="objetivos-item-title">Conocimiento Científico</h4>
+                    <p class="objetivos-content-category">Desarrollo Científico y Tecnológico • 2 de 5</p>
+                </div>
+            </div>
+            <p class="objetivos-content-text">
+                El avance en el conocimiento científico de los fenómenos físicos, químicos y biológicos,
+                mediante la comprensión de las leyes, el planteamiento de los problemas y la observación
+                experimental.
+            </p>
+            <div class="objetivos-content-highlight">
+                <h5>¿Por qué es importante?</h5>
+                <p>La comprensión científica desarrolla el pensamiento crítico y la capacidad de analizar el
+                    mundo natural mediante el método científico, fundamental para la innovación y el progreso.
+                </p>
+            </div>
+        </div>
+
+        <!-- Objetivo 6 -->
+        <div class="objetivos-content-item" data-category="cientifico" data-index="2">
+            <div class="objetivos-content-header">
+                <div class="objetivos-content-number">03</div>
+                <div class="objetivos-content-title-group">
+                    <h4 class="objetivos-item-title">Tecnología y Práctica</h4>
+                    <p class="objetivos-content-category">Desarrollo Científico y Tecnológico • 3 de 5</p>
+                </div>
+            </div>
+            <p class="objetivos-content-text">
+                La iniciativa en los campos más avanzados de la tecnología moderna y el entrenamiento en
+                disciplinas, procesos y técnicas que les permitan el ejercicio de una función socialmente útil.
+            </p>
+            <div class="objetivos-content-highlight">
+                <h5>¿Por qué es importante?</h5>
+                <p>La formación tecnológica prepara a los estudiantes para un mundo en constante cambio,
+                    desarrollando habilidades prácticas que les permiten contribuir significativamente a la
+                    sociedad.</p>
+            </div>
+        </div>
+
+        <!-- Objetivo 7 -->
+        <div class="objetivos-content-item" data-category="cientifico" data-index="3">
+            <div class="objetivos-content-header">
+                <div class="objetivos-content-number">04</div>
+                <div class="objetivos-content-title-group">
+                    <h4 class="objetivos-item-title">Teoría y Práctica</h4>
+                    <p class="objetivos-content-category">Desarrollo Científico y Tecnológico • 4 de 5</p>
+                </div>
+            </div>
+            <p class="objetivos-content-text">
+                La comprensión de la dimensión práctica de los conocimientos teóricos, así como la dimensión
+                teórica del conocimiento práctico y la capacidad para utilizarla en la solución de problemas.
+            </p>
+            <div class="objetivos-content-highlight">
+                <h5>¿Por qué es importante?</h5>
+                <p>La integración entre teoría y práctica asegura que el aprendizaje sea significativo y
+                    aplicable, desarrollando competencias para resolver problemas reales.</p>
+            </div>
+        </div>
+
+        <!-- Objetivo 8 -->
+        <div class="objetivos-content-item" data-category="cientifico" data-index="4">
+            <div class="objetivos-content-header">
+                <div class="objetivos-content-number">05</div>
+                <div class="objetivos-content-title-group">
+                    <h4 class="objetivos-item-title">Búsqueda de Conocimiento</h4>
+                    <p class="objetivos-content-category">Desarrollo Científico y Tecnológico • 5 de 5</p>
+                </div>
+            </div>
+            <p class="objetivos-content-text">
+                La utilización con sentido crítico de los distintos contenidos y formas de información y la
+                búsqueda de nuevos conocimientos con su propio esfuerzo.
+            </p>
+            <div class="objetivos-content-highlight">
+                <h5>¿Por qué es importante?</h5>
+                <p>Fomenta el aprendizaje autónomo y permanente, desarrollando la capacidad de investigar,
+                    evaluar fuentes y construir conocimiento de manera independiente.</p>
+            </div>
+        </div>
+
+        <!-- FORMACIÓN SOCIAL Y CIUDADANA -->
+        <!-- Objetivo 9 -->
+        <div class="objetivos-content-item" data-category="social" data-index="0">
+            <div class="objetivos-content-header">
+                <div class="objetivos-content-number">01</div>
+                <div class="objetivos-content-title-group">
+                    <h4 class="objetivos-item-title">Historia y Sociedad</h4>
+                    <p class="objetivos-content-category">Formación Social y Ciudadana • 1 de 4</p>
+                </div>
+            </div>
+            <p class="objetivos-content-text">
+                El estudio científico de la historia nacional y mundial dirigida a comprender el desarrollo de
+                la sociedad y el estudio de las ciencias sociales, con miras al análisis de las condiciones
+                actuales de la realidad social.
+            </p>
+            <div class="objetivos-content-highlight">
+                <h5>¿Por qué es importante?</h5>
+                <p>Comprender la historia permite entender el presente y tomar decisiones informadas sobre el
+                    futuro, desarrollando consciencia social y pensamiento crítico sobre la realidad
+                    contemporánea.</p>
+            </div>
+        </div>
+
+        <!-- Objetivo 10 -->
+        <div class="objetivos-content-item" data-category="social" data-index="1">
+            <div class="objetivos-content-header">
+                <div class="objetivos-content-number">02</div>
+                <div class="objetivos-content-title-group">
+                    <h4 class="objetivos-item-title">Geografía y Cultura Mundial</h4>
+                    <p class="objetivos-content-category">Formación Social y Ciudadana • 2 de 4</p>
+                </div>
+            </div>
+            <p class="objetivos-content-text">
+                El estudio científico del universo, de la tierra, de su estructura física, de su división y
+                organización política, del desarrollo económico de los países y de las diferentes
+                manifestaciones culturales de los pueblos.
+            </p>
+            <div class="objetivos-content-highlight">
+                <h5>¿Por qué es importante?</h5>
+                <p>El conocimiento geográfico y cultural desarrolla una visión global del mundo, promoviendo el
+                    respeto intercultural y la comprensión de la interdependencia entre naciones.</p>
+            </div>
+        </div>
+
+        <!-- Objetivo 11 -->
+        <div class="objetivos-content-item" data-category="social" data-index="2">
+            <div class="objetivos-content-header">
+                <div class="objetivos-content-number">03</div>
+                <div class="objetivos-content-title-group">
+                    <h4 class="objetivos-item-title">Formación Constitucional</h4>
+                    <p class="objetivos-content-category">Formación Social y Ciudadana • 3 de 4</p>
+                </div>
+            </div>
+            <p class="objetivos-content-text">
+                La formación en el ejercicio de sus deberes y derechos, el conocimiento de la constitución
+                política y de las relaciones internacionales.
+            </p>
+            <div class="objetivos-content-highlight">
+                <h5>¿Por qué es importante?</h5>
+                <p>Formar ciudadanos conscientes de sus derechos y deberes es fundamental para fortalecer la
+                    democracia y promover una participación activa y responsable en la sociedad.</p>
+            </div>
+        </div>
+
+        <!-- Objetivo 12 -->
+        <div class="objetivos-content-item" data-category="social" data-index="3">
+            <div class="objetivos-content-header">
+                <div class="objetivos-content-number">04</div>
+                <div class="objetivos-content-title-group">
+                    <h4 class="objetivos-item-title">Conservación Ambiental</h4>
+                    <p class="objetivos-content-category">Formación Social y Ciudadana • 4 de 4</p>
+                </div>
+            </div>
+            <p class="objetivos-content-text">
+                El desarrollo de actitudes favorables al conocimiento, valoración y conservación de la
+                naturaleza y el ambiente.
+            </p>
+            <div class="objetivos-content-highlight">
+                <h5>¿Por qué es importante?</h5>
+                <p>La consciencia ambiental es crucial para la sostenibilidad del planeta, formando ciudadanos
+                    responsables con el medio ambiente y comprometidos con su preservación.</p>
+            </div>
+        </div>
+
+        <!-- DESARROLLO INTEGRAL Y BIENESTAR -->
+        <!-- Objetivo 13 -->
+        <div class="objetivos-content-item" data-category="integral" data-index="0">
+            <div class="objetivos-content-header">
+                <div class="objetivos-content-number">01</div>
+                <div class="objetivos-content-title-group">
+                    <h4 class="objetivos-item-title">Formación Artística</h4>
+                    <p class="objetivos-content-category">Desarrollo Integral y Bienestar • 1 de 3</p>
+                </div>
+            </div>
+            <p class="objetivos-content-text">
+                La apreciación artística, la comprensión estética, la creatividad, la familiarización con los
+                diferentes medios de expresión artística y el conocimiento, valoración y respeto por los bienes
+                artísticos y culturales.
+            </p>
+            <div class="objetivos-content-highlight">
+                <h5>¿Por qué es importante?</h5>
+                <p>La formación artística desarrolla la sensibilidad, la creatividad y la expresión personal,
+                    enriqueciendo la vida emocional y cultural de los estudiantes.</p>
+            </div>
+        </div>
+
+        <!-- Objetivo 14 -->
+        <div class="objetivos-content-item" data-category="integral" data-index="1">
+            <div class="objetivos-content-header">
+                <div class="objetivos-content-number">02</div>
+                <div class="objetivos-content-title-group">
+                    <h4 class="objetivos-item-title">Salud y Bienestar</h4>
+                    <p class="objetivos-content-category">Desarrollo Integral y Bienestar • 2 de 3</p>
+                </div>
+            </div>
+            <p class="objetivos-content-text">
+                La valoración de la salud y de los hábitos relacionados con ella.
+            </p>
+            <div class="objetivos-content-highlight">
+                <h5>¿Por qué es importante?</h5>
+                <p>La valoración de la salud establece las bases para un estilo de vida saludable y el bienestar
+                    integral a lo largo de toda la vida.</p>
+            </div>
+        </div>
+
+        <!-- Objetivo 15 -->
+        <div class="objetivos-content-item" data-category="integral" data-index="2">
+            <div class="objetivos-content-header">
+                <div class="objetivos-content-number">03</div>
+                <div class="objetivos-content-title-group">
+                    <h4 class="objetivos-item-title">Desarrollo Físico y Recreación</h4>
+                    <p class="objetivos-content-category">Desarrollo Integral y Bienestar • 3 de 3</p>
+                </div>
+            </div>
+            <p class="objetivos-content-text">
+                La educación física y la práctica de la recreación y los deportes, la participación y
+                organización juvenil y la utilización adecuada del tiempo libre.
+            </p>
+            <div class="objetivos-content-highlight">
+                <h5>¿Por qué es importante?</h5>
+                <p>El desarrollo físico y la recreación promueven hábitos saludables, trabajo en equipo,
+                    disciplina y el aprovechamiento constructivo del tiempo libre, contribuyendo al desarrollo
+                    integral de la personalidad.</p>
+            </div>
+        </div>
+
+        <!-- Navegación entre objetivos -->
+        <div class="objetivos-content-navigation">
+            <button class="objetivos-nav-btn objetivos-prev" id="objetivosPrevBtn">
+                ← Anterior
+            </button>
+            <button class="objetivos-nav-btn objetivos-next" id="objetivosNextBtn">
+                Siguiente →
+            </button>
+        </div>
+    </div>
+</div>
+</section>
+
+
+
+
+
+
+
 
 
 
@@ -456,11 +505,11 @@
 
 
         <!-- GALERÍA -->
-        <section aria-label="Galería de momentos especiales en el preescolar de Neiva">
+        <section aria-label="Galería de actividades de educación básica secundaria en Neiva">
             <header class="gallery-header">
                 <h2 class="gallery-title">Momentos Especiales</h2>
                 <p class="gallery-subtitle">
-                    Actividades, juegos y aprendizajes que viven nuestros estudiantes de educación inicial y preescolar.
+                    Actividades y experiencias que viven nuestros estudiantes de educación básica secundaria.
                 </p>
             </header>
 
@@ -483,43 +532,42 @@
                 <div class="gallery-grid">
 
                     <article class="gallery-item" onclick="openLightbox(0)">
-                        <img src="images/educacion_secundaria/imagen5.jpg"
-                            alt="Niños jugando en el aula del preescolar" loading="lazy">
+                        <img src="{{ asset('images/educacion_secundaria/imagen5.jpg') }}"
+                            alt="Estudiantes de educación básica secundaria en actividades académicas" loading="lazy">
                     </article>
 
                     <article class="gallery-item" onclick="openLightbox(1)">
-                        <img src="images/educacion_secundaria/imagen3.jpg"
-                            alt="Actividades creativas para primera infancia" loading="lazy">
+                        <img src="{{ asset('images/educacion_secundaria/imagen3.jpg') }}"
+                            alt="Estudiantes de educación básica secundaria en actividades académicas" loading="lazy">
                     </article>
 
                     <article class="gallery-item" onclick="openLightbox(2)">
-                        <img src="images/educacion_secundaria/imagen2.jpg"
-                            alt="Aprendizaje colaborativo en preescolar" loading="lazy">
+                        <img src="{{ asset('images/educacion_secundaria/imagen2.jpg') }}"
+                            alt="Aprendizaje colaborativo en educación básica secundaria Neiva" loading="lazy">
                     </article>
 
                     <article class="gallery-item" onclick="openLightbox(3)">
-                        <img src="images/educacion_secundaria/imagen11.jpg" alt="Exploración educativa al aire libre"
+                        <img src="{{ asset('images/educacion_secundaria/imagen11.jpg') }}" alt="Exploración educativa en el aula"
                             loading="lazy">
                     </article>
 
                     <article class="gallery-item" onclick="openLightbox(4)">
-                        <img src="images/educacion_secundaria/imagen1.jpg" alt="Juego libre y diversión en el colegio"
+                        <img src="{{ asset('images/educacion_secundaria/imagen1.jpg') }}" alt="Juego libre y diversión en el colegio"
                             loading="lazy">
                     </article>
 
                     <article class="gallery-item" onclick="openLightbox(5)">
-                        <img src="images/educacion_secundaria/imagen6.jpg"
+                        <img src="{{ asset('images/educacion_secundaria/imagen6.jpg') }}"
                             alt="Desarrollo integral y acompañamiento docente" loading="lazy">
                     </article>
 
                     <article class="gallery-item" onclick="openLightbox(6)">
-                        <img src="images/educacion_secundaria/imagen10.jpg" alt="Momentos de aprendizaje diario"
+                        <img src="{{ asset('images/educacion_secundaria/imagen10.jpg') }}" alt="Momentos de aprendizaje diario"
                             loading="lazy">
                     </article>
                 </div>
             </div>
         </section>
-
 
 
 
@@ -645,31 +693,31 @@
             // Array con todas las imágenes de la galería (7 imágenes)
             const galleryImages = [{
                     src: 'images/educacion_secundaria/imagen5.jpg',
-                    alt: 'Niños jugando en el aula'
+                    alt: 'Estudiantes de educación básica secundaria en actividades académicas'
                 },
                 {
                     src: 'images/educacion_secundaria/imagen3.jpg',
-                    alt: 'Actividades creativas'
+                    alt: 'Estudiantes de educación básica secundaria en actividades académicas'
                 },
                 {
                     src: 'images/educacion_secundaria/imagen2.jpg',
-                    alt: 'Aprendizaje en grupo'
+                    alt: 'Aprendizaje colaborativo en educación básica secundaria Neiva'
                 },
                 {
                     src: 'images/educacion_secundaria/imagen11.jpg',
-                    alt: 'Exploración educativa'
+                    alt: 'Estudiantes de educación básica secundaria en actividades académicas'
                 },
                 {
                     src: 'images/educacion_secundaria/imagen1.jpg',
-                    alt: 'Tiempo de juego y diversión'
+                    alt: 'Juego libre y diversión en el colegio'
                 },
                 {
                     src: 'images/educacion_secundaria/imagen6.jpg',
-                    alt: 'Desarrollo integral'
+                    alt: 'Desarrollo integral y acompañamiento docente'
                 },
                 {
                     src: 'images/educacion_secundaria/imagen10.jpg',
-                    alt: 'Momentos de aprendizaje'
+                    alt: 'Momentos de aprendizaje diario'
                 }
             ];
 

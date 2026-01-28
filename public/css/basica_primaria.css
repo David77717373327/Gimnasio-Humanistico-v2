@@ -408,7 +408,9 @@ body {
     justify-content: center;
 }
 
-.objetivos-content-title-group h2 {
+/* ✅ CORREGIDO: Cambiado de h2 a h4 y .objetivos-item-title */
+.objetivos-content-title-group h4,
+.objetivos-content-title-group .objetivos-item-title {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
@@ -455,7 +457,8 @@ body {
     z-index: 10;
 }
 
-.objetivos-content-highlight h3 {
+/* ✅ CORREGIDO: Cambiado de h3 a h5 */
+.objetivos-content-highlight h5 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-weight: 700;
@@ -543,6 +546,32 @@ body {
     background: var(--primary-green);
     border-color: var(--primary-green);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

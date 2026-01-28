@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CO">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +8,11 @@
               SEO OPTIMIZADO
     ======================================== -->
 
-    <title>Misión y Visión | Gimnasio Humanístico del Alto Magdalena - Neiva</title>
+    <title>Misión y Visión del Gimnasio Humanístico | Colegio Privado en Neiva</title>
 
     <!-- Meta descripción SEO -->
     <meta name="description"
-        content="Conoce la misión y visión del Gimnasio Humanístico del Alto Magdalena: un modelo educativo humanista, inclusivo, científico y con enfoque ecológico y tecnológico que forma ciudadanos líderes y comprometidos.">
+        content="Conoce la misión y visión del Gimnasio Humanístico del Alto Magdalena, colegio privado en Neiva, Huila, con un modelo educativo humanista, inclusivo, científico y tecnológico.">
 
     <!-- Palabras clave SEO -->
     <meta name="keywords"
@@ -21,14 +21,13 @@
     <!-- Autor -->
     <meta name="author" content="Gimnasio Humanístico del Alto Magdalena">
 
-    
 
     <!-- Open Graph -->
     <meta property="og:title" content="Misión y Visión - Gimnasio Humanístico del Alto Magdalena">
     <meta property="og:description"
         content="Nuestro compromiso es transformar vidas mediante una educación de excelencia basada en un enfoque humanista, inclusivo, científico y ecológico.">
     <meta property="og:image" content="{{ asset('images/Politica_de_calidad2.webp') }}">
-    <meta property="og:url" content="https://gimnasiohumanistico.edu.co/mision-vision">
+    <meta property="og:url" content="https://gimnasiohumanisticoaltomagdalena.com/mision-vision">
     <meta property="og:type" content="website">
 
     <!-- Twitter Cards -->
@@ -59,6 +58,26 @@
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
     <link href="{{ asset('css/hero.css') }}" rel="stylesheet">
     <link href="{{ asset('css/navegacion.css') }}" rel="stylesheet">
+
+
+    @verbatim
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Gimnasio Humanístico del Alto Magdalena",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Neiva",
+    "addressRegion": "Huila",
+    "addressCountry": "CO"
+  },
+  "description": "Colegio privado en Neiva con modelo educativo humanista, inclusivo y científico.",
+  "educationalLevel": ["Preescolar", "Educación Básica", "Media Académica"]
+}
+</script>
+@endverbatim
+
 </head>
 
 <body>
@@ -79,7 +98,7 @@
     <!-- HERO -->
     <section class="hero-section" aria-label="Misión y Visión del Gimnasio Humanístico del Alto Magdalena">
         <div class="hero-background">
-            <img src="../images/educacion_secundaria/imagen1.jpg" alt="Instalaciones del Gimnasio Humanístico del Alto Magdalena en Neiva"
+            <img src="{{ asset('images/educacion_secundaria/imagen1.jpg') }}" alt="Instalaciones del Gimnasio Humanístico del Alto Magdalena en Neiva"
                 width="1920" height="1080" loading="lazy">
         </div>
         <div class="hero-overlay"></div>
@@ -87,7 +106,7 @@
 
         <div class="container hero-container">
             <div class="hero-content">
-                <h1 class="hero-title" data-title="Nuestra Identidad Institucional">Misión y Visión</h1>
+                <h1 class="hero-title" data-title="Nuestra Identidad Institucional">Misión y Visión del Gimnasio Humanístico</h1>
                 <div class="hero-scroll-indicator" onclick="scrollToContent()" role="button" tabindex="0"
                     aria-label="Desplazarse a la siguiente sección"
                     onkeypress="if(event.key==='Enter')scrollToContent()">

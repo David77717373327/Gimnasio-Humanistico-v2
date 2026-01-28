@@ -1,41 +1,74 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CO">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Eventos y Celebraciones Institucionales | Gimnasio Humanístico del Alto Magdalena - Neiva</title>
+
     <meta name="description"
-        content="Descubre los proyectos de vida del Gimnasio Humanístico del Alto Magdalena en Neiva. Más de 40 años formando líderes con excelencia académica y valores humanísticos.">
+        content="Conoce los eventos y celebraciones del Gimnasio Humanístico del Alto Magdalena en Neiva: actividades académicas, culturales, deportivas y espirituales que fortalecen la formación integral.">
+
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#0d3f27">
-    <title>Eventos y Celebraciones | Gimnasio Humanístico del Alto Magdalena - Neiva</title>
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://tusitio.com/eventos-celebraciones">
-    <!-- Preconnect para optimización de fuentes -->
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://gimnasiohumanisticoaltomagdalena.com/eventos-celebraciones">
+
+    <!-- Preconnect fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!--Scrip para el hero -->
-    <script src="{{ asset('js/hero.js') }}"></script>
-    <!-- Google Fonts con preload opcional -->
-    <link rel="preload"
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700&display=swap"
-        as="style">
+
+    <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+
     <!-- Bootstrap y Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
     <!-- Favicons -->
     <link rel="icon" type="image/x-icon" href="{{ asset('images/logo.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/logo.png') }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/logo.png') }}">
-    <!-- CSS personalizado -->
+
+    <!-- CSS -->
     <link href="{{ asset('css/header.css') }}" rel="stylesheet">
     <link href="{{ asset('css/eventos_celebraciones.css') }}" rel="stylesheet">
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
     <link href="{{ asset('css/hero.css') }}" rel="stylesheet">
+
+    <!-- JS -->
+    <script src="{{ asset('js/hero.js') }}" defer></script>
+
+
+
+    @verbatim
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://gimnasiohumanisticoaltomagdalena.com/eventos-celebraciones",
+      "name": "Eventos y Celebraciones Institucionales",
+      "description": "Eventos académicos, culturales, deportivos y espirituales del Gimnasio Humanístico del Alto Magdalena en Neiva.",
+      "inLanguage": "es-CO",
+      "isPartOf": {
+        "@type": "EducationalOrganization",
+        "@id": "https://gimnasiohumanisticoaltomagdalena.com/#school",
+        "name": "Gimnasio Humanístico del Alto Magdalena"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://gimnasiohumanisticoaltomagdalena.com/images/educacion_secundaria/imagen1.jpg"
+      }
+    }
+    </script>
+
+    @endverbatim
 </head>
+
 
 <body>
 
@@ -48,12 +81,12 @@
     </nav>
 
     <!-- Contenido principal -->
-    <main id="main" role="main">
+    <main id="main">
 
         <!-- HERO SECTION -->
         <section class="hero-section" aria-label="Sección destacada de eventos">
             <div class="hero-background">
-                <img src="../images/educacion_secundaria/imagen1.jpg"
+                <img src="{{ asset('/images/educacion_secundaria/imagen1.jpg') }}"
                     alt="Vista del Gimnasio Humanístico del Alto Magdalena, institución educativa en Neiva"
                     width="1920" height="1080">
             </div>
@@ -259,9 +292,9 @@
                 description: 'Celebración tradicional donde nuestros estudiantes más pequeños comparten su alegría y talento en un ambiente festivo y educativo que fortalece su desarrollo integral.',
                 date: 'Junio',
                 images: [
-                    '../images/celebraciones/sanpedro1.jpg',
-                    '../images/celebraciones/sanpedro2.jpg',
-                    '../images/celebraciones/sanpedro3.jpg'
+                    '/images/celebraciones/sanpedro1.jpg',
+                    '/images/celebraciones/sanpedro2.jpg',
+                    '/images/celebraciones/sanpedro3.jpg'
                 ]
             },
             {
@@ -272,9 +305,9 @@
                 description: 'Jornada dedicada a la celebración del idioma inglés con actividades interactivas, presentaciones culturales y dinámicas que fortalecen el aprendizaje del idioma.',
                 date: 'Septiembre',
                 images: [
-                    '../images/celebraciones/english_day2.jpg',
-                    '../images/celebraciones/english_day1.jpg',
-                    '../images/celebraciones/english_day3.jpg'
+                    '/images/celebraciones/english_day2.jpg',
+                    '/images/celebraciones/english_day1.jpg',
+                    '/images/celebraciones/english_day3.jpg'
                 ]
             },
             {
@@ -285,9 +318,9 @@
                 description: 'Experiencias de aprendizaje fuera del aula que conectan teoría con práctica, explorando el entorno natural, histórico y cultural de nuestra región.',
                 date: 'Todo el año',
                 images: [
-                    '../images/educacion_secundaria/imagen1.jpg',
-                    '../images/educacion_secundaria/imagen1.jpg',
-                    '../images/educacion_secundaria/imagen1.jpg'
+                    '/images/educacion_secundaria/imagen1.jpg',
+                    '/images/educacion_secundaria/imagen1.jpg',
+                    '/images/educacion_secundaria/imagen1.jpg'
                 ]
             },
             {
@@ -298,9 +331,9 @@
                 description: 'Ceremonia religiosa significativa donde nuestros estudiantes reciben el sacramento de la Eucaristía, acompañados por sus familias y comunidad educativa.',
                 date: 'Mayo',
                 images: [
-                    '../images/celebraciones/comuniones2.jpg',
-                    '../images/celebraciones/comuniones1.jpg',
-                    '../images/celebraciones/confirmaciones1.jpg'
+                    '/images/celebraciones/comuniones2.jpg',
+                    '/images/celebraciones/comuniones1.jpg',
+                    '/images/celebraciones/confirmaciones1.jpg'
                 ]
             },
 
@@ -312,9 +345,9 @@
                 description: 'Sacramento de la Confirmación donde nuestros jóvenes fortalecen su compromiso con la fe y los valores cristianos que guían nuestra institución educativa.',
                 date: 'Octubre',
                 images: [
-                    '../images/celebraciones/comuniones1.jpg',
-                    '../images/celebraciones/comuniones2.jpg',
-                    '../images/celebraciones/confirmaciones1.jpg'
+                    '/images/celebraciones/comuniones1.jpg',
+                    '/images/celebraciones/comuniones2.jpg',
+                    '/images/celebraciones/confirmaciones1.jpg'
                 ]
             },
             {
@@ -325,9 +358,9 @@
                 description: 'Competencia deportiva anual que promueve el trabajo en equipo, el espíritu deportivo y la vida saludable entre todos nuestros estudiantes.',
                 date: 'Agosto',
                 images: [
-                    '../images/proyecto/imagen4.jpg',
-                    '../images/proyecto/imagen11.jpg',
-                    '../images/proyecto/imagen12.jpg'
+                    '/images/proyecto/imagen4.jpg',
+                    '/images/proyecto/imagen11.jpg',
+                    '/images/proyecto/imagen12.jpg'
                 ]
             }
         ];

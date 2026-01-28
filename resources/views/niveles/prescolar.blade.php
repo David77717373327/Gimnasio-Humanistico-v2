@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CO">
+
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Educación Inicial y Preescolar en Neiva | Gimnasio Humanístico del Alto Magdalena - Neiva</title>
+    <title>Preescolar en Neiva | Educación Inicial | Gimnasio Humanístico</title>
+
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,12 +23,42 @@
     <!-- Scripts -->
     <script src="{{ asset('js/hero.js') }}" defer></script>
 
+
+    <!--Meta descripción SEO-->
+    <meta name="description"
+content="Preescolar en Neiva con enfoque humanista. Educación inicial basada en el juego, valores y desarrollo integral. Gimnasio Humanístico del Alto Magdalena.">
+
+
     <!-- CSS -->
     <link href="{{ asset('css/header.css') }}" rel="stylesheet">
     <link href="{{ asset('css/prescolar.css') }}" rel="stylesheet">
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
     <link href="{{ asset('css/galeria.css') }}" rel="stylesheet">
     <link href="{{ asset('css/hero.css') }}" rel="stylesheet">
+
+
+    @verbatim
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOccupationalProgram",
+  "name": "Educación Preescolar",
+  "description": "Programa de educación preescolar del Gimnasio Humanístico del Alto Magdalena en Neiva, enfocado en el desarrollo integral, social y emocional.",
+  "educationalLevel": "Preescolar",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "name": "Gimnasio Humanístico del Alto Magdalena",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Neiva",
+      "addressRegion": "Huila",
+      "addressCountry": "CO"
+    }
+  }
+}
+</script>
+    @endverbatim
+
 </head>
 
 <body>
@@ -44,7 +76,7 @@
         <!-- HERO -->
         <section class="hero-section" aria-label="Educación Inicial y Preescolar en Neiva">
             <div class="hero-background">
-                <img src="../images/educacion_inicial/sanpedrito.jpg"
+                <img src="{{ asset('images/educacion_inicial/sanpedrito.jpg') }}"
                     alt="Instalaciones del colegio en Neiva enfocadas en educación inicial y preescolar" width="1920"
                     height="1080" loading="lazy">
             </div>
@@ -55,7 +87,7 @@
             <div class="container hero-container">
                 <div class="hero-content">
                     <h1 class="hero-title" data-title="Nuestra Identidad Institucional">
-                        Educación Inicial - Prescolar
+                         Educación Inicial y Preescolar en Neiva
                     </h1>
 
                     <div class="hero-scroll-indicator" onclick="scrollToContent()" role="button" tabindex="0"
@@ -75,9 +107,13 @@
 
                     <!-- Título SEO -->
                     <header class="admision-nav-header">
-                        <h2 class="admision-nav-title">Propósitos de la Educación Inicial </h2>
+                        <h2 class="admision-nav-title">Propósitos de la Educación Inicial</h2>
                     </header>
                 </div>
+
+
+                
+
 
                 <div class="row align-items-center g-5">
 
@@ -96,7 +132,7 @@
                     <div class="col-lg-6 order-lg-2 order-1">
                         <article class="metodologia-content">
 
-                            <h2 class="section-title">Educamos desde los 3 Propósitos Fundamentales</h2>
+                            <h3 class="section-title">Educamos desde los 3 Propósitos Fundamentales</h3>
 
                             <p class="hero_parrafo">
                                 En nuestro programa de educación inicial y preescolar en Neiva, brindamos experiencias
@@ -195,37 +231,37 @@
                 <div class="gallery-grid">
 
                     <article class="gallery-item" onclick="openLightbox(0)">
-                        <img src="images/educacion_inicial/imagen11.jpg" alt="Niños jugando en el aula del preescolar"
+                        <img src="{{ asset('images/educacion_inicial/imagen11.jpg') }}" alt="Niños jugando en el aula del preescolar de Neiva"
                             loading="lazy">
                     </article>
 
                     <article class="gallery-item" onclick="openLightbox(1)">
-                        <img src="images/educacion_inicial/imagen2.jpg"
+                        <img src="{{ asset('images/educacion_inicial/imagen2.jpg') }}"
                             alt="Actividades creativas para primera infancia" loading="lazy">
                     </article>
 
                     <article class="gallery-item" onclick="openLightbox(2)">
-                        <img src="images/educacion_inicial/imagen3.jpg" alt="Aprendizaje colaborativo en preescolar"
+                        <img src="{{ asset('images/educacion_inicial/imagen3.jpg') }}" alt="Aprendizaje colaborativo en preescolar"
                             loading="lazy">
                     </article>
 
                     <article class="gallery-item" onclick="openLightbox(3)">
-                        <img src="images/educacion_inicial/imagen6.jpg" alt="Exploración educativa al aire libre"
+                        <img src="{{ asset('images/educacion_inicial/imagen6.jpg') }}" alt="Exploración educativa al aire libre"
                             loading="lazy">
                     </article>
 
                     <article class="gallery-item" onclick="openLightbox(4)">
-                        <img src="images/educacion_inicial/imagen7.jpg" alt="Juego libre y diversión en el colegio"
+                        <img src="{{ asset('images/educacion_inicial/imagen7.jpg') }}" alt="Juego libre y diversión en el colegio"
                             loading="lazy">
                     </article>
 
                     <article class="gallery-item" onclick="openLightbox(5)">
-                        <img src="images/educacion_inicial/imagen5.jpg"
+                        <img src="{{ asset('images/educacion_inicial/imagen5.jpg') }}"
                             alt="Desarrollo integral y acompañamiento docente" loading="lazy">
                     </article>
 
                     <article class="gallery-item" onclick="openLightbox(6)">
-                        <img src="images/educacion_inicial/imagen8.jpg" alt="Momentos de aprendizaje diario"
+                        <img src="{{ asset('images/educacion_inicial/imagen8.jpg') }}" alt="Momentos de aprendizaje diario"
                             loading="lazy">
                     </article>
                 </div>
@@ -244,31 +280,31 @@
         // Array con todas las imágenes de la galería (7 imágenes)
         const galleryImages = [{
                 src: 'images/educacion_inicial/imagen7.jpg',
-                alt: 'Niños jugando en el aula'
+                alt: 'Niños jugando en el aula del preescolar de Neiva'
             },
             {
                 src: 'images/educacion_inicial/imagen2.jpg',
-                alt: 'Actividades creativas'
+                alt: 'Actividades creativas para primera infancia'
             },
             {
                 src: 'images/educacion_inicial/imagen3.jpg',
-                alt: 'Aprendizaje en grupo'
+                alt: 'Aprendizaje colaborativo en preescolar'
             },
             {
                 src: 'images/educacion_inicial/imagen6.jpg',
-                alt: 'Exploración educativa'
+                alt: 'Exploración educativa al aire libre'
             },
             {
                 src: 'images/educacion_inicial/imagen7.jpg',
-                alt: 'Tiempo de juego y diversión'
+                alt: 'Juego libre y diversión en el colegio'
             },
             {
                 src: 'images/educacion_inicial/imagen5.jpg',
-                alt: 'Desarrollo integral'
+                alt: 'Desarrollo integral y acompañamiento docente'
             },
             {
                 src: 'images/educacion_inicial/imagen8.jpg',
-                alt: 'Momentos de aprendizaje'
+                alt: 'Momentos de aprendizaje diario'
             }
         ];
 

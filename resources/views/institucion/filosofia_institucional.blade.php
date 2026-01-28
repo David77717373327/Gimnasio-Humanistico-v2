@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="es-CO">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Title optimizado -->
-    <title>Componente Filosófico | Gimnasio Humanístico del Alto Magdalena - Neiva</title>
+    <title>Componente Filosófico del Colegio Gimnasio Humanístico en Neiva</title>
 
     <!-- Meta Description SEO -->
     <meta name="description" content="Conoce el componente filosófico del Gimnasio Humanístico de Neiva: principios humanísticos, cultura democrática, liderazgo, emprendimiento, valores, sostenibilidad ambiental e identidad educativa.">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://gimnasiohumanistico.edu.co/componente-filosofico">
+    <link rel="canonical" href="https://gimnasiohumanisticoaltomagdalena.com/filosofia-institucional">
 
     <!-- Open Graph SEO -->
     <meta property="og:title" content="Componente Filosófico – Gimnasio Humanístico de Neiva">
@@ -42,6 +41,28 @@
     <link href="{{ asset('css/navegacion.css') }}" rel="stylesheet">
 
 
+    @verbatim
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Gimnasio Humanístico del Alto Magdalena",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Neiva",
+    "addressRegion": "Huila",
+    "addressCountry": "CO"
+  },
+  "areaServed": "Neiva, Huila",
+  "educationalLevel": [
+    "Preescolar",
+    "Básica Primaria",
+    "Básica Secundaria",
+    "Media Académica"
+  ]
+}
+</script>
+    @endverbatim
 
 </head>
 
@@ -57,12 +78,12 @@
 
 
     <!-- Contenido principal -->
-    <main id="main" role="main">
+    <main id="main">
 
     <!-- HERO -->
     <section class="hero-section" aria-label="Componente filosófico institucional">
         <div class="hero-background">
-            <img src="../images/politica_de_calidad3.jpg"
+            <img src="{{ asset('images/politica_de_calidad3.jpg') }}"
                 alt="Instalaciones del Gimnasio Humanístico de Neiva en el Alto Magdalena"
                 width="1920"
                 height="1080"
@@ -75,7 +96,7 @@
         <div class="container hero-container">
             <div class="hero-content">
                 <h1 class="hero-title" data-title="Componente Filosófico">
-                    Componente Filosófico Institucional
+                   Componente Filosófico Gimnasio Humanístico 
                 </h1>
 
                 <div class="hero-scroll-indicator"
@@ -229,8 +250,6 @@
     <footer aria-label="Pie de página del sitio">
         @include('layouts.footer')
     </footer>
-
-
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>

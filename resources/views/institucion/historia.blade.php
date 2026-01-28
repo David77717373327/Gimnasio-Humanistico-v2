@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CO">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,33 +8,62 @@
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#0d3f27">
     <title>Historia | Gimnasio Humanístico del Alto Magdalena - Neiva</title>
+    
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://tusitio.com/historia">
+    <link rel="canonical" href="https://gimnasiohumanisticoaltomagdalena.com/historia">
+
     <!-- Preconnect para optimización de fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!--Scrip para el hero --> 
     <script src="{{ asset('js/hero.js') }}"></script>
+    
+    
     <!-- Google Fonts con preload opcional -->
     <link rel="preload"
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700&display=swap"
         as="style">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+
     <!-- Bootstrap y Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+
     <!-- Favicons -->
     <link rel="icon" type="image/x-icon" href="{{ asset('images/logo.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/logo.png') }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/logo.png') }}">
+
+
     <!-- CSS personalizado -->
     <link href="{{ asset('css/header.css') }}" rel="stylesheet">
     <link href="{{ asset('css/quienes_somos.css') }}" rel="stylesheet">
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
     <link href="{{ asset('css/hero.css') }}" rel="stylesheet">
     <link href="{{ asset('css/navegacion.css') }}" rel="stylesheet">
+
+
+    @verbatim
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Gimnasio Humanístico del Alto Magdalena",
+  "foundingDate": "1983",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Neiva",
+    "addressRegion": "Huila",
+    "addressCountry": "CO"
+  },
+  "areaServed": "Neiva, Huila",
+  "description": "Colegio privado en Neiva con más de 40 años de trayectoria en educación humanista."
+}
+</script>
+@endverbatim
 </head>
 
 <body>
@@ -48,12 +77,12 @@
     </nav>
 
     <!-- Contenido principal -->
-    <main id="main" role="main">
+    <main id="main">
 
         <!-- HERO SECTION -->
         <section class="hero-section" aria-label="Sección destacada de historia">
             <div class="hero-background">
-                <img src="../images/politica_de_calidad4.webp"
+                <img src="{{ asset('images/politica_de_calidad4.webp') }}"
                     alt="Vista del Gimnasio Humanístico del Alto Magdalena, institución educativa en Neiva"
                     width="1920" height="1080">
             </div>
@@ -62,7 +91,7 @@
 
             <div class="container hero-container">
                 <div class="hero-content">
-                    <h1 class="hero-title" data-title="Nuestra Historia">Nuestra Historia</h1>
+                    <h1 class="hero-title" data-title="Nuestra Historia">Historia del Gimnasio Humanístico Neiva</h1>
                     <div class="hero-scroll-indicator" onclick="scrollToContent()" role="button" tabindex="0"
                         aria-label="Desplazarse a la siguete sesion"
                         onkeypress="if(event.key==='Enter')scrollToContent()">

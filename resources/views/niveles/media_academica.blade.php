@@ -11,6 +11,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
         rel="stylesheet">
+
+    <!-- Meta Descripción para SEO -->
+    <meta name="description"
+    content="Educación Media Académica en Neiva con formación integral, preparación para Pruebas Saber 11 y orientación universitaria en el Gimnasio Humanístico del Alto Magdalena.">
+
+
     <!-- Bootstrap y Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
@@ -25,8 +31,32 @@
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
     <link href="{{ asset('css/hero.css') }}" rel="stylesheet">
     <link href="{{ asset('css/galeria.css') }}" rel="stylesheet">
-</head>
 
+
+    @verbatim
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOccupationalProgram",
+  "name": "Educación Media Académica",
+  "educationalLevel": "Media Académica",
+  "description": "Programa de educación media académica en Neiva orientado a la preparación universitaria, Pruebas Saber 11 y formación integral.",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "name": "Gimnasio Humanístico del Alto Magdalena",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Neiva",
+      "addressRegion": "Huila",
+      "addressCountry": "CO"
+    }
+  }
+}
+</script>
+@endverbatim
+
+
+</head>
 <body>
 
     <header class="header-top" aria-label="Encabezado principal del sitio">
@@ -42,7 +72,7 @@
         <!-- HERO -->
         <section class="hero-section" aria-label="Educación Media Académica en Neiva">
             <div class="hero-background">
-                <img src="../images/educacion_secundaria/imagen1.jpg"
+                <img src="{{ asset('images/educacion_secundaria/imagen1.jpg') }}"
                     alt="Instalaciones del colegio en Neiva enfocadas en educación media académica" width="1920"
                     height="1080" loading="lazy">
             </div>
@@ -53,7 +83,7 @@
             <div class="container hero-container">
                 <div class="hero-content">
                     <h1 class="hero-title" data-title="Nuestra Identidad Institucional">
-                        Educación Media Académica
+                        Educación Media Académica en Neiva
                     </h1>
 
                     <div class="hero-scroll-indicator" onclick="scrollToContent()" role="button" tabindex="0"
@@ -65,331 +95,363 @@
         </section>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <!-- Título SEO -->
-        <header class="admision-nav-header" id="siguiente_sesion">
-            <h2 class="admision-nav-title">Objetivos Media Académica</h2>
-        </header>
+<header class="admision-nav-header" id="siguiente_sesion">
+    <h2 class="admision-nav-title">Objetivos Media Académica</h2>
+</header>
 
 
-        <div class="objetivos-split-container">
-            <!-- Panel de Navegación -->
-            <div class="objetivos-nav-panel">
+<div class="objetivos-split-container">
+    <!-- Panel de Navegación -->
+    <div class="objetivos-nav-panel">
 
-                <!-- Profundización Académica -->
-                <div class="objetivos-nav-item active" data-category="profundizacion">
-                    <div class="objetivos-nav-number">01</div>
-                    <div class="objetivos-nav-content">
-                        <div class="objetivos-nav-title">Profundización Académica</div>
-                        <div class="objetivos-nav-subtitle">2 objetivos</div>
-                    </div>
-                </div>
-
-                <!-- Preparación para Educación Superior -->
-                <div class="objetivos-nav-item" data-category="superior">
-                    <div class="objetivos-nav-number">02</div>
-                    <div class="objetivos-nav-content">
-                        <div class="objetivos-nav-title">Preparación para Educación Superior</div>
-                        <div class="objetivos-nav-subtitle">3 objetivos</div>
-                    </div>
-                </div>
-
-                <!-- Trabajo y Emprendimiento -->
-                <div class="objetivos-nav-item" data-category="trabajo">
-                    <div class="objetivos-nav-number">03</div>
-                    <div class="objetivos-nav-content">
-                        <div class="objetivos-nav-title">Trabajo y Emprendimiento</div>
-                        <div class="objetivos-nav-subtitle">3 objetivos</div>
-                    </div>
-                </div>
-
-                <!-- Formación Humana y Ciudadana -->
-                <div class="objetivos-nav-item" data-category="formacion">
-                    <div class="objetivos-nav-number">04</div>
-                    <div class="objetivos-nav-content">
-                        <div class="objetivos-nav-title">Formación Humana y Ciudadana</div>
-                        <div class="objetivos-nav-subtitle">4 objetivos</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Panel de Contenido -->
-            <div class="objetivos-content-panel">
-
-                <!-- PROFUNDIZACIÓN ACADÉMICA -->
-                <!-- Objetivo 1 -->
-                <div class="objetivos-content-item active" data-category="profundizacion" data-index="0">
-                    <div class="objetivos-content-header">
-                        <div class="objetivos-content-number">01</div>
-                        <div class="objetivos-content-title-group">
-                            <h2>Consolidación de Saberes</h2>
-                            <p class="objetivos-content-category">Profundización Académica • 1 de 2</p>
-                        </div>
-                    </div>
-                    <p class="objetivos-content-text">
-                        Buscamos que nuestros estudiantes consoliden sus saberes en las áreas obligatorias y
-                        fundamentales, fortaleciendo las competencias desarrolladas durante la educación básica para
-                        alcanzar un dominio profundo de cada disciplina.
-                    </p>
-                    <div class="objetivos-content-highlight">
-                        <h3>¿Por qué es importante?</h3>
-                        <p>La profundización permite que el estudiante afiance contenidos clave y adquiera autonomía
-                            para estudiar con mayor rigor en su campo de interés.</p>
-                    </div>
-                </div>
-
-                <!-- Objetivo 2 -->
-                <div class="objetivos-content-item" data-category="profundizacion" data-index="1">
-                    <div class="objetivos-content-header">
-                        <div class="objetivos-content-number">02</div>
-                        <div class="objetivos-content-title-group">
-                            <h2>Exploración Personalizada</h2>
-                            <p class="objetivos-content-category">Profundización Académica • 2 de 2</p>
-                        </div>
-                    </div>
-                    <p class="objetivos-content-text">
-                        Ofrecemos la oportunidad de explorar y profundizar en aquellas disciplinas que se alineen con
-                        los intereses, aptitudes y proyecto de vida de cada estudiante, facilitando el descubrimiento de
-                        su vocación profesional.
-                    </p>
-                    <div class="objetivos-content-highlight">
-                        <h3>¿Por qué es importante?</h3>
-                        <p>Permite al estudiante identificar rutas formativas y vocacionales, aumentando la motivación y
-                            la conexión con su proyecto de vida.</p>
-                    </div>
-                </div>
-
-                <!-- PREPARACIÓN PARA EDUCACIÓN SUPERIOR -->
-                <!-- Objetivo 3 -->
-                <div class="objetivos-content-item" data-category="superior" data-index="0">
-                    <div class="objetivos-content-header">
-                        <div class="objetivos-content-number">01</div>
-                        <div class="objetivos-content-title-group">
-                            <h2>Competencias Académicas Universitarias</h2>
-                            <p class="objetivos-content-category">Preparación para Educación Superior • 1 de 3</p>
-                        </div>
-                    </div>
-                    <p class="objetivos-content-text">
-                        Nuestro currículo y metodología están diseñados para desarrollar las competencias académicas y
-                        habilidades de pensamiento crítico que son indispensables para el éxito en el nivel
-                        universitario, garantizando una formación integral y rigurosa.
-                    </p>
-                    <div class="objetivos-content-highlight">
-                        <h3>¿Por qué es importante?</h3>
-                        <p>Desarrolla las competencias que facilitan la adaptación a exigencias académicas superiores y
-                            el pensamiento autónomo.</p>
-                    </div>
-                </div>
-
-                <!-- Objetivo 4 -->
-                <div class="objetivos-content-item" data-category="superior" data-index="1">
-                    <div class="objetivos-content-header">
-                        <div class="objetivos-content-number">02</div>
-                        <div class="objetivos-content-title-group">
-                            <h2>Excelencia en Pruebas Saber 11</h2>
-                            <p class="objetivos-content-category">Preparación para Educación Superior • 2 de 3</p>
-                        </div>
-                    </div>
-                    <p class="objetivos-content-text">
-                        Preparamos a los estudiantes para un desempeño sobresaliente en las pruebas de Estado Saber 11,
-                        proporcionando las herramientas y estrategias necesarias para obtener resultados destacados que
-                        faciliten su ingreso a instituciones de educación superior de calidad.
-                    </p>
-                    <div class="objetivos-content-highlight">
-                        <h3>¿Por qué es importante?</h3>
-                        <p>Mejorar resultados en las pruebas estatales amplía opciones de admisión y acceso a becas y
-                            programas de alto nivel.</p>
-                    </div>
-                </div>
-
-                <!-- Objetivo 5 -->
-                <div class="objetivos-content-item" data-category="superior" data-index="2">
-                    <div class="objetivos-content-header">
-                        <div class="objetivos-content-number">03</div>
-                        <div class="objetivos-content-title-group">
-                            <h2>Transición Exitosa</h2>
-                            <p class="objetivos-content-category">Preparación para Educación Superior • 3 de 3</p>
-                        </div>
-                    </div>
-                    <p class="objetivos-content-text">
-                        Facilitamos una transición exitosa a la vida académica superior, desarrollando autonomía,
-                        habilidades de investigación, gestión del tiempo y todas las competencias necesarias para
-                        enfrentar con éxito los desafíos universitarios.
-                    </p>
-                    <div class="objetivos-content-highlight">
-                        <h3>¿Por qué es importante?</h3>
-                        <p>Prepara a los estudiantes para los retos organizativos y académicos de la universidad,
-                            reduciendo el abandono y mejorando desempeño.</p>
-                    </div>
-                </div>
-
-                <!-- TRABAJO Y EMPRENDIMIENTO -->
-                <!-- Objetivo 6 -->
-                <div class="objetivos-content-item" data-category="trabajo" data-index="0">
-                    <div class="objetivos-content-header">
-                        <div class="objetivos-content-number">01</div>
-                        <div class="objetivos-content-title-group">
-                            <h2>Vinculación al Mundo Laboral</h2>
-                            <p class="objetivos-content-category">Trabajo y Emprendimiento • 1 de 3</p>
-                        </div>
-                    </div>
-                    <p class="objetivos-content-text">
-                        Capacitamos a los estudiantes con las habilidades y conocimientos necesarios para que puedan
-                        vincularse al mundo laboral de manera exitosa, desarrollando competencias técnicas y blandas
-                        valoradas en el mercado actual.
-                    </p>
-                    <div class="objetivos-content-highlight">
-                        <h3>¿Por qué es importante?</h3>
-                        <p>Facilita la inserción laboral y la empleabilidad mediante formación práctica y orientación
-                            ocupacional.</p>
-                    </div>
-                </div>
-
-                <!-- Objetivo 7 -->
-                <div class="objetivos-content-item" data-category="trabajo" data-index="1">
-                    <div class="objetivos-content-header">
-                        <div class="objetivos-content-number">02</div>
-                        <div class="objetivos-content-title-group">
-                            <h2>Pensamiento Emprendedor</h2>
-                            <p class="objetivos-content-category">Trabajo y Emprendimiento • 2 de 3</p>
-                        </div>
-                    </div>
-                    <p class="objetivos-content-text">
-                        Fomentamos el pensamiento emprendedor, la creatividad y la capacidad de resolver problemas,
-                        desarrollando habilidades esenciales para el siglo XXI que permitan a nuestros estudiantes crear
-                        oportunidades y generar valor en cualquier contexto.
-                    </p>
-                    <div class="objetivos-content-highlight">
-                        <h3>¿Por qué es importante?</h3>
-                        <p>Incentiva la autonomía, la creatividad y la capacidad de generar proyectos y empresas
-                            sostenibles.</p>
-                    </div>
-                </div>
-
-                <!-- Objetivo 8 -->
-                <div class="objetivos-content-item" data-category="trabajo" data-index="2">
-                    <div class="objetivos-content-header">
-                        <div class="objetivos-content-number">03</div>
-                        <div class="objetivos-content-title-group">
-                            <h2>Competencias del Siglo XXI</h2>
-                            <p class="objetivos-content-category">Trabajo y Emprendimiento • 3 de 3</p>
-                        </div>
-                    </div>
-                    <p class="objetivos-content-text">
-                        Desarrollamos competencias clave como trabajo en equipo, comunicación efectiva, adaptabilidad,
-                        pensamiento crítico y alfabetización digital, preparando profesionales integrales capaces de
-                        enfrentar los retos de un mundo en constante transformación.
-                    </p>
-                    <div class="objetivos-content-highlight">
-                        <h3>¿Por qué es importante?</h3>
-                        <p>Estas competencias son demandadas por empleadores y esenciales para el éxito personal y
-                            profesional.</p>
-                    </div>
-                </div>
-
-                <!-- FORMACIÓN HUMANA Y CIUDADANA -->
-                <!-- Objetivo 9 -->
-                <div class="objetivos-content-item" data-category="formacion" data-index="0">
-                    <div class="objetivos-content-header">
-                        <div class="objetivos-content-number">01</div>
-                        <div class="objetivos-content-title-group">
-                            <h2>Formación en Valores</h2>
-                            <p class="objetivos-content-category">Formación Humana y Ciudadana • 1 de 4</p>
-                        </div>
-                    </div>
-                    <p class="objetivos-content-text">
-                        Consolidamos la formación en valores, el respeto, la responsabilidad y la autonomía,
-                        fortaleciendo el carácter y la integridad de nuestros estudiantes como fundamento de su
-                        desarrollo personal y profesional.
-                    </p>
-                    <div class="objetivos-content-highlight">
-                        <h3>¿Por qué es importante?</h3>
-                        <p>Los valores guían el comportamiento ético y la convivencia democrática en la comunidad
-                            educativa y la sociedad.</p>
-                    </div>
-                </div>
-
-                <!-- Objetivo 10 -->
-                <div class="objetivos-content-item" data-category="formacion" data-index="1">
-                    <div class="objetivos-content-header">
-                        <div class="objetivos-content-number">02</div>
-                        <div class="objetivos-content-title-group">
-                            <h2>Ciudadanía Activa y Ética</h2>
-                            <p class="objetivos-content-category">Formación Humana y Ciudadana • 2 de 4</p>
-                        </div>
-                    </div>
-                    <p class="objetivos-content-text">
-                        Nuestro objetivo es que los estudiantes se conviertan en ciudadanos activos, éticos y
-                        conscientes de su rol en la construcción de una sociedad más justa, equitativa y solidaria,
-                        comprometidos con el bienestar colectivo.
-                    </p>
-                    <div class="objetivos-content-highlight">
-                        <h3>¿Por qué es importante?</h3>
-                        <p>Promueve la participación ciudadana responsable y el compromiso con la comunidad y las normas
-                            democráticas.</p>
-                    </div>
-                </div>
-
-                <!-- Objetivo 11 -->
-                <div class="objetivos-content-item" data-category="formacion" data-index="2">
-                    <div class="objetivos-content-header">
-                        <div class="objetivos-content-number">03</div>
-                        <div class="objetivos-content-title-group">
-                            <h2>Solidaridad y Responsabilidad Social</h2>
-                            <p class="objetivos-content-category">Formación Humana y Ciudadana • 3 de 4</p>
-                        </div>
-                    </div>
-                    <p class="objetivos-content-text">
-                        Fomentamos la conciencia de solidaridad y la responsabilidad social, desarrollando la empatía y
-                        el compromiso con las comunidades vulnerables, promoviendo acciones concretas de servicio y
-                        transformación social.
-                    </p>
-                    <div class="objetivos-content-highlight">
-                        <h3>¿Por qué es importante?</h3>
-                        <p>La solidaridad forma ciudadanos comprometidos con la justicia social y el bienestar
-                            colectivo.</p>
-                    </div>
-                </div>
-
-                <!-- Objetivo 12 -->
-                <div class="objetivos-content-item" data-category="formacion" data-index="3">
-                    <div class="objetivos-content-header">
-                        <div class="objetivos-content-number">04</div>
-                        <div class="objetivos-content-title-group">
-                            <h2>Identidad Cultural y Ambiental</h2>
-                            <p class="objetivos-content-category">Formación Humana y Ciudadana • 4 de 4</p>
-                        </div>
-                    </div>
-                    <p class="objetivos-content-text">
-                        Promovemos que los estudiantes valoren y respeten la diversidad cultural y la rica naturaleza de
-                        nuestro país, desarrollando una identidad cultural sólida y una conciencia ambiental que impulse
-                        la conservación y el desarrollo sostenible.
-                    </p>
-                    <div class="objetivos-content-highlight">
-                        <h3>¿Por qué es importante?</h3>
-                        <p>Fortalece el sentido de pertenencia y la responsabilidad frente al cuidado del patrimonio
-                            natural y cultural.</p>
-                    </div>
-                </div>
-
-                <!-- Navegación entre objetivos -->
-                <div class="objetivos-content-navigation">
-                    <button class="objetivos-nav-btn objetivos-prev" id="objetivosPrevBtn">
-                        ← Anterior
-                    </button>
-                    <button class="objetivos-nav-btn objetivos-next" id="objetivosNextBtn">
-                        Siguiente →
-                    </button>
-                </div>
+        <!-- Profundización Académica -->
+        <div class="objetivos-nav-item active" data-category="profundizacion">
+            <div class="objetivos-nav-number">01</div>
+            <div class="objetivos-nav-content">
+                <div class="objetivos-nav-title">Profundización Académica</div>
+                <div class="objetivos-nav-subtitle">2 objetivos</div>
             </div>
         </div>
 
+        <!-- Preparación para Educación Superior -->
+        <div class="objetivos-nav-item" data-category="superior">
+            <div class="objetivos-nav-number">02</div>
+            <div class="objetivos-nav-content">
+                <div class="objetivos-nav-title">Preparación para Educación Superior</div>
+                <div class="objetivos-nav-subtitle">3 objetivos</div>
+            </div>
+        </div>
+
+        <!-- Trabajo y Emprendimiento -->
+        <div class="objetivos-nav-item" data-category="trabajo">
+            <div class="objetivos-nav-number">03</div>
+            <div class="objetivos-nav-content">
+                <div class="objetivos-nav-title">Trabajo y Emprendimiento</div>
+                <div class="objetivos-nav-subtitle">3 objetivos</div>
+            </div>
+        </div>
+
+        <!-- Formación Humana y Ciudadana -->
+        <div class="objetivos-nav-item" data-category="formacion">
+            <div class="objetivos-nav-number">04</div>
+            <div class="objetivos-nav-content">
+                <div class="objetivos-nav-title">Formación Humana y Ciudadana</div>
+                <div class="objetivos-nav-subtitle">4 objetivos</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Panel de Contenido -->
+    <div class="objetivos-content-panel">
+
+        <!-- PROFUNDIZACIÓN ACADÉMICA -->
+        <!-- Objetivo 1 -->
+        <div class="objetivos-content-item active" data-category="profundizacion" data-index="0">
+            <div class="objetivos-content-header">
+                <div class="objetivos-content-number">01</div>
+                <div class="objetivos-content-title-group">
+                    <h4 class="objetivos-item-title">Consolidación de Saberes</h4>
+                    <p class="objetivos-content-category">Profundización Académica • 1 de 2</p>
+                </div>
+            </div>
+            <p class="objetivos-content-text">
+                Buscamos que nuestros estudiantes consoliden sus saberes en las áreas obligatorias y
+                fundamentales, fortaleciendo las competencias desarrolladas durante la educación básica para
+                alcanzar un dominio profundo de cada disciplina.
+            </p>
+            <div class="objetivos-content-highlight">
+                <h5>¿Por qué es importante?</h5>
+                <p>La profundización permite que el estudiante afiance contenidos clave y adquiera autonomía
+                    para estudiar con mayor rigor en su campo de interés.</p>
+            </div>
+        </div>
+
+        <!-- Objetivo 2 -->
+        <div class="objetivos-content-item" data-category="profundizacion" data-index="1">
+            <div class="objetivos-content-header">
+                <div class="objetivos-content-number">02</div>
+                <div class="objetivos-content-title-group">
+                    <h4 class="objetivos-item-title">Exploración Personalizada</h4>
+                    <p class="objetivos-content-category">Profundización Académica • 2 de 2</p>
+                </div>
+            </div>
+            <p class="objetivos-content-text">
+                Ofrecemos la oportunidad de explorar y profundizar en aquellas disciplinas que se alineen con
+                los intereses, aptitudes y proyecto de vida de cada estudiante, facilitando el descubrimiento de
+                su vocación profesional.
+            </p>
+            <div class="objetivos-content-highlight">
+                <h5>¿Por qué es importante?</h5>
+                <p>Permite al estudiante identificar rutas formativas y vocacionales, aumentando la motivación y
+                    la conexión con su proyecto de vida.</p>
+            </div>
+        </div>
+
+        <!-- PREPARACIÓN PARA EDUCACIÓN SUPERIOR -->
+        <!-- Objetivo 3 -->
+        <div class="objetivos-content-item" data-category="superior" data-index="0">
+            <div class="objetivos-content-header">
+                <div class="objetivos-content-number">01</div>
+                <div class="objetivos-content-title-group">
+                    <h4 class="objetivos-item-title">Competencias Académicas Universitarias</h4>
+                    <p class="objetivos-content-category">Preparación para Educación Superior • 1 de 3</p>
+                </div>
+            </div>
+            <p class="objetivos-content-text">
+                Nuestro currículo y metodología están diseñados para desarrollar las competencias académicas y
+                habilidades de pensamiento crítico que son indispensables para el éxito en el nivel
+                universitario, garantizando una formación integral y rigurosa.
+            </p>
+            <div class="objetivos-content-highlight">
+                <h5>¿Por qué es importante?</h5>
+                <p>Desarrolla las competencias que facilitan la adaptación a exigencias académicas superiores y
+                    el pensamiento autónomo.</p>
+            </div>
+        </div>
+
+        <!-- Objetivo 4 -->
+        <div class="objetivos-content-item" data-category="superior" data-index="1">
+            <div class="objetivos-content-header">
+                <div class="objetivos-content-number">02</div>
+                <div class="objetivos-content-title-group">
+                    <h4 class="objetivos-item-title">Excelencia en Pruebas Saber 11</h4>
+                    <p class="objetivos-content-category">Preparación para Educación Superior • 2 de 3</p>
+                </div>
+            </div>
+            <p class="objetivos-content-text">
+                Preparamos a los estudiantes para un desempeño sobresaliente en las pruebas de Estado Saber 11,
+                proporcionando las herramientas y estrategias necesarias para obtener resultados destacados que
+                faciliten su ingreso a instituciones de educación superior de calidad.
+            </p>
+            <div class="objetivos-content-highlight">
+                <h5>¿Por qué es importante?</h5>
+                <p>Mejorar resultados en las pruebas estatales amplía opciones de admisión y acceso a becas y
+                    programas de alto nivel.</p>
+            </div>
+        </div>
+
+        <!-- Objetivo 5 -->
+        <div class="objetivos-content-item" data-category="superior" data-index="2">
+            <div class="objetivos-content-header">
+                <div class="objetivos-content-number">03</div>
+                <div class="objetivos-content-title-group">
+                    <h4 class="objetivos-item-title">Transición Exitosa</h4>
+                    <p class="objetivos-content-category">Preparación para Educación Superior • 3 de 3</p>
+                </div>
+            </div>
+            <p class="objetivos-content-text">
+                Facilitamos una transición exitosa a la vida académica superior, desarrollando autonomía,
+                habilidades de investigación, gestión del tiempo y todas las competencias necesarias para
+                enfrentar con éxito los desafíos universitarios.
+            </p>
+            <div class="objetivos-content-highlight">
+                <h5>¿Por qué es importante?</h5>
+                <p>Prepara a los estudiantes para los retos organizativos y académicos de la universidad,
+                    reduciendo el abandono y mejorando desempeño.</p>
+            </div>
+        </div>
+
+        <!-- TRABAJO Y EMPRENDIMIENTO -->
+        <!-- Objetivo 6 -->
+        <div class="objetivos-content-item" data-category="trabajo" data-index="0">
+            <div class="objetivos-content-header">
+                <div class="objetivos-content-number">01</div>
+                <div class="objetivos-content-title-group">
+                    <h4 class="objetivos-item-title">Vinculación al Mundo Laboral</h4>
+                    <p class="objetivos-content-category">Trabajo y Emprendimiento • 1 de 3</p>
+                </div>
+            </div>
+            <p class="objetivos-content-text">
+                Capacitamos a los estudiantes con las habilidades y conocimientos necesarios para que puedan
+                vincularse al mundo laboral de manera exitosa, desarrollando competencias técnicas y blandas
+                valoradas en el mercado actual.
+            </p>
+            <div class="objetivos-content-highlight">
+                <h5>¿Por qué es importante?</h5>
+                <p>Facilita la inserción laboral y la empleabilidad mediante formación práctica y orientación
+                    ocupacional.</p>
+            </div>
+        </div>
+
+        <!-- Objetivo 7 -->
+        <div class="objetivos-content-item" data-category="trabajo" data-index="1">
+            <div class="objetivos-content-header">
+                <div class="objetivos-content-number">02</div>
+                <div class="objetivos-content-title-group">
+                    <h4 class="objetivos-item-title">Pensamiento Emprendedor</h4>
+                    <p class="objetivos-content-category">Trabajo y Emprendimiento • 2 de 3</p>
+                </div>
+            </div>
+            <p class="objetivos-content-text">
+                Fomentamos el pensamiento emprendedor, la creatividad y la capacidad de resolver problemas,
+                desarrollando habilidades esenciales para el siglo XXI que permitan a nuestros estudiantes crear
+                oportunidades y generar valor en cualquier contexto.
+            </p>
+            <div class="objetivos-content-highlight">
+                <h5>¿Por qué es importante?</h5>
+                <p>Incentiva la autonomía, la creatividad y la capacidad de generar proyectos y empresas
+                    sostenibles.</p>
+            </div>
+        </div>
+
+        <!-- Objetivo 8 -->
+        <div class="objetivos-content-item" data-category="trabajo" data-index="2">
+            <div class="objetivos-content-header">
+                <div class="objetivos-content-number">03</div>
+                <div class="objetivos-content-title-group">
+                    <h4 class="objetivos-item-title">Competencias del Siglo XXI</h4>
+                    <p class="objetivos-content-category">Trabajo y Emprendimiento • 3 de 3</p>
+                </div>
+            </div>
+            <p class="objetivos-content-text">
+                Desarrollamos competencias clave como trabajo en equipo, comunicación efectiva, adaptabilidad,
+                pensamiento crítico y alfabetización digital, preparando profesionales integrales capaces de
+                enfrentar los retos de un mundo en constante transformación.
+            </p>
+            <div class="objetivos-content-highlight">
+                <h5>¿Por qué es importante?</h5>
+                <p>Estas competencias son demandadas por empleadores y esenciales para el éxito personal y
+                    profesional.</p>
+            </div>
+        </div>
+
+        <!-- FORMACIÓN HUMANA Y CIUDADANA -->
+        <!-- Objetivo 9 -->
+        <div class="objetivos-content-item" data-category="formacion" data-index="0">
+            <div class="objetivos-content-header">
+                <div class="objetivos-content-number">01</div>
+                <div class="objetivos-content-title-group">
+                    <h4 class="objetivos-item-title">Formación en Valores</h4>
+                    <p class="objetivos-content-category">Formación Humana y Ciudadana • 1 de 4</p>
+                </div>
+            </div>
+            <p class="objetivos-content-text">
+                Consolidamos la formación en valores, el respeto, la responsabilidad y la autonomía,
+                fortaleciendo el carácter y la integridad de nuestros estudiantes como fundamento de su
+                desarrollo personal y profesional.
+            </p>
+            <div class="objetivos-content-highlight">
+                <h5>¿Por qué es importante?</h5>
+                <p>Los valores guían el comportamiento ético y la convivencia democrática en la comunidad
+                    educativa y la sociedad.</p>
+            </div>
+        </div>
+
+        <!-- Objetivo 10 -->
+        <div class="objetivos-content-item" data-category="formacion" data-index="1">
+            <div class="objetivos-content-header">
+                <div class="objetivos-content-number">02</div>
+                <div class="objetivos-content-title-group">
+                    <h4 class="objetivos-item-title">Ciudadanía Activa y Ética</h4>
+                    <p class="objetivos-content-category">Formación Humana y Ciudadana • 2 de 4</p>
+                </div>
+            </div>
+            <p class="objetivos-content-text">
+                Nuestro objetivo es que los estudiantes se conviertan en ciudadanos activos, éticos y
+                conscientes de su rol en la construcción de una sociedad más justa, equitativa y solidaria,
+                comprometidos con el bienestar colectivo.
+            </p>
+            <div class="objetivos-content-highlight">
+                <h5>¿Por qué es importante?</h5>
+                <p>Promueve la participación ciudadana responsable y el compromiso con la comunidad y las normas
+                    democráticas.</p>
+            </div>
+        </div>
+
+        <!-- Objetivo 11 -->
+        <div class="objetivos-content-item" data-category="formacion" data-index="2">
+            <div class="objetivos-content-header">
+                <div class="objetivos-content-number">03</div>
+                <div class="objetivos-content-title-group">
+                    <h4 class="objetivos-item-title">Solidaridad y Responsabilidad Social</h4>
+                    <p class="objetivos-content-category">Formación Humana y Ciudadana • 3 de 4</p>
+                </div>
+            </div>
+            <p class="objetivos-content-text">
+                Fomentamos la conciencia de solidaridad y la responsabilidad social, desarrollando la empatía y
+                el compromiso con las comunidades vulnerables, promoviendo acciones concretas de servicio y
+                transformación social.
+            </p>
+            <div class="objetivos-content-highlight">
+                <h5>¿Por qué es importante?</h5>
+                <p>La solidaridad forma ciudadanos comprometidos con la justicia social y el bienestar
+                    colectivo.</p>
+            </div>
+        </div>
+
+        <!-- Objetivo 12 -->
+        <div class="objetivos-content-item" data-category="formacion" data-index="3">
+            <div class="objetivos-content-header">
+                <div class="objetivos-content-number">04</div>
+                <div class="objetivos-content-title-group">
+                    <h4 class="objetivos-item-title">Identidad Cultural y Ambiental</h4>
+                    <p class="objetivos-content-category">Formación Humana y Ciudadana • 4 de 4</p>
+                </div>
+            </div>
+            <p class="objetivos-content-text">
+                Promovemos que los estudiantes valoren y respeten la diversidad cultural y la rica naturaleza de
+                nuestro país, desarrollando una identidad cultural sólida y una conciencia ambiental que impulse
+                la conservación y el desarrollo sostenible.
+            </p>
+            <div class="objetivos-content-highlight">
+                <h5>¿Por qué es importante?</h5>
+                <p>Fortalece el sentido de pertenencia y la responsabilidad frente al cuidado del patrimonio
+                    natural y cultural.</p>
+            </div>
+        </div>
+
+        <!-- Navegación entre objetivos -->
+        <div class="objetivos-content-navigation">
+            <button class="objetivos-nav-btn objetivos-prev" id="objetivosPrevBtn">
+                ← Anterior
+            </button>
+            <button class="objetivos-nav-btn objetivos-next" id="objetivosNextBtn">
+                Siguiente →
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <!-- GALERÍA -->
-        <section aria-label="Galería de momentos especiales en el preescolar de Neiva">
+        <section aria-label="Galería de Imágenes de Educación Media Académica en Neiva">
             <header class="gallery-header">
                 <h2 class="gallery-title">Momentos Especiales</h2>
                 <p class="gallery-subtitle">
-                    Actividades, juegos y aprendizajes que viven nuestros estudiantes de educación inicial y preescolar.
+                    Explora nuestra galería de imágenes que capturan momentos inolvidables y experiencias
+                    significativas de nuestros estudiantes en la educación media académica en Neiva.
                 </p>
             </header>
 
@@ -412,37 +474,43 @@
                 <div class="gallery-grid">
 
                     <article class="gallery-item" onclick="openLightbox(0)">
-                        <img src="images/media_academica/imagen1.jpg" alt="Niños jugando en el aula del preescolar"
+                        <img src="{{ asset('images/media_academica/imagen1.jpg') }}" 
+                        alt="Estudiantes de educación media académica en Neiva en el Gimnasio Humanístico"
                             loading="lazy">
                     </article>
 
                     <article class="gallery-item" onclick="openLightbox(1)">
-                        <img src="images/media_academica/imagen2.jpg"
-                            alt="Actividades creativas para primera infancia" loading="lazy">
+                        <img src="{{ asset('images/media_academica/imagen2.jpg') }}"
+                            alt="Estudiantes de educación media académica en Neiva en el Gimnasio Humanístico" loading="lazy">
                     </article>
 
                     <article class="gallery-item" onclick="openLightbox(2)">
-                        <img src="images/media_academica/imagen3.jpg" alt="Aprendizaje colaborativo en preescolar"
+                        <img src="{{ asset('images/media_academica/imagen3.jpg') }}" 
+                        alt="Aprendizaje colaborativo en educación media académica"
                             loading="lazy">
                     </article>
 
                     <article class="gallery-item" onclick="openLightbox(3)">
-                        <img src="images/media_academica/imagen4.jpg" alt="Exploración educativa al aire libre"
+                        <img src="{{ asset('images/media_academica/imagen4.jpg') }}" 
+                        alt="Estudiantes de educación media académica en actividades grupales"
                             loading="lazy">
                     </article>
 
                     <article class="gallery-item" onclick="openLightbox(4)">
-                        <img src="images/media_academica/imagen5.jpg" alt="Juego libre y diversión en el colegio"
+                        <img src="{{ asset('images/media_academica/imagen5.jpg') }}" 
+                        alt="Estudiantes de educación media académica en actividades recreativas"
                             loading="lazy">
                     </article>
 
                     <article class="gallery-item" onclick="openLightbox(5)">
-                        <img src="images/media_academica/imagen9.jpg"
-                            alt="Desarrollo integral y acompañamiento docente" loading="lazy">
+                        <img src="{{ asset('images/media_academica/imagen9.jpg') }}"
+                            alt="Estudiantes de educación media académica en Neiva en el Gimnasio Humanístico"
+                            loading="lazy">
                     </article>
 
                     <article class="gallery-item" onclick="openLightbox(6)">
-                        <img src="images/media_academica/imagen7.jpg" alt="Momentos de aprendizaje diario"
+                        <img src="{{ asset('images/media_academica/imagen7.jpg') }}" 
+                        alt="Estudiantes de educación media académica en actividades artísticas"
                             loading="lazy">
                     </article>
                 </div>
@@ -674,31 +742,31 @@
             // Array con todas las imágenes de la galería (7 imágenes)
             const galleryImages = [{
                     src: 'images/media_academica/imagen1.jpg',
-                    alt: 'Niños jugando en el aula'
+                    alt: 'Estudiantes de educación media académica en Neiva'
                 },
                 {
                     src: 'images/media_academica/imagen2.jpg',
-                    alt: 'Actividades creativas'
+                    alt: 'Estudiantes en el Gimnasio Humanístico'
                 },
                 {
                     src: 'images/media_academica/imagen3.jpg',
-                    alt: 'Aprendizaje en grupo'
+                    alt: 'Estudiantes de educación media académica en Neiva colaborando'
                 },
                 {
                     src: 'images/media_academica/imagen4.jpg',
-                    alt: 'Exploración educativa'
+                    alt: 'Actividades grupales en educación media académica'
                 },
                 {
                     src: 'images/media_academica/imagen5.jpg',
-                    alt: 'Tiempo de juego y diversión'
+                    alt: 'Actividades recreativas'
                 },
                 {
                     src: 'images/media_academica/imagen9.jpg',
-                    alt: 'Desarrollo integral'
+                    alt: 'Estudiantes en el Gimnasio Humanístico'
                 },
                 {
                     src: 'images/media_academica/imagen7.jpg',
-                    alt: 'Momentos de aprendizaje'
+                    alt: 'Actividades artísticas en educación media académica'
                 }
             ];
 

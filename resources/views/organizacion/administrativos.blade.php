@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" dir="ltr">
+<html lang="es-CO">
 
 <head>
     <!-- 🧠 SEO BÁSICO -->
@@ -24,6 +24,8 @@
     <meta property="og:image" content="{{ asset('images/politica_de_calidad2.webp') }}">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_CO">
+    <meta property="og:url" content="https://gimnasiohumanisticoaltomagdalena.com/administrativos">
+    <meta property="og:site_name" content="Gimnasio Humanístico del Alto Magdalena">
 
     
 
@@ -44,6 +46,32 @@
 
     <!-- ⚡ JS -->
     <script src="{{ asset('js/hero.js') }}" defer></script>
+
+    @verbatim
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Gimnasio Humanístico del Alto Magdalena",
+  "url": "https://gimnasiohumanisticoaltomagdalena.com",
+  "department": [
+    {
+      "@type": "Organization",
+      "name": "Equipo Administrativo",
+      "employee": [
+        { "@type": "Person", "jobTitle": "Jefe Administrativo" },
+        { "@type": "Person", "jobTitle": "Contador" },
+        { "@type": "Person", "jobTitle": "Secretaría Académica" },
+        { "@type": "Person", "jobTitle": "Pagador - Tesorero" },
+        { "@type": "Person", "jobTitle": "Maestra de Apoyo" },
+        { "@type": "Person", "jobTitle": "Servicios Generales" }
+      ]
+    }
+  ]
+}
+</script>
+@endverbatim
+
 </head>
 
 <body>
@@ -105,7 +133,7 @@
                             <div class="flip-card-front" aria-hidden="false">
                                 <div class="card-logo">
                                     <img src="{{ asset('images/jefe_administracion.png') }}"
-                                        alt="Ícono representativo del Jefe Administrativo">
+                                        alt="Contador del Gimnasio Humanístico del Alto Magdalena">
                                 </div>
                                 <h4 class="front-title">Jefe Administrativo</h4>
                                 <p class="front-subtitle">Liderazgo Operativo</p>
@@ -136,7 +164,7 @@
                             <div class="flip-card-front">
                                 <div class="card-logo">
                                     <img src="{{ asset('images/contador.png') }}"
-                                        alt="Ícono representativo del Contador institucional">
+                                        alt="Contador del Gimnasio Humanístico del Alto Magdalena">
                                 </div>
                                 <h4 class="front-title">Contador</h4>
                                 <p class="front-subtitle">Rigor Financiero</p>
@@ -168,7 +196,7 @@
                             <div class="flip-card-front">
                                 <div class="card-logo">
                                     <img src="{{ asset('images/secretaria_academica.png') }}"
-                                        alt="Ícono de la Secretaría Académica">
+                                        alt="Ícono representativo de la Secretaría Académica del Gimnasio Humanístico">
                                 </div>
                                 <h4 class="front-title">Secretaría Académica</h4>
                                 <p class="front-subtitle">Gestión Académica</p>
@@ -200,7 +228,7 @@
                             <div class="flip-card-front">
                                 <div class="card-logo">
                                     <img src="{{ asset('images/pagador_tesorero.png') }}"
-                                        alt="Ícono representativo del Pagador o Tesorero">
+                                        alt="Ícono representativo del Pagador-Tesorero del Gimnasio Humanístico">
                                 </div>
                                 <h4 class="front-title">Pagador - Tesorero</h4>
                                 <p class="front-subtitle">Gestión Financiera</p>
@@ -231,7 +259,7 @@
                             <div class="flip-card-front">
                                 <div class="card-logo">
                                     <img src="{{ asset('images/maestra_apoyo.png') }}"
-                                        alt="Ícono representativo de la Maestra de Apoyo">
+                                        alt="Ícono representativo de la Maestra de Apoyo del Gimnasio Humanístico">
                                 </div>
                                 <h4 class="front-title">Maestra de Apoyo</h4>
                                 <p class="front-subtitle">Inclusión Educativa</p>
@@ -264,7 +292,7 @@
                             <div class="flip-card-front">
                                 <div class="card-logo">
                                     <img src="{{ asset('images/servicios_generales.png') }}"
-                                        alt="Ícono del personal de Servicios Generales">
+                                        alt="Ícono representativo de Servicios Generales del Gimnasio Humanístico">
                                 </div>
                                 <h4 class="front-title">Servicios Generales</h4>
                                 <p class="front-subtitle">Bienestar y Seguridad</p>
@@ -280,7 +308,6 @@
                                 calidad.
                                 </p>
                             </div>
-
                         </div>
                     </div>
                 </article>
