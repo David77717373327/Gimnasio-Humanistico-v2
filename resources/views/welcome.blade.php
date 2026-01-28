@@ -143,8 +143,6 @@
     <!-- Contenido Principal -->
     <main id="main-content" role="main">
 
-
-
         <!-- Hero Section -->
         <section class="hero-banner" id="inicio" aria-labelledby="hero-title">
             <!-- Fondo con video y overlays profesionales -->
@@ -370,7 +368,7 @@
                         <article class="gallery-item" data-index="0" data-aos="fade-up" data-aos-delay="150"
                             data-aos-duration="800">
                             <figure class="gallery-image-wrapper">
-                                <img src="{{ asset('images/dansas.jpg') }}"
+                                <img src="{{ asset('images/laboratorio.jpg') }}"
                                     alt="Laboratorios de ciencias equipados con tecnología moderna"
                                     class="gallery-image" loading="lazy">
                             </figure>
@@ -1107,7 +1105,7 @@
             const facilities = [{
                     title: "Laboratorios de Ciencias",
                     description: "Laboratorios de ciencias equipados con tecnología moderna para experimentos. Espacios diseñados para fomentar la investigación y el descubrimiento científico.",
-                    image: "images/dansas.jpg",
+                    image: "images/laboratorio.jpg",
                     alt: "Laboratorios de ciencias equipados con tecnología moderna"
                 },
                 {
