@@ -92,7 +92,7 @@
         <!-- HERO -->
         <section class="hero-section" aria-labelledby="titulo-pagina">
             <div class="hero-background">
-                <img src="{{ asset('images/politica_de_calidad3.jpg') }}"
+                <img src="{{ asset('images/administrativos.jpeg') }}"
                     alt="Instalaciones del Gimnasio Humanístico en Neiva que representan la gestión administrativa."
                     width="1920" height="1080" loading="lazy">
             </div>
