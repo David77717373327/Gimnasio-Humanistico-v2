@@ -1503,12 +1503,16 @@ h6 {
     will-change: transform;
 }
 
+/* ✅ CORREGIDO */
 .academic-carousel-slide {
+    flex: 0 0 100%; /* CRÍTICO: Asegura que cada slide ocupe exactamente el 100% */
     min-width: 100%;
+    width: 100%; /* Agregar esto también */
     height: 100%;
     position: relative;
     flex-shrink: 0;
 }
+
 
 /* IMAGEN SIN TRANSICIÓN DE ZOOM */
 .academic-carousel-slide .academic-level-image {
@@ -1742,6 +1746,14 @@ h6 {
 .academic-level-card:hover .academic-level-title::after {
     width: 80px;
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -2959,6 +2971,26 @@ h6 {
         right: 0.6rem;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
