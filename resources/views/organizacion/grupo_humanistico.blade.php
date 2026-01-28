@@ -55,7 +55,7 @@
     <link href="{{ asset('css/hero.css') }}" rel="stylesheet">
     <link href="{{ asset('css/navegacion.css') }}" rel="stylesheet">
 
-
+@verbatim
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -100,6 +100,7 @@
   ]
 }
 </script>
+@endverbatim
 
 </head>
 
