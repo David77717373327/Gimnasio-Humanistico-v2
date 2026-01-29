@@ -620,6 +620,320 @@
 
 
 
+
+
+
+
+
+
+
+
+
+/* ============================================
+   FLECHAS DE NAVEGACIÓN MEJORADAS - MÁS ANCHAS Y MEJOR UX
+============================================ */
+
+@media (max-width: 1023px) {
+    /* Contenedor para las flechas */
+    .tabs-wrapper-container {
+        position: relative;
+        width: 100%;
+    }
+    
+    /* Asegurar que el wrapper tenga scroll horizontal */
+    .eventos-tabs .tabs-wrapper {
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+        padding: 0.5rem 0;
+        scroll-snap-type: x mandatory;
+    }
+    
+    .eventos-tabs .tabs-wrapper::-webkit-scrollbar {
+        display: none;
+    }
+    
+    /* FLECHAS - MÁS ANCHAS Y FÁCILES DE TOCAR */
+    .tabs-nav-arrow {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 55px; /* Aumentado de 35px a 55px */
+        height: 100%;
+        background: rgba(0, 0, 0, 0.75);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .tabs-nav-arrow:hover {
+        background: rgba(0, 0, 0, 0.85);
+    }
+    
+    .tabs-nav-arrow svg {
+        width: 28px; /* Aumentado de 20px a 28px */
+        height: 28px;
+        color: white;
+        filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+    }
+    
+    /* Flecha izquierda */
+    .tabs-arrow-left {
+        left: 0;
+        opacity: 0;
+        pointer-events: none;
+    }
+    
+    .tabs-arrow-left.visible {
+        opacity: 1;
+        pointer-events: all;
+    }
+    
+    /* Flecha derecha */
+    .tabs-arrow-right {
+        right: 0;
+        opacity: 1;
+        pointer-events: all;
+    }
+    
+    .tabs-arrow-right.hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    /* Asegurar que el contenedor no tenga padding */
+    .eventos-tabs .container {
+        padding: 0;
+        margin: 0;
+        max-width: 100%;
+    }
+}
+
+/* ============================================
+   MEJORAS UX/UI - CARDS CON SEPARADORES Y SCROLL SNAP
+============================================ */
+
+@media (max-width: 1023px) {
+    /* Separador visual entre cards */
+    .tab-btn {
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+        position: relative;
+        transition: all 0.3s ease;
+        scroll-snap-align: start;
+    }
+    
+    .tab-btn:last-child {
+        border-right: none;
+    }
+    
+    /* Efecto de hover más suave */
+    .tab-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Card activa con borde más definido */
+    .tab-btn.active {
+        border-right: 1px solid transparent;
+        box-shadow: 0 4px 16px rgba(13, 63, 39, 0.15);
+        transform: translateY(-2px);
+    }
+}
+
+/* ============================================
+   TABLET HORIZONTAL (768px - 1023px)
+============================================ */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .tabs-nav-arrow {
+        width: 55px;
+    }
+    
+    .tabs-nav-arrow svg {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/* ============================================
+   TABLET VERTICAL (576px - 767px)
+============================================ */
+@media (max-width: 767px) and (min-width: 576px) {
+    .tabs-nav-arrow {
+        width: 50px; /* Aumentado de 32px a 50px */
+    }
+    
+    .tabs-nav-arrow svg {
+        width: 26px; /* Aumentado de 18px a 26px */
+        height: 26px;
+    }
+}
+
+/* ============================================
+   MÓVIL GRANDE (480px - 575px)
+============================================ */
+@media (max-width: 575px) and (min-width: 480px) {
+    .tabs-nav-arrow {
+        width: 48px; /* Aumentado de 30px a 48px */
+    }
+    
+    .tabs-nav-arrow svg {
+        width: 24px; /* Aumentado de 16px a 24px */
+        height: 24px;
+    }
+    
+    /* Separador más sutil en móvil */
+    .tab-btn {
+        border-right: 1px solid rgba(0, 0, 0, 0.08);
+    }
+}
+
+/* ============================================
+   MÓVIL MEDIANO (375px - 479px)
+============================================ */
+@media (max-width: 479px) and (min-width: 375px) {
+    .tabs-nav-arrow {
+        width: 45px; /* Aumentado de 28px a 45px */
+    }
+    
+    .tabs-nav-arrow svg {
+        width: 22px; /* Aumentado de 15px a 22px */
+        height: 22px;
+    }
+}
+
+/* ============================================
+   MÓVIL PEQUEÑO (320px - 374px)
+============================================ */
+@media (max-width: 374px) and (min-width: 320px) {
+    .tabs-nav-arrow {
+        width: 42px; /* Aumentado de 26px a 42px */
+    }
+    
+    .tabs-nav-arrow svg {
+        width: 20px; /* Aumentado de 14px a 20px */
+        height: 20px;
+    }
+}
+
+/* ============================================
+   MÓVIL EXTRA PEQUEÑO (250px - 319px)
+============================================ */
+@media (max-width: 319px) and (min-width: 250px) {
+    .tabs-nav-arrow {
+        width: 38px; /* Aumentado de 24px a 38px */
+    }
+    
+    .tabs-nav-arrow svg {
+        width: 18px; /* Aumentado de 13px a 18px */
+        height: 18px;
+    }
+}
+
+/* ============================================
+   MÓVIL ULTRA PEQUEÑO (menos de 250px)
+============================================ */
+@media (max-width: 249px) {
+    .tabs-nav-arrow {
+        width: 35px;
+    }
+    
+    .tabs-nav-arrow svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+/* ============================================
+   MEJORAS DE ACCESIBILIDAD Y RENDIMIENTO
+============================================ */
+@media (max-width: 1023px) {
+    /* Mejorar área de toque */
+    .tabs-nav-arrow {
+        -webkit-tap-highlight-color: transparent;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+    
+    /* Feedback visual al tocar */
+    .tabs-nav-arrow:active {
+        background: rgba(0, 0, 0, 0.9);
+        transform: scale(0.97);
+    }
+    
+    /* Transición suave del scroll */
+    .tabs-wrapper {
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    /* Mejorar rendimiento */
+    .tab-btn {
+        will-change: transform;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+    }
+}
+
+/* ============================================
+   ORIENTACIÓN LANDSCAPE EN MÓVILES
+============================================ */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .tabs-nav-arrow {
+        width: 45px;
+    }
+    
+    .tabs-nav-arrow svg {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+/* ============================================
+   OPTIMIZACIÓN PARA PANTALLAS TOUCH
+============================================ */
+@media (max-width: 1023px) and (hover: none) and (pointer: coarse) {
+    /* Dispositivos táctiles */
+    .tabs-nav-arrow {
+        width: 55px; /* Asegurar que sea ancho en touch */
+        min-width: 55px;
+    }
+    
+    .tabs-nav-arrow:active {
+        background: rgba(0, 0, 0, 0.95);
+    }
+}
+
+/* ============================================
+   SMOOTH SCROLL BEHAVIOR
+============================================ */
+@media (prefers-reduced-motion: no-preference) {
+    .tabs-wrapper {
+        scroll-behavior: smooth;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .tabs-wrapper {
+        scroll-behavior: auto;
+    }
+    
+    .tab-btn,
+    .tabs-nav-arrow {
+        transition: none;
+    }
+}
+
+
+
+
+
+
 /* ============================================
    PANTALLAS GRANDES - Desktop (min-width: 1280px)
 ============================================ */
@@ -1505,222 +1819,5 @@
 
     button, a {
         touch-action: manipulation;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ============================================
-   FLECHAS DE NAVEGACIÓN - DELGADAS Y PEGADAS
-============================================ */
-
-@media (max-width: 1023px) {
-    /* Contenedor para las flechas */
-    .tabs-wrapper-container {
-        position: relative;
-        width: 100%;
-    }
-    
-    /* Asegurar que el wrapper tenga scroll horizontal */
-    .eventos-tabs .tabs-wrapper {
-        overflow-x: auto;
-        overflow-y: hidden;
-        scroll-behavior: smooth;
-        scrollbar-width: none;
-        -webkit-overflow-scrolling: touch;
-        padding: 0.5rem 0;
-    }
-    
-    .eventos-tabs .tabs-wrapper::-webkit-scrollbar {
-        display: none;
-    }
-    
-    /* FLECHAS - FONDO NEGRO SÓLIDO */
-    .tabs-nav-arrow {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 35px;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.75);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 10;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        margin: 0;
-        padding: 0;
-    }
-    
-    .tabs-nav-arrow:hover {
-        background: rgba(0, 0, 0, 0.85);
-    }
-    
-    .tabs-nav-arrow svg {
-        width: 20px;
-        height: 20px;
-        color: white;
-        filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
-    }
-    
-    /* Flecha izquierda */
-    .tabs-arrow-left {
-        left: 0;
-        opacity: 0;
-        pointer-events: none;
-    }
-    
-    .tabs-arrow-left.visible {
-        opacity: 1;
-        pointer-events: all;
-    }
-    
-    /* Flecha derecha */
-    .tabs-arrow-right {
-        right: 0;
-        opacity: 1;
-        pointer-events: all;
-    }
-    
-    .tabs-arrow-right.hidden {
-        opacity: 0;
-        pointer-events: none;
-    }
-
-    /* Asegurar que el contenedor no tenga padding */
-    .eventos-tabs .container {
-        padding: 0;
-        margin: 0;
-        max-width: 100%;
-    }
-}
-
-/* ============================================
-   MEJORAS UX/UI - CARDS CON SEPARADORES
-============================================ */
-
-@media (max-width: 1023px) {
-    /* Separador visual entre cards */
-    .tab-btn {
-        border-right: 1px solid rgba(0, 0, 0, 0.1);
-        position: relative;
-        transition: all 0.3s ease;
-    }
-    
-    .tab-btn:last-child {
-        border-right: none;
-    }
-    
-    /* Efecto de hover más suave */
-    .tab-btn:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-    
-    /* Card activa con borde más definido */
-    .tab-btn.active {
-        border-right: 1px solid transparent;
-        box-shadow: 0 4px 16px rgba(13, 63, 39, 0.15);
-        transform: translateY(-2px);
-    }
-    
-    /* Scroll snap para mejor experiencia */
-    .tabs-wrapper {
-        scroll-snap-type: x mandatory;
-    }
-    
-    .tab-btn {
-        scroll-snap-align: start;
-    }
-}
-
-/* Ajustes responsivos */
-@media (max-width: 767px) {
-    .tabs-nav-arrow {
-        width: 32px;
-    }
-    
-    .tabs-nav-arrow svg {
-        width: 18px;
-        height: 18px;
-    }
-}
-
-@media (max-width: 575px) {
-    .tabs-nav-arrow {
-        width: 30px;
-    }
-    
-    .tabs-nav-arrow svg {
-        width: 16px;
-        height: 16px;
-    }
-    
-    /* Separador más sutil en móvil */
-    .tab-btn {
-        border-right: 1px solid rgba(0, 0, 0, 0.08);
-    }
-}
-
-@media (max-width: 479px) {
-    .tabs-nav-arrow {
-        width: 28px;
-    }
-    
-    .tabs-nav-arrow svg {
-        width: 15px;
-        height: 15px;
-    }
-}
-
-@media (max-width: 374px) {
-    .tabs-nav-arrow {
-        width: 26px;
-    }
-    
-    .tabs-nav-arrow svg {
-        width: 14px;
-        height: 14px;
-    }
-}
-
-@media (max-width: 319px) {
-    .tabs-nav-arrow {
-        width: 24px;
-    }
-    
-    .tabs-nav-arrow svg {
-        width: 13px;
-        height: 13px;
     }
 }

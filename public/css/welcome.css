@@ -218,6 +218,7 @@ h6 {
 }
 
 .hero-title-section {
+    font-family: 'Playfair Display', serif;
     padding-top: 0;
     padding-bottom: 0;
     margin-bottom: 1rem;
@@ -225,7 +226,8 @@ h6 {
 }
 
 .hero-title {
-    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-size: clamp(1.9rem, 3.1vw, 2.5rem);
+    font-family: 'Playfair Display', serif;
     font-weight: 700;
     color: #ffffff;
     line-height: 1.3;

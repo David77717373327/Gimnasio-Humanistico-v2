@@ -141,149 +141,226 @@
 
     </main>
     <script>
+
+
+
+
         // ============================================
-        // FLECHAS DE NAVEGACIÓN PARA TABS - CORREGIDO
-        // ============================================
+// NAVEGACIÓN DE TABS MEJORADA - MEJOR UX
+// ============================================
 
-        document.addEventListener('DOMContentLoaded', function() {
-            // Esperar a que renderTabs() termine
-            setTimeout(function() {
-                if (window.innerWidth <= 1023) {
-                    initializeTabsArrows();
-                }
-            }, 200);
+document.addEventListener('DOMContentLoaded', function() {
+    // Esperar a que renderTabs() termine
+    setTimeout(function() {
+        if (window.innerWidth <= 1023) {
+            initializeTabsArrows();
+        }
+    }, 200);
 
-            // Re-inicializar en resize
-            let resizeTimer;
-            window.addEventListener('resize', function() {
-                clearTimeout(resizeTimer);
-                resizeTimer = setTimeout(function() {
-                    if (window.innerWidth <= 1023) {
-                        removeTabsArrows();
-                        initializeTabsArrows();
-                    } else {
-                        removeTabsArrows();
-                    }
-                }, 250);
-            });
-        });
-
-        function initializeTabsArrows() {
-            const tabsWrapper = document.getElementById('tabsWrapper');
-
-            if (!tabsWrapper) {
-                console.log('No se encontró tabsWrapper');
-                return;
+    // Re-inicializar en resize con debounce
+    let resizeTimer;
+    window.addEventListener('resize', function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function() {
+            if (window.innerWidth <= 1023) {
+                removeTabsArrows();
+                initializeTabsArrows();
+            } else {
+                removeTabsArrows();
             }
+        }, 250);
+    });
+});
 
-            // Verificar si ya existen las flechas
-            if (document.querySelector('.tabs-arrow-left')) {
-                console.log('Las flechas ya existen');
-                return;
-            }
+function initializeTabsArrows() {
+    const tabsWrapper = document.getElementById('tabsWrapper');
 
-            // Obtener o crear el contenedor
-            let container = tabsWrapper.parentElement;
+    if (!tabsWrapper) {
+        console.log('No se encontró tabsWrapper');
+        return;
+    }
 
-            // Si el padre no es .container, buscar hacia arriba
-            if (!container.classList.contains('container')) {
-                const eventosTabsSection = tabsWrapper.closest('.eventos-tabs');
-                if (eventosTabsSection) {
-                    container = eventosTabsSection.querySelector('.container');
-                }
-            }
+    // Verificar si ya existen las flechas
+    if (document.querySelector('.tabs-arrow-left')) {
+        console.log('Las flechas ya existen');
+        return;
+    }
 
-            if (!container) {
-                console.log('No se encontró contenedor adecuado');
-                return;
-            }
+    // Obtener o crear el contenedor
+    let container = tabsWrapper.parentElement;
 
-            // Crear wrapper solo si no existe
-            if (!container.classList.contains('tabs-wrapper-container')) {
-                const wrapper = document.createElement('div');
-                wrapper.className = 'tabs-wrapper-container';
+    // Si el padre no es .container, buscar hacia arriba
+    if (!container.classList.contains('container')) {
+        const eventosTabsSection = tabsWrapper.closest('.eventos-tabs');
+        if (eventosTabsSection) {
+            container = eventosTabsSection.querySelector('.container');
+        }
+    }
 
-                // Mover tabsWrapper dentro del nuevo wrapper
-                const parent = tabsWrapper.parentNode;
-                parent.insertBefore(wrapper, tabsWrapper);
-                wrapper.appendChild(tabsWrapper);
+    if (!container) {
+        console.log('No se encontró contenedor adecuado');
+        return;
+    }
 
-                container = wrapper;
-            }
+    // Crear wrapper solo si no existe
+    if (!container.classList.contains('tabs-wrapper-container')) {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'tabs-wrapper-container';
 
-            // Crear flecha izquierda
-            const arrowLeft = document.createElement('div');
-            arrowLeft.className = 'tabs-nav-arrow tabs-arrow-left';
-            arrowLeft.innerHTML = `
+        // Mover tabsWrapper dentro del nuevo wrapper
+        const parent = tabsWrapper.parentNode;
+        parent.insertBefore(wrapper, tabsWrapper);
+        wrapper.appendChild(tabsWrapper);
+
+        container = wrapper;
+    }
+
+    // Crear flecha izquierda
+    const arrowLeft = document.createElement('div');
+    arrowLeft.className = 'tabs-nav-arrow tabs-arrow-left';
+    arrowLeft.innerHTML = `
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7" />
         </svg>
     `;
 
-            // Crear flecha derecha
-            const arrowRight = document.createElement('div');
-            arrowRight.className = 'tabs-nav-arrow tabs-arrow-right';
-            arrowRight.innerHTML = `
+    // Crear flecha derecha
+    const arrowRight = document.createElement('div');
+    arrowRight.className = 'tabs-nav-arrow tabs-arrow-right';
+    arrowRight.innerHTML = `
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
         </svg>
     `;
 
-            // Insertar flechas
-            container.appendChild(arrowLeft);
-            container.appendChild(arrowRight);
+    // Insertar flechas
+    container.appendChild(arrowLeft);
+    container.appendChild(arrowRight);
 
-            console.log('Flechas creadas correctamente');
+    console.log('Flechas creadas correctamente');
 
-            // Funcionalidad de scroll
-            arrowLeft.addEventListener('click', function() {
-                tabsWrapper.scrollBy({
-                    left: -200,
-                    behavior: 'smooth'
-                });
-            });
+    // Calcular ancho de scroll óptimo basado en el ancho de las tabs
+    function getScrollAmount() {
+        const firstTab = tabsWrapper.querySelector('.tab-btn');
+        if (!firstTab) return 200;
+        
+        // Scroll del ancho de una tab completa
+        return firstTab.offsetWidth + 20; // +20 para gap
+    }
 
-            arrowRight.addEventListener('click', function() {
-                tabsWrapper.scrollBy({
-                    left: 200,
-                    behavior: 'smooth'
-                });
-            });
+    // Funcionalidad de scroll mejorada
+    arrowLeft.addEventListener('click', function() {
+        const scrollAmount = getScrollAmount();
+        tabsWrapper.scrollBy({
+            left: -scrollAmount,
+            behavior: 'smooth'
+        });
+    });
 
-            // Actualizar visibilidad de flechas
-            function updateArrows() {
-                const scrollLeft = tabsWrapper.scrollLeft;
-                const maxScroll = tabsWrapper.scrollWidth - tabsWrapper.clientWidth;
+    arrowRight.addEventListener('click', function() {
+        const scrollAmount = getScrollAmount();
+        tabsWrapper.scrollBy({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+    });
 
-                // Flecha izquierda
-                if (scrollLeft <= 10) {
-                    arrowLeft.classList.remove('visible');
-                } else {
-                    arrowLeft.classList.add('visible');
-                }
+    // Actualizar visibilidad de flechas
+    function updateArrows() {
+        const scrollLeft = tabsWrapper.scrollLeft;
+        const maxScroll = tabsWrapper.scrollWidth - tabsWrapper.clientWidth;
 
-                // Flecha derecha
-                if (scrollLeft >= maxScroll - 10) {
-                    arrowRight.classList.add('hidden');
-                } else {
-                    arrowRight.classList.remove('hidden');
-                }
-            }
+        // Flecha izquierda
+        if (scrollLeft <= 10) {
+            arrowLeft.classList.remove('visible');
+        } else {
+            arrowLeft.classList.add('visible');
+        }
 
-            // Escuchar scroll
-            tabsWrapper.addEventListener('scroll', updateArrows);
+        // Flecha derecha
+        if (scrollLeft >= maxScroll - 10) {
+            arrowRight.classList.add('hidden');
+        } else {
+            arrowRight.classList.remove('hidden');
+        }
+    }
 
-            // Actualizar al inicio
+    // Escuchar scroll con throttle para mejor rendimiento
+    let scrollTimeout;
+    tabsWrapper.addEventListener('scroll', function() {
+        if (scrollTimeout) {
+            window.cancelAnimationFrame(scrollTimeout);
+        }
+        scrollTimeout = window.requestAnimationFrame(updateArrows);
+    });
+
+    // Soporte para gestos táctiles
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    tabsWrapper.addEventListener('touchstart', function(e) {
+        touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    tabsWrapper.addEventListener('touchend', function(e) {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    }, { passive: true });
+
+    function handleSwipe() {
+        const swipeThreshold = 50;
+        const diff = touchStartX - touchEndX;
+
+        if (Math.abs(diff) > swipeThreshold) {
             updateArrows();
-            setTimeout(updateArrows, 300);
         }
+    }
 
-        function removeTabsArrows() {
-            const arrows = document.querySelectorAll('.tabs-arrow-left, .tabs-arrow-right');
-            arrows.forEach(arrow => {
-                arrow.remove();
+    // Actualizar al inicio
+    updateArrows();
+    setTimeout(updateArrows, 100);
+    setTimeout(updateArrows, 300);
+
+    // Observar cambios en el DOM
+    const observer = new MutationObserver(updateArrows);
+    observer.observe(tabsWrapper, { 
+        childList: true, 
+        subtree: true 
+    });
+
+    // Actualizar cuando se cambia de tab
+    tabsWrapper.addEventListener('click', function() {
+        setTimeout(updateArrows, 100);
+    });
+}
+
+function removeTabsArrows() {
+    const arrows = document.querySelectorAll('.tabs-arrow-left, .tabs-arrow-right');
+    arrows.forEach(arrow => {
+        arrow.remove();
+    });
+}
+
+// Función auxiliar para scroll suave al cambiar de tab
+function scrollTabIntoView(tabElement) {
+    if (window.innerWidth <= 1023) {
+        const tabsWrapper = document.getElementById('tabsWrapper');
+        if (tabsWrapper && tabElement) {
+            const tabLeft = tabElement.offsetLeft;
+            const tabWidth = tabElement.offsetWidth;
+            const wrapperWidth = tabsWrapper.offsetWidth;
+            const scrollLeft = tabLeft - (wrapperWidth / 2) + (tabWidth / 2);
+
+            tabsWrapper.scrollTo({
+                left: scrollLeft,
+                behavior: 'smooth'
             });
         }
+    }
+}
+
+// Exportar función para uso en switchTab
+window.scrollTabIntoView = scrollTabIntoView;
         const eventos = [{
                 id: 'sanpedrito',
                 category: 'Tradición',

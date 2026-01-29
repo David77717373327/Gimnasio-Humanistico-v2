@@ -186,15 +186,21 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
 
+        // SOLO cerrar el navbar cuando se hace clic en un dropdown-item (elemento final del menú)
         document.querySelectorAll(".dropdown-item").forEach(i =>
             i.addEventListener("click", closeNavbar)
         );
 
-        document.querySelectorAll(".nav-link:not([role='button'])").forEach(l =>
-            l.addEventListener("click", () => {
-                if (!l.closest(".dropdown")) closeNavbar();
-            })
-        );
+        // SOLO cerrar para links directos que NO son parte de dropdowns
+        document.querySelectorAll(".nav-link:not([role='button'])").forEach(l => {
+            const parentDropdown = l.closest(".dropdown");
+            // Solo agregar evento de cierre si NO está dentro de un dropdown
+            if (!parentDropdown) {
+                l.addEventListener("click", () => {
+                    closeNavbar();
+                });
+            }
+        });
     }
 
     function closeNavbar() {
@@ -250,3 +256,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 </script>
+
+
