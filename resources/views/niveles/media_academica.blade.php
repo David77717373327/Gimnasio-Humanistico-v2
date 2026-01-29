@@ -518,8 +518,8 @@
         </section>
 
         <script>
-            // ============================================
-            // NAVEGACIÓN CON CONTROLES Y FLECHAS
+             // ============================================
+            // NAVEGACIÓN CON CONTROLES - 1 CARD A LA VEZ
             // ============================================
 
             document.addEventListener('DOMContentLoaded', function() {
@@ -577,17 +577,31 @@
                 wrapper.appendChild(arrowLeft);
                 wrapper.appendChild(arrowRight);
 
-                // Funcionalidad de scroll
+                // Obtener ancho de una card completa (incluyendo gap)
+                function getCardWidth() {
+                    const card = navPanel.querySelector('.objetivos-nav-item');
+                    if (!card) return 0;
+
+                    const cardStyle = window.getComputedStyle(card);
+                    const cardWidth = card.offsetWidth;
+                    const gap = parseFloat(window.getComputedStyle(navPanel).gap) || 0;
+
+                    return cardWidth + gap;
+                }
+
+                // Funcionalidad de scroll - SCROLL DE 1 CARD COMPLETA
                 arrowLeft.addEventListener('click', function() {
+                    const scrollAmount = getCardWidth();
                     navPanel.scrollBy({
-                        left: -280,
+                        left: -scrollAmount,
                         behavior: 'smooth'
                     });
                 });
 
                 arrowRight.addEventListener('click', function() {
+                    const scrollAmount = getCardWidth();
                     navPanel.scrollBy({
-                        left: 280,
+                        left: scrollAmount,
                         behavior: 'smooth'
                     });
                 });

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es-CO">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +19,7 @@
 
     <!-- Meta descripción SEO-->
     <meta name="description"
-    content="Educación básica primaria en Neiva con enfoque humanista. Formación académica integral basada en valores, convivencia y desarrollo del pensamiento. Gimnasio Humanístico del Alto Magdalena.">
+        content="Educación básica primaria en Neiva con enfoque humanista. Formación académica integral basada en valores, convivencia y desarrollo del pensamiento. Gimnasio Humanístico del Alto Magdalena.">
 
     <!-- Scripts -->
     <script src="{{ asset('js/hero.js') }}" defer></script>
@@ -31,7 +32,7 @@
     <link href="{{ asset('css/galeria.css') }}" rel="stylesheet">
 
     @verbatim
-    <script type="application/ld+json">
+        <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "EducationalOccupationalProgram",
@@ -81,7 +82,7 @@
             <div class="container hero-container">
                 <div class="hero-content">
                     <h1 class="hero-title" data-title="Nuestra Identidad Institucional">
-                         Educación Básica Primaria en Neiva
+                        Educación Básica Primaria en Neiva
                     </h1>
 
                     <div class="hero-scroll-indicator" onclick="scrollToContent()" role="button" tabindex="0"
@@ -103,363 +104,363 @@
 
 
         <!-- Título SEO -->
-<header class="admision-nav-header" id="siguiente_sesion">
-    <h2 class="admision-nav-title">Educación Básica Primaria en Neiva</h2>
-</header>
+        <header class="admision-nav-header" id="siguiente_sesion">
+            <h2 class="admision-nav-title">Educación Básica Primaria en Neiva</h2>
+        </header>
 
 
-<div class="objetivos-split-container">
-    <!-- Panel de Navegación -->
-    <div class="objetivos-nav-panel">
+        <div class="objetivos-split-container">
+            <!-- Panel de Navegación -->
+            <div class="objetivos-nav-panel">
 
-        <!-- Valores y Ciudadanía -->
-        <div class="objetivos-nav-item active" data-category="valores">
-            <div class="objetivos-nav-number">01</div>
-            <div class="objetivos-nav-content">
-                <div class="objetivos-nav-title">Valores y Ciudadanía</div>
-                <div class="objetivos-nav-subtitle">4 objetivos</div>
-            </div>
-        </div>
+                <!-- Valores y Ciudadanía -->
+                <div class="objetivos-nav-item active" data-category="valores">
+                    <div class="objetivos-nav-number">01</div>
+                    <div class="objetivos-nav-content">
+                        <div class="objetivos-nav-title">Valores y Ciudadanía</div>
+                        <div class="objetivos-nav-subtitle">4 objetivos</div>
+                    </div>
+                </div>
 
-        <!-- Desarrollo Académico -->
-        <div class="objetivos-nav-item" data-category="academico">
-            <div class="objetivos-nav-number">02</div>
-            <div class="objetivos-nav-content">
-                <div class="objetivos-nav-title">Desarrollo Académico</div>
-                <div class="objetivos-nav-subtitle">7 objetivos</div>
-            </div>
-        </div>
+                <!-- Desarrollo Académico -->
+                <div class="objetivos-nav-item" data-category="academico">
+                    <div class="objetivos-nav-number">02</div>
+                    <div class="objetivos-nav-content">
+                        <div class="objetivos-nav-title">Desarrollo Académico</div>
+                        <div class="objetivos-nav-subtitle">7 objetivos</div>
+                    </div>
+                </div>
 
-        <!-- Desarrollo Físico -->
-        <div class="objetivos-nav-item" data-category="fisico">
-            <div class="objetivos-nav-number">03</div>
-            <div class="objetivos-nav-content">
-                <div class="objetivos-nav-title">Desarrollo Físico</div>
-                <div class="objetivos-nav-subtitle">3 objetivos</div>
-            </div>
-        </div>
+                <!-- Desarrollo Físico -->
+                <div class="objetivos-nav-item" data-category="fisico">
+                    <div class="objetivos-nav-number">03</div>
+                    <div class="objetivos-nav-content">
+                        <div class="objetivos-nav-title">Desarrollo Físico</div>
+                        <div class="objetivos-nav-subtitle">3 objetivos</div>
+                    </div>
+                </div>
 
-        <!-- Habilidades Sociales -->
-        <div class="objetivos-nav-item" data-category="sociales">
-            <div class="objetivos-nav-number">04</div>
-            <div class="objetivos-nav-content">
-                <div class="objetivos-nav-title">Habilidades Sociales</div>
-                <div class="objetivos-nav-subtitle">1 objetivo</div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Panel de Contenido -->
-    <div class="objetivos-content-panel">
-
-        <!-- VALORES Y CIUDADANÍA -->
-        <!-- Objetivo 1 -->
-        <div class="objetivos-content-item active" data-category="valores" data-index="0">
-            <div class="objetivos-content-header">
-                <div class="objetivos-content-number">01</div>
-                <div class="objetivos-content-title-group">
-                    <h4 class="objetivos-item-title">Valores para la Convivencia</h4>
-                    <p class="objetivos-content-category">Valores y Ciudadanía • 1 de 4</p>
+                <!-- Habilidades Sociales -->
+                <div class="objetivos-nav-item" data-category="sociales">
+                    <div class="objetivos-nav-number">04</div>
+                    <div class="objetivos-nav-content">
+                        <div class="objetivos-nav-title">Habilidades Sociales</div>
+                        <div class="objetivos-nav-subtitle">1 objetivo</div>
+                    </div>
                 </div>
             </div>
-            <p class="objetivos-content-text">
-                La formación de los valores fundamentales para la convivencia de una sociedad democrática,
-                participativa y pluralista.
-            </p>
-            <div class="objetivos-content-highlight">
-                <h5>¿Por qué es importante?</h5>
-                <p>Este objetivo busca desarrollar en los estudiantes las bases éticas y morales necesarias para
-                    vivir en armonía con otros, respetando la diversidad y promoviendo el diálogo como
-                    herramienta de resolución de conflictos.</p>
-            </div>
-        </div>
 
-        <!-- Objetivo 2 -->
-        <div class="objetivos-content-item" data-category="valores" data-index="1">
-            <div class="objetivos-content-header">
-                <div class="objetivos-content-number">02</div>
-                <div class="objetivos-content-title-group">
-                    <h4 class="objetivos-item-title">Valores Cívicos y Morales</h4>
-                    <p class="objetivos-content-category">Valores y Ciudadanía • 2 de 4</p>
+            <!-- Panel de Contenido -->
+            <div class="objetivos-content-panel">
+
+                <!-- VALORES Y CIUDADANÍA -->
+                <!-- Objetivo 1 -->
+                <div class="objetivos-content-item active" data-category="valores" data-index="0">
+                    <div class="objetivos-content-header">
+                        <div class="objetivos-content-number">01</div>
+                        <div class="objetivos-content-title-group">
+                            <h4 class="objetivos-item-title">Valores para la Convivencia</h4>
+                            <p class="objetivos-content-category">Valores y Ciudadanía • 1 de 4</p>
+                        </div>
+                    </div>
+                    <p class="objetivos-content-text">
+                        La formación de los valores fundamentales para la convivencia de una sociedad democrática,
+                        participativa y pluralista.
+                    </p>
+                    <div class="objetivos-content-highlight">
+                        <h5>¿Por qué es importante?</h5>
+                        <p>Este objetivo busca desarrollar en los estudiantes las bases éticas y morales necesarias para
+                            vivir en armonía con otros, respetando la diversidad y promoviendo el diálogo como
+                            herramienta de resolución de conflictos.</p>
+                    </div>
+                </div>
+
+                <!-- Objetivo 2 -->
+                <div class="objetivos-content-item" data-category="valores" data-index="1">
+                    <div class="objetivos-content-header">
+                        <div class="objetivos-content-number">02</div>
+                        <div class="objetivos-content-title-group">
+                            <h4 class="objetivos-item-title">Valores Cívicos y Morales</h4>
+                            <p class="objetivos-content-category">Valores y Ciudadanía • 2 de 4</p>
+                        </div>
+                    </div>
+                    <p class="objetivos-content-text">
+                        El desarrollo de valores civiles y morales de organización social y de convivencia humana.
+                    </p>
+                    <div class="objetivos-content-highlight">
+                        <h5>¿Por qué es importante?</h5>
+                        <p>Fomenta la comprensión de las normas sociales y el desarrollo de una consciencia ciudadana
+                            responsable desde temprana edad.</p>
+                    </div>
+                </div>
+
+                <!-- Objetivo 3 -->
+                <div class="objetivos-content-item" data-category="valores" data-index="2">
+                    <div class="objetivos-content-header">
+                        <div class="objetivos-content-number">03</div>
+                        <div class="objetivos-content-title-group">
+                            <h4 class="objetivos-item-title">Educación Constitucional</h4>
+                            <p class="objetivos-content-category">Valores y Ciudadanía • 3 de 4</p>
+                        </div>
+                    </div>
+                    <p class="objetivos-content-text">
+                        La iniciación en el conocimiento de la constitución política.
+                    </p>
+                    <div class="objetivos-content-highlight">
+                        <h5>¿Por qué es importante?</h5>
+                        <p>Introduce a los estudiantes en los principios fundamentales que rigen nuestra sociedad y sus
+                            derechos como ciudadanos.</p>
+                    </div>
+                </div>
+
+                <!-- Objetivo 4 -->
+                <div class="objetivos-content-item" data-category="valores" data-index="3">
+                    <div class="objetivos-content-header">
+                        <div class="objetivos-content-number">04</div>
+                        <div class="objetivos-content-title-group">
+                            <h4 class="objetivos-item-title">Participación Infantil</h4>
+                            <p class="objetivos-content-category">Valores y Ciudadanía • 4 de 4</p>
+                        </div>
+                    </div>
+                    <p class="objetivos-content-text">
+                        La formación para la participación y organización infantil y la utilización adecuada del tiempo
+                        libre.
+                    </p>
+                    <div class="objetivos-content-highlight">
+                        <h5>¿Por qué es importante?</h5>
+                        <p>Desarrolla habilidades de liderazgo, trabajo en equipo y gestión del tiempo desde la
+                            infancia.</p>
+                    </div>
+                </div>
+
+                <!-- DESARROLLO ACADÉMICO -->
+                <!-- Objetivo 5 -->
+                <div class="objetivos-content-item" data-category="academico" data-index="0">
+                    <div class="objetivos-content-header">
+                        <div class="objetivos-content-number">01</div>
+                        <div class="objetivos-content-title-group">
+                            <h4 class="objetivos-item-title">Deseo de Saber</h4>
+                            <p class="objetivos-content-category">Desarrollo Académico • 1 de 7</p>
+                        </div>
+                    </div>
+                    <p class="objetivos-content-text">
+                        El fomento del deseo del saber, de la iniciativa personal frente al conocimiento y frente a la
+                        realidad social, así como el espíritu crítico.
+                    </p>
+                    <div class="objetivos-content-highlight">
+                        <h5>¿Por qué es importante?</h5>
+                        <p>Cultiva la curiosidad intelectual y el pensamiento crítico, herramientas esenciales para el
+                            aprendizaje continuo.</p>
+                    </div>
+                </div>
+
+                <!-- Objetivo 6 -->
+                <div class="objetivos-content-item" data-category="academico" data-index="1">
+                    <div class="objetivos-content-header">
+                        <div class="objetivos-content-number">02</div>
+                        <div class="objetivos-content-title-group">
+                            <h4 class="objetivos-item-title">Habilidades Comunicativas</h4>
+                            <p class="objetivos-content-category">Desarrollo Académico • 2 de 7</p>
+                        </div>
+                    </div>
+                    <p class="objetivos-content-text">
+                        El desarrollo de las habilidades comunicativas básicas para leer, comprender, escribir,
+                        escuchar, hablar y expresarse correctamente en lengua castellana, así como el fomento de la
+                        afición por la lectura.
+                    </p>
+                    <div class="objetivos-content-highlight">
+                        <h5>¿Por qué es importante?</h5>
+                        <p>La comunicación efectiva es la base de todas las interacciones humanas y el aprendizaje
+                            académico.</p>
+                    </div>
+                </div>
+
+                <!-- Objetivo 7 -->
+                <div class="objetivos-content-item" data-category="academico" data-index="2">
+                    <div class="objetivos-content-header">
+                        <div class="objetivos-content-number">03</div>
+                        <div class="objetivos-content-title-group">
+                            <h4 class="objetivos-item-title">Expresión Estética</h4>
+                            <p class="objetivos-content-category">Desarrollo Académico • 3 de 7</p>
+                        </div>
+                    </div>
+                    <p class="objetivos-content-text">
+                        El desarrollo de la capacidad para apreciar y utilizar la lengua como medio de expresión
+                        estética.
+                    </p>
+                    <div class="objetivos-content-highlight">
+                        <h5>¿Por qué es importante?</h5>
+                        <p>Fomenta la creatividad y la sensibilidad artística a través del lenguaje.</p>
+                    </div>
+                </div>
+
+                <!-- Objetivo 8 -->
+                <div class="objetivos-content-item" data-category="academico" data-index="3">
+                    <div class="objetivos-content-header">
+                        <div class="objetivos-content-number">04</div>
+                        <div class="objetivos-content-title-group">
+                            <h4 class="objetivos-item-title">Pensamiento Matemático</h4>
+                            <p class="objetivos-content-category">Desarrollo Académico • 4 de 7</p>
+                        </div>
+                    </div>
+                    <p class="objetivos-content-text">
+                        El desarrollo de los conocimientos matemáticos necesarios para manejar y utilizar operaciones
+                        simples de cálculo y procedimientos lógicos elementales en diferentes situaciones, así como la
+                        capacidad para solucionar problemas que impliquen conocimientos.
+                    </p>
+                    <div class="objetivos-content-highlight">
+                        <h5>¿Por qué es importante?</h5>
+                        <p>Las matemáticas desarrollan el razonamiento lógico y la capacidad de resolver problemas de
+                            manera sistemática.</p>
+                    </div>
+                </div>
+
+                <!-- Objetivo 9 -->
+                <div class="objetivos-content-item" data-category="academico" data-index="4">
+                    <div class="objetivos-content-header">
+                        <div class="objetivos-content-number">05</div>
+                        <div class="objetivos-content-title-group">
+                            <h4 class="objetivos-item-title">Comprensión del Medio</h4>
+                            <p class="objetivos-content-category">Desarrollo Académico • 5 de 7</p>
+                        </div>
+                    </div>
+                    <p class="objetivos-content-text">
+                        La comprensión básica del medio físico, social y cultural en el nivel local, nacional y
+                        universal, de acuerdo con el desarrollo intelectual correspondiente a su edad.
+                    </p>
+                    <div class="objetivos-content-highlight">
+                        <h5>¿Por qué es importante?</h5>
+                        <p>Permite a los estudiantes entender su entorno y su lugar en el mundo.</p>
+                    </div>
+                </div>
+
+                <!-- Objetivo 10 -->
+                <div class="objetivos-content-item" data-category="academico" data-index="5">
+                    <div class="objetivos-content-header">
+                        <div class="objetivos-content-number">06</div>
+                        <div class="objetivos-content-title-group">
+                            <h4 class="objetivos-item-title">Asimilación de Conceptos</h4>
+                            <p class="objetivos-content-category">Desarrollo Académico • 6 de 7</p>
+                        </div>
+                    </div>
+                    <p class="objetivos-content-text">
+                        La asimilación de conceptos en áreas del conocimiento que sean objeto de estudio, de acuerdo con
+                        el desarrollo intelectual y la edad.
+                    </p>
+                    <div class="objetivos-content-highlight">
+                        <h5>¿Por qué es importante?</h5>
+                        <p>Garantiza una comprensión profunda de los contenidos adaptados a cada etapa del desarrollo.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Objetivo 11 -->
+                <div class="objetivos-content-item" data-category="academico" data-index="6">
+                    <div class="objetivos-content-header">
+                        <div class="objetivos-content-number">07</div>
+                        <div class="objetivos-content-title-group">
+                            <h4 class="objetivos-item-title">Lengua Extranjera</h4>
+                            <p class="objetivos-content-category">Desarrollo Académico • 7 de 7</p>
+                        </div>
+                    </div>
+                    <p class="objetivos-content-text">
+                        La adquisición de elementos de conversación y de lectura al menos en una lengua extranjera.
+                    </p>
+                    <div class="objetivos-content-highlight">
+                        <h5>¿Por qué es importante?</h5>
+                        <p>Abre puertas al mundo globalizado y desarrolla habilidades cognitivas adicionales.</p>
+                    </div>
+                </div>
+
+                <!-- DESARROLLO FÍSICO -->
+                <!-- Objetivo 12 -->
+                <div class="objetivos-content-item" data-category="fisico" data-index="0">
+                    <div class="objetivos-content-header">
+                        <div class="objetivos-content-number">01</div>
+                        <div class="objetivos-content-title-group">
+                            <h4 class="objetivos-item-title">Salud y Cuidado Personal</h4>
+                            <p class="objetivos-content-category">Desarrollo Físico • 1 de 3</p>
+                        </div>
+                    </div>
+                    <p class="objetivos-content-text">
+                        La valoración de la higiene y la salud del propio cuerpo y la formación para la protección de la
+                        naturaleza y el ambiente.
+                    </p>
+                    <div class="objetivos-content-highlight">
+                        <h5>¿Por qué es importante?</h5>
+                        <p>Establece hábitos saludables y consciencia ambiental desde temprana edad.</p>
+                    </div>
+                </div>
+
+                <!-- Objetivo 13 -->
+                <div class="objetivos-content-item" data-category="fisico" data-index="1">
+                    <div class="objetivos-content-header">
+                        <div class="objetivos-content-number">02</div>
+                        <div class="objetivos-content-title-group">
+                            <h4 class="objetivos-item-title">Educación Física y Deportes</h4>
+                            <p class="objetivos-content-category">Desarrollo Físico • 2 de 3</p>
+                        </div>
+                    </div>
+                    <p class="objetivos-content-text">
+                        El conocimiento y ejercitación del propio cuerpo mediante la práctica de la educación física, la
+                        recreación y los deportes adecuados a su edad y conducentes a un desarrollo físico armónico.
+                    </p>
+                    <div class="objetivos-content-highlight">
+                        <h5>¿Por qué es importante?</h5>
+                        <p>Promueve el desarrollo físico integral y la disciplina deportiva.</p>
+                    </div>
+                </div>
+
+                <!-- Objetivo 14 -->
+                <div class="objetivos-content-item" data-category="fisico" data-index="2">
+                    <div class="objetivos-content-header">
+                        <div class="objetivos-content-number">03</div>
+                        <div class="objetivos-content-title-group">
+                            <h4 class="objetivos-item-title">Formación Artística</h4>
+                            <p class="objetivos-content-category">Desarrollo Físico • 3 de 3</p>
+                        </div>
+                    </div>
+                    <p class="objetivos-content-text">
+                        La formación artística mediante la expresión corporal, la representación, la música, la plástica
+                        y la literatura.
+                    </p>
+                    <div class="objetivos-content-highlight">
+                        <h5>¿Por qué es importante?</h5>
+                        <p>Desarrolla la creatividad y la sensibilidad artística a través de múltiples lenguajes
+                            expresivos.</p>
+                    </div>
+                </div>
+
+                <!-- HABILIDADES SOCIALES -->
+                <!-- Objetivo 15 -->
+                <div class="objetivos-content-item" data-category="sociales" data-index="0">
+                    <div class="objetivos-content-header">
+                        <div class="objetivos-content-number">01</div>
+                        <div class="objetivos-content-title-group">
+                            <h4 class="objetivos-item-title">Autonomía Personal</h4>
+                            <p class="objetivos-content-category">Habilidades Sociales • 1 de 1</p>
+                        </div>
+                    </div>
+                    <p class="objetivos-content-text">
+                        La adquisición de habilidades para desempeñarse con autonomía en la sociedad.
+                    </p>
+                    <div class="objetivos-content-highlight">
+                        <h5>¿Por qué es importante?</h5>
+                        <p>Prepara a los estudiantes para ser independientes y tomar decisiones responsables.</p>
+                    </div>
+                </div>
+
+                <!-- Navegación entre objetivos -->
+                <div class="objetivos-content-navigation">
+                    <button class="objetivos-nav-btn objetivos-prev" id="objetivosPrevBtn">
+                        ← Anterior
+                    </button>
+                    <button class="objetivos-nav-btn objetivos-next" id="objetivosNextBtn">
+                        Siguiente →
+                    </button>
                 </div>
             </div>
-            <p class="objetivos-content-text">
-                El desarrollo de valores civiles y morales de organización social y de convivencia humana.
-            </p>
-            <div class="objetivos-content-highlight">
-                <h5>¿Por qué es importante?</h5>
-                <p>Fomenta la comprensión de las normas sociales y el desarrollo de una consciencia ciudadana
-                    responsable desde temprana edad.</p>
-            </div>
         </div>
-
-        <!-- Objetivo 3 -->
-        <div class="objetivos-content-item" data-category="valores" data-index="2">
-            <div class="objetivos-content-header">
-                <div class="objetivos-content-number">03</div>
-                <div class="objetivos-content-title-group">
-                    <h4 class="objetivos-item-title">Educación Constitucional</h4>
-                    <p class="objetivos-content-category">Valores y Ciudadanía • 3 de 4</p>
-                </div>
-            </div>
-            <p class="objetivos-content-text">
-                La iniciación en el conocimiento de la constitución política.
-            </p>
-            <div class="objetivos-content-highlight">
-                <h5>¿Por qué es importante?</h5>
-                <p>Introduce a los estudiantes en los principios fundamentales que rigen nuestra sociedad y sus
-                    derechos como ciudadanos.</p>
-            </div>
-        </div>
-
-        <!-- Objetivo 4 -->
-        <div class="objetivos-content-item" data-category="valores" data-index="3">
-            <div class="objetivos-content-header">
-                <div class="objetivos-content-number">04</div>
-                <div class="objetivos-content-title-group">
-                    <h4 class="objetivos-item-title">Participación Infantil</h4>
-                    <p class="objetivos-content-category">Valores y Ciudadanía • 4 de 4</p>
-                </div>
-            </div>
-            <p class="objetivos-content-text">
-                La formación para la participación y organización infantil y la utilización adecuada del tiempo
-                libre.
-            </p>
-            <div class="objetivos-content-highlight">
-                <h5>¿Por qué es importante?</h5>
-                <p>Desarrolla habilidades de liderazgo, trabajo en equipo y gestión del tiempo desde la
-                    infancia.</p>
-            </div>
-        </div>
-
-        <!-- DESARROLLO ACADÉMICO -->
-        <!-- Objetivo 5 -->
-        <div class="objetivos-content-item" data-category="academico" data-index="0">
-            <div class="objetivos-content-header">
-                <div class="objetivos-content-number">01</div>
-                <div class="objetivos-content-title-group">
-                    <h4 class="objetivos-item-title">Deseo de Saber</h4>
-                    <p class="objetivos-content-category">Desarrollo Académico • 1 de 7</p>
-                </div>
-            </div>
-            <p class="objetivos-content-text">
-                El fomento del deseo del saber, de la iniciativa personal frente al conocimiento y frente a la
-                realidad social, así como el espíritu crítico.
-            </p>
-            <div class="objetivos-content-highlight">
-                <h5>¿Por qué es importante?</h5>
-                <p>Cultiva la curiosidad intelectual y el pensamiento crítico, herramientas esenciales para el
-                    aprendizaje continuo.</p>
-            </div>
-        </div>
-
-        <!-- Objetivo 6 -->
-        <div class="objetivos-content-item" data-category="academico" data-index="1">
-            <div class="objetivos-content-header">
-                <div class="objetivos-content-number">02</div>
-                <div class="objetivos-content-title-group">
-                    <h4 class="objetivos-item-title">Habilidades Comunicativas</h4>
-                    <p class="objetivos-content-category">Desarrollo Académico • 2 de 7</p>
-                </div>
-            </div>
-            <p class="objetivos-content-text">
-                El desarrollo de las habilidades comunicativas básicas para leer, comprender, escribir,
-                escuchar, hablar y expresarse correctamente en lengua castellana, así como el fomento de la
-                afición por la lectura.
-            </p>
-            <div class="objetivos-content-highlight">
-                <h5>¿Por qué es importante?</h5>
-                <p>La comunicación efectiva es la base de todas las interacciones humanas y el aprendizaje
-                    académico.</p>
-            </div>
-        </div>
-
-        <!-- Objetivo 7 -->
-        <div class="objetivos-content-item" data-category="academico" data-index="2">
-            <div class="objetivos-content-header">
-                <div class="objetivos-content-number">03</div>
-                <div class="objetivos-content-title-group">
-                    <h4 class="objetivos-item-title">Expresión Estética</h4>
-                    <p class="objetivos-content-category">Desarrollo Académico • 3 de 7</p>
-                </div>
-            </div>
-            <p class="objetivos-content-text">
-                El desarrollo de la capacidad para apreciar y utilizar la lengua como medio de expresión
-                estética.
-            </p>
-            <div class="objetivos-content-highlight">
-                <h5>¿Por qué es importante?</h5>
-                <p>Fomenta la creatividad y la sensibilidad artística a través del lenguaje.</p>
-            </div>
-        </div>
-
-        <!-- Objetivo 8 -->
-        <div class="objetivos-content-item" data-category="academico" data-index="3">
-            <div class="objetivos-content-header">
-                <div class="objetivos-content-number">04</div>
-                <div class="objetivos-content-title-group">
-                    <h4 class="objetivos-item-title">Pensamiento Matemático</h4>
-                    <p class="objetivos-content-category">Desarrollo Académico • 4 de 7</p>
-                </div>
-            </div>
-            <p class="objetivos-content-text">
-                El desarrollo de los conocimientos matemáticos necesarios para manejar y utilizar operaciones
-                simples de cálculo y procedimientos lógicos elementales en diferentes situaciones, así como la
-                capacidad para solucionar problemas que impliquen conocimientos.
-            </p>
-            <div class="objetivos-content-highlight">
-                <h5>¿Por qué es importante?</h5>
-                <p>Las matemáticas desarrollan el razonamiento lógico y la capacidad de resolver problemas de
-                    manera sistemática.</p>
-            </div>
-        </div>
-
-        <!-- Objetivo 9 -->
-        <div class="objetivos-content-item" data-category="academico" data-index="4">
-            <div class="objetivos-content-header">
-                <div class="objetivos-content-number">05</div>
-                <div class="objetivos-content-title-group">
-                    <h4 class="objetivos-item-title">Comprensión del Medio</h4>
-                    <p class="objetivos-content-category">Desarrollo Académico • 5 de 7</p>
-                </div>
-            </div>
-            <p class="objetivos-content-text">
-                La comprensión básica del medio físico, social y cultural en el nivel local, nacional y
-                universal, de acuerdo con el desarrollo intelectual correspondiente a su edad.
-            </p>
-            <div class="objetivos-content-highlight">
-                <h5>¿Por qué es importante?</h5>
-                <p>Permite a los estudiantes entender su entorno y su lugar en el mundo.</p>
-            </div>
-        </div>
-
-        <!-- Objetivo 10 -->
-        <div class="objetivos-content-item" data-category="academico" data-index="5">
-            <div class="objetivos-content-header">
-                <div class="objetivos-content-number">06</div>
-                <div class="objetivos-content-title-group">
-                    <h4 class="objetivos-item-title">Asimilación de Conceptos</h4>
-                    <p class="objetivos-content-category">Desarrollo Académico • 6 de 7</p>
-                </div>
-            </div>
-            <p class="objetivos-content-text">
-                La asimilación de conceptos en áreas del conocimiento que sean objeto de estudio, de acuerdo con
-                el desarrollo intelectual y la edad.
-            </p>
-            <div class="objetivos-content-highlight">
-                <h5>¿Por qué es importante?</h5>
-                <p>Garantiza una comprensión profunda de los contenidos adaptados a cada etapa del desarrollo.
-                </p>
-            </div>
-        </div>
-
-        <!-- Objetivo 11 -->
-        <div class="objetivos-content-item" data-category="academico" data-index="6">
-            <div class="objetivos-content-header">
-                <div class="objetivos-content-number">07</div>
-                <div class="objetivos-content-title-group">
-                    <h4 class="objetivos-item-title">Lengua Extranjera</h4>
-                    <p class="objetivos-content-category">Desarrollo Académico • 7 de 7</p>
-                </div>
-            </div>
-            <p class="objetivos-content-text">
-                La adquisición de elementos de conversación y de lectura al menos en una lengua extranjera.
-            </p>
-            <div class="objetivos-content-highlight">
-                <h5>¿Por qué es importante?</h5>
-                <p>Abre puertas al mundo globalizado y desarrolla habilidades cognitivas adicionales.</p>
-            </div>
-        </div>
-
-        <!-- DESARROLLO FÍSICO -->
-        <!-- Objetivo 12 -->
-        <div class="objetivos-content-item" data-category="fisico" data-index="0">
-            <div class="objetivos-content-header">
-                <div class="objetivos-content-number">01</div>
-                <div class="objetivos-content-title-group">
-                    <h4 class="objetivos-item-title">Salud y Cuidado Personal</h4>
-                    <p class="objetivos-content-category">Desarrollo Físico • 1 de 3</p>
-                </div>
-            </div>
-            <p class="objetivos-content-text">
-                La valoración de la higiene y la salud del propio cuerpo y la formación para la protección de la
-                naturaleza y el ambiente.
-            </p>
-            <div class="objetivos-content-highlight">
-                <h5>¿Por qué es importante?</h5>
-                <p>Establece hábitos saludables y consciencia ambiental desde temprana edad.</p>
-            </div>
-        </div>
-
-        <!-- Objetivo 13 -->
-        <div class="objetivos-content-item" data-category="fisico" data-index="1">
-            <div class="objetivos-content-header">
-                <div class="objetivos-content-number">02</div>
-                <div class="objetivos-content-title-group">
-                    <h4 class="objetivos-item-title">Educación Física y Deportes</h4>
-                    <p class="objetivos-content-category">Desarrollo Físico • 2 de 3</p>
-                </div>
-            </div>
-            <p class="objetivos-content-text">
-                El conocimiento y ejercitación del propio cuerpo mediante la práctica de la educación física, la
-                recreación y los deportes adecuados a su edad y conducentes a un desarrollo físico armónico.
-            </p>
-            <div class="objetivos-content-highlight">
-                <h5>¿Por qué es importante?</h5>
-                <p>Promueve el desarrollo físico integral y la disciplina deportiva.</p>
-            </div>
-        </div>
-
-        <!-- Objetivo 14 -->
-        <div class="objetivos-content-item" data-category="fisico" data-index="2">
-            <div class="objetivos-content-header">
-                <div class="objetivos-content-number">03</div>
-                <div class="objetivos-content-title-group">
-                    <h4 class="objetivos-item-title">Formación Artística</h4>
-                    <p class="objetivos-content-category">Desarrollo Físico • 3 de 3</p>
-                </div>
-            </div>
-            <p class="objetivos-content-text">
-                La formación artística mediante la expresión corporal, la representación, la música, la plástica
-                y la literatura.
-            </p>
-            <div class="objetivos-content-highlight">
-                <h5>¿Por qué es importante?</h5>
-                <p>Desarrolla la creatividad y la sensibilidad artística a través de múltiples lenguajes
-                    expresivos.</p>
-            </div>
-        </div>
-
-        <!-- HABILIDADES SOCIALES -->
-        <!-- Objetivo 15 -->
-        <div class="objetivos-content-item" data-category="sociales" data-index="0">
-            <div class="objetivos-content-header">
-                <div class="objetivos-content-number">01</div>
-                <div class="objetivos-content-title-group">
-                    <h4 class="objetivos-item-title">Autonomía Personal</h4>
-                    <p class="objetivos-content-category">Habilidades Sociales • 1 de 1</p>
-                </div>
-            </div>
-            <p class="objetivos-content-text">
-                La adquisición de habilidades para desempeñarse con autonomía en la sociedad.
-            </p>
-            <div class="objetivos-content-highlight">
-                <h5>¿Por qué es importante?</h5>
-                <p>Prepara a los estudiantes para ser independientes y tomar decisiones responsables.</p>
-            </div>
-        </div>
-
-        <!-- Navegación entre objetivos -->
-        <div class="objetivos-content-navigation">
-            <button class="objetivos-nav-btn objetivos-prev" id="objetivosPrevBtn">
-                ← Anterior
-            </button>
-            <button class="objetivos-nav-btn objetivos-next" id="objetivosNextBtn">
-                Siguiente →
-            </button>
-        </div>
-    </div>
-</div>
 
 
 
@@ -492,9 +493,8 @@
                 <div class="gallery-grid">
 
                     <article class="gallery-item" onclick="openLightbox(0)">
-                        <img src="{{ asset('images/educacion_primaria/imagen7.jpg') }}" 
-                        alt="Niños jugando en el aula del primaria de Neiva"
-                            loading="lazy">
+                        <img src="{{ asset('images/educacion_primaria/imagen7.jpg') }}"
+                            alt="Niños jugando en el aula del primaria de Neiva" loading="lazy">
                     </article>
 
                     <article class="gallery-item" onclick="openLightbox(1)">
@@ -503,21 +503,18 @@
                     </article>
 
                     <article class="gallery-item" onclick="openLightbox(2)">
-                        <img src="{{ asset('images/educacion_primaria/imagen1.jpg') }}" 
-                        alt="Aprendizaje colaborativo en primaria"
-                            loading="lazy">
+                        <img src="{{ asset('images/educacion_primaria/imagen1.jpg') }}"
+                            alt="Aprendizaje colaborativo en primaria" loading="lazy">
                     </article>
 
                     <article class="gallery-item" onclick="openLightbox(3)">
-                        <img src="{{ asset('images/educacion_primaria/imagen8.jpg') }}" 
-                        alt="Exploración educativa al aire libre"
-                            loading="lazy">
+                        <img src="{{ asset('images/educacion_primaria/imagen8.jpg') }}"
+                            alt="Exploración educativa al aire libre" loading="lazy">
                     </article>
 
                     <article class="gallery-item" onclick="openLightbox(4)">
-                        <img src="{{ asset('images/educacion_primaria/imagen4.jpg') }}" 
-                        alt="Juego libre y diversión en el colegio"
-                            loading="lazy">
+                        <img src="{{ asset('images/educacion_primaria/imagen4.jpg') }}"
+                            alt="Juego libre y diversión en el colegio" loading="lazy">
                     </article>
 
                     <article class="gallery-item" onclick="openLightbox(5)">
@@ -526,9 +523,8 @@
                     </article>
 
                     <article class="gallery-item" onclick="openLightbox(6)">
-                        <img src="{{ asset('images/educacion_primaria/imagen3.jpg') }}" 
-                        alt="Momentos de aprendizaje diario"
-                            loading="lazy">
+                        <img src="{{ asset('images/educacion_primaria/imagen3.jpg') }}"
+                            alt="Momentos de aprendizaje diario" loading="lazy">
                     </article>
                 </div>
             </div>
@@ -545,7 +541,7 @@
 
         <script>
             // ============================================
-            // NAVEGACIÓN CON CONTROLES Y FLECHAS
+            // NAVEGACIÓN CON CONTROLES - 1 CARD A LA VEZ
             // ============================================
 
             document.addEventListener('DOMContentLoaded', function() {
@@ -603,17 +599,31 @@
                 wrapper.appendChild(arrowLeft);
                 wrapper.appendChild(arrowRight);
 
-                // Funcionalidad de scroll
+                // Obtener ancho de una card completa (incluyendo gap)
+                function getCardWidth() {
+                    const card = navPanel.querySelector('.objetivos-nav-item');
+                    if (!card) return 0;
+
+                    const cardStyle = window.getComputedStyle(card);
+                    const cardWidth = card.offsetWidth;
+                    const gap = parseFloat(window.getComputedStyle(navPanel).gap) || 0;
+
+                    return cardWidth + gap;
+                }
+
+                // Funcionalidad de scroll - SCROLL DE 1 CARD COMPLETA
                 arrowLeft.addEventListener('click', function() {
+                    const scrollAmount = getCardWidth();
                     navPanel.scrollBy({
-                        left: -280,
+                        left: -scrollAmount,
                         behavior: 'smooth'
                     });
                 });
 
                 arrowRight.addEventListener('click', function() {
+                    const scrollAmount = getCardWidth();
                     navPanel.scrollBy({
-                        left: 280,
+                        left: scrollAmount,
                         behavior: 'smooth'
                     });
                 });
@@ -652,6 +662,12 @@
                 const arrows = document.querySelectorAll('.objetivos-nav-arrow-left, .objetivos-nav-arrow-right');
                 arrows.forEach(arrow => arrow.remove());
             }
+
+
+
+
+
+
 
 
 
@@ -887,6 +903,15 @@
                 });
             }
         </script>
+
+
+
+
+
+
+
+
+
 
         <!-- Incluir el footer -->
         @include('layouts.footer')
