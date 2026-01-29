@@ -74,7 +74,7 @@
 .proyectos-container {
     max-width: 1600px;
     margin: 0 auto;
-    padding: 60px 40px 80px;
+    padding:  60px 40px 80px;
 }
 
 /* ============================================
@@ -95,7 +95,7 @@
 }
 
 .proyecto-item:last-child {
-    margin-bottom: 0;
+    margin-bottom: 3.5rem;
 }
 
 /* Encabezado - PADDING REDUCIDO */

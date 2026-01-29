@@ -1467,6 +1467,8 @@ h6 {
 
 /* Tarjetas de Nivel - Sin card style */
 .academic-level-card {
+    margin-bottom: 30px;
+    
     background: transparent;
     border-radius: 0;
     overflow: visible;
