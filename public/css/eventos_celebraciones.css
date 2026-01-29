@@ -628,9 +628,9 @@
 
 
 
-
 /* ============================================
-   FLECHAS DE NAVEGACIÓN MEJORADAS - MÁS ANCHAS Y MEJOR UX
+   FLECHAS DE NAVEGACIÓN - VERSIÓN FINAL
+   SOLO 1 TAB VISIBLE A LA VEZ
 ============================================ */
 
 @media (max-width: 1023px) {
@@ -647,12 +647,25 @@
         scroll-behavior: smooth;
         scrollbar-width: none;
         -webkit-overflow-scrolling: touch;
-        padding: 0.5rem 0;
+        padding: 0.5rem 3.5rem; /* Aumentado el padding lateral para los controles */
         scroll-snap-type: x mandatory;
+        display: flex;
+        gap: 1rem;
     }
     
     .eventos-tabs .tabs-wrapper::-webkit-scrollbar {
         display: none;
+    }
+    
+    /* TAB - SOLO 1 VISIBLE A LA VEZ */
+    .tab-btn {
+        min-width: calc(100% - 7rem); /* Resta el padding lateral total */
+        max-width: calc(100% - 7rem);
+        flex-shrink: 0;
+        scroll-snap-align: center;
+        border-right: none; /* Sin separadores cuando solo se ve 1 */
+        position: relative;
+        transition: all 0.3s ease;
     }
     
     /* FLECHAS - MÁS ANCHAS Y FÁCILES DE TOCAR */
@@ -708,29 +721,11 @@
         pointer-events: none;
     }
 
-    /* Asegurar que el contenedor no tenga padding */
+    /* Asegurar que el contenedor no tenga padding extra */
     .eventos-tabs .container {
         padding: 0;
         margin: 0;
         max-width: 100%;
-    }
-}
-
-/* ============================================
-   MEJORAS UX/UI - CARDS CON SEPARADORES Y SCROLL SNAP
-============================================ */
-
-@media (max-width: 1023px) {
-    /* Separador visual entre cards */
-    .tab-btn {
-        border-right: 1px solid rgba(0, 0, 0, 0.1);
-        position: relative;
-        transition: all 0.3s ease;
-        scroll-snap-align: start;
-    }
-    
-    .tab-btn:last-child {
-        border-right: none;
     }
     
     /* Efecto de hover más suave */
@@ -739,9 +734,8 @@
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
     
-    /* Card activa con borde más definido */
+    /* Card activa con mejor sombra */
     .tab-btn.active {
-        border-right: 1px solid transparent;
         box-shadow: 0 4px 16px rgba(13, 63, 39, 0.15);
         transform: translateY(-2px);
     }
@@ -751,6 +745,16 @@
    TABLET HORIZONTAL (768px - 1023px)
 ============================================ */
 @media (max-width: 1023px) and (min-width: 768px) {
+    .eventos-tabs .tabs-wrapper {
+        padding: 0.5rem 3.5rem;
+        gap: 1rem;
+    }
+    
+    .tab-btn {
+        min-width: calc(100% - 7rem);
+        max-width: calc(100% - 7rem);
+    }
+    
     .tabs-nav-arrow {
         width: 55px;
     }
@@ -765,6 +769,16 @@
    TABLET VERTICAL (576px - 767px)
 ============================================ */
 @media (max-width: 767px) and (min-width: 576px) {
+    .eventos-tabs .tabs-wrapper {
+        padding: 0.5rem 3.25rem;
+        gap: 0.875rem;
+    }
+    
+    .tab-btn {
+        min-width: calc(100% - 6.5rem);
+        max-width: calc(100% - 6.5rem);
+    }
+    
     .tabs-nav-arrow {
         width: 50px; /* Aumentado de 32px a 50px */
     }
@@ -779,6 +793,16 @@
    MÓVIL GRANDE (480px - 575px)
 ============================================ */
 @media (max-width: 575px) and (min-width: 480px) {
+    .eventos-tabs .tabs-wrapper {
+        padding: 0.5rem 3rem;
+        gap: 0.75rem;
+    }
+    
+    .tab-btn {
+        min-width: calc(100% - 6rem);
+        max-width: calc(100% - 6rem);
+    }
+    
     .tabs-nav-arrow {
         width: 48px; /* Aumentado de 30px a 48px */
     }
@@ -787,17 +811,22 @@
         width: 24px; /* Aumentado de 16px a 24px */
         height: 24px;
     }
-    
-    /* Separador más sutil en móvil */
-    .tab-btn {
-        border-right: 1px solid rgba(0, 0, 0, 0.08);
-    }
 }
 
 /* ============================================
    MÓVIL MEDIANO (375px - 479px)
 ============================================ */
 @media (max-width: 479px) and (min-width: 375px) {
+    .eventos-tabs .tabs-wrapper {
+        padding: 0.5rem 2.75rem;
+        gap: 0.625rem;
+    }
+    
+    .tab-btn {
+        min-width: calc(100% - 5.5rem);
+        max-width: calc(100% - 5.5rem);
+    }
+    
     .tabs-nav-arrow {
         width: 45px; /* Aumentado de 28px a 45px */
     }
@@ -812,6 +841,16 @@
    MÓVIL PEQUEÑO (320px - 374px)
 ============================================ */
 @media (max-width: 374px) and (min-width: 320px) {
+    .eventos-tabs .tabs-wrapper {
+        padding: 0.5rem 2.5rem;
+        gap: 0.5rem;
+    }
+    
+    .tab-btn {
+        min-width: calc(100% - 5rem);
+        max-width: calc(100% - 5rem);
+    }
+    
     .tabs-nav-arrow {
         width: 42px; /* Aumentado de 26px a 42px */
     }
@@ -826,6 +865,16 @@
    MÓVIL EXTRA PEQUEÑO (250px - 319px)
 ============================================ */
 @media (max-width: 319px) and (min-width: 250px) {
+    .eventos-tabs .tabs-wrapper {
+        padding: 0.5rem 2.25rem;
+        gap: 0.5rem;
+    }
+    
+    .tab-btn {
+        min-width: calc(100% - 4.5rem);
+        max-width: calc(100% - 4.5rem);
+    }
+    
     .tabs-nav-arrow {
         width: 38px; /* Aumentado de 24px a 38px */
     }
@@ -840,6 +889,16 @@
    MÓVIL ULTRA PEQUEÑO (menos de 250px)
 ============================================ */
 @media (max-width: 249px) {
+    .eventos-tabs .tabs-wrapper {
+        padding: 0.5rem 2rem;
+        gap: 0.5rem;
+    }
+    
+    .tab-btn {
+        min-width: calc(100% - 4rem);
+        max-width: calc(100% - 4rem);
+    }
+    
     .tabs-nav-arrow {
         width: 35px;
     }
@@ -928,6 +987,18 @@
         transition: none;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

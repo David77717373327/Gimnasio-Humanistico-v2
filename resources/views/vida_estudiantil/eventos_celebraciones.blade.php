@@ -146,7 +146,7 @@
 
 
         // ============================================
-// NAVEGACIÓN DE TABS MEJORADA - MEJOR UX
+// NAVEGACIÓN DE TABS - SOLO 1 VISIBLE A LA VEZ
 // ============================================
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -239,18 +239,21 @@ function initializeTabsArrows() {
 
     console.log('Flechas creadas correctamente');
 
-    // Calcular ancho de scroll óptimo basado en el ancho de las tabs
-    function getScrollAmount() {
-        const firstTab = tabsWrapper.querySelector('.tab-btn');
-        if (!firstTab) return 200;
+    // Calcular ancho de scroll para 1 tab completa
+    function getTabWidth() {
+        const tab = tabsWrapper.querySelector('.tab-btn');
+        if (!tab) return 300;
         
-        // Scroll del ancho de una tab completa
-        return firstTab.offsetWidth + 20; // +20 para gap
+        const tabStyle = window.getComputedStyle(tab);
+        const tabWidth = tab.offsetWidth;
+        const gap = parseFloat(window.getComputedStyle(tabsWrapper).gap) || 0;
+        
+        return tabWidth + gap;
     }
 
-    // Funcionalidad de scroll mejorada
+    // Funcionalidad de scroll - SCROLL DE 1 TAB COMPLETA
     arrowLeft.addEventListener('click', function() {
-        const scrollAmount = getScrollAmount();
+        const scrollAmount = getTabWidth();
         tabsWrapper.scrollBy({
             left: -scrollAmount,
             behavior: 'smooth'
@@ -258,7 +261,7 @@ function initializeTabsArrows() {
     });
 
     arrowRight.addEventListener('click', function() {
-        const scrollAmount = getScrollAmount();
+        const scrollAmount = getTabWidth();
         tabsWrapper.scrollBy({
             left: scrollAmount,
             behavior: 'smooth'
@@ -361,6 +364,12 @@ function scrollTabIntoView(tabElement) {
 
 // Exportar función para uso en switchTab
 window.scrollTabIntoView = scrollTabIntoView;
+
+
+
+
+
+
         const eventos = [{
                 id: 'sanpedrito',
                 category: 'Tradición',
